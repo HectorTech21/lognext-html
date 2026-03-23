@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lognext - Home</title>
+  <title>Lognext - Your Meaningful Tech Partner</title>
 
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
@@ -22,25 +22,23 @@
       <nav class="main-nav">
         <ul class="menu">
           <li class="menu-item has-dropdown">
-            <a href="#">Servicios</a>
+            <a href="#" data-i18n="nav_servicios">Servicios</a>
             <ul class="submenu">
-              <li><a href="#">Inteligencia Artificial</a></li>
-              <li><a href="#">Application Management Services</a></li>
-              <li><a href="#">Infrastructure Management Services</a></li>
-              <li><a href="#">Agile Transformation</a></li>
-              <li><a href="#">Outsourcing de Talento</a></li>
+              <li><a href="#" data-i18n="submenu_ia">Inteligencia Artificial</a></li>
+              <li><a href="#" data-i18n="submenu_ams">Application Management Services</a></li>
+              <li><a href="#" data-i18n="submenu_ims">Infrastructure Management Services</a></li>
+              <li><a href="#" data-i18n="submenu_agile">Agile Transformation</a></li>
+              <li><a href="#" data-i18n="submenu_outsourcing">Outsourcing de Talento</a></li>
             </ul>
           </li>
 
-          <li><a href="#">Quienes somos</a></li>
-          <li><a href="#">Trabaja con nosotros</a></li>
+          <li><a href="#" data-i18n="nav_quienes_somos">Quienes somos</a></li>
+          <li><a href="#" data-i18n="nav_trabaja">Trabaja con nosotros</a></li>
         </ul>
       </nav>
 
       <!-- btn portal del empleado -->
-      <a href="#" class="employee-portal">
-        Portal del empleado
-      </a>
+      <a href="#" class="employee-portal" data-i18n="btn_portal">Portal del empleado</a>
 
       <!-- selector de idioma -->
       <div class="language-switcher">
@@ -60,37 +58,39 @@
     <!-- presentacion del contenido (HERO SECTION) -->
     <section class="presentacion">
       <div class="presentacion-contenido">
-        <h1>YOUR MEANINGFUL TECH PARTNER</h1>
-        <p>
+        <h1 data-i18n="hero_title">YOUR MEANINGFUL TECH PARTNER</h1>
+        <p data-i18n="hero_description">
           Transformamos la tecnología en soluciones robustas y accesibles para todos aquellos que necesitan simplificar el mañana y progresar en sus retos, ambiciones y propósitos.
         </p>
-        <a href="#servicios" class="btn-principal">Ver servicios</a>
+        <a href="#servicios" class="btn-principal" data-i18n="hero_btn">Ver servicios</a>
       </div>
     </section>
 
     <!-- servicios -->
     <section id="servicios" class="servicios">
-      <h2>Nuestros Servicios</h2>
+      <h2 data-i18n="servicios_title">Nuestros Servicios</h2>
 
       <div class="servicios-grid">
         <div class="servicio-card">
-          <h3>Gestión de flotas</h3>
-          <p>Optimización y control en tiempo real.</p>
+          <h3 data-i18n="servicio1_title">Gestión de flotas</h3>
+          <p data-i18n="servicio1_desc">Optimización y control en tiempo real.</p>
         </div>
 
         <div class="servicio-card">
-          <h3>Rutas inteligentes</h3>
-          <p>Planificación eficiente basada en datos y tráfico.</p>
+          <h3 data-i18n="servicio2_title">Rutas inteligentes</h3>
+          <p data-i18n="servicio2_desc">Planificación eficiente basada en datos y tráfico.</p>
         </div>
 
         <div class="servicio-card">
-          <h3>Analítica avanzada</h3>
-          <p>Informes y métricas para mejorar la toma de decisiones.</p>
+          <h3 data-i18n="servicio3_title">Analítica avanzada</h3>
+          <p data-i18n="servicio3_desc">Informes y métricas para mejorar la toma de decisiones.</p>
         </div>
       </div>
     </section>
 
   </main>
 
+
+  <script src="assets/js/translations.js"></script>
 </body>
 </html>

@@ -412,13 +412,17 @@ body {
 .servicio-card-horizontal {
   background: #000029;
   border-radius: 20px;
-  padding: 30px 20px;
+  padding: 40px 20px 45px 20px;
   text-align: center;
   transition: all 0.4s ease;
   border: 1px solid rgba(250, 60, 15, 0.2);
   position: relative;
   overflow: hidden;
   cursor: pointer;
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .servicio-card-horizontal::before {
@@ -447,9 +451,12 @@ body {
   font-size: 18px;
   font-weight: 600;
   color: #ffffff;
-  margin-bottom: 25px;
-  line-height: 1.3;
-  min-height: 60px;
+  margin-bottom: 35px;
+  line-height: 1.4;
+  min-height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .servicio-imagen {
@@ -457,13 +464,19 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 10px;
 }
 
 .servicio-imagen img {
-  max-width: 80px;
+  max-width: 100px;
   height: auto;
   transition: transform 0.3s ease;
-  filter: brightness(0) invert(1);
+  filter: none;
+}
+
+/* EFECTO HOVER: título se pone naranja */
+.servicio-card-horizontal:hover h3 {
+  color: #FA3C0F;
 }
 
 .servicio-card-horizontal:hover .servicio-imagen img {
@@ -795,6 +808,18 @@ body {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
   }
+  .servicio-card-horizontal {
+    padding: 30px 15px 35px 15px;
+    min-height: 280px;
+  }
+  .servicio-card-horizontal h3 {
+    font-size: 16px;
+    min-height: 65px;
+    margin-bottom: 25px;
+  }
+  .servicio-imagen img {
+    max-width: 80px;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -916,15 +941,16 @@ body {
     gap: 15px;
   }
   .servicio-card-horizontal {
-    padding: 20px 15px;
+    padding: 25px 12px 30px 12px;
+    min-height: 250px;
   }
   .servicio-card-horizontal h3 {
     font-size: 14px;
-    min-height: 50px;
-    margin-bottom: 15px;
+    min-height: 55px;
+    margin-bottom: 20px;
   }
   .servicio-imagen img {
-    max-width: 50px;
+    max-width: 65px;
   }
   .footer-grid {
     grid-template-columns: 1fr;
@@ -961,14 +987,16 @@ body {
     gap: 15px;
   }
   .servicio-card-horizontal {
-    padding: 25px 20px;
+    padding: 30px 20px 35px 20px;
+    min-height: 240px;
   }
   .servicio-card-horizontal h3 {
     font-size: 16px;
     min-height: auto;
+    margin-bottom: 25px;
   }
   .servicio-imagen img {
-    max-width: 60px;
+    max-width: 80px;
   }
   .presentacion::after,
   .presentacion .circle-1,

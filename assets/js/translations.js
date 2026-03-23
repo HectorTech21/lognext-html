@@ -88,10 +88,10 @@ const translations = {
   }
 };
 
-// Idioma actual (por defecto español(es))
+// Idioma actual (por defecto español)
 let currentLang = localStorage.getItem('language') || 'es';
 
-// Function para cambiar el idioma
+// Función para cambiar el idioma
 function setLanguage(lang) {
   if (!translations[lang]) return;
   
@@ -99,8 +99,8 @@ function setLanguage(lang) {
   localStorage.setItem('language', lang);
   updateContent();
   
-  // Actualizar clase activa en el selector de idioma
-  document.querySelectorAll('.language-switcher a').forEach(link => {
+  // Actualizar clase activa en el selector de idioma (tanto escritorio como móvil)
+  document.querySelectorAll('.language-switcher a, .language-switcher.mobile a').forEach(link => {
     if (link.textContent.toLowerCase() === lang || 
         (lang === 'es' && link.textContent === 'ES') ||
         (lang === 'en' && link.textContent === 'EN') ||
@@ -121,24 +121,58 @@ function updateContent() {
   document.querySelectorAll('[data-i18n]').forEach(element => {
     const key = element.getAttribute('data-i18n');
     if (t[key] !== undefined) {
-      // Si es un input o textarea, actualizar value o placeholder
-      if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
-        if (element.getAttribute('data-i18n-type') === 'placeholder') {
-          element.placeholder = t[key];
-        } else {
-          element.value = t[key];
-        }
-      } else {
-        element.textContent = t[key];
-      }
+      element.textContent = t[key];
     }
   });
 }
 
-// Se inicializa cuando el DOM esté listo
+// ========== FUNCIONALIDAD DEL MENÚ MÓVIL ==========
+
+// Función para el menú hamburguesa
+function initMobileMenu() {
+  const menuToggle = document.querySelector('.menu-toggle');
+  const mainNav = document.querySelector('.main-nav');
+  
+  if (!menuToggle || !mainNav) return;
+  
+  // Abrir/cerrar menú
+  menuToggle.addEventListener('click', () => {
+    menuToggle.classList.toggle('active');
+    mainNav.classList.toggle('active');
+    document.body.style.overflow = mainNav.classList.contains('active') ? 'hidden' : '';
+  });
+  
+  // Cerrar menú al hacer clic en un enlace
+  const menuLinks = document.querySelectorAll('.menu a, .mobile-actions a');
+  menuLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      if (window.innerWidth <= 768) {
+        menuToggle.classList.remove('active');
+        mainNav.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+    });
+  });
+  
+  // Manejar submenús en móvil
+  const dropdowns = document.querySelectorAll('.has-dropdown');
+  dropdowns.forEach(dropdown => {
+    const link = dropdown.querySelector('> a');
+    if (link) {
+      link.addEventListener('click', (e) => {
+        if (window.innerWidth <= 768) {
+          e.preventDefault();
+          dropdown.classList.toggle('active');
+        }
+      });
+    }
+  });
+}
+
+// Inicialización cuando el DOM esté listo
 document.addEventListener('DOMContentLoaded', () => {
-  // Configurar eventos de botones de idioma
-  const langLinks = document.querySelectorAll('.language-switcher a');
+  // Configurar eventos de los botones de idioma (escritorio y móvil)
+  const langLinks = document.querySelectorAll('.language-switcher a, .language-switcher.mobile a');
   langLinks.forEach(link => {
     link.addEventListener('click', (e) => {
       e.preventDefault();
@@ -149,4 +183,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
   // Aplicar idioma guardado
   setLanguage(currentLang);
+  
+  // Inicializar menú móvil
+  initMobileMenu();
 });

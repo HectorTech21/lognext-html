@@ -35,20 +35,34 @@
           <li><a href="#" data-i18n="nav_quienes_somos">Quienes somos</a></li>
           <li><a href="#" data-i18n="nav_trabaja">Trabaja con nosotros</a></li>
         </ul>
+        
+        <!-- Botones móvil (se muestran solo en versión móvil dentro del menú) -->
+        <div class="mobile-actions">
+          <a href="#" class="employee-portal mobile" data-i18n="btn_portal">Portal del empleado</a>
+          <div class="language-switcher mobile">
+            <a href="#" class="active">ES</a>
+            <a href="#">EN</a>
+            <a href="#">FR</a>
+          </div>
+        </div>
       </nav>
 
-      <!-- btn portal del empleado -->
-      <a href="#" class="employee-portal" data-i18n="btn_portal">Portal del empleado</a>
-
-      <!-- selector de idioma -->
-      <div class="language-switcher">
-        <a href="#" class="active">ES</a>
-        <a href="#">EN</a>
-        <a href="#">FR</a>
+      <!-- botones de escritorio -->
+      <div class="desktop-actions">
+        <a href="#" class="employee-portal" data-i18n="btn_portal">Portal del empleado</a>
+        <div class="language-switcher">
+          <a href="#" class="active">ES</a>
+          <a href="#">EN</a>
+          <a href="#">FR</a>
+        </div>
       </div>
 
       <!-- boton para abrir el menu del movil (hamburguesa) -->
-      <button class="menu-toggle">☰</button>
+      <button class="menu-toggle" aria-label="Menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 
     </div>
   </header>
@@ -90,7 +104,7 @@
 
   </main>
 
-
+  <!-- Scripts -->
   <script src="assets/js/translations.js"></script>
 </body>
 </html>

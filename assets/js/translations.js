@@ -11,7 +11,7 @@ const translations = {
     submenu_ia: "Inteligencia Artificial",
     submenu_ams: "Application Management Services",
     submenu_ims: "Infrastructure Management Services",
-    submenu_agile: "Agile Transformation",
+    submenu_agile: "Ciberseguridad",
     submenu_outsourcing: "Outsourcing de Talento",
     
     // Hero section
@@ -40,7 +40,7 @@ const translations = {
     submenu_ia: "Artificial Intelligence",
     submenu_ams: "Application Management Services",
     submenu_ims: "Infrastructure Management Services",
-    submenu_agile: "Agile Transformation",
+    submenu_agile: "Cybersecurity",
     submenu_outsourcing: "Talent Outsourcing",
     
     // Hero section
@@ -69,7 +69,7 @@ const translations = {
     submenu_ia: "Intelligence Artificielle",
     submenu_ams: "Services de gestion d'applications",
     submenu_ims: "Services de gestion d'infrastructure",
-    submenu_agile: "Transformation Agile",
+    submenu_agile: "Cybersécurité",
     submenu_outsourcing: "Externalisation de talents",
     
     // Hero section
@@ -99,7 +99,7 @@ function setLanguage(lang) {
   localStorage.setItem('language', lang);
   updateContent();
   
-  // Actualizar clase activa en el selector de idioma (tanto escritorio como móvil)
+  // Actualizar clase activa en el selector de idioma
   document.querySelectorAll('.language-switcher a, .language-switcher.mobile a').forEach(link => {
     if (link.textContent.toLowerCase() === lang || 
         (lang === 'es' && link.textContent === 'ES') ||
@@ -117,7 +117,6 @@ function updateContent() {
   const t = translations[currentLang];
   if (!t) return;
   
-  // Actualizar elementos con atributo data-i18n
   document.querySelectorAll('[data-i18n]').forEach(element => {
     const key = element.getAttribute('data-i18n');
     if (t[key] !== undefined) {
@@ -127,8 +126,6 @@ function updateContent() {
 }
 
 // ========== FUNCIONALIDAD DEL MENÚ MÓVIL ==========
-
-// Función para el menú hamburguesa
 function initMobileMenu() {
   const menuToggle = document.querySelector('.menu-toggle');
   const mainNav = document.querySelector('.main-nav');
@@ -136,7 +133,7 @@ function initMobileMenu() {
   if (!menuToggle || !mainNav) return;
   
   // Abrir/cerrar menú
-  menuToggle.addEventListener('click', () => {
+  menuToggle.addEventListener('click', function() {
     menuToggle.classList.toggle('active');
     mainNav.classList.toggle('active');
     document.body.style.overflow = mainNav.classList.contains('active') ? 'hidden' : '';
@@ -144,8 +141,8 @@ function initMobileMenu() {
   
   // Cerrar menú al hacer clic en un enlace
   const menuLinks = document.querySelectorAll('.menu a, .mobile-actions a');
-  menuLinks.forEach(link => {
-    link.addEventListener('click', () => {
+  menuLinks.forEach(function(link) {
+    link.addEventListener('click', function() {
       if (window.innerWidth <= 768) {
         menuToggle.classList.remove('active');
         mainNav.classList.remove('active');
@@ -154,12 +151,12 @@ function initMobileMenu() {
     });
   });
   
-  // Manejar submenús en móvil
+  // Manejar submenús en móvil (CORREGIDO - sin error de selector)
   const dropdowns = document.querySelectorAll('.has-dropdown');
-  dropdowns.forEach(dropdown => {
-    const link = dropdown.querySelector('> a');
+  dropdowns.forEach(function(dropdown) {
+    const link = dropdown.querySelector('a');
     if (link) {
-      link.addEventListener('click', (e) => {
+      link.addEventListener('click', function(e) {
         if (window.innerWidth <= 768) {
           e.preventDefault();
           dropdown.classList.toggle('active');
@@ -169,29 +166,14 @@ function initMobileMenu() {
   });
 }
 
-// ========== EFECTO DE SCROLL EN HEADER ==========
-function initScrollEffect() {
-  const header = document.querySelector('.site-header');
-  
-  if (!header) return;
-  
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {
-      header.classList.add('scrolled');
-    } else {
-      header.classList.remove('scrolled');
-    }
-  });
-}
-
-// Inicialización cuando el DOM esté listo
-document.addEventListener('DOMContentLoaded', () => {
-  // Configurar eventos de los botones de idioma (escritorio y móvil)
+// ========== INICIALIZACIÓN ==========
+document.addEventListener('DOMContentLoaded', function() {
+  // Configurar eventos de los botones de idioma
   const langLinks = document.querySelectorAll('.language-switcher a, .language-switcher.mobile a');
-  langLinks.forEach(link => {
-    link.addEventListener('click', (e) => {
+  langLinks.forEach(function(link) {
+    link.addEventListener('click', function(e) {
       e.preventDefault();
-      const lang = link.textContent.toLowerCase();
+      const lang = this.textContent.toLowerCase();
       setLanguage(lang);
     });
   });
@@ -201,7 +183,4 @@ document.addEventListener('DOMContentLoaded', () => {
   
   // Inicializar menú móvil
   initMobileMenu();
-  
-  // Inicializar efecto de scroll
-  initScrollEffect();
 });

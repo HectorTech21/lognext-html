@@ -169,6 +169,21 @@ function initMobileMenu() {
   });
 }
 
+// ========== EFECTO DE SCROLL EN HEADER ==========
+function initScrollEffect() {
+  const header = document.querySelector('.site-header');
+  
+  if (!header) return;
+  
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+  });
+}
+
 // Inicialización cuando el DOM esté listo
 document.addEventListener('DOMContentLoaded', () => {
   // Configurar eventos de los botones de idioma (escritorio y móvil)
@@ -186,4 +201,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
   // Inicializar menú móvil
   initMobileMenu();
+  
+  // Inicializar efecto de scroll
+  initScrollEffect();
 });

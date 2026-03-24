@@ -10,6 +10,13 @@ body {
   background-color: #ffffff;
   color: #1e2a3a;
   overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
 }
 
 .container {
@@ -218,7 +225,7 @@ body {
   transform: rotate(-45deg) translate(7px, -6px);
 }
 
-/* ========== HERO SECTION ========== */
+/* ========== HERO SECTION (INDEX) ========== */
 .presentacion {
   min-height: 100vh;
   background: #000029;
@@ -227,6 +234,7 @@ body {
   align-items: center;
   padding: 0 80px;
   overflow: hidden;
+  margin-top: 80px;
 }
 
 .presentacion::before {
@@ -305,7 +313,6 @@ body {
   50% { transform: scale(1.15); opacity: 0.7; }
 }
 
-/* ========== HERO CON VIDEO ========== */
 .presentacion-wrapper {
   display: flex;
   align-items: center;
@@ -320,6 +327,66 @@ body {
   flex: 1;
   max-width: 600px;
   animation: fadeInUp 1s ease-out;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.presentacion h1 {
+  font-size: 56px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  background: linear-gradient(135deg, #ffffff 0%, #FA3C0F 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.presentacion p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.btn-principal {
+  display: inline-block;
+  padding: 14px 32px;
+  background: linear-gradient(135deg, #FA3C0F, #e6350a);
+  color: white;
+  text-decoration: none;
+  border-radius: 40px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-principal::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s;
+}
+
+.btn-principal:hover::before {
+  width: 300px;
+  height: 300px;
+}
+
+.btn-principal:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(250, 60, 15, 0.4);
 }
 
 .presentacion-video {
@@ -386,66 +453,6 @@ body {
 .video-play-pause svg {
   width: 30px;
   height: 30px;
-}
-
-@keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(30px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-.presentacion h1 {
-  font-size: 56px;
-  margin-bottom: 20px;
-  font-weight: 700;
-  line-height: 1.2;
-  background: linear-gradient(135deg, #ffffff 0%, #FA3C0F 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-.presentacion p {
-  font-size: 18px;
-  line-height: 1.6;
-  margin-bottom: 30px;
-  color: rgba(255, 255, 255, 0.9);
-}
-
-.btn-principal {
-  display: inline-block;
-  padding: 14px 32px;
-  background: linear-gradient(135deg, #FA3C0F, #e6350a);
-  color: white;
-  text-decoration: none;
-  border-radius: 40px;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  position: relative;
-  overflow: hidden;
-}
-
-.btn-principal::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 0;
-  height: 0;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.3);
-  transform: translate(-50%, -50%);
-  transition: width 0.6s, height 0.6s;
-}
-
-.btn-principal:hover::before {
-  width: 300px;
-  height: 300px;
-}
-
-.btn-principal:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 25px rgba(250, 60, 15, 0.4);
 }
 
 /* ========== SERVICIOS - CARDS HORIZONTALES ========== */
@@ -556,6 +563,128 @@ body {
 
 .servicio-card-horizontal:hover .servicio-imagen img {
   transform: scale(1.1);
+}
+
+/* ========== PÁGINA QUIÉNES SOMOS ========== */
+.about-hero {
+  min-height: 85vh;
+  background: #000029;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  margin-top: 80px;
+}
+
+.about-hero .circle-1,
+.about-hero .circle-2,
+.about-hero .circle-3 {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.about-hero .circle-1 {
+  width: 350px;
+  height: 350px;
+  background: radial-gradient(circle, rgba(250, 60, 15, 0.2) 0%, rgba(250, 60, 15, 0.08) 40%, transparent 70%);
+  top: -120px;
+  left: -100px;
+  animation: floatCircle 10s ease-in-out infinite reverse;
+}
+
+.about-hero .circle-2 {
+  width: 250px;
+  height: 250px;
+  background: radial-gradient(circle, rgba(250, 60, 15, 0.18) 0%, rgba(250, 60, 15, 0.08) 40%, transparent 70%);
+  top: 40%;
+  right: 5%;
+  animation: pulseCircle 6s ease-in-out infinite;
+}
+
+.about-hero .circle-3 {
+  width: 180px;
+  height: 180px;
+  background: radial-gradient(circle, rgba(250, 60, 15, 0.15) 0%, rgba(250, 60, 15, 0.05) 40%, transparent 70%);
+  bottom: 15%;
+  left: 5%;
+  animation: floatCircle 12s ease-in-out infinite;
+}
+
+.about-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: radial-gradient(circle at 20% 80%, rgba(250, 60, 15, 0.15) 0%, transparent 50%),
+                    repeating-linear-gradient(45deg, rgba(250, 60, 15, 0.05) 0px, rgba(250, 60, 15, 0.05) 2px, transparent 2px, transparent 8px);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.about-hero::after {
+  content: '';
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(250, 60, 15, 0.25) 0%, rgba(250, 60, 15, 0.1) 40%, transparent 70%);
+  bottom: -200px;
+  right: -150px;
+  border-radius: 50%;
+  animation: floatCircle 8s ease-in-out infinite;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.about-hero-content {
+  position: relative;
+  z-index: 2;
+  animation: fadeInUp 1s ease-out;
+  max-width: 900px;
+  padding: 0 20px;
+}
+
+.about-hero-content h1 {
+  font-size: 64px;
+  font-weight: 700;
+  background: linear-gradient(135deg, #ffffff 0%, #FA3C0F 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+}
+
+.about-hero-content h2 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: rgba(255, 255, 255, 0.85);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Sección texto corporativo */
+.about-text-section {
+  padding: 80px 0 80px 0;
+  background-color: #ffffff;
+}
+
+.about-text-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-text-inner p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #4a5568;
 }
 
 /* ========== FOOTER ========== */
@@ -914,6 +1043,12 @@ body {
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
   }
+  .about-hero-content h1 {
+    font-size: 52px;
+  }
+  .about-hero-content h2 {
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -1003,6 +1138,7 @@ body {
   .presentacion {
     padding: 0 20px;
     text-align: center;
+    margin-top: 80px;
   }
   .presentacion h1 {
     font-size: 32px;
@@ -1067,6 +1203,26 @@ body {
     display: flex;
     margin-bottom: 30px;
   }
+  
+  /* Quiénes somos responsive */
+  .about-hero {
+    min-height: 70vh;
+  }
+  .about-hero-content h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+  }
+  .about-hero-content h2 {
+    font-size: 18px;
+    padding: 0 20px;
+  }
+  .about-text-section {
+    padding: 50px 0;
+  }
+  .about-text-inner p {
+    font-size: 16px;
+    padding: 0 20px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1113,5 +1269,16 @@ body {
   }
   .mobile-info-contact p {
     font-size: 12px;
+  }
+  
+  /* Quiénes somos responsive móvil pequeño */
+  .about-hero-content h1 {
+    font-size: 32px;
+  }
+  .about-hero-content h2 {
+    font-size: 16px;
+  }
+  .about-text-inner p {
+    font-size: 14px;
   }
 }

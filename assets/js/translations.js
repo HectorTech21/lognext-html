@@ -1,25 +1,18 @@
 // translations.js
 const translations = {
   es: {
-    // Header
     nav_servicios: "Servicios",
     nav_quienes_somos: "Quienes somos",
     nav_trabaja: "Trabaja con nosotros",
     btn_portal: "Portal del empleado",
-    
-    // Submenu Servicios
     submenu_ia: "Inteligencia Artificial",
     submenu_ams: "Application Management Services",
     submenu_ims: "Infrastructure Management Services",
     submenu_agile: "Ciberseguridad",
     submenu_outsourcing: "Outsourcing de Talento",
-    
-    // Hero section
     hero_title: "YOUR MEANINGFUL TECH PARTNER",
     hero_description: "Transformamos la tecnología en soluciones robustas y accesibles para todos aquellos que necesitan simplificar el mañana y progresar en sus retos, ambiciones y propósitos.",
     hero_btn: "Ver servicios",
-    
-    // Servicios section
     servicios_title: "Nuestros Servicios",
     servicio1_title: "Gestión de flotas",
     servicio1_desc: "Optimización y control en tiempo real.",
@@ -28,27 +21,19 @@ const translations = {
     servicio3_title: "Analítica avanzada",
     servicio3_desc: "Informes y métricas para mejorar la toma de decisiones."
   },
-  
   en: {
-    // Header
     nav_servicios: "Services",
     nav_quienes_somos: "About Us",
     nav_trabaja: "Work with us",
     btn_portal: "Employee Portal",
-    
-    // Submenu Servicios
     submenu_ia: "Artificial Intelligence",
     submenu_ams: "Application Management Services",
     submenu_ims: "Infrastructure Management Services",
     submenu_agile: "Cybersecurity",
     submenu_outsourcing: "Talent Outsourcing",
-    
-    // Hero section
     hero_title: "YOUR MEANINGFUL TECH PARTNER",
     hero_description: "We transform technology into robust and accessible solutions for all those who need to simplify tomorrow and progress in their challenges, ambitions and purposes.",
     hero_btn: "View services",
-    
-    // Servicios section
     servicios_title: "Our Services",
     servicio1_title: "Fleet Management",
     servicio1_desc: "Optimization and real-time control.",
@@ -57,27 +42,19 @@ const translations = {
     servicio3_title: "Advanced Analytics",
     servicio3_desc: "Reports and metrics to improve decision making."
   },
-  
   fr: {
-    // Header
     nav_servicios: "Services",
     nav_quienes_somos: "Qui sommes-nous",
     nav_trabaja: "Travaillez avec nous",
     btn_portal: "Portail employé",
-    
-    // Submenu Servicios
     submenu_ia: "Intelligence Artificielle",
     submenu_ams: "Services de gestion d'applications",
     submenu_ims: "Services de gestion d'infrastructure",
     submenu_agile: "Cybersécurité",
     submenu_outsourcing: "Externalisation de talents",
-    
-    // Hero section
     hero_title: "YOUR MEANINGFUL TECH PARTNER",
     hero_description: "Nous transformons la technologie en solutions robustes et accessibles pour tous ceux qui ont besoin de simplifier demain et de progresser dans leurs défis, ambitions et objectifs.",
     hero_btn: "Voir les services",
-    
-    // Servicios section
     servicios_title: "Nos Services",
     servicio1_title: "Gestion de flotte",
     servicio1_desc: "Optimisation et contrôle en temps réel.",
@@ -88,18 +65,13 @@ const translations = {
   }
 };
 
-// Idioma actual (por defecto español)
 let currentLang = localStorage.getItem('language') || 'es';
 
-// Función para cambiar el idioma
 function setLanguage(lang) {
   if (!translations[lang]) return;
-  
   currentLang = lang;
   localStorage.setItem('language', lang);
   updateContent();
-  
-  // Actualizar clase activa en el selector de idioma
   document.querySelectorAll('.language-switcher a, .language-switcher.mobile a').forEach(link => {
     if (link.textContent.toLowerCase() === lang || 
         (lang === 'es' && link.textContent === 'ES') ||
@@ -112,11 +84,9 @@ function setLanguage(lang) {
   });
 }
 
-// Función para actualizar todos los textos
 function updateContent() {
   const t = translations[currentLang];
   if (!t) return;
-  
   document.querySelectorAll('[data-i18n]').forEach(element => {
     const key = element.getAttribute('data-i18n');
     if (t[key] !== undefined) {
@@ -125,21 +95,17 @@ function updateContent() {
   });
 }
 
-// ========== FUNCIONALIDAD DEL MENÚ MÓVIL ==========
 function initMobileMenu() {
   const menuToggle = document.querySelector('.menu-toggle');
   const mainNav = document.querySelector('.main-nav');
-  
   if (!menuToggle || !mainNav) return;
   
-  // Abrir/cerrar menú
   menuToggle.addEventListener('click', function() {
     menuToggle.classList.toggle('active');
     mainNav.classList.toggle('active');
     document.body.style.overflow = mainNav.classList.contains('active') ? 'hidden' : '';
   });
   
-  // Cerrar menú al hacer clic en un enlace
   const menuLinks = document.querySelectorAll('.menu a, .mobile-actions a');
   menuLinks.forEach(function(link) {
     link.addEventListener('click', function() {
@@ -151,7 +117,6 @@ function initMobileMenu() {
     });
   });
   
-  // Manejar submenús en móvil (CORREGIDO - sin error de selector)
   const dropdowns = document.querySelectorAll('.has-dropdown');
   dropdowns.forEach(function(dropdown) {
     const link = dropdown.querySelector('a');
@@ -166,9 +131,48 @@ function initMobileMenu() {
   });
 }
 
-// ========== INICIALIZACIÓN ==========
+// ========== CONTROL DEL VIDEO HERO ==========
+function initHeroVideo() {
+  const video = document.getElementById('heroVideo');
+  const playPauseBtn = document.getElementById('videoPlayPauseBtn');
+  
+  if (!video || !playPauseBtn) return;
+  
+  video.pause();
+  
+  function toggleVideo() {
+    if (video.paused) {
+      video.play();
+      playPauseBtn.innerHTML = `<svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+        <rect x="6" y="4" width="4" height="16" fill="white" stroke="white"/>
+        <rect x="14" y="4" width="4" height="16" fill="white" stroke="white"/>
+      </svg>`;
+    } else {
+      video.pause();
+      playPauseBtn.innerHTML = `<svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+        <polygon points="5 3 19 12 5 21 5 3" fill="white" stroke="white"/>
+      </svg>`;
+    }
+  }
+  
+  playPauseBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    toggleVideo();
+  });
+  
+  video.addEventListener('click', () => {
+    toggleVideo();
+  });
+  
+  video.addEventListener('ended', () => {
+    video.currentTime = 0;
+    playPauseBtn.innerHTML = `<svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+      <polygon points="5 3 19 12 5 21 5 3" fill="white" stroke="white"/>
+    </svg>`;
+  });
+}
+
 document.addEventListener('DOMContentLoaded', function() {
-  // Configurar eventos de los botones de idioma
   const langLinks = document.querySelectorAll('.language-switcher a, .language-switcher.mobile a');
   langLinks.forEach(function(link) {
     link.addEventListener('click', function(e) {
@@ -177,10 +181,7 @@ document.addEventListener('DOMContentLoaded', function() {
       setLanguage(lang);
     });
   });
-  
-  // Aplicar idioma guardado
   setLanguage(currentLang);
-  
-  // Inicializar menú móvil
   initMobileMenu();
+  initHeroVideo();
 });

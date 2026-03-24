@@ -305,12 +305,87 @@ body {
   50% { transform: scale(1.15); opacity: 0.7; }
 }
 
-.presentacion-contenido {
-  max-width: 700px;
-  color: white;
+/* ========== HERO CON VIDEO ========== */
+.presentacion-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  width: 100%;
   position: relative;
   z-index: 2;
+}
+
+.presentacion-contenido {
+  flex: 1;
+  max-width: 600px;
   animation: fadeInUp 1s ease-out;
+}
+
+.presentacion-video {
+  flex: 1;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  z-index: 2;
+}
+
+.presentacion-video:hover {
+  transform: scale(1.02);
+}
+
+.presentacion-video video {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 20px;
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.presentacion-video:hover .video-overlay {
+  opacity: 1;
+}
+
+.video-play-pause {
+  background: rgba(250, 60, 15, 0.8);
+  border: none;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(4px);
+  pointer-events: auto;
+}
+
+.video-play-pause:hover {
+  background: #FA3C0F;
+  transform: scale(1.1);
+}
+
+.video-play-pause svg {
+  width: 30px;
+  height: 30px;
 }
 
 @keyframes fadeInUp {
@@ -373,7 +448,7 @@ body {
   box-shadow: 0 10px 25px rgba(250, 60, 15, 0.4);
 }
 
-/* ========== SERVICIOS - CARDS HORIZONTALES CON FONDO AZUL ========== */
+/* ========== SERVICIOS - CARDS HORIZONTALES ========== */
 .servicios {
   padding: 100px 80px;
   background-color: #ffffff;
@@ -457,6 +532,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: color 0.3s ease;
+}
+
+.servicio-card-horizontal:hover h3 {
+  color: #FA3C0F;
 }
 
 .servicio-imagen {
@@ -472,11 +552,6 @@ body {
   height: auto;
   transition: transform 0.3s ease;
   filter: none;
-}
-
-/* EFECTO HOVER: título se pone naranja */
-.servicio-card-horizontal:hover h3 {
-  color: #FA3C0F;
 }
 
 .servicio-card-horizontal:hover .servicio-imagen img {
@@ -841,6 +916,21 @@ body {
   }
 }
 
+@media (max-width: 992px) {
+  .presentacion-wrapper {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .presentacion-contenido {
+    max-width: 100%;
+    text-align: center;
+  }
+  .presentacion-video {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+
 @media (max-width: 768px) {
   .desktop-actions {
     display: none;
@@ -929,6 +1019,17 @@ body {
   .presentacion .circle-3 {
     opacity: 0.4;
     transform: scale(0.8);
+  }
+  .presentacion-video {
+    max-width: 100%;
+  }
+  .video-play-pause {
+    width: 50px;
+    height: 50px;
+  }
+  .video-play-pause svg {
+    width: 22px;
+    height: 22px;
   }
   .servicios {
     padding: 60px 20px;

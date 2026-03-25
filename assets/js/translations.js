@@ -32,13 +32,17 @@ const translations = {
     footer_cv_btn: "📄 Envíanos tu CV",
     footer_copyright: "© 2026 Lognext. Todos los derechos reservados.",
     
+    // Mobile footer info
+    mobile_quieres_trabajar: "¿Quieres trabajar con nosotros?",
+    mobile_hablamos: "¿Hablamos?",
+    
     // Página Quiénes Somos
     about_hero_title: "SOMOS NEXTERS",
     about_hero_subtitle: "Transformamos la tecnología en soluciones robustas y accesibles para todos aquellos que necesitan simplificar el mañana y progresar en sus retos, ambiciones y propósitos.",
     
     // Sección Stats (Quiénes Somos)
     stats_title: "Números que nos respaldan",
-    stats_anos: "Años de experiencia",
+    stats_anos: "Años de experiência",
     stats_proyectos: "Proyectos entregados",
     stats_clientes: "Clientes satisfechos",
     stats_expertos: "Expertos en tecnología",
@@ -66,7 +70,55 @@ const translations = {
     // Sección Mapa (Quiénes Somos)
     mapa_title: "Estamos donde nos necesitas",
     mapa_info_sede: "Sede principal",
-    mapa_info_direccion: "Avenida de Burgos 17, 28036 Madrid, Spain"
+    mapa_info_direccion: "Avenida de Burgos 17, 28036 Madrid, Spain",
+    
+    // ========== PÁGINA TRABAJA CON NOSOTROS ==========
+    // Hero
+    work_hero_title: "CONOCE AL EQUIPO",
+    
+    // Card 1 - Comité de Dirección
+    work_comite_title: "Comité De Dirección",
+    work_comite_desc: "Un equipo de liderazgo con amplia experiencia en el sector tecnológico, comprometido con la innovación y la excelencia. Este comité está formado por profesionales con más de 15 años de trayectoria en empresas líderes del sector, que aportan visión estratégica y pasión por la tecnología. Su misión es guiar a Lognext hacia nuevos horizontes, impulsando la transformación digital de nuestros clientes y fomentando una cultura de mejora continua.",
+    work_ceo: "Director Ejecutivo (CEO)",
+    work_coo: "Director de Operaciones (COO)",
+    work_cfo: "Director Financiero (CFO)",
+    work_business_unit: "Responsable de Unidad de Negocio",
+    
+    // Card 2 - Carrusel
+    work_miguel_name: "Miguel Esteban Aparicio",
+    work_it_department: "Departamento IT",
+    work_it_role: "Director de IT",
+    work_pilar_name: "Pilar Calvo González",
+    work_hbd_department: "Human Business Development (HBD)",
+    work_hbd_role: "Head of Business Development",
+    work_enrique_name: "Enrique Martínez Pérez",
+    work_proyectos_department: "Proyectos & Compliance",
+    work_proyectos_role: "Head of Projects & Compliance PMO",
+    
+    // Beneficios
+    work_benefits_title: "Beneficios de trabajar con nosotros",
+    work_benefit1_title: "Horario Flexible",
+    work_benefit1_desc: "Adaptamos tu jornada para que puedas conciliar tu vida personal y profesional.",
+    work_benefit2_title: "Planes de Acompañamiento",
+    work_benefit2_desc: "Mentores que te guiarán en tu desarrollo profesional desde el primer día.",
+    work_benefit3_title: "Programa de Formación",
+    work_benefit3_desc: "Formación técnica y de idiomas continua para potenciar tus habilidades.",
+    work_benefit4_title: "Retribución Flexible",
+    work_benefit4_desc: "Elige cómo quieres recibir parte de tu salario: seguro médico, formación, etc.",
+    work_benefit5_title: "Team LogNext",
+    work_benefit5_desc: "Eventos, afterworks y actividades para fortalecer los lazos del equipo.",
+    work_benefit6_title: "Compromiso Social",
+    work_benefit6_desc: "Participamos activamente en iniciativas que generan impacto positivo en la sociedad.",
+    work_benefit7_title: "Referral Program",
+    work_benefit7_desc: "Recompensamos tus recomendaciones de talento que se unen al equipo.",
+    work_benefit8_title: "Plan de Carrera Next Level",
+    work_benefit8_desc: "Un plan personalizado para crecer profesionalmente dentro de Lognext.",
+    
+    // Ofertas
+    work_offers_title: "Conoce nuestras posiciones abiertas",
+    work_offers_text1: "Superamos nuestros retos porque somos expertos en lo que hacemos, no importa cuáles sean, nuestra entrega por lo que hacemos nos ayuda a superar expectativas, la excelencia es el fruto de nuestra experiencia. Estamos orgullosos de lo que hacemos y de lo que conseguimos haciéndolo.",
+    work_offers_text2: "Si te mueve dar un paso más, creando un impacto significativo en el mundo que te rodea, este es tu lugar.",
+    work_offers_btn: "Conoce nuestras ofertas"
   },
   
   en: {
@@ -100,6 +152,10 @@ const translations = {
     footer_siguenos: "Follow us",
     footer_cv_btn: "📄 Send us your CV",
     footer_copyright: "© 2026 Lognext. All rights reserved.",
+    
+    // Mobile footer info
+    mobile_quieres_trabajar: "Do you want to work with us?",
+    mobile_hablamos: "Let's talk?",
     
     // Página Quiénes Somos
     about_hero_title: "WE ARE NEXTERS",
@@ -135,7 +191,55 @@ const translations = {
     // Sección Mapa (Quiénes Somos)
     mapa_title: "We are where you need us",
     mapa_info_sede: "Headquarters",
-    mapa_info_direccion: "Avenida de Burgos 17, 28036 Madrid, Spain"
+    mapa_info_direccion: "Avenida de Burgos 17, 28036 Madrid, Spain",
+    
+    // ========== PÁGINA TRABAJA CON NOSOTROS ==========
+    // Hero
+    work_hero_title: "MEET THE TEAM",
+    
+    // Card 1 - Comité de Dirección
+    work_comite_title: "Executive Committee",
+    work_comite_desc: "A leadership team with extensive experience in the technology sector, committed to innovation and excellence. This committee is made up of professionals with more than 15 years of experience in leading companies in the sector, who bring strategic vision and passion for technology. Their mission is to guide Lognext towards new horizons, driving the digital transformation of our clients and fostering a culture of continuous improvement.",
+    work_ceo: "Chief Executive Officer (CEO)",
+    work_coo: "Chief Operating Officer (COO)",
+    work_cfo: "Chief Financial Officer (CFO)",
+    work_business_unit: "Business Unit Manager",
+    
+    // Card 2 - Carrusel
+    work_miguel_name: "Miguel Esteban Aparicio",
+    work_it_department: "IT Department",
+    work_it_role: "IT Director",
+    work_pilar_name: "Pilar Calvo González",
+    work_hbd_department: "Human Business Development (HBD)",
+    work_hbd_role: "Head of Business Development",
+    work_enrique_name: "Enrique Martínez Pérez",
+    work_proyectos_department: "Projects & Compliance",
+    work_proyectos_role: "Head of Projects & Compliance PMO",
+    
+    // Beneficios
+    work_benefits_title: "Benefits of working with us",
+    work_benefit1_title: "Flexible Schedule",
+    work_benefit1_desc: "We adapt your schedule so you can balance your personal and professional life.",
+    work_benefit2_title: "Mentorship Programs",
+    work_benefit2_desc: "Mentors who will guide you in your professional development from day one.",
+    work_benefit3_title: "Training Program",
+    work_benefit3_desc: "Continuous technical and language training to enhance your skills.",
+    work_benefit4_title: "Flexible Compensation",
+    work_benefit4_desc: "Choose how to receive part of your salary: health insurance, training, etc.",
+    work_benefit5_title: "Team LogNext",
+    work_benefit5_desc: "Events, afterworks and activities to strengthen team bonds.",
+    work_benefit6_title: "Social Commitment",
+    work_benefit6_desc: "We actively participate in initiatives that generate positive impact on society.",
+    work_benefit7_title: "Referral Program",
+    work_benefit7_desc: "We reward your recommendations of talent that join the team.",
+    work_benefit8_title: "Next Level Career Plan",
+    work_benefit8_desc: "A personalized plan to grow professionally within Lognext.",
+    
+    // Ofertas
+    work_offers_title: "Check our open positions",
+    work_offers_text1: "We overcome our challenges because we are experts in what we do, no matter what they are, our dedication helps us exceed expectations, excellence is the result of our experience. We are proud of what we do and what we achieve by doing it.",
+    work_offers_text2: "If you want to take a step further, creating a significant impact on the world around you, this is your place.",
+    work_offers_btn: "Check our offers"
   },
   
   fr: {
@@ -169,6 +273,10 @@ const translations = {
     footer_siguenos: "Suivez-nous",
     footer_cv_btn: "📄 Envoyez-nous votre CV",
     footer_copyright: "© 2026 Lognext. Tous droits réservés.",
+    
+    // Mobile footer info
+    mobile_quieres_trabajar: "Vous voulez travailler avec nous ?",
+    mobile_hablamos: "On parle ?",
     
     // Página Quiénes Somos
     about_hero_title: "NOUS SOMMES NEXTERS",
@@ -204,7 +312,55 @@ const translations = {
     // Sección Mapa (Quiénes Somos)
     mapa_title: "Nous sommes là où vous avez besoin de nous",
     mapa_info_sede: "Siège social",
-    mapa_info_direccion: "Avenida de Burgos 17, 28036 Madrid, Espagne"
+    mapa_info_direccion: "Avenida de Burgos 17, 28036 Madrid, Espagne",
+    
+    // ========== PÁGINA TRABAJA CON NOSOTROS ==========
+    // Hero
+    work_hero_title: "RENCONTREZ L'ÉQUIPE",
+    
+    // Card 1 - Comité de Dirección
+    work_comite_title: "Comité De Direction",
+    work_comite_desc: "Une équipe de direction avec une vaste expérience dans le secteur technologique, engagée pour l'innovation et l'excellence. Ce comité est composé de professionnels ayant plus de 15 ans d'expérience dans des entreprises leaders du secteur, qui apportent une vision stratégique et une passion pour la technologie. Leur mission est de guider Lognext vers de nouveaux horizons, en impulsant la transformation numérique de nos clients et en favorisant une culture d'amélioration continue.",
+    work_ceo: "Directeur Général (CEO)",
+    work_coo: "Directeur des Opérations (COO)",
+    work_cfo: "Directeur Financier (CFO)",
+    work_business_unit: "Responsable d'Unité d'Affaires",
+    
+    // Card 2 - Carrusel
+    work_miguel_name: "Miguel Esteban Aparicio",
+    work_it_department: "Département IT",
+    work_it_role: "Directeur IT",
+    work_pilar_name: "Pilar Calvo González",
+    work_hbd_department: "Human Business Development (HBD)",
+    work_hbd_role: "Head of Business Development",
+    work_enrique_name: "Enrique Martínez Pérez",
+    work_proyectos_department: "Projets & Conformité",
+    work_proyectos_role: "Head of Projects & Compliance PMO",
+    
+    // Beneficios
+    work_benefits_title: "Avantages de travailler avec nous",
+    work_benefit1_title: "Horaires flexibles",
+    work_benefit1_desc: "Nous adaptons votre emploi du temps pour concilier vie personnelle et professionnelle.",
+    work_benefit2_title: "Programmes d'accompagnement",
+    work_benefit2_desc: "Des mentors vous guideront dans votre développement professionnel dès le premier jour.",
+    work_benefit3_title: "Programme de formation",
+    work_benefit3_desc: "Formation technique et linguistique continue pour renforcer vos compétences.",
+    work_benefit4_title: "Rémunération flexible",
+    work_benefit4_desc: "Choisissez comment recevoir une partie de votre salaire : assurance santé, formation, etc.",
+    work_benefit5_title: "Team LogNext",
+    work_benefit5_desc: "Événements, afterworks et activités pour renforcer les liens d'équipe.",
+    work_benefit6_title: "Engagement social",
+    work_benefit6_desc: "Nous participons activement à des initiatives qui génèrent un impact positif sur la société.",
+    work_benefit7_title: "Programme de parrainage",
+    work_benefit7_desc: "Nous récompensons vos recommandations de talents qui rejoignent l'équipe.",
+    work_benefit8_title: "Plan de carrière Next Level",
+    work_benefit8_desc: "Un plan personnalisé pour évoluer professionnellement au sein de Lognext.",
+    
+    // Ofertas
+    work_offers_title: "Découvrez nos postes ouverts",
+    work_offers_text1: "Nous surmontons nos défis parce que nous sommes experts dans ce que nous faisons, peu importe lesquels, notre engagement nous aide à dépasser les attentes, l'excellence est le fruit de notre expérience. Nous sommes fiers de ce que nous faisons et de ce que nous accomplissons.",
+    work_offers_text2: "Si vous voulez aller plus loin, créer un impact significatif sur le monde qui vous entoure, c'est votre place.",
+    work_offers_btn: "Découvrez nos offres"
   }
 };
 

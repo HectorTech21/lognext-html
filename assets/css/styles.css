@@ -1187,6 +1187,198 @@ main {
   font-weight: 600;
 }
 
+/* Estilo para enlaces de LinkedIn en el equipo */
+.team-linkedin {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.team-linkedin:hover {
+  color: #FA3C0F;
+  transform: translateX(2px);
+}
+
+/* ========== CARRUSEL DE EQUIPOS ========== */
+.team-card-carousel {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+  border-radius: 24px;
+  padding: 30px;
+  transition: all 0.4s ease;
+  border: 1px solid rgba(250, 60, 15, 0.2);
+  margin-top: 60px;
+}
+
+.team-card-carousel:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 40px rgba(250, 60, 15, 0.2);
+  background: rgba(250, 60, 15, 0.1);
+  border-color: rgba(250, 60, 15, 0.5);
+}
+
+.carousel-container-team {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.carousel-slides-team {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-slide-team {
+  flex: 0 0 100%;
+  padding: 20px;
+}
+
+.team-carousel-content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.team-carousel-image {
+  flex-shrink: 0;
+}
+
+.team-carousel-image img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #FA3C0F;
+  transition: transform 0.3s ease;
+}
+
+.team-carousel-image img:hover {
+  transform: scale(1.05);
+}
+
+.team-carousel-info {
+  flex: 1;
+}
+
+.team-carousel-info h3 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.team-carousel-info h3 a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.team-carousel-info h3 a:hover {
+  color: #FA3C0F;
+}
+
+.team-carousel-department {
+  font-size: 20px;
+  font-weight: 600;
+  color: #FA3C0F;
+  margin-bottom: 10px;
+}
+
+.team-carousel-role {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Flechas del carrusel */
+.carousel-team-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 45px;
+  height: 45px;
+  background: #FA3C0F;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.carousel-team-btn:hover {
+  background: #e6350a;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.prev-team {
+  left: 10px;
+}
+
+.next-team {
+  right: 10px;
+}
+
+/* Indicadores (dots) */
+.carousel-team-dots {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.team-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.team-dot.active {
+  width: 25px;
+  border-radius: 10px;
+  background: #FA3C0F;
+}
+
+/* Responsive para el carrusel */
+@media (max-width: 768px) {
+  .team-carousel-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+  
+  .team-carousel-image img {
+    width: 140px;
+    height: 140px;
+  }
+  
+  .team-carousel-info h3 {
+    font-size: 22px;
+  }
+  
+  .team-carousel-department {
+    font-size: 18px;
+  }
+  
+  .team-carousel-role {
+    font-size: 14px;
+  }
+  
+  .carousel-team-btn {
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
+  }
+}
+
 /* Sección Beneficios con partículas */
 .benefits-section {
   padding: 80px 0;
@@ -2000,6 +2192,29 @@ main {
   .team-info p {
     font-size: 14px;
   }
+  .team-carousel-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+  .team-carousel-image img {
+    width: 140px;
+    height: 140px;
+  }
+  .team-carousel-info h3 {
+    font-size: 22px;
+  }
+  .team-carousel-department {
+    font-size: 18px;
+  }
+  .team-carousel-role {
+    font-size: 14px;
+  }
+  .carousel-team-btn {
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
+  }
   .benefits-section {
     padding: 50px 0;
   }
@@ -2108,5 +2323,18 @@ main {
   }
   .benefit-card h3 {
     font-size: 16px;
+  }
+  .team-carousel-image img {
+    width: 120px;
+    height: 120px;
+  }
+  .team-carousel-info h3 {
+    font-size: 18px;
+  }
+  .team-carousel-department {
+    font-size: 16px;
+  }
+  .team-carousel-role {
+    font-size: 12px;
   }
 }

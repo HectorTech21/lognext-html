@@ -483,6 +483,92 @@ function initBenefitParticles() {
   }
 }
 
+function initTeamCarousel() {
+  const slidesContainer = document.querySelector('.carousel-slides-team');
+  const slides = document.querySelectorAll('.carousel-slide-team');
+  const prevBtn = document.getElementById('prevTeamBtn');
+  const nextBtn = document.getElementById('nextTeamBtn');
+  const dotsContainer = document.getElementById('teamDots');
+  
+  if (!slidesContainer || !slides.length) return;
+  
+  let currentIndex = 0;
+  let autoSlideInterval;
+  const slideCount = slides.length;
+  
+  if (dotsContainer) {
+    for (let i = 0; i < slideCount; i++) {
+      const dot = document.createElement('div');
+      dot.classList.add('team-dot');
+      if (i === 0) dot.classList.add('active');
+      dot.addEventListener('click', () => goToSlide(i));
+      dotsContainer.appendChild(dot);
+    }
+  }
+  
+  const dots = document.querySelectorAll('.team-dot');
+  
+  function updateCarousel() {
+    slidesContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+    if (dots.length) {
+      dots.forEach((dot, i) => {
+        dot.classList.toggle('active', i === currentIndex);
+      });
+    }
+  }
+  
+  function goToSlide(index) {
+    currentIndex = (index + slideCount) % slideCount;
+    updateCarousel();
+    resetAutoSlide();
+  }
+  
+  function nextSlide() {
+    currentIndex = (currentIndex + 1) % slideCount;
+    updateCarousel();
+  }
+  
+  function prevSlide() {
+    currentIndex = (currentIndex - 1 + slideCount) % slideCount;
+    updateCarousel();
+  }
+  
+  function startAutoSlide() {
+    if (autoSlideInterval) clearInterval(autoSlideInterval);
+    autoSlideInterval = setInterval(nextSlide, 5000);
+  }
+  
+  function resetAutoSlide() {
+    clearInterval(autoSlideInterval);
+    startAutoSlide();
+  }
+  
+  function pauseAutoSlide() {
+    clearInterval(autoSlideInterval);
+  }
+  
+  if (prevBtn && nextBtn) {
+    prevBtn.addEventListener('click', () => {
+      prevSlide();
+      resetAutoSlide();
+    });
+    
+    nextBtn.addEventListener('click', () => {
+      nextSlide();
+      resetAutoSlide();
+    });
+  }
+  
+  const carouselContainer = document.querySelector('.carousel-container-team');
+  if (carouselContainer) {
+    carouselContainer.addEventListener('mouseenter', pauseAutoSlide);
+    carouselContainer.addEventListener('mouseleave', startAutoSlide);
+  }
+  
+  startAutoSlide();
+  updateCarousel();
+}
+
 document.addEventListener('DOMContentLoaded', function() {
   const langLinks = document.querySelectorAll('.language-switcher a, .language-switcher.mobile a');
   langLinks.forEach(function(link) {
@@ -500,4 +586,5 @@ document.addEventListener('DOMContentLoaded', function() {
   initScrollReveal();
   initAnimatedBackground();
   initBenefitParticles();
+  initTeamCarousel();
 });

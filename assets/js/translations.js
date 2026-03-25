@@ -282,7 +282,6 @@ function initHeroVideo() {
   
   if (!video || !playPauseBtn) return;
   
-  // Si el video tiene autoplay, aseguramos que esté reproduciéndose
   if (video.hasAttribute('autoplay')) {
     video.play();
   }
@@ -469,9 +468,22 @@ function initAnimatedBackground() {
   }
 }
 
-// Esperar a que el DOM esté listo
+function initBenefitParticles() {
+  const benefitsSection = document.querySelector('.benefits-section');
+  if (!benefitsSection) return;
+  
+  for (let i = 0; i < 30; i++) {
+    const particle = document.createElement('div');
+    particle.classList.add('benefit-particle');
+    particle.style.left = Math.random() * 100 + '%';
+    particle.style.top = Math.random() * 100 + '%';
+    particle.style.animationDelay = Math.random() * 8 + 's';
+    particle.style.animationDuration = 4 + Math.random() * 4 + 's';
+    benefitsSection.appendChild(particle);
+  }
+}
+
 document.addEventListener('DOMContentLoaded', function() {
-  // Configurar idioma
   const langLinks = document.querySelectorAll('.language-switcher a, .language-switcher.mobile a');
   langLinks.forEach(function(link) {
     link.addEventListener('click', function(e) {
@@ -481,12 +493,11 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
   setLanguage(currentLang);
-  
-  // Inicializar todos los componentes
   initMobileMenu();
   initHeroVideo();
   initCounters();
   initCarousel();
   initScrollReveal();
   initAnimatedBackground();
+  initBenefitParticles();
 });

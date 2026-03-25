@@ -990,6 +990,369 @@ main {
   color: #FA3C0F;
 }
 
+/* ========== PÁGINA TRABAJA CON NOSOTROS ========== */
+
+/* Hero */
+.work-hero {
+  min-height: 60vh;
+  background: #000029;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  margin-top: 80px;
+}
+
+.work-hero .circle-1,
+.work-hero .circle-2,
+.work-hero .circle-3 {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.work-hero .circle-1 {
+  width: 350px;
+  height: 350px;
+  background: radial-gradient(circle, rgba(250, 60, 15, 0.2) 0%, rgba(250, 60, 15, 0.08) 40%, transparent 70%);
+  top: -120px;
+  left: -100px;
+  animation: floatCircle 10s ease-in-out infinite reverse;
+}
+
+.work-hero .circle-2 {
+  width: 250px;
+  height: 250px;
+  background: radial-gradient(circle, rgba(250, 60, 15, 0.18) 0%, rgba(250, 60, 15, 0.08) 40%, transparent 70%);
+  top: 40%;
+  right: 5%;
+  animation: pulseCircle 6s ease-in-out infinite;
+}
+
+.work-hero .circle-3 {
+  width: 180px;
+  height: 180px;
+  background: radial-gradient(circle, rgba(250, 60, 15, 0.15) 0%, rgba(250, 60, 15, 0.05) 40%, transparent 70%);
+  bottom: 15%;
+  left: 5%;
+  animation: floatCircle 12s ease-in-out infinite;
+}
+
+.work-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: radial-gradient(circle at 20% 80%, rgba(250, 60, 15, 0.15) 0%, transparent 50%),
+                    repeating-linear-gradient(45deg, rgba(250, 60, 15, 0.05) 0px, rgba(250, 60, 15, 0.05) 2px, transparent 2px, transparent 8px);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.work-hero::after {
+  content: '';
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(250, 60, 15, 0.25) 0%, rgba(250, 60, 15, 0.1) 40%, transparent 70%);
+  bottom: -200px;
+  right: -150px;
+  border-radius: 50%;
+  animation: floatCircle 8s ease-in-out infinite;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.work-hero-content {
+  position: relative;
+  z-index: 2;
+  animation: fadeInUp 1s ease-out;
+}
+
+.work-hero-content h1 {
+  font-size: 64px;
+  font-weight: 700;
+  background: linear-gradient(135deg, #ffffff 0%, #FA3C0F 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: 2px;
+}
+
+/* Sección Equipo */
+.team-section {
+  padding: 80px 0;
+  background-color: #ffffff;
+}
+
+.team-card {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  margin-bottom: 80px;
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 30px;
+  transition: all 0.4s ease;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.team-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 40px rgba(250, 60, 15, 0.15);
+}
+
+.team-card-left {
+  flex-direction: row;
+}
+
+.team-card-right {
+  flex-direction: row-reverse;
+}
+
+.team-image {
+  flex: 1;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.team-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.team-card:hover .team-image img {
+  transform: scale(1.02);
+}
+
+.team-info {
+  flex: 1;
+}
+
+.team-info h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #000029;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+}
+
+.team-info h2::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background: linear-gradient(90deg, #FA3C0F, #e6350a);
+  border-radius: 3px;
+}
+
+.team-info p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #4a5568;
+}
+
+/* Sección Beneficios con partículas */
+.benefits-section {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #000029 0%, #0a0a3a 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.benefits-section .section-title {
+  color: #ffffff;
+}
+
+.benefits-section .section-title::after {
+  background: linear-gradient(90deg, #FA3C0F, #e6350a);
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.benefit-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 30px 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(250, 60, 15, 0.2);
+  cursor: pointer;
+  position: relative;
+}
+
+.benefit-card:hover {
+  transform: translateY(-8px);
+  background: rgba(250, 60, 15, 0.15);
+  border-color: rgba(250, 60, 15, 0.5);
+}
+
+.benefit-icon {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.benefit-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 0;
+}
+
+.benefit-tooltip {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-10px);
+  background: #FA3C0F;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-size: 12px;
+  line-height: 1.4;
+  width: 200px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  pointer-events: none;
+  z-index: 10;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.benefit-tooltip::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 6px;
+  border-style: solid;
+  border-color: #FA3C0F transparent transparent transparent;
+}
+
+.benefit-card:hover .benefit-tooltip {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(-15px);
+}
+
+/* Partículas para beneficios */
+.benefit-particle {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: rgba(250, 60, 15, 0.3);
+  border-radius: 50%;
+  pointer-events: none;
+  animation: floatParticle linear infinite;
+}
+
+/* Sección Ofertas */
+.offers-section {
+  padding: 80px 0;
+  background-color: #ffffff;
+}
+
+.offers-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 60px;
+  align-items: center;
+}
+
+.offers-left h2 {
+  font-size: 42px;
+  font-weight: 700;
+  color: #000029;
+  line-height: 1.2;
+  position: relative;
+  display: inline-block;
+}
+
+.offers-left h2::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  width: 70px;
+  height: 3px;
+  background: linear-gradient(90deg, #FA3C0F, #e6350a);
+  border-radius: 3px;
+}
+
+.offers-right p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #4a5568;
+  margin-bottom: 20px;
+}
+
+.offers-highlight {
+  font-weight: 600;
+  color: #000029;
+  border-left: 3px solid #FA3C0F;
+  padding-left: 15px;
+  margin-top: 20px;
+}
+
+.offers-btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 14px 32px;
+  background: linear-gradient(135deg, #FA3C0F, #e6350a);
+  color: white;
+  text-decoration: none;
+  border-radius: 40px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.offers-btn::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s;
+}
+
+.offers-btn:hover::before {
+  width: 300px;
+  height: 300px;
+}
+
+.offers-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(250, 60, 15, 0.4);
+}
+
 /* ========== FOOTER ========== */
 .site-footer {
   background: linear-gradient(135deg, #000029 0%, #0a0a3a 100%);
@@ -1340,6 +1703,9 @@ main {
   .section-title {
     font-size: 32px;
   }
+  .benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 1024px) {
@@ -1364,6 +1730,27 @@ main {
   }
   .about-hero-content h2 {
     font-size: 20px;
+  }
+  .work-hero-content h1 {
+    font-size: 52px;
+  }
+  .team-card {
+    flex-direction: column !important;
+    gap: 30px;
+    text-align: center;
+  }
+  .team-info h2::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .offers-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 40px;
+  }
+  .offers-left h2::after {
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 
@@ -1567,6 +1954,43 @@ main {
   .map-container iframe {
     height: 300px;
   }
+  
+  /* Trabaja con nosotros responsive */
+  .work-hero {
+    min-height: 50vh;
+  }
+  .work-hero-content h1 {
+    font-size: 36px;
+  }
+  .team-section {
+    padding: 50px 0;
+  }
+  .team-card {
+    margin-bottom: 40px;
+    padding: 20px;
+  }
+  .team-info h2 {
+    font-size: 24px;
+  }
+  .team-info p {
+    font-size: 14px;
+  }
+  .benefits-section {
+    padding: 50px 0;
+  }
+  .benefits-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .offers-section {
+    padding: 50px 0;
+  }
+  .offers-left h2 {
+    font-size: 32px;
+  }
+  .offers-right p {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1639,5 +2063,25 @@ main {
   }
   .card-icon {
     font-size: 36px;
+  }
+  
+  /* Trabaja con nosotros responsive móvil pequeño */
+  .work-hero-content h1 {
+    font-size: 28px;
+  }
+  .team-info h2 {
+    font-size: 20px;
+  }
+  .offers-left h2 {
+    font-size: 28px;
+  }
+  .benefit-card {
+    padding: 20px 15px;
+  }
+  .benefit-icon {
+    font-size: 36px;
+  }
+  .benefit-card h3 {
+    font-size: 16px;
   }
 }

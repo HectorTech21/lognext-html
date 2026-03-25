@@ -21,12 +21,6 @@ const translations = {
     
     // Servicios section (index)
     servicios_title: "Nuestros Servicios",
-    servicio1_title: "Gestión de flotas",
-    servicio1_desc: "Optimización y control en tiempo real.",
-    servicio2_title: "Rutas inteligentes",
-    servicio2_desc: "Planificación eficiente basada en datos y tráfico.",
-    servicio3_title: "Analítica avanzada",
-    servicio3_desc: "Informes y métricas para mejorar la toma de decisiones.",
     
     // Footer
     footer_somos_nexter: "SOMOS NEXTERS",
@@ -41,7 +35,6 @@ const translations = {
     // Página Quiénes Somos
     about_hero_title: "SOMOS NEXTERS",
     about_hero_subtitle: "Transformamos la tecnología en soluciones robustas y accesibles para todos aquellos que necesitan simplificar el mañana y progresar en sus retos, ambiciones y propósitos.",
-    about_text_corporativo: "Superamos nuestros retos porque somos expertos en lo que hacemos, no importa cuáles sean, nuestra entrega por lo que hacemos nos ayuda a superar expectativas, la excelencia es el fruto de nuestra experiencia. Estamos orgullosos de lo que hacemos y de lo que conseguimos haciéndolo. Si te mueve dar un paso más, creando un impacto significativo en el mundo que te rodea, este es tu lugar.",
     
     // Sección Stats (Quiénes Somos)
     stats_title: "Números que nos respaldan",
@@ -51,8 +44,8 @@ const translations = {
     stats_expertos: "Expertos en tecnología",
     
     // Frase impactante (Claim)
-    claim_text: "\"No solo transformamos negocios. ",
-    claim_highlight: "Creamos futuro.\"",
+    claim_text: "No solo transformamos negocios. ",
+    claim_highlight: "Creamos futuro.",
     claim_sub: "Tecnología con propósito, personas con pasión",
     
     // Sección Valores (Carrusel)
@@ -73,21 +66,7 @@ const translations = {
     // Sección Mapa (Quiénes Somos)
     mapa_title: "Estamos donde nos necesitas",
     mapa_info_sede: "Sede principal",
-    mapa_info_direccion: "Avenida de Burgos 17, 28036 Madrid, Spain",
-    
-    // Sección Trabaja con nosotros (para cuando se implemente)
-    trabajo_hero_title: "ÚNETE AL EQUIPO",
-    trabajo_hero_subtitle: "¿Quieres formar parte de Lognext? Descubre cómo puedes crecer con nosotros.",
-    trabajo_beneficios_title: "Beneficios de trabajar con nosotros",
-    trabajo_cultura_title: "Nuestra cultura",
-    trabajo_ofertas_title: "Ofertas activas",
-    trabajo_formulario_title: "Envíanos tu candidatura",
-    trabajo_formulario_nombre: "Nombre completo",
-    trabajo_formulario_email: "Correo electrónico",
-    trabajo_formulario_telefono: "Teléfono",
-    trabajo_formulario_mensaje: "¿Por qué quieres trabajar con nosotros?",
-    trabajo_formulario_cv: "Adjuntar CV",
-    trabajo_formulario_enviar: "Enviar candidatura"
+    mapa_info_direccion: "Avenida de Burgos 17, 28036 Madrid, Spain"
   },
   
   en: {
@@ -111,12 +90,6 @@ const translations = {
     
     // Servicios section (index)
     servicios_title: "Our Services",
-    servicio1_title: "Fleet Management",
-    servicio1_desc: "Optimization and real-time control.",
-    servicio2_title: "Smart Routes",
-    servicio2_desc: "Efficient planning based on data and traffic.",
-    servicio3_title: "Advanced Analytics",
-    servicio3_desc: "Reports and metrics to improve decision making.",
     
     // Footer
     footer_somos_nexter: "WE ARE NEXTERS",
@@ -131,7 +104,6 @@ const translations = {
     // Página Quiénes Somos
     about_hero_title: "WE ARE NEXTERS",
     about_hero_subtitle: "We transform technology into robust and accessible solutions for all those who need to simplify tomorrow and progress in their challenges, ambitions and purposes.",
-    about_text_corporativo: "We overcome our challenges because we are experts in what we do, no matter what they are, our dedication helps us exceed expectations, excellence is the result of our experience. We are proud of what we do and what we achieve by doing it. If you want to take a step further, creating a significant impact on the world around you, this is your place.",
     
     // Sección Stats (Quiénes Somos)
     stats_title: "Numbers that support us",
@@ -141,8 +113,8 @@ const translations = {
     stats_expertos: "Technology experts",
     
     // Frase impactante (Claim)
-    claim_text: "\"We don't just transform businesses. ",
-    claim_highlight: "We create the future.\"",
+    claim_text: "We don't just transform businesses. ",
+    claim_highlight: "We create the future.",
     claim_sub: "Technology with purpose, people with passion",
     
     // Sección Valores (Carrusel)
@@ -163,21 +135,7 @@ const translations = {
     // Sección Mapa (Quiénes Somos)
     mapa_title: "We are where you need us",
     mapa_info_sede: "Headquarters",
-    mapa_info_direccion: "Avenida de Burgos 17, 28036 Madrid, Spain",
-    
-    // Sección Trabaja con nosotros (para cuando se implemente)
-    trabajo_hero_title: "JOIN THE TEAM",
-    trabajo_hero_subtitle: "Do you want to be part of Lognext? Discover how you can grow with us.",
-    trabajo_beneficios_title: "Benefits of working with us",
-    trabajo_cultura_title: "Our culture",
-    trabajo_ofertas_title: "Open positions",
-    trabajo_formulario_title: "Send your application",
-    trabajo_formulario_nombre: "Full name",
-    trabajo_formulario_email: "Email",
-    trabajo_formulario_telefono: "Phone",
-    trabajo_formulario_mensaje: "Why do you want to work with us?",
-    trabajo_formulario_cv: "Attach CV",
-    trabajo_formulario_enviar: "Submit application"
+    mapa_info_direccion: "Avenida de Burgos 17, 28036 Madrid, Spain"
   },
   
   fr: {
@@ -201,12 +159,6 @@ const translations = {
     
     // Servicios section (index)
     servicios_title: "Nos Services",
-    servicio1_title: "Gestion de flotte",
-    servicio1_desc: "Optimisation et contrôle en temps réel.",
-    servicio2_title: "Itinéraires intelligents",
-    servicio2_desc: "Planification efficace basée sur les données et le trafic.",
-    servicio3_title: "Analytique avancée",
-    servicio3_desc: "Rapports et métriques pour améliorer la prise de décision.",
     
     // Footer
     footer_somos_nexter: "NOUS SOMMES NEXTERS",
@@ -221,7 +173,6 @@ const translations = {
     // Página Quiénes Somos
     about_hero_title: "NOUS SOMMES NEXTERS",
     about_hero_subtitle: "Nous transformons la technologie en solutions robustes et accessibles pour tous ceux qui ont besoin de simplifier demain et de progresser dans leurs défis, ambitions et objectifs.",
-    about_text_corporativo: "Nous surmontons nos défis parce que nous sommes experts dans ce que nous faisons, peu importe lesquels, notre engagement nous aide à dépasser les attentes, l'excellence est le fruit de notre expérience. Nous sommes fiers de ce que nous faisons et de ce que nous accomplissons. Si vous voulez aller plus loin, créer un impact significatif sur le monde qui vous entoure, c'est votre place.",
     
     // Sección Stats (Quiénes Somos)
     stats_title: "Des chiffres qui nous soutiennent",
@@ -231,8 +182,8 @@ const translations = {
     stats_expertos: "Experts en technologie",
     
     // Frase impactante (Claim)
-    claim_text: "\"Nous ne transformons pas seulement les entreprises. ",
-    claim_highlight: "Nous créons l'avenir.\"",
+    claim_text: "Nous ne transformons pas seulement les entreprises. ",
+    claim_highlight: "Nous créons l'avenir.",
     claim_sub: "Technologie avec un but, des personnes passionnées",
     
     // Sección Valores (Carrusel)
@@ -253,21 +204,7 @@ const translations = {
     // Sección Mapa (Quiénes Somos)
     mapa_title: "Nous sommes là où vous avez besoin de nous",
     mapa_info_sede: "Siège social",
-    mapa_info_direccion: "Avenida de Burgos 17, 28036 Madrid, Espagne",
-    
-    // Sección Trabaja con nosotros (para cuando se implemente)
-    trabajo_hero_title: "REJOIGNEZ L'ÉQUIPE",
-    trabajo_hero_subtitle: "Vous voulez faire partie de Lognext ? Découvrez comment vous pouvez grandir avec nous.",
-    trabajo_beneficios_title: "Avantages de travailler avec nous",
-    trabajo_cultura_title: "Notre culture",
-    trabajo_ofertas_title: "Offres d'emploi",
-    trabajo_formulario_title: "Envoyez votre candidature",
-    trabajo_formulario_nombre: "Nom complet",
-    trabajo_formulario_email: "Adresse e-mail",
-    trabajo_formulario_telefono: "Téléphone",
-    trabajo_formulario_mensaje: "Pourquoi voulez-vous travailler avec nous ?",
-    trabajo_formulario_cv: "Joindre CV",
-    trabajo_formulario_enviar: "Envoyer la candidature"
+    mapa_info_direccion: "Avenida de Burgos 17, 28036 Madrid, Espagne"
   }
 };
 
@@ -279,7 +216,6 @@ function setLanguage(lang) {
   localStorage.setItem('language', lang);
   updateContent();
   
-  // Actualizar clase activa en el selector de idioma
   document.querySelectorAll('.language-switcher a, .language-switcher.mobile a').forEach(link => {
     if (link.textContent.toLowerCase() === lang || 
         (lang === 'es' && link.textContent === 'ES') ||
@@ -340,14 +276,16 @@ function initMobileMenu() {
   });
 }
 
-// ========== CONTROL DEL VIDEO HERO ==========
 function initHeroVideo() {
   const video = document.getElementById('heroVideo');
   const playPauseBtn = document.getElementById('videoPlayPauseBtn');
   
   if (!video || !playPauseBtn) return;
   
-  video.pause();
+  // Si el video tiene autoplay, aseguramos que esté reproduciéndose
+  if (video.hasAttribute('autoplay')) {
+    video.play();
+  }
   
   function toggleVideo() {
     if (video.paused) {
@@ -381,7 +319,6 @@ function initHeroVideo() {
   });
 }
 
-// ========== CONTADORES ANIMADOS ==========
 function initCounters() {
   const counters = document.querySelectorAll('.stat-number');
   if (!counters.length) return;
@@ -414,7 +351,6 @@ function initCounters() {
   counters.forEach(counter => observer.observe(counter));
 }
 
-// ========== CARRUSEL CON AUTO-SLIDE ==========
 function initCarousel() {
   const track = document.getElementById('carouselTrack');
   const prevBtn = document.getElementById('prevBtn');
@@ -428,7 +364,6 @@ function initCarousel() {
   let currentIndex = 0;
   let autoSlideInterval;
   
-  // Crear dots
   if (dotsContainer) {
     for (let i = 0; i < cardCount; i++) {
       const dot = document.createElement('div');
@@ -442,6 +377,7 @@ function initCarousel() {
   const dots = document.querySelectorAll('.dot');
   
   function updateCarousel() {
+    if (cards.length === 0) return;
     const cardWidth = cards[0].offsetWidth + 25;
     track.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
     if (dots.length) {
@@ -468,6 +404,7 @@ function initCarousel() {
   }
   
   function startAutoSlide() {
+    if (autoSlideInterval) clearInterval(autoSlideInterval);
     autoSlideInterval = setInterval(nextSlide, 4000);
   }
   
@@ -501,7 +438,6 @@ function initCarousel() {
   updateCarousel();
 }
 
-// ========== SCROLL REVEAL ==========
 function initScrollReveal() {
   const revealElements = document.querySelectorAll('.scroll-reveal');
   if (!revealElements.length) return;
@@ -518,7 +454,6 @@ function initScrollReveal() {
   revealElements.forEach(el => observer.observe(el));
 }
 
-// ========== BACKGROUND ANIMADO PARA SECCIÓN DE ESTADÍSTICAS ==========
 function initAnimatedBackground() {
   const statsSection = document.querySelector('.about-stats');
   if (!statsSection) return;
@@ -534,8 +469,9 @@ function initAnimatedBackground() {
   }
 }
 
-// ========== INICIALIZACIÓN ==========
+// Esperar a que el DOM esté listo
 document.addEventListener('DOMContentLoaded', function() {
+  // Configurar idioma
   const langLinks = document.querySelectorAll('.language-switcher a, .language-switcher.mobile a');
   langLinks.forEach(function(link) {
     link.addEventListener('click', function(e) {
@@ -545,6 +481,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
   setLanguage(currentLang);
+  
+  // Inicializar todos los componentes
   initMobileMenu();
   initHeroVideo();
   initCounters();

@@ -505,6 +505,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  text-decoration: none;
 }
 
 .servicio-card-horizontal::before {
@@ -540,6 +541,7 @@ main {
   align-items: center;
   justify-content: center;
   transition: color 0.3s ease;
+  text-decoration: none;
 }
 
 .servicio-card-horizontal:hover h3 {
@@ -1760,15 +1762,15 @@ main {
   box-shadow: 0 20px 40px rgba(250, 60, 15, 0.2);
 }
 
-/* Sección Casos de Éxito */
-.service-casos {
-  padding: 80px 0;
+/* Sección Casos de Éxito que se extiende hasta el footer */
+.service-casos-full {
+  padding: 80px 0 0 0;
   background: linear-gradient(135deg, #000029 0%, #0a0a3a 100%);
   position: relative;
   overflow: hidden;
 }
 
-.service-casos::before {
+.service-casos-full::before {
   content: '';
   position: absolute;
   top: 0;
@@ -1779,14 +1781,26 @@ main {
   pointer-events: none;
 }
 
-.service-casos .section-title {
+.service-casos-full .section-title {
   color: #ffffff;
   position: relative;
   z-index: 2;
 }
 
-.service-casos .section-title::after {
+.service-casos-full .section-title::after {
   background: linear-gradient(90deg, #FA3C0F, #e6350a);
+}
+
+.service-casos-full .casos-list {
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+  padding-bottom: 0;
+}
+
+.service-casos-full .caso-item:last-child {
+  margin-bottom: 0;
 }
 
 .casos-list {
@@ -1868,6 +1882,11 @@ main {
   margin-top: 60px;
   border-top: 3px solid #FA3C0F;
   overflow: hidden;
+}
+
+/* Footer para páginas de servicios - sin margen superior */
+.service-footer {
+  margin-top: 0 !important;
 }
 
 .site-footer::before {
@@ -2581,8 +2600,8 @@ main {
   .service-section {
     padding: 50px 0;
   }
-  .service-casos {
-    padding: 50px 0;
+  .service-casos-full {
+    padding: 50px 0 0 0;
   }
   .caso-item {
     padding: 20px;

@@ -725,6 +725,21 @@ function initTeamCarousel() {
   updateCarousel();
 }
 
+function initCasosParticles() {
+  const casosSection = document.querySelector('.service-casos');
+  if (!casosSection) return;
+  
+  for (let i = 0; i < 30; i++) {
+    const particle = document.createElement('div');
+    particle.classList.add('caso-particle');
+    particle.style.left = Math.random() * 100 + '%';
+    particle.style.top = Math.random() * 100 + '%';
+    particle.style.animationDelay = Math.random() * 8 + 's';
+    particle.style.animationDuration = 4 + Math.random() * 4 + 's';
+    casosSection.appendChild(particle);
+  }
+}
+
 document.addEventListener('DOMContentLoaded', function() {
   const langLinks = document.querySelectorAll('.language-switcher a, .language-switcher.mobile a');
   langLinks.forEach(function(link) {
@@ -743,4 +758,5 @@ document.addEventListener('DOMContentLoaded', function() {
   initAnimatedBackground();
   initBenefitParticles();
   initTeamCarousel();
+  initCasosParticles();
 });

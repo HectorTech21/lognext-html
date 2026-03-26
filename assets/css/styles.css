@@ -1569,6 +1569,297 @@ main {
   box-shadow: 0 10px 25px rgba(250, 60, 15, 0.4);
 }
 
+/* ========== PÁGINAS DE SERVICIOS ========== */
+
+/* Hero de servicios */
+.service-hero {
+  min-height: 90vh;
+  background: #000029;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0 80px;
+  overflow: hidden;
+  margin-top: 80px;
+}
+
+.service-hero .circle-1,
+.service-hero .circle-2,
+.service-hero .circle-3 {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.service-hero .circle-1 {
+  width: 350px;
+  height: 350px;
+  background: radial-gradient(circle, rgba(250, 60, 15, 0.2) 0%, rgba(250, 60, 15, 0.08) 40%, transparent 70%);
+  top: -120px;
+  left: -100px;
+  animation: floatCircle 10s ease-in-out infinite reverse;
+}
+
+.service-hero .circle-2 {
+  width: 250px;
+  height: 250px;
+  background: radial-gradient(circle, rgba(250, 60, 15, 0.18) 0%, rgba(250, 60, 15, 0.08) 40%, transparent 70%);
+  top: 40%;
+  right: 5%;
+  animation: pulseCircle 6s ease-in-out infinite;
+}
+
+.service-hero .circle-3 {
+  width: 180px;
+  height: 180px;
+  background: radial-gradient(circle, rgba(250, 60, 15, 0.15) 0%, rgba(250, 60, 15, 0.05) 40%, transparent 70%);
+  bottom: 15%;
+  left: 5%;
+  animation: floatCircle 12s ease-in-out infinite;
+}
+
+.service-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: radial-gradient(circle at 20% 80%, rgba(250, 60, 15, 0.15) 0%, transparent 50%),
+                    repeating-linear-gradient(45deg, rgba(250, 60, 15, 0.05) 0px, rgba(250, 60, 15, 0.05) 2px, transparent 2px, transparent 8px);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.service-hero::after {
+  content: '';
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(250, 60, 15, 0.25) 0%, rgba(250, 60, 15, 0.1) 40%, transparent 70%);
+  bottom: -200px;
+  right: -150px;
+  border-radius: 50%;
+  animation: floatCircle 8s ease-in-out infinite;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.service-hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+.service-hero-text {
+  flex: 1;
+  animation: fadeInUp 1s ease-out;
+}
+
+.service-hero-text h1 {
+  font-size: 56px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  background: linear-gradient(135deg, #ffffff 0%, #FA3C0F 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.service-hero-text h2 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 20px;
+}
+
+.hero-quote {
+  font-size: 18px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.8);
+  font-style: italic;
+  border-left: 3px solid #FA3C0F;
+  padding-left: 20px;
+  margin-top: 20px;
+}
+
+.service-hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  animation: fadeInRight 1s ease-out;
+}
+
+.service-hero-image img {
+  max-width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.service-hero-image img:hover {
+  transform: scale(1.02);
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Sección dos columnas */
+.service-section {
+  padding: 80px 0;
+  background-color: #ffffff;
+}
+
+.service-two-columns {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.service-text-col {
+  flex: 1;
+}
+
+.service-text-col p {
+  font-size: 24px;
+  line-height: 1.5;
+  color: #1e2a3a;
+  font-weight: 500;
+}
+
+.service-image-col {
+  flex: 1;
+  text-align: center;
+}
+
+.service-img-hover {
+  max-width: 100%;
+  height: auto;
+  border-radius: 16px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.service-img-hover:hover {
+  transform: scale(1.02);
+  box-shadow: 0 20px 40px rgba(250, 60, 15, 0.2);
+}
+
+/* Sección Casos de Éxito */
+.service-casos {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #000029 0%, #0a0a3a 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.service-casos::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: repeating-linear-gradient(45deg, rgba(250, 60, 15, 0.03) 0px, rgba(250, 60, 15, 0.03) 2px, transparent 2px, transparent 8px);
+  pointer-events: none;
+}
+
+.service-casos .section-title {
+  color: #ffffff;
+  position: relative;
+  z-index: 2;
+}
+
+.service-casos .section-title::after {
+  background: linear-gradient(90deg, #FA3C0F, #e6350a);
+}
+
+.casos-list {
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.caso-item {
+  margin-bottom: 50px;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+  border-radius: 24px;
+  transition: all 0.3s ease;
+}
+
+.caso-item:hover {
+  transform: translateY(-5px);
+  background: rgba(250, 60, 15, 0.1);
+}
+
+.caso-item h3 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #FA3C0F;
+  margin-bottom: 15px;
+}
+
+.caso-divider {
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(90deg, #FA3C0F, #e6350a);
+  margin-bottom: 20px;
+  border-radius: 3px;
+}
+
+.caso-item p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 25px;
+}
+
+.caso-image {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.caso-image img {
+  max-width: 100%;
+  height: auto;
+  max-height: 300px;
+  border-radius: 16px;
+  transition: transform 0.4s ease;
+}
+
+.caso-image img:hover {
+  transform: scale(1.02);
+}
+
+/* Partículas para casos de éxito */
+.caso-particle {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: rgba(250, 60, 15, 0.3);
+  border-radius: 50%;
+  pointer-events: none;
+  animation: floatParticle linear infinite;
+}
+
 /* ========== FOOTER ========== */
 .site-footer {
   background: linear-gradient(135deg, #000029 0%, #0a0a3a 100%);
@@ -1968,6 +2259,27 @@ main {
     left: 50%;
     transform: translateX(-50%);
   }
+  .service-hero {
+    padding: 0 40px;
+  }
+  .service-hero-text h1 {
+    font-size: 48px;
+  }
+  .service-hero-text h2 {
+    font-size: 20px;
+  }
+  .hero-quote {
+    font-size: 16px;
+  }
+  .service-two-columns {
+    gap: 40px;
+  }
+  .service-text-col p {
+    font-size: 20px;
+  }
+  .caso-item h3 {
+    font-size: 24px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -1982,6 +2294,26 @@ main {
   .presentacion-video {
     max-width: 500px;
     margin: 0 auto;
+  }
+  .service-hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .service-hero-image {
+    order: -1;
+  }
+  .hero-quote {
+    border-left: none;
+    border-top: 3px solid #FA3C0F;
+    padding-left: 0;
+    padding-top: 20px;
+  }
+  .service-two-columns {
+    flex-direction: column;
+    text-align: center;
+  }
+  .service-text-col p {
+    font-size: 18px;
   }
 }
 
@@ -2231,6 +2563,40 @@ main {
   .offers-right p {
     font-size: 14px;
   }
+  
+  /* Servicios responsive */
+  .service-hero {
+    padding: 0 20px;
+    min-height: 70vh;
+  }
+  .service-hero-text h1 {
+    font-size: 36px;
+  }
+  .service-hero-text h2 {
+    font-size: 18px;
+  }
+  .hero-quote {
+    font-size: 14px;
+  }
+  .service-section {
+    padding: 50px 0;
+  }
+  .service-casos {
+    padding: 50px 0;
+  }
+  .caso-item {
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+  .caso-item h3 {
+    font-size: 20px;
+  }
+  .caso-item p {
+    font-size: 14px;
+  }
+  .caso-divider {
+    width: 60px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -2336,5 +2702,22 @@ main {
   }
   .team-carousel-role {
     font-size: 12px;
+  }
+  
+  /* Servicios responsive móvil pequeño */
+  .service-hero-text h1 {
+    font-size: 28px;
+  }
+  .service-text-col p {
+    font-size: 16px;
+  }
+  .caso-item h3 {
+    font-size: 18px;
+  }
+  .caso-item p {
+    font-size: 13px;
+  }
+  .caso-divider {
+    width: 50px;
   }
 }

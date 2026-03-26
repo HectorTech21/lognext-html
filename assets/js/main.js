@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
-  // botón play/pause
+  // boton play/pause
   if (playPauseBtn && video) {
     playPauseBtn.addEventListener('click', function() {
       if (video.paused) {

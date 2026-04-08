@@ -73,18 +73,13 @@ const translations = {
     mapa_info_direccion: "Avenida de Burgos 17, 28036 Madrid, Spain",
     
     // ========== PÁGINA TRABAJA CON NOSOTROS ==========
-    // Hero
     work_hero_title: "CONOCE AL EQUIPO",
-    
-    // Card 1 - Comité de Dirección
     work_comite_title: "Comité De Dirección",
     work_comite_desc: "Un equipo de liderazgo con amplia experiencia en el sector tecnológico, comprometido con la innovación y la excelencia. Este comité está formado por profesionales con más de 15 años de trayectoria en empresas líderes del sector, que aportan visión estratégica y pasión por la tecnología. Su misión es guiar a Lognext hacia nuevos horizontes, impulsando la transformación digital de nuestros clientes y fomentando una cultura de mejora continua.",
     work_ceo: "Director Ejecutivo (CEO)",
     work_coo: "Director de Operaciones (COO)",
     work_cfo: "Director Financiero (CFO)",
     work_business_unit: "Responsable de Unidad de Negocio",
-    
-    // Card 2 - Carrusel
     work_miguel_name: "Miguel Esteban Aparicio",
     work_it_department: "Departamento IT",
     work_it_role: "Director de IT",
@@ -94,8 +89,6 @@ const translations = {
     work_enrique_name: "Enrique Martínez Pérez",
     work_proyectos_department: "Proyectos & Compliance",
     work_proyectos_role: "Head of Projects & Compliance PMO",
-    
-    // Beneficios
     work_benefits_title: "Beneficios de trabajar con nosotros",
     work_benefit1_title: "Horario Flexible",
     work_benefit1_desc: "Adaptamos tu jornada para que puedas conciliar tu vida personal y profesional.",
@@ -113,12 +106,66 @@ const translations = {
     work_benefit7_desc: "Recompensamos tus recomendaciones de talento que se unen al equipo.",
     work_benefit8_title: "Plan de Carrera Next Level",
     work_benefit8_desc: "Un plan personalizado para crecer profesionalmente dentro de Lognext.",
-    
-    // Ofertas
     work_offers_title: "Conoce nuestras posiciones abiertas",
     work_offers_text1: "Superamos nuestros retos porque somos expertos en lo que hacemos, no importa cuáles sean, nuestra entrega por lo que hacemos nos ayuda a superar expectativas, la excelencia es el fruto de nuestra experiencia. Estamos orgullosos de lo que hacemos y de lo que conseguimos haciéndolo.",
     work_offers_text2: "Si te mueve dar un paso más, creando un impacto significativo en el mundo que te rodea, este es tu lugar.",
-    work_offers_btn: "Conoce nuestras ofertas"
+    work_offers_btn: "Conoce nuestras ofertas",
+    
+    // ========== PÁGINAS DE SERVICIOS ==========
+    // Títulos comunes
+    casos_title: "CASOS DE ÉXITO",
+    
+    // IA
+    ia_title: "INTELIGENCIA ARTIFICIAL",
+    ia_subtitle: "Creamos nuevas oportunidades para la interacción y el engagement del cliente ofreciendo soluciones personalizadas y creativas.",
+    ia_quote: "Nuestro centro de IA está especializado en IA generativa, una tecnología revolucionaria que está transformando el panorama empresarial. Esta tecnología mejora la eficiencia y reduce costos, nuestro equipo está dedicado a explorar y desarrollar aplicaciones de IA generativa que impulsen el crecimiento y el éxito de nuestros clientes.",
+    ia_section1: "Integrar Inteligencia Artificial es fundamental para la evolución y transformación de diversos sectores.",
+    ia_caso1_title: "Hiperautomatización - RAG",
+    ia_caso1_desc: "Desarrollamos una solución a través de técnicas de Retrieval Augmented Generation para uno de los mayores bancos españoles, combinando la recuperación de información con la generación de texto en el dominio del asset portfolio management. Este modelo especializado permite no solo recuperar datos esenciales de extensos documentos relacionados con la gestión de carteras (como doc, pdf, URL, entre otros), sino también generar respuestas precisas y altamente contextualizadas a partir de dicha información.",
+    ia_caso2_title: "ChatBot de Customer Care",
+    ia_caso2_desc: "Tras ser inicialmente entrenado con grandes conjuntos de datos, este modelo es sometido a un 'fine tuning' específico utilizando los datos internos de clientes, garantizando así respuestas adaptadas y altamente relevantes a las necesidades específicas (siendo 24x7). Este proceso se realiza garantizando la total privacidad y seguridad, instalándose en la infraestructura de este banco internacional.",
+    ia_caso3_title: "Generación de Historias de Usuarios (Gherkin)",
+    ia_caso3_desc: "La API de IAGen automatiza la creación de historias de usuarios, descripciones, criterios de aceptación, escenarios de Gherkins y Java, Cucumber. Actúa como asistente de escritura, generando contenidos estructurados a partir del prompt 'Como/Quiero/Para'. Su finalidad es permitir que los Product Owners se enfoquen en tareas de mayor valor, alejándolos de lo rutinario. Al identificar escenarios no considerados, mejora la cobertura de funcionalidades, siendo esencial en la gestión de proyectos.",
+    ia_caso4_title: "Calculadora avanzada de Rating de Riesgos de Crédito",
+    ia_caso4_desc: "Combinando el análisis financiero y el sentiment analysis, se evalúa detalladamente el riesgo crediticio de las empresas. Esta calculadora va más allá de procesar y analizar datos contables, también calcula ratios financieros y, adicionalmente, interpreta el sentimiento de los informes y contenido de las cuentas anuales. Generando un rating de crédito que abarca tanto la salud financiera como la percepción general de la empresa y ofreciendo a los prestamistas una visión integral y matizada respecto al potencial riesgo crediticio.",
+    ia_caso5_title: "Detección de intrusiones",
+    ia_caso5_desc: "Utilizando cámaras de seguridad equipadas con algoritmos de computer vision, ofrecemos un monitoreo ininterrumpido de zonas protegidas, identificando actividades irregulares. Nuestros algoritmos para la detección de objetos y seguimiento humano garantizan una rápida identificación de intrusos, proporcionando alertas en tiempo real al personal de seguridad.",
+    ia_caso6_title: "Detección de caídas de mayores",
+    ia_caso6_desc: "En base al análisis de imagen y aprendizaje profundo, nuestro sistema monitoriza en tiempo real la dinámica y geometría del cuerpo humano, calculando vértices y ángulos para estimar de forma precisa la postura y movimientos de cada individuo. Esta meticulosa observación, en conjunción con algoritmos especializados, nos permite detectar y alertar de manera inmediata ante situaciones potenciales de caída en personas mayores, contribuyendo así a una intervención temprana y mejorando significativamente su seguridad y bienestar.",
+    
+    // AMS
+    ams_title: "Application Management Services",
+    ams_subtitle: "Proporcionamos experiencias especializadas en el diseño y desarrollo de soluciones omnicanal, abarcando todas las capas del proceso, desde movilidad y front-end hasta back-end y aplicaciones web.",
+    ams_quote: "Proponemos enfoques híbridos o de nube privada según las necesidades específicas de cada proyecto, asegurando soluciones totalmente alineadas con los objetivos.",
+    ams_section1: "Proyectos de desarrollo llave en mano, con las últimas tecnologías estables, y con equipos de alto rendimiento bajo metodologías Agile.",
+    ams_caso1_title: "Desde 2012",
+    ams_caso1_desc1: "Hemos proporcionado a una de las grandes aseguradoras en España una variedad de servicios, como desarrollo, soporte infra y datos, abarcando las verticales de Asistencia, Autos, Hogar, Accidentes, Recibos y Pagos. Todo ello se lleva a cabo a través de un equipo de consultores comprometido y con una amplia experiencia demostrada.",
+    ams_caso1_desc2: "Nos especializamos en el diseño y la prestación de servicios que abarcan el desarrollo, la implementación y el mantenimiento de aplicaciones en diversas tecnologías front y back. Además, nos destacamos en realizar mantenimientos evolutivos y en el desarrollo de nuevos productos, anticipando y adaptando las oportunidades.",
+    ams_caso2_title: "Desde 2019",
+    ams_caso2_desc1: "Hemos brindado apoyo a la principal empresa de seguridad en España, reconocida como uno de los líderes mundiales en el ámbito de alarmas, siendo uno de sus principales socios tecnológicos.",
+    ams_caso2_desc2: "Nos especializamos en el diseño y la prestación de servicios que abarcan el desarrollo, la implementación y el mantenimiento de aplicaciones en diversas tecnologías, como IONIC, Angular, REACT, Java, Kafka, microservicios. Destacando nuestros mantenimientos evolutivos y en el desarrollo de nuevos productos.",
+    ams_caso2_desc3: "Contamos con equipos de trabajo expertos en la estructura de desarrollo de aplicaciones, utilizando metodologías ágiles como Scrum para marcar la diferencia garantizando la eficiencia y calidad en cada proyecto.",
+    
+    // IMS
+    ims_title: "Infrastructure Management Services",
+    ims_subtitle: "Impulsamos la transformación digital de las empresas con soluciones de infraestructura en la nube y entornos OnPremise.",
+    ims_quote: "Diseñamos, implementamos y gestionamos plataformas híbridas y multi-nube para optimizar el rendimiento, mejorar la eficiencia y aportar la flexibilidad necesaria para adaptarse al cambio.",
+    ims_section1: "Mantenimiento y administración de tu infraestructura IT en manos de expertos que te acompañan en tu evolución digital para progresar tecnológicamente.",
+    ims_caso1_title: "Desde 2012",
+    ims_caso1_desc1: "Nos hemos posicionado como uno de los principales socios de una de las más grandes organizaciones internacionales en España. Desde 2016, nos hemos consolidado como un socio estratégico de una de las mayores organizaciones internacionales en España, asumiendo la gestión del servicio del Centro de Control de Redes. Nuestra labor es clave para garantizar el soporte técnico a misiones de paz, misiones políticas, entidades, programas y agencias distribuidas por todo el mundo.",
+    ims_caso1_desc2: "A través de un servicio gestionado 24/7/365, nos encargamos de la monitorización y resolución de anomalías, la coordinación de incidencias y el mantenimiento del nivel de servicio operativo de la infraestructura IT en el centro de procesamiento de datos y comunicaciones del SGITT, asegurando así la continuidad y fiabilidad de las operaciones.",
+    ims_caso2_title: "Desde 2014",
+    ims_caso2_desc1: "Somos el principal socio de la plataforma IT para EMEA de uno de los mayores bancos europeos en España. Desde 2016, gestionamos la infraestructura de servidores y puestos de trabajo, adaptándola de forma continua a las necesidades del cliente para garantizar entornos IT seguros, eficientes y plenamente operativos.",
+    ims_caso2_desc2: "Nuestro servicio abarca la administración del sistema operativo, la autenticación y gestión de accesos mediante Active Directory, la gestión de impresión, la seguridad de los equipos, el despliegue centralizado de software y la aplicación de parches y actualizaciones. Además, nuestros equipos prestan soporte de nivel 2 en infraestructura IT y ciberseguridad, así como atención de primer nivel a usuarios en toda Europa.",
+    
+    // Outsourcing
+    outsourcing_title: "Outsourcing de Talento",
+    outsourcing_subtitle: "Con una amplia experiencia en outsourcing, Lognext se ha consolidado como un socio de confianza para las empresas que buscan talento especializado capaz de impulsar sus proyectos.",
+    outsourcing_quote: "Identificamos los perfiles IT que mejor se adaptan a cada necesidad, aportando profesionales cualificados, comprometidos y orientados a generar un impacto real, superando expectativas y poniendo su conocimiento, habilidades y experiencia al servicio de cada reto.",
+    outsourcing_section1: "Un equipo fuerte, decidido y multidisciplinar preparado para transformar la tecnología en algo útil y práctico que pueda hacernos progresar a todos, aportando soluciones de alto rendimiento para los equipos, empresas y sociedad.",
+    outsourcing_caso1_title: "Your next level",
+    outsourcing_caso1_desc1: "Acompañamos a nuestros clientes y a sus equipos con nuestros NEXTERS. Talento altamente cualificado que se adapta a las necesidades específicas de cada proyecto y entorno tecnológico, identificando nuevas formas de avanzar, haciendo de la creatividad un motor de innovación para marcar la diferencia en el negocio, anticipando y adaptando las oportunidades.",
+    outsourcing_caso1_desc2: "Nuestra forma de trabajar promueve la comunicación eficiente y garantiza la entrega continua de proyectos en diferentes tecnologías IT."
   },
   
   en: {
@@ -160,20 +207,14 @@ const translations = {
     // Página Quiénes Somos
     about_hero_title: "WE ARE NEXTERS",
     about_hero_subtitle: "We transform technology into robust and accessible solutions for all those who need to simplify tomorrow and progress in their challenges, ambitions and purposes.",
-    
-    // Sección Stats (Quiénes Somos)
     stats_title: "Numbers that support us",
     stats_anos: "Years of experience",
     stats_proyectos: "Projects delivered",
     stats_clientes: "Satisfied clients",
     stats_expertos: "Technology experts",
-    
-    // Frase impactante (Claim)
     claim_text: "We don't just transform businesses. ",
     claim_highlight: "We create the future.",
     claim_sub: "Technology with purpose, people with passion",
-    
-    // Sección Valores (Carrusel)
     valores_title: "Our values",
     valor_innovacion: "Innovation",
     valor_innovacion_desc: "Always one step ahead, exploring new technological frontiers.",
@@ -187,25 +228,18 @@ const translations = {
     valor_creatividad_desc: "Unique solutions for complex problems.",
     valor_excelencia: "Excellence",
     valor_excelencia_desc: "Quality is our hallmark.",
-    
-    // Sección Mapa (Quiénes Somos)
     mapa_title: "We are where you need us",
     mapa_info_sede: "Headquarters",
     mapa_info_direccion: "Avenida de Burgos 17, 28036 Madrid, Spain",
     
-    // ========== PÁGINA TRABAJA CON NOSOTROS ==========
-    // Hero
+    // Trabaja con nosotros
     work_hero_title: "MEET THE TEAM",
-    
-    // Card 1 - Comité de Dirección
     work_comite_title: "Executive Committee",
     work_comite_desc: "A leadership team with extensive experience in the technology sector, committed to innovation and excellence. This committee is made up of professionals with more than 15 years of experience in leading companies in the sector, who bring strategic vision and passion for technology. Their mission is to guide Lognext towards new horizons, driving the digital transformation of our clients and fostering a culture of continuous improvement.",
     work_ceo: "Chief Executive Officer (CEO)",
     work_coo: "Chief Operating Officer (COO)",
     work_cfo: "Chief Financial Officer (CFO)",
     work_business_unit: "Business Unit Manager",
-    
-    // Card 2 - Carrusel
     work_miguel_name: "Miguel Esteban Aparicio",
     work_it_department: "IT Department",
     work_it_role: "IT Director",
@@ -215,8 +249,6 @@ const translations = {
     work_enrique_name: "Enrique Martínez Pérez",
     work_proyectos_department: "Projects & Compliance",
     work_proyectos_role: "Head of Projects & Compliance PMO",
-    
-    // Beneficios
     work_benefits_title: "Benefits of working with us",
     work_benefit1_title: "Flexible Schedule",
     work_benefit1_desc: "We adapt your schedule so you can balance your personal and professional life.",
@@ -234,12 +266,65 @@ const translations = {
     work_benefit7_desc: "We reward your recommendations of talent that join the team.",
     work_benefit8_title: "Next Level Career Plan",
     work_benefit8_desc: "A personalized plan to grow professionally within Lognext.",
-    
-    // Ofertas
     work_offers_title: "Check our open positions",
     work_offers_text1: "We overcome our challenges because we are experts in what we do, no matter what they are, our dedication helps us exceed expectations, excellence is the result of our experience. We are proud of what we do and what we achieve by doing it.",
     work_offers_text2: "If you want to take a step further, creating a significant impact on the world around you, this is your place.",
-    work_offers_btn: "Check our offers"
+    work_offers_btn: "Check our offers",
+    
+    // Servicios
+    casos_title: "SUCCESS STORIES",
+    
+    // IA
+    ia_title: "ARTIFICIAL INTELLIGENCE",
+    ia_subtitle: "We create new opportunities for customer interaction and engagement by offering personalized and creative solutions.",
+    ia_quote: "Our AI center is specialized in generative AI, a revolutionary technology that is transforming the business landscape. This technology improves efficiency and reduces costs, our team is dedicated to exploring and developing generative AI applications that drive our clients' growth and success.",
+    ia_section1: "Integrating Artificial Intelligence is essential for the evolution and transformation of various sectors.",
+    ia_caso1_title: "Hyperautomation - RAG",
+    ia_caso1_desc: "We developed a solution using Retrieval Augmented Generation techniques for one of the largest Spanish banks, combining information retrieval with text generation in the asset portfolio management domain. This specialized model not only allows retrieving essential data from extensive documents related to portfolio management (such as doc, pdf, URL, among others), but also generating precise and highly contextualized responses from that information.",
+    ia_caso2_title: "Customer Care ChatBot",
+    ia_caso2_desc: "After being initially trained with large datasets, this model undergoes specific 'fine tuning' using internal client data, thus guaranteeing adapted and highly relevant responses to specific needs (24x7). This process is carried out guaranteeing total privacy and security, installing on the infrastructure of this international bank.",
+    ia_caso3_title: "User Story Generation (Gherkin)",
+    ia_caso3_desc: "The IAGen API automates the creation of user stories, descriptions, acceptance criteria, Gherkin scenarios and Java, Cucumber. It acts as a writing assistant, generating structured content from the 'As a/I want to/So that' prompt. Its purpose is to allow Product Owners to focus on higher value tasks, moving them away from routine. By identifying scenarios not considered, it improves feature coverage, being essential in project management.",
+    ia_caso4_title: "Advanced Credit Risk Rating Calculator",
+    ia_caso4_desc: "Combining financial analysis and sentiment analysis, we evaluate the credit risk of companies in detail. This calculator goes beyond processing and analyzing accounting data, also calculates financial ratios and additionally interprets the sentiment of reports and content of annual accounts. Generating a credit rating that covers both financial health and the general perception of the company, offering lenders a comprehensive and nuanced view of potential credit risk.",
+    ia_caso5_title: "Intrusion Detection",
+    ia_caso5_desc: "Using security cameras equipped with computer vision algorithms, we offer uninterrupted monitoring of protected areas, identifying irregular activities. Our algorithms for object detection and human tracking guarantee rapid identification of intruders, providing real-time alerts to security personnel.",
+    ia_caso6_title: "Elderly Fall Detection",
+    ia_caso6_desc: "Based on image analysis and deep learning, our system monitors in real time the dynamics and geometry of the human body, calculating vertices and angles to accurately estimate the posture and movements of each individual. This meticulous observation, in conjunction with specialized algorithms, allows us to detect and alert immediately to potential fall situations in the elderly, thus contributing to early intervention and significantly improving their safety and well-being.",
+    
+    // AMS
+    ams_title: "Application Management Services",
+    ams_subtitle: "We provide specialized experiences in the design and development of omnichannel solutions, covering all layers of the process, from mobility and front-end to back-end and web applications.",
+    ams_quote: "We propose hybrid or private cloud approaches according to the specific needs of each project, ensuring solutions fully aligned with the objectives.",
+    ams_section1: "Turnkey development projects, with the latest stable technologies, and with high-performance teams under Agile methodologies.",
+    ams_caso1_title: "Since 2012",
+    ams_caso1_desc1: "We have provided one of the largest insurance companies in Spain with a variety of services, such as development, infrastructure support and data, covering the Assistance, Automobiles, Home, Accidents, Receipts and Payments verticals. All this is carried out through a team of committed consultants with extensive proven experience.",
+    ams_caso1_desc2: "We specialize in the design and provision of services that cover the development, implementation and maintenance of applications in various front and back technologies. In addition, we stand out in carrying out evolutionary maintenance and in the development of new products, anticipating and adapting opportunities.",
+    ams_caso2_title: "Since 2019",
+    ams_caso2_desc1: "We have provided support to the main security company in Spain, recognized as one of the world leaders in the field of alarms, being one of its main technological partners.",
+    ams_caso2_desc2: "We specialize in the design and provision of services that cover the development, implementation and maintenance of applications in various technologies, such as IONIC, Angular, REACT, Java, Kafka, microservices. Highlighting our evolutionary maintenance and new product development.",
+    ams_caso2_desc3: "We have work teams expert in the application development structure, using agile methodologies such as Scrum to make a difference, guaranteeing efficiency and quality in each project.",
+    
+    // IMS
+    ims_title: "Infrastructure Management Services",
+    ims_subtitle: "We drive the digital transformation of companies with cloud infrastructure solutions and OnPremise environments.",
+    ims_quote: "We design, implement and manage hybrid and multi-cloud platforms to optimize performance, improve efficiency and provide the flexibility needed to adapt to change.",
+    ims_section1: "Maintenance and administration of your IT infrastructure in the hands of experts who accompany you in your digital evolution to progress technologically.",
+    ims_caso1_title: "Since 2012",
+    ims_caso1_desc1: "We have positioned ourselves as one of the main partners of one of the largest international organizations in Spain. Since 2016, we have consolidated ourselves as a strategic partner of one of the largest international organizations in Spain, assuming the service management of the Network Control Center. Our work is key to guarantee technical support for peace missions, political missions, entities, programs and agencies distributed around the world.",
+    ims_caso1_desc2: "Through a 24/7/365 managed service, we are responsible for monitoring and resolving anomalies, coordinating incidents and maintaining the operational service level of the IT infrastructure in the data processing and communications center of the SGITT, thus ensuring the continuity and reliability of operations.",
+    ims_caso2_title: "Since 2014",
+    ims_caso2_desc1: "We are the main partner of the IT platform for EMEA of one of the largest European banks in Spain. Since 2016, we have been managing the server and workstation infrastructure, continuously adapting it to the client's needs to ensure secure, efficient and fully operational IT environments.",
+    ims_caso2_desc2: "Our service covers operating system administration, authentication and access management through Active Directory, print management, equipment security, centralized software deployment and application of patches and updates. In addition, our teams provide level 2 support in IT infrastructure and cybersecurity, as well as first-level care to users throughout Europe.",
+    
+    // Outsourcing
+    outsourcing_title: "Talent Outsourcing",
+    outsourcing_subtitle: "With extensive outsourcing experience, Lognext has established itself as a trusted partner for companies seeking specialized talent capable of driving their projects.",
+    outsourcing_quote: "We identify the IT profiles that best adapt to each need, providing qualified, committed professionals oriented to generate a real impact, exceeding expectations and putting their knowledge, skills and experience at the service of each challenge.",
+    outsourcing_section1: "A strong, determined and multidisciplinary team prepared to transform technology into something useful and practical that can make us all progress, providing high-performance solutions for teams, companies and society.",
+    outsourcing_caso1_title: "Your next level",
+    outsourcing_caso1_desc1: "We accompany our clients and their teams with our NEXTERS. Highly qualified talent that adapts to the specific needs of each project and technological environment, identifying new ways to advance, making creativity a driver of innovation to make a difference in the business, anticipating and adapting opportunities.",
+    outsourcing_caso1_desc2: "Our way of working promotes efficient communication and guarantees the continuous delivery of projects in different IT technologies."
   },
   
   fr: {
@@ -281,20 +366,14 @@ const translations = {
     // Página Quiénes Somos
     about_hero_title: "NOUS SOMMES NEXTERS",
     about_hero_subtitle: "Nous transformons la technologie en solutions robustes et accessibles pour tous ceux qui ont besoin de simplifier demain et de progresser dans leurs défis, ambitions et objectifs.",
-    
-    // Sección Stats (Quiénes Somos)
     stats_title: "Des chiffres qui nous soutiennent",
     stats_anos: "Années d'expérience",
     stats_proyectos: "Projets livrés",
     stats_clientes: "Clients satisfaits",
     stats_expertos: "Experts en technologie",
-    
-    // Frase impactante (Claim)
     claim_text: "Nous ne transformons pas seulement les entreprises. ",
     claim_highlight: "Nous créons l'avenir.",
     claim_sub: "Technologie avec un but, des personnes passionnées",
-    
-    // Sección Valores (Carrusel)
     valores_title: "Nos valeurs",
     valor_innovacion: "Innovation",
     valor_innovacion_desc: "Toujours un pas en avant, explorer de nouvelles frontières technologiques.",
@@ -308,25 +387,18 @@ const translations = {
     valor_creatividad_desc: "Des solutions uniques pour des problèmes complexes.",
     valor_excelencia: "Excellence",
     valor_excelencia_desc: "La qualité est notre marque de fabrique.",
-    
-    // Sección Mapa (Quiénes Somos)
     mapa_title: "Nous sommes là où vous avez besoin de nous",
     mapa_info_sede: "Siège social",
     mapa_info_direccion: "Avenida de Burgos 17, 28036 Madrid, Espagne",
     
-    // ========== PÁGINA TRABAJA CON NOSOTROS ==========
-    // Hero
+    // Trabaja con nosotros
     work_hero_title: "RENCONTREZ L'ÉQUIPE",
-    
-    // Card 1 - Comité de Dirección
     work_comite_title: "Comité De Direction",
     work_comite_desc: "Une équipe de direction avec une vaste expérience dans le secteur technologique, engagée pour l'innovation et l'excellence. Ce comité est composé de professionnels ayant plus de 15 ans d'expérience dans des entreprises leaders du secteur, qui apportent une vision stratégique et une passion pour la technologie. Leur mission est de guider Lognext vers de nouveaux horizons, en impulsant la transformation numérique de nos clients et en favorisant une culture d'amélioration continue.",
     work_ceo: "Directeur Général (CEO)",
     work_coo: "Directeur des Opérations (COO)",
     work_cfo: "Directeur Financier (CFO)",
     work_business_unit: "Responsable d'Unité d'Affaires",
-    
-    // Card 2 - Carrusel
     work_miguel_name: "Miguel Esteban Aparicio",
     work_it_department: "Département IT",
     work_it_role: "Directeur IT",
@@ -336,8 +408,6 @@ const translations = {
     work_enrique_name: "Enrique Martínez Pérez",
     work_proyectos_department: "Projets & Conformité",
     work_proyectos_role: "Head of Projects & Compliance PMO",
-    
-    // Beneficios
     work_benefits_title: "Avantages de travailler avec nous",
     work_benefit1_title: "Horaires flexibles",
     work_benefit1_desc: "Nous adaptons votre emploi du temps pour concilier vie personnelle et professionnelle.",
@@ -355,12 +425,65 @@ const translations = {
     work_benefit7_desc: "Nous récompensons vos recommandations de talents qui rejoignent l'équipe.",
     work_benefit8_title: "Plan de carrière Next Level",
     work_benefit8_desc: "Un plan personnalisé pour évoluer professionnellement au sein de Lognext.",
-    
-    // Ofertas
     work_offers_title: "Découvrez nos postes ouverts",
     work_offers_text1: "Nous surmontons nos défis parce que nous sommes experts dans ce que nous faisons, peu importe lesquels, notre engagement nous aide à dépasser les attentes, l'excellence est le fruit de notre expérience. Nous sommes fiers de ce que nous faisons et de ce que nous accomplissons.",
     work_offers_text2: "Si vous voulez aller plus loin, créer un impact significatif sur le monde qui vous entoure, c'est votre place.",
-    work_offers_btn: "Découvrez nos offres"
+    work_offers_btn: "Découvrez nos offres",
+    
+    // Servicios
+    casos_title: "CAS DE RÉUSSITE",
+    
+    // IA
+    ia_title: "INTELLIGENCE ARTIFICIELLE",
+    ia_subtitle: "Nous créons de nouvelles opportunités d'interaction et d'engagement client en offrant des solutions personnalisées et créatives.",
+    ia_quote: "Notre centre d'IA est spécialisé dans l'IA générative, une technologie révolutionnaire qui transforme le paysage des entreprises. Cette technologie améliore l'efficacité et réduit les coûts, notre équipe se consacre à explorer et développer des applications d'IA générative qui stimulent la croissance et le succès de nos clients.",
+    ia_section1: "Intégrer l'Intelligence Artificielle est essentiel pour l'évolution et la transformation de divers secteurs.",
+    ia_caso1_title: "Hyperautomatisation - RAG",
+    ia_caso1_desc: "Nous avons développé une solution utilisant les techniques de Retrieval Augmented Generation pour l'une des plus grandes banques espagnoles, combinant la récupération d'informations avec la génération de texte dans le domaine de la gestion de portefeuille d'actifs. Ce modèle spécialisé permet non seulement de récupérer des données essentielles à partir de documents étendus liés à la gestion de portefeuille (doc, pdf, URL, entre autres), mais aussi de générer des réponses précises et hautement contextualisées à partir de ces informations.",
+    ia_caso2_title: "ChatBot de Service Client",
+    ia_caso2_desc: "Après avoir été initialement entraîné avec de grands ensembles de données, ce modèle subit un 'fine tuning' spécifique en utilisant les données internes des clients, garantissant ainsi des réponses adaptées et hautement pertinentes aux besoins spécifiques (24x7). Ce processus est réalisé en garantissant la confidentialité et la sécurité totales, en s'installant sur l'infrastructure de cette banque internationale.",
+    ia_caso3_title: "Génération d'Histoires Utilisateur (Gherkin)",
+    ia_caso3_desc: "L'API IAGen automatise la création d'histoires utilisateur, de descriptions, de critères d'acceptation, de scénarios Gherkin et Java, Cucumber. Elle agit comme un assistant d'écriture, générant du contenu structuré à partir de l'invite 'En tant que/Je veux/Afin de'. Son objectif est de permettre aux Product Owners de se concentrer sur des tâches à plus forte valeur ajoutée, en les éloignant des tâches routinières. En identifiant des scénarios non considérés, elle améliore la couverture des fonctionnalités, étant essentielle dans la gestion de projet.",
+    ia_caso4_title: "Calculateur avancé de notation du risque de crédit",
+    ia_caso4_desc: "Combinant l'analyse financière et l'analyse des sentiments, nous évaluons en détail le risque de crédit des entreprises. Cette calculatrice va au-delà du traitement et de l'analyse des données comptables, calcule également des ratios financiers et interprète en outre le sentiment des rapports et du contenu des comptes annuels. Générant une notation de crédit qui couvre à la fois la santé financière et la perception générale de l'entreprise, offrant aux prêteurs une vision complète et nuancée du risque de crédit potentiel.",
+    ia_caso5_title: "Détection d'intrusions",
+    ia_caso5_desc: "En utilisant des caméras de sécurité équipées d'algorithmes de vision par ordinateur, nous offrons une surveillance ininterrompue des zones protégées, identifiant les activités irrégulières. Nos algorithmes de détection d'objets et de suivi humain garantissent une identification rapide des intrus, fournissant des alertes en temps réel au personnel de sécurité.",
+    ia_caso6_title: "Détection des chutes de personnes âgées",
+    ia_caso6_desc: "Basé sur l'analyse d'images et l'apprentissage profond, notre système surveille en temps réel la dynamique et la géométrie du corps humain, calculant les sommets et les angles pour estimer avec précision la posture et les mouvements de chaque individu. Cette observation méticuleuse, en conjonction avec des algorithmes spécialisés, nous permet de détecter et d'alerter immédiatement les situations potentielles de chute chez les personnes âgées, contribuant ainsi à une intervention précoce et améliorant considérablement leur sécurité et leur bien-être.",
+    
+    // AMS
+    ams_title: "Application Management Services",
+    ams_subtitle: "Nous fournissons des expériences spécialisées dans la conception et le développement de solutions omnicanales, couvrant toutes les couches du processus, de la mobilité et du front-end au back-end et aux applications web.",
+    ams_quote: "Nous proposons des approches hybrides ou de cloud privé en fonction des besoins spécifiques de chaque projet, garantissant des solutions parfaitement alignées sur les objectifs.",
+    ams_section1: "Projets de développement clé en main, avec les dernières technologies stables, et avec des équipes haute performance sous méthodologies Agile.",
+    ams_caso1_title: "Depuis 2012",
+    ams_caso1_desc1: "Nous avons fourni à l'une des plus grandes compagnies d'assurance en Espagne une variété de services, tels que le développement, le support infrastructure et les données, couvrant les verticales Assistance, Automobiles, Habitation, Accidents, Reçus et Paiements. Tout cela est réalisé grâce à une équipe de consultants engagés et avec une vaste expérience prouvée.",
+    ams_caso1_desc2: "Nous nous spécialisons dans la conception et la fourniture de services qui couvrent le développement, la mise en œuvre et la maintenance d'applications dans diverses technologies front et back. De plus, nous nous distinguons dans la réalisation de maintenances évolutives et dans le développement de nouveaux produits, anticipant et adaptant les opportunités.",
+    ams_caso2_title: "Depuis 2019",
+    ams_caso2_desc1: "Nous avons apporté notre soutien à la principale entreprise de sécurité en Espagne, reconnue comme l'un des leaders mondiaux dans le domaine des alarmes, étant l'un de ses principaux partenaires technologiques.",
+    ams_caso2_desc2: "Nous nous spécialisons dans la conception et la fourniture de services qui couvrent le développement, la mise en œuvre et la maintenance d'applications dans diverses technologies, telles que IONIC, Angular, REACT, Java, Kafka, microservices. Soulignant nos maintenances évolutives et le développement de nouveaux produits.",
+    ams_caso2_desc3: "Nous disposons d'équipes de travail expertes dans la structure de développement d'applications, utilisant des méthodologies agiles comme Scrum pour faire la différence, garantissant efficacité et qualité dans chaque projet.",
+    
+    // IMS
+    ims_title: "Infrastructure Management Services",
+    ims_subtitle: "Nous accélérons la transformation numérique des entreprises avec des solutions d'infrastructure cloud et des environnements OnPremise.",
+    ims_quote: "Nous concevons, mettons en œuvre et gérons des plateformes hybrides et multi-cloud pour optimiser les performances, améliorer l'efficacité et fournir la flexibilité nécessaire pour s'adapter au changement.",
+    ims_section1: "Maintenance et administration de votre infrastructure IT entre les mains d'experts qui vous accompagnent dans votre évolution numérique pour progresser technologiquement.",
+    ims_caso1_title: "Depuis 2012",
+    ims_caso1_desc1: "Nous nous sommes positionnés comme l'un des principaux partenaires d'une des plus grandes organisations internationales en Espagne. Depuis 2016, nous nous sommes consolidés comme un partenaire stratégique d'une des plus grandes organisations internationales en Espagne, assumant la gestion du service du Centre de Contrôle des Réseaux. Notre travail est essentiel pour garantir le support technique aux missions de paix, missions politiques, entités, programmes et agences répartis dans le monde entier.",
+    ims_caso1_desc2: "Grâce à un service géré 24/7/365, nous sommes chargés de la surveillance et de la résolution des anomalies, de la coordination des incidents et du maintien du niveau de service opérationnel de l'infrastructure IT dans le centre de traitement des données et des communications du SGITT, assurant ainsi la continuité et la fiabilité des opérations.",
+    ims_caso2_title: "Depuis 2014",
+    ims_caso2_desc1: "Nous sommes le principal partenaire de la plateforme IT pour EMEA d'une des plus grandes banques européennes en Espagne. Depuis 2016, nous gérons l'infrastructure des serveurs et des postes de travail, l'adaptant en continu aux besoins du client pour garantir des environnements IT sécurisés, efficaces et pleinement opérationnels.",
+    ims_caso2_desc2: "Notre service couvre l'administration du système d'exploitation, l'authentification et la gestion des accès via Active Directory, la gestion de l'impression, la sécurité des équipements, le déploiement centralisé de logiciels et l'application de correctifs et de mises à jour. De plus, nos équipes fournissent un support de niveau 2 en infrastructure IT et cybersécurité, ainsi qu'une attention de premier niveau aux utilisateurs dans toute l'Europe.",
+    
+    // Outsourcing
+    outsourcing_title: "Externalisation de Talents",
+    outsourcing_subtitle: "Avec une vaste expérience en externalisation, Lognext s'est imposé comme un partenaire de confiance pour les entreprises recherchant des talents spécialisés capables de mener leurs projets.",
+    outsourcing_quote: "Nous identifions les profils IT qui s'adaptent le mieux à chaque besoin, fournissant des professionnels qualifiés, engagés et orientés vers un impact réel, dépassant les attentes et mettant leurs connaissances, compétences et expérience au service de chaque défi.",
+    outsourcing_section1: "Une équipe forte, déterminée et multidisciplinaire prête à transformer la technologie en quelque chose d'utile et de pratique qui peut nous faire tous progresser, fournissant des solutions haute performance pour les équipes, les entreprises et la société.",
+    outsourcing_caso1_title: "Your next level",
+    outsourcing_caso1_desc1: "Nous accompagnons nos clients et leurs équipes avec nos NEXTERS. Des talents hautement qualifiés qui s'adaptent aux besoins spécifiques de chaque projet et environnement technologique, identifiant de nouvelles façons d'avancer, faisant de la créativité un moteur d'innovation pour faire la différence dans les affaires, anticipant et adaptant les opportunités.",
+    outsourcing_caso1_desc2: "Notre façon de travailler favorise une communication efficace et garantit la livraison continue de projets dans différentes technologies IT."
   }
 };
 
@@ -726,7 +849,7 @@ function initTeamCarousel() {
 }
 
 function initCasosParticles() {
-  const casosSection = document.querySelector('.service-casos');
+  const casosSection = document.querySelector('.service-casos-full');
   if (!casosSection) return;
   
   for (let i = 0; i < 30; i++) {

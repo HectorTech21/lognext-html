@@ -15,6 +15,60 @@ body {
   min-height: 100vh;
 }
 
+/* ========== ANIMATED GRADIENT TEXT (reusable) ========== */
+/*
+  Premium animated gradient that renders ONLY inside glyphs.
+  Usage: add class="animated-gradient-text" to any heading/span.
+*/
+.animated-gradient-text {
+  color: #FA3C0F; /* fallback if background-clip unsupported */
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  /* Base gradient + subtle shine layer (both clipped to text) */
+  background-image:
+    linear-gradient(
+      110deg,
+      #7C3AED 0%,
+      #22D3EE 35%,
+      #3B82F6 70%,
+      #A855F7 100%
+    ),
+    linear-gradient(
+      120deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.55) 45%,
+      rgba(255, 255, 255, 0) 60%
+    );
+
+  background-size: 220% 100%, 60% 100%;
+  background-position: 0% 50%, -80% 50%;
+  background-repeat: no-repeat;
+
+  animation: animatedGradientFlow 12s ease-in-out infinite;
+  will-change: background-position;
+}
+
+@keyframes animatedGradientFlow {
+  0% {
+    background-position: 0% 50%, -80% 50%;
+  }
+  50% {
+    background-position: 100% 50%, 120% 50%;
+  }
+  100% {
+    background-position: 0% 50%, 220% 50%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animated-gradient-text {
+    animation: none;
+    background-position: 50% 50%, 50% 50%;
+  }
+}
+
 main {
   flex: 1;
 }
@@ -3177,4 +3231,7 @@ main {
     padding: 20px;
   }
 }
+
+  
+
 }

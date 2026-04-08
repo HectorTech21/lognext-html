@@ -2128,16 +2128,163 @@ main {
   background: linear-gradient(135deg, #e6350a, #FA3C0F);
 }
 
+/* ========== FOOTER BOTTOM CON ENLACES LEGALES ========== */
 .footer-bottom {
   text-align: center;
   padding-top: 30px;
   margin-top: 30px;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(250, 60, 15, 0.3);
 }
 
-.footer-bottom p {
-  color: rgba(255, 255, 255, 0.5);
+.footer-bottom-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.copyright {
+  color: #ffffff;
   font-size: 12px;
+}
+
+.legal-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.legal-link {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  font-size: 12px;
+  transition: color 0.3s ease;
+}
+
+.legal-link:hover {
+  color: #FA3C0F;
+}
+
+.legal-separator {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 12px;
+}
+
+/* ========== PÁGINAS LEGALES ========== */
+
+/* Hero para páginas legales */
+.legal-hero {
+  min-height: 50vh;
+  background: #000029;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  margin-top: 80px;
+}
+
+.legal-hero .circle-1,
+.legal-hero .circle-2,
+.legal-hero .circle-3 {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.legal-hero .circle-1 {
+  width: 350px;
+  height: 350px;
+  background: radial-gradient(circle, rgba(250, 60, 15, 0.2) 0%, rgba(250, 60, 15, 0.08) 40%, transparent 70%);
+  top: -120px;
+  left: -100px;
+  animation: floatCircle 10s ease-in-out infinite reverse;
+}
+
+.legal-hero .circle-2 {
+  width: 250px;
+  height: 250px;
+  background: radial-gradient(circle, rgba(250, 60, 15, 0.18) 0%, rgba(250, 60, 15, 0.08) 40%, transparent 70%);
+  top: 40%;
+  right: 5%;
+  animation: pulseCircle 6s ease-in-out infinite;
+}
+
+.legal-hero .circle-3 {
+  width: 180px;
+  height: 180px;
+  background: radial-gradient(circle, rgba(250, 60, 15, 0.15) 0%, rgba(250, 60, 15, 0.05) 40%, transparent 70%);
+  bottom: 15%;
+  left: 5%;
+  animation: floatCircle 12s ease-in-out infinite;
+}
+
+.legal-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: radial-gradient(circle at 20% 80%, rgba(250, 60, 15, 0.15) 0%, transparent 50%),
+                    repeating-linear-gradient(45deg, rgba(250, 60, 15, 0.05) 0px, rgba(250, 60, 15, 0.05) 2px, transparent 2px, transparent 8px);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.legal-hero::after {
+  content: '';
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(250, 60, 15, 0.25) 0%, rgba(250, 60, 15, 0.1) 40%, transparent 70%);
+  bottom: -200px;
+  right: -150px;
+  border-radius: 50%;
+  animation: floatCircle 8s ease-in-out infinite;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.legal-hero-content {
+  position: relative;
+  z-index: 2;
+  animation: fadeInUp 1s ease-out;
+}
+
+.legal-hero-content h1 {
+  font-size: 56px;
+  font-weight: 700;
+  background: linear-gradient(135deg, #ffffff 0%, #FA3C0F 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: 2px;
+}
+
+/* Contenido de páginas legales */
+.legal-content {
+  padding: 80px 0;
+  background-color: #ffffff;
+}
+
+.legal-content-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.legal-content-inner p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #4a5568;
+  margin-bottom: 20px;
 }
 
 /* ========== INFORMACIÓN ADICIONAL SOLO PARA MÓVIL ========== */
@@ -2648,6 +2795,24 @@ main {
   .caso-divider {
     width: 60px;
   }
+  
+  /* Footer bottom responsive */
+  .footer-bottom-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .legal-links {
+    justify-content: center;
+  }
+  
+  .legal-hero-content h1 {
+    font-size: 42px;
+  }
+  
+  .legal-content {
+    padding: 50px 0;
+  }
 }
 
 @media (max-width: 480px) {
@@ -2770,5 +2935,27 @@ main {
   }
   .caso-divider {
     width: 50px;
+  }
+  
+  /* Footer bottom responsive móvil pequeño */
+  .legal-links {
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .legal-separator {
+    display: none;
+  }
+  
+  .legal-link {
+    font-size: 11px;
+  }
+  
+  .legal-hero-content h1 {
+    font-size: 32px;
+  }
+  
+  .legal-content {
+    padding: 40px 0;
   }
 }

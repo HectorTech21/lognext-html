@@ -2198,6 +2198,38 @@ main {
   display: inline-block;
 }
 
+/* ========== SCROLLBAR PERSONALIZADA ========== */
+
+/* Para navegadores WebKit (Chrome, Safari, Edge, Opera) */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* Fondo de la scrollbar (track) */
+::-webkit-scrollbar-track {
+  background: #000029;
+  border-radius: 10px;
+}
+
+/* Barra de desplazamiento (thumb) */
+::-webkit-scrollbar-thumb {
+  background: #FA3C0F;
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+/* Hover sobre la barra */
+::-webkit-scrollbar-thumb:hover {
+  background: #e6350a;
+}
+
+/* Para Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #FA3C0F #000029;
+}
+
 /* ========== MEDIA QUERIES ========== */
 @media (max-width: 1100px) {
   .servicios-grid-horizontal {

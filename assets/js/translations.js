@@ -559,7 +559,7 @@ function initHeroVideo() {
   const video = document.getElementById('heroVideo');
   if (!video) return;
   
-  video.currentTime = 2;
+  video.currentTime = 3;
   video.pause();
   
   video.onclick = function() {

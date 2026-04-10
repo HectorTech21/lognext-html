@@ -1310,6 +1310,11 @@ main {
   transition: transform 0.3s ease;
 }
 
+/* Ajuste para la imagen de Miguel en el carrusel - corrige cabeza cortada */
+.team-carousel-image img[src*="miguel.jpg"] {
+    object-position: center 20%;
+}
+
 .team-carousel-image img:hover {
   transform: scale(1.05);
 }
@@ -3510,4 +3515,6 @@ input:disabled + .cookie-slider {
     .cookie-category-name {
         font-size: 14px;
     }
+
+    
 }

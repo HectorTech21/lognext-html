@@ -560,11 +560,8 @@ function initHeroVideo() {
   if (!video) return;
   
   video.currentTime = 2;
-
-  // Asegurar que el video empieza en pausa
   video.pause();
   
-  // Al hacer clic en el video, reproducir o pausar
   video.onclick = function() {
     if (video.paused) {
       video.play();
@@ -840,6 +837,152 @@ function initCasosParticles() {
   }
 }
 
+// ========== SISTEMA DE COOKIES (CORREGIDO - NO ROMPE SCROLLBAR) ==========
+function initCookieSystem() {
+    const STORAGE_KEY = 'lognext_cookie_preferences';
+    
+    const defaultPreferences = {
+        necessary: true,
+        functional: false,
+        analytics: false,
+        performance: false,
+        advertising: false
+    };
+    
+    let modal = document.getElementById('cookieModal');
+    let cookieBtn = document.getElementById('cookieBtn');
+    let closeBtn = document.getElementById('closeCookieModal');
+    let acceptAllBtn = document.getElementById('acceptAllCookies');
+    let rejectAllBtn = document.getElementById('rejectAllCookies');
+    let acceptNecessaryBtn = document.getElementById('acceptNecessaryCookies');
+    
+    let chkFunctional = document.getElementById('cookieFunctional');
+    let chkAnalytics = document.getElementById('cookieAnalytics');
+    let chkPerformance = document.getElementById('cookiePerformance');
+    let chkAdvertising = document.getElementById('cookieAdvertising');
+    
+    function loadPreferences() {
+        const saved = localStorage.getItem(STORAGE_KEY);
+        let preferences;
+        
+        if (saved) {
+            preferences = JSON.parse(saved);
+        } else {
+            preferences = { ...defaultPreferences };
+        }
+        
+        if (chkFunctional) chkFunctional.checked = preferences.functional;
+        if (chkAnalytics) chkAnalytics.checked = preferences.analytics;
+        if (chkPerformance) chkPerformance.checked = preferences.performance;
+        if (chkAdvertising) chkAdvertising.checked = preferences.advertising;
+        
+        return preferences;
+    }
+    
+    function saveCurrentPreferences() {
+        const preferences = {
+            necessary: true,
+            functional: chkFunctional ? chkFunctional.checked : false,
+            analytics: chkAnalytics ? chkAnalytics.checked : false,
+            performance: chkPerformance ? chkPerformance.checked : false,
+            advertising: chkAdvertising ? chkAdvertising.checked : false
+        };
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(preferences));
+        applyCookiePreferences(preferences);
+        return preferences;
+    }
+    
+    function acceptAll() {
+        if (chkFunctional) chkFunctional.checked = true;
+        if (chkAnalytics) chkAnalytics.checked = true;
+        if (chkPerformance) chkPerformance.checked = true;
+        if (chkAdvertising) chkAdvertising.checked = true;
+        saveCurrentPreferences();
+        closeModal();
+    }
+    
+    function rejectAll() {
+        if (chkFunctional) chkFunctional.checked = false;
+        if (chkAnalytics) chkAnalytics.checked = false;
+        if (chkPerformance) chkPerformance.checked = false;
+        if (chkAdvertising) chkAdvertising.checked = false;
+        saveCurrentPreferences();
+        closeModal();
+    }
+    
+    function acceptOnlyNecessary() {
+        rejectAll();
+    }
+    
+    function applyCookiePreferences(preferences) {
+        console.log('Preferencias de cookies aplicadas:', preferences);
+        
+        if (preferences.analytics) {
+            console.log('Analytics activado');
+        } else {
+            console.log('Analytics desactivado');
+        }
+        
+        if (preferences.advertising) {
+            console.log('Publicidad activada');
+        } else {
+            console.log('Publicidad desactivada');
+        }
+        
+        window.dispatchEvent(new CustomEvent('cookiePreferencesChanged', { detail: preferences }));
+    }
+    
+    function openModal() {
+        if (modal) {
+            modal.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        }
+    }
+    
+    function closeModal() {
+        if (modal) {
+            modal.style.display = 'none';
+            // Restaurar correctamente el overflow para que la scrollbar vuelva
+            document.body.style.overflow = '';
+        }
+    }
+    
+    // Cargar preferencias guardadas
+    loadPreferences();
+    
+    // Mostrar modal si es primera visita
+    if (!localStorage.getItem(STORAGE_KEY)) {
+        setTimeout(() => {
+            openModal();
+        }, 500);
+    }
+    
+    // Eventos
+    if (cookieBtn) cookieBtn.addEventListener('click', openModal);
+    if (closeBtn) closeBtn.addEventListener('click', closeModal);
+    if (acceptAllBtn) acceptAllBtn.addEventListener('click', acceptAll);
+    if (rejectAllBtn) rejectAllBtn.addEventListener('click', rejectAll);
+    if (acceptNecessaryBtn) acceptNecessaryBtn.addEventListener('click', acceptOnlyNecessary);
+    
+    if (modal) {
+        modal.addEventListener('click', function(e) {
+            if (e.target === modal) {
+                closeModal();
+            }
+        });
+    }
+    
+    const checkboxes = [chkFunctional, chkAnalytics, chkPerformance, chkAdvertising];
+    checkboxes.forEach(chk => {
+        if (chk) {
+            chk.addEventListener('change', function() {
+                saveCurrentPreferences();
+            });
+        }
+    });
+}
+
+// ========== INICIALIZACIÓN PRINCIPAL ==========
 document.addEventListener('DOMContentLoaded', function() {
   const langLinks = document.querySelectorAll('.language-switcher a, .language-switcher.mobile a');
   langLinks.forEach(function(link) {
@@ -859,4 +1002,5 @@ document.addEventListener('DOMContentLoaded', function() {
   initBenefitParticles();
   initTeamCarousel();
   initCasosParticles();
+  initCookieSystem(); // Sistema de cookies iniciado - NO ROMPE LA SCROLLBAR
 });

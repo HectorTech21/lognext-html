@@ -310,6 +310,97 @@
     </div>
   </footer>
 
+      <!-- ========== BOTÓN FLOTANTE DE COOKIES ========== -->
+<div class="cookie-btn-fixed" id="cookieBtn">
+  <span class="cookie-icon">🍪</span>
+  <span class="cookie-text">Cookies</span>
+</div>
+
+<!-- ========== MODAL DE COOKIES ========== -->
+<div id="cookieModal" class="cookie-modal">
+  <div class="cookie-modal-content">
+    <div class="cookie-modal-header">
+      <h2>Valoramos tu privacidad</h2>
+      <button class="cookie-modal-close" id="closeCookieModal">&times;</button>
+    </div>
+    
+    <div class="cookie-modal-body">
+      <p>Usamos cookies para mejorar su experiencia de navegación, mostrarle anuncios o contenidos personalizados y analizar nuestro tráfico. Al hacer clic en "Aceptar todo" usted da su consentimiento a nuestro uso de las cookies.</p>
+      
+      <h3>Personalizar las preferencias de consentimiento</h3>
+      <p>Usamos cookies para ayudarle a navegar de manera eficiente y realizar ciertas funciones. Encontrará información detallada sobre cada una de las cookies bajo cada categoría de consentimiento a continuación.</p>
+      
+      <p>Las cookies categorizadas como "Necesarias" se guardan en su navegador, ya que son esenciales para permitir las funcionalidades básicas del sitio web.</p>
+      
+      <p>También utilizamos cookies de terceros que nos ayudan a analizar cómo usted utiliza este sitio web, guardar sus preferencias y aportar el contenido y la publicidad que le sean relevantes. Estas cookies solo se guardan en su navegador previo consentimiento por su parte.</p>
+      
+      <p>Puede optar por activar o desactivar alguna o todas estas cookies, aunque la desactivación de algunas podría afectar a su experiencia de navegación.</p>
+      
+      <!-- Categorías de cookies -->
+      <div class="cookie-category">
+        <div class="cookie-category-header">
+          <span class="cookie-category-name">Necesaria</span>
+          <label class="cookie-switch">
+            <input type="checkbox" class="cookie-checkbox" id="cookieNecessary" checked disabled>
+            <span class="cookie-slider"></span>
+          </label>
+        </div>
+        <p class="cookie-category-desc">Las cookies necesarias son cruciales para las funciones básicas del sitio web y el sitio web no funcionará de la forma prevista sin ellas. Estas cookies no almacenan ningún dato de identificación personal.</p>
+      </div>
+      
+      <div class="cookie-category">
+        <div class="cookie-category-header">
+          <span class="cookie-category-name">Funcional</span>
+          <label class="cookie-switch">
+            <input type="checkbox" class="cookie-checkbox" id="cookieFunctional">
+            <span class="cookie-slider"></span>
+          </label>
+        </div>
+        <p class="cookie-category-desc">Las cookies funcionales ayudan a realizar ciertas funcionalidades, como compartir el contenido del sitio web en plataformas de redes sociales, recopilar comentarios y otras características de terceros.</p>
+      </div>
+      
+      <div class="cookie-category">
+        <div class="cookie-category-header">
+          <span class="cookie-category-name">Analítica</span>
+          <label class="cookie-switch">
+            <input type="checkbox" class="cookie-checkbox" id="cookieAnalytics">
+            <span class="cookie-slider"></span>
+          </label>
+        </div>
+        <p class="cookie-category-desc">Las cookies analíticas se utilizan para comprender cómo interactúan los visitantes con el sitio web. Estas cookies ayudan a proporcionar información sobre métricas el número de visitantes, el porcentaje de rebote, la fuente de tráfico, etc.</p>
+      </div>
+      
+      <div class="cookie-category">
+        <div class="cookie-category-header">
+          <span class="cookie-category-name">El rendimiento</span>
+          <label class="cookie-switch">
+            <input type="checkbox" class="cookie-checkbox" id="cookiePerformance">
+            <span class="cookie-slider"></span>
+          </label>
+        </div>
+        <p class="cookie-category-desc">Las cookies de rendimiento se utilizan para comprender y analizar los índices de rendimiento clave del sitio web, lo que ayuda a proporcionar una mejor experiencia de usuario para los visitantes.</p>
+      </div>
+      
+      <div class="cookie-category">
+        <div class="cookie-category-header">
+          <span class="cookie-category-name">Anuncio</span>
+          <label class="cookie-switch">
+            <input type="checkbox" class="cookie-checkbox" id="cookieAdvertising">
+            <span class="cookie-slider"></span>
+          </label>
+        </div>
+        <p class="cookie-category-desc">Las cookies publicitarias se utilizan para entregar a los visitantes anuncios personalizados basados en las páginas que visitaron antes y analizar la efectividad de la campaña publicitaria.</p>
+      </div>
+    </div>
+    
+    <div class="cookie-modal-footer">
+      <button class="cookie-btn cookie-btn-reject" id="rejectAllCookies">Rechazar todas</button>
+      <button class="cookie-btn cookie-btn-accept" id="acceptAllCookies">Aceptar todas</button>
+      <button class="cookie-btn cookie-btn-necessary" id="acceptNecessaryCookies">Aceptar solo necesarias</button>
+    </div>
+  </div>
+</div>
+
   <script src="../assets/js/translations.js"></script>
 </body>
 </html>

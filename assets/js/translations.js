@@ -557,44 +557,21 @@ function initMobileMenu() {
 
 function initHeroVideo() {
   const video = document.getElementById('heroVideo');
-  const playPauseBtn = document.getElementById('videoPlayPauseBtn');
+  if (!video) return;
   
-  if (!video || !playPauseBtn) return;
+  video.currentTime = 2;
+
+  // Asegurar que el video empieza en pausa
+  video.pause();
   
-  if (video.hasAttribute('autoplay')) {
-    video.play();
-  }
-  
-  function toggleVideo() {
+  // Al hacer clic en el video, reproducir o pausar
+  video.onclick = function() {
     if (video.paused) {
       video.play();
-      playPauseBtn.innerHTML = `<svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
-        <rect x="6" y="4" width="4" height="16" fill="white" stroke="white"/>
-        <rect x="14" y="4" width="4" height="16" fill="white" stroke="white"/>
-      </svg>`;
     } else {
       video.pause();
-      playPauseBtn.innerHTML = `<svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
-        <polygon points="5 3 19 12 5 21 5 3" fill="white" stroke="white"/>
-      </svg>`;
     }
-  }
-  
-  playPauseBtn.addEventListener('click', (e) => {
-    e.stopPropagation();
-    toggleVideo();
-  });
-  
-  video.addEventListener('click', () => {
-    toggleVideo();
-  });
-  
-  video.addEventListener('ended', () => {
-    video.currentTime = 0;
-    playPauseBtn.innerHTML = `<svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
-      <polygon points="5 3 19 12 5 21 5 3" fill="white" stroke="white"/>
-    </svg>`;
-  });
+  };
 }
 
 function initCounters() {

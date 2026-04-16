@@ -42,7 +42,7 @@ const translations = {
     
     // Sección Stats (Quiénes Somos)
     stats_title: "Números que nos respaldan",
-    stats_anos: "Años de experiência",
+    stats_anos: "Años de experiencia",
     stats_proyectos: "Proyectos entregados",
     stats_clientes: "Clientes satisfechos",
     stats_expertos: "Expertos en tecnología",

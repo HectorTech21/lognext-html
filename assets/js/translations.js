@@ -613,51 +613,104 @@ function initCarousel() {
   
   const cards = document.querySelectorAll('.carousel-card');
   const cardCount = cards.length;
-  let currentIndex = 0;
+  let currentPage = 0;
   let autoSlideInterval;
   
-  if (dotsContainer) {
-    for (let i = 0; i < cardCount; i++) {
+  // Calcular cuántas tarjetas se ven según el ancho de pantalla
+  let cardsPerView = 3;
+  
+  function updateCardsPerView() {
+    if (window.innerWidth <= 1100 && window.innerWidth > 768) {
+      cardsPerView = 2;
+    } else if (window.innerWidth <= 768) {
+      cardsPerView = 1;
+    } else {
+      cardsPerView = 3;
+    }
+  }
+  
+  function getTotalPages() {
+    return Math.ceil(cardCount / cardsPerView);
+  }
+  
+  function getCurrentPage() {
+    return Math.floor(currentPage / cardsPerView);
+  }
+  
+  function updateDots() {
+    if (!dotsContainer) return;
+    
+    const totalPages = getTotalPages();
+    const currentPageIndex = Math.floor(currentPage / cardsPerView);
+    
+    // Limpiar dots existentes
+    dotsContainer.innerHTML = '';
+    
+    // Crear nuevos dots (uno por página)
+    for (let i = 0; i < totalPages; i++) {
       const dot = document.createElement('div');
       dot.classList.add('dot');
-      if (i === 0) dot.classList.add('active');
-      dot.addEventListener('click', () => goToSlide(i));
+      if (i === currentPageIndex) dot.classList.add('active');
+      dot.addEventListener('click', () => {
+        goToPage(i);
+        resetAutoSlide();
+      });
       dotsContainer.appendChild(dot);
     }
   }
   
-  const dots = document.querySelectorAll('.dot');
+  function goToPage(pageIndex) {
+    currentPage = pageIndex * cardsPerView;
+    updateCarousel();
+  }
   
   function updateCarousel() {
     if (cards.length === 0) return;
     const cardWidth = cards[0].offsetWidth + 25;
-    track.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
-    if (dots.length) {
-      dots.forEach((dot, i) => {
-        dot.classList.toggle('active', i === currentIndex);
-      });
+    const maxPage = getTotalPages() - 1;
+    const currentPageIndex = Math.floor(currentPage / cardsPerView);
+    
+    // Limitar a la última página
+    if (currentPageIndex > maxPage) {
+      currentPage = maxPage * cardsPerView;
     }
-  }
-  
-  function goToSlide(index) {
-    currentIndex = index;
-    updateCarousel();
-    resetAutoSlide();
+    
+    track.style.transform = `translateX(-${currentPage * cardWidth}px)`;
+    updateDots();
   }
   
   function nextSlide() {
-    currentIndex = (currentIndex + 1) % cardCount;
-    updateCarousel();
+    updateCardsPerView();
+    const totalPages = getTotalPages();
+    const currentPageIndex = Math.floor(currentPage / cardsPerView);
+    
+    if (currentPageIndex < totalPages - 1) {
+      currentPage = (currentPageIndex + 1) * cardsPerView;
+      updateCarousel();
+    }
   }
   
   function prevSlide() {
-    currentIndex = (currentIndex - 1 + cardCount) % cardCount;
-    updateCarousel();
+    const currentPageIndex = Math.floor(currentPage / cardsPerView);
+    if (currentPageIndex > 0) {
+      currentPage = (currentPageIndex - 1) * cardsPerView;
+      updateCarousel();
+    }
   }
   
   function startAutoSlide() {
     if (autoSlideInterval) clearInterval(autoSlideInterval);
-    autoSlideInterval = setInterval(nextSlide, 4000);
+    autoSlideInterval = setInterval(() => {
+      updateCardsPerView();
+      const totalPages = getTotalPages();
+      const currentPageIndex = Math.floor(currentPage / cardsPerView);
+      
+      if (currentPageIndex < totalPages - 1) {
+        currentPage = (currentPageIndex + 1) * cardsPerView;
+        updateCarousel();
+      }
+      // Si llega al final, se queda ahí (no vuelve al principio)
+    }, 4000);
   }
   
   function resetAutoSlide() {
@@ -683,9 +736,11 @@ function initCarousel() {
   track.addEventListener('mouseleave', startAutoSlide);
   
   window.addEventListener('resize', () => {
+    updateCardsPerView();
     updateCarousel();
   });
   
+  updateCardsPerView();
   startAutoSlide();
   updateCarousel();
 }

@@ -798,8 +798,9 @@ main {
 }
 
 .stats-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 40px;
   max-width: 1000px;
   margin: 0 auto;
@@ -811,6 +812,8 @@ main {
   background: rgba(255, 255, 255, 0.05);
   border-radius: 20px;
   transition: all 0.3s ease;
+  width: 250px;
+  flex-shrink: 0;
 }
 
 .stat-card:hover {
@@ -2562,10 +2565,10 @@ main {
   .servicio-imagen img {
     max-width: 80px;
   }
-  .stats-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 25px;
-  }
+  .stat-card {
+  width: 100%;
+  max-width: 280px;
+}
   .carousel-card {
     flex: 0 0 calc(50% - 25px);
   }

@@ -165,6 +165,12 @@ main {
   gap: 32px;
 }
 
+@media (min-width: 769px) and (max-width: 1100px) {
+  .menu {
+    gap: 20px;
+  }
+}
+
 .menu a {
   text-decoration: none;
   color: #ffffff;
@@ -454,7 +460,7 @@ main {
 }
 
 .footer-links a::before {
-  content: 'â€º';
+  content: '\203A';
   position: absolute;
   left: -15px;
   opacity: 0;

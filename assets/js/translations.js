@@ -5,6 +5,7 @@ const translations = {
     nav_servicios: "Servicios",
     nav_quienes_somos: "Quienes somos",
     nav_trabaja: "Trabaja con nosotros",
+    nav_comunicacion: "Comunicación",
     btn_portal: "Portal del empleado",
     
     // Submenu Servicios
@@ -64,6 +65,20 @@ const translations = {
     // Mobile footer info
     mobile_quieres_trabajar: "¿Quieres trabajar con nosotros?",
     mobile_hablamos: "¿Hablamos?",
+
+    // Pagina Comunicacion
+    comunicacion_title: "Comunicación",
+    comunicacion_intro: "Próximamente compartiremos noticias, artículos y novedades sobre tecnología, ciberseguridad, inteligencia artificial y transformación digital.",
+    comunicacion_news_title: "Próximas publicaciones",
+    comunicacion_card_1_tag: "Tecnología",
+    comunicacion_card_1_title: "Artículo en preparación",
+    comunicacion_card_1_text: "Este espacio se reservará para novedades tecnológicas y análisis de actualidad.",
+    comunicacion_card_2_tag: "Empresa",
+    comunicacion_card_2_title: "Contenido próximamente",
+    comunicacion_card_2_text: "Aquí se publicarán reflexiones sobre transformación digital y negocio.",
+    comunicacion_card_3_tag: "Innovación",
+    comunicacion_card_3_title: "Nuevo formato editorial",
+    comunicacion_card_3_text: "Esta sección se preparará para futuras noticias, newsletter y contenidos especializados.",
     
     // Página Quiénes Somos
     about_hero_title: "SOMOS NEXTERS",
@@ -208,6 +223,7 @@ const translations = {
     nav_servicios: "Services",
     nav_quienes_somos: "About Us",
     nav_trabaja: "Work with us",
+    nav_comunicacion: "Communication",
     btn_portal: "Employee Portal",
     
     // Submenu Servicios
@@ -267,6 +283,20 @@ const translations = {
     // Mobile footer info
     mobile_quieres_trabajar: "Do you want to work with us?",
     mobile_hablamos: "Let's talk?",
+
+    // Communication page
+    comunicacion_title: "Communication",
+    comunicacion_intro: "Soon we will share news, articles and updates on technology, cybersecurity, artificial intelligence and digital transformation.",
+    comunicacion_news_title: "Upcoming publications",
+    comunicacion_card_1_tag: "Technology",
+    comunicacion_card_1_title: "Article in preparation",
+    comunicacion_card_1_text: "This space will be reserved for technology updates and current affairs analysis.",
+    comunicacion_card_2_tag: "Business",
+    comunicacion_card_2_title: "Content coming soon",
+    comunicacion_card_2_text: "Reflections on digital transformation and business will be published here.",
+    comunicacion_card_3_tag: "Innovation",
+    comunicacion_card_3_title: "New editorial format",
+    comunicacion_card_3_text: "This section will be prepared for future news, newsletters and specialized content.",
     
     // Página Quiénes Somos
     about_hero_title: "WE ARE NEXTERS",
@@ -402,6 +432,7 @@ const translations = {
     nav_servicios: "Services",
     nav_quienes_somos: "Qui sommes-nous",
     nav_trabaja: "Travaillez avec nous",
+    nav_comunicacion: "Communication",
     btn_portal: "Portail employé",
     
     // Submenu Servicios
@@ -461,6 +492,20 @@ const translations = {
     // Mobile footer info
     mobile_quieres_trabajar: "Vous voulez travailler avec nous ?",
     mobile_hablamos: "On parle ?",
+
+    // Page Communication
+    comunicacion_title: "Communication",
+    comunicacion_intro: "Nous partagerons prochainement des actualités, des articles et des nouveautés sur la technologie, la cybersécurité, l'intelligence artificielle et la transformation numérique.",
+    comunicacion_news_title: "Prochaines publications",
+    comunicacion_card_1_tag: "Technologie",
+    comunicacion_card_1_title: "Article en préparation",
+    comunicacion_card_1_text: "Cet espace sera réservé aux nouveautés technologiques et aux analyses d'actualité.",
+    comunicacion_card_2_tag: "Entreprise",
+    comunicacion_card_2_title: "Contenu prochainement",
+    comunicacion_card_2_text: "Des réflexions sur la transformation numérique et l'entreprise seront publiées ici.",
+    comunicacion_card_3_tag: "Innovation",
+    comunicacion_card_3_title: "Nouveau format éditorial",
+    comunicacion_card_3_text: "Cette section sera préparée pour de futures actualités, newsletters et contenus spécialisés.",
     
     // Página Quiénes Somos
     about_hero_title: "NOUS SOMMES NEXTERS",

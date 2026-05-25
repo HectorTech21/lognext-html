@@ -1,0 +1,180 @@
+/* ========== COMUNICACION ========== */
+.comunicacion-hero {
+  padding: 160px 0 90px;
+  background: #000029;
+  color: #ffffff;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.comunicacion-hero .circle-1,
+.comunicacion-hero .circle-2,
+.comunicacion-hero .circle-3 {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.comunicacion-hero .circle-1 {
+  width: 350px;
+  height: 350px;
+  background: radial-gradient(circle, rgba(250, 60, 15, 0.2) 0%, rgba(250, 60, 15, 0.08) 40%, transparent 70%);
+  top: -120px;
+  left: -100px;
+  animation: floatCircle 10s ease-in-out infinite reverse;
+}
+
+.comunicacion-hero .circle-2 {
+  width: 250px;
+  height: 250px;
+  background: radial-gradient(circle, rgba(250, 60, 15, 0.18) 0%, rgba(250, 60, 15, 0.08) 40%, transparent 70%);
+  top: 40%;
+  right: 5%;
+  animation: pulseCircle 6s ease-in-out infinite;
+}
+
+.comunicacion-hero .circle-3 {
+  width: 180px;
+  height: 180px;
+  background: radial-gradient(circle, rgba(250, 60, 15, 0.15) 0%, rgba(250, 60, 15, 0.05) 40%, transparent 70%);
+  bottom: 15%;
+  left: 5%;
+  animation: floatCircle 12s ease-in-out infinite;
+}
+
+.comunicacion-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: radial-gradient(circle at 20% 80%, rgba(250, 60, 15, 0.15) 0%, transparent 50%),
+                    repeating-linear-gradient(45deg, rgba(250, 60, 15, 0.05) 0px, rgba(250, 60, 15, 0.05) 2px, transparent 2px, transparent 8px);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.comunicacion-hero::after {
+  content: '';
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(250, 60, 15, 0.25) 0%, rgba(250, 60, 15, 0.1) 40%, transparent 70%);
+  bottom: -200px;
+  right: -150px;
+  border-radius: 50%;
+  animation: floatCircle 8s ease-in-out infinite;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.comunicacion-hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+.comunicacion-hero h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.comunicacion-hero p {
+  max-width: 760px;
+  margin: 0 auto;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+@keyframes floatCircle {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-30px) rotate(180deg); }
+}
+
+@keyframes pulseCircle {
+  0%, 100% { transform: scale(1); opacity: 0.6; }
+  50% { transform: scale(1.2); opacity: 0.3; }
+}
+
+.comunicacion-news {
+  padding: 90px 0;
+  background: #ffffff;
+}
+
+.news-placeholder-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.news-placeholder-card {
+  min-height: 220px;
+  padding: 28px;
+  border: 1px solid rgba(0, 0, 41, 0.12);
+  border-radius: 8px;
+  background: #ffffff;
+  overflow: visible;
+  word-break: normal;
+  overflow-wrap: normal;
+}
+
+.news-placeholder-card span {
+  display: inline-block;
+  margin-bottom: 18px;
+  color: #FA3C0F;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.news-placeholder-card h3 {
+  color: #000029;
+  font-size: 22px;
+  line-height: 1.35;
+  margin-bottom: 14px;
+  overflow: visible;
+  word-break: normal;
+  overflow-wrap: normal;
+  hyphens: none;
+}
+
+.news-placeholder-card p {
+  color: #4b5563;
+  line-height: 1.6;
+  overflow: visible;
+  word-break: normal;
+  overflow-wrap: normal;
+  hyphens: none;
+}
+
+@media (max-width: 1024px) {
+  .news-placeholder-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .comunicacion-hero {
+    padding: 130px 0 70px;
+  }
+
+  .comunicacion-hero h1 {
+    font-size: 36px;
+  }
+
+  .comunicacion-hero p {
+    font-size: 17px;
+  }
+
+  .comunicacion-news {
+    padding: 70px 0;
+  }
+
+  .news-placeholder-grid {
+    grid-template-columns: 1fr;
+  }
+}

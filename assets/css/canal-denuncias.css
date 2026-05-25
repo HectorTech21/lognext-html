@@ -1,0 +1,59 @@
+﻿/* ========== BOTONES DEL CANAL DE DENUNCIAS ========== */
+.canal-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.canal-btn {
+  display: inline-block;
+  padding: 14px 28px;
+  background: transparent;
+  color: #FA3C0F;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  border: 2px solid #FA3C0F;
+  cursor: pointer;
+  text-align: center;
+}
+
+.canal-btn:hover {
+  background: #FA3C0F;
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(250, 60, 15, 0.4);
+}
+
+/* Responsive para los botones */
+@media (max-width: 768px) {
+  .canal-buttons {
+    gap: 15px;
+  }
+  .canal-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .canal-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+  .canal-btn {
+    width: 100%;
+    max-width: 280px;
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+}
+
+/* ========== RESPONSIVE CANAL DENUNCIAS ========== */
+

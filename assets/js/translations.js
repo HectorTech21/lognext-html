@@ -31,6 +31,35 @@ const translations = {
     footer_siguenos: "Síguenos",
     footer_cv_btn: "📄 Envíanos tu CV",
     footer_copyright: "© 2026 Lognext. Todos los derechos reservados.",
+    legal_link_security: "Política de seguridad de la información",
+    legal_link_integrated: "Política de sistema integrado",
+    legal_link_legal_notice: "Aviso Legal",
+    legal_link_cookies: "Política de cookies",
+    legal_link_whistleblowing: "Canal de Denuncias",
+    cookie_btn: "Cookies",
+    cookie_modal_title: "Valoramos tu privacidad",
+    cookie_modal_preferences_title: "Personalizar las preferencias de consentimiento",
+    cookie_category_necessary: "Necesaria",
+    cookie_category_functional: "Funcional",
+    cookie_category_analytics: "Analítica",
+    cookie_category_performance: "El rendimiento",
+    cookie_category_advertising: "Anuncio",
+    cookie_reject_all: "Rechazar todas",
+    cookie_accept_all: "Aceptar todas",
+    cookie_accept_necessary: "Aceptar solo necesarias",
+    cookie_modal_intro: "Usamos cookies para mejorar su experiencia de navegaciÃ³n, mostrarle anuncios o contenidos personalizados y analizar nuestro trÃ¡fico. Al hacer clic en \"Aceptar todo\" usted da su consentimiento a nuestro uso de las cookies.",
+    cookie_modal_preferences_intro: "Usamos cookies para ayudarle a navegar de manera eficiente y realizar ciertas funciones. EncontrarÃ¡ informaciÃ³n detallada sobre cada una de las cookies bajo cada categorÃ­a de consentimiento a continuaciÃ³n.",
+    cookie_modal_necessary_intro: "Las cookies categorizadas como \"Necesarias\" se guardan en su navegador, ya que son esenciales para permitir las funcionalidades bÃ¡sicas del sitio web.",
+    cookie_modal_third_party: "TambiÃ©n utilizamos cookies de terceros que nos ayudan a analizar cÃ³mo usted utiliza este sitio web, guardar sus preferencias y aportar el contenido y la publicidad que le sean relevantes. Estas cookies solo se guardan en su navegador previo consentimiento por su parte.",
+    cookie_modal_toggle_note: "Puede optar por activar o desactivar alguna o todas estas cookies, aunque la desactivaciÃ³n de algunas podrÃ­a afectar a su experiencia de navegaciÃ³n.",
+    cookie_desc_necessary: "Las cookies necesarias son cruciales para las funciones bÃ¡sicas del sitio web y el sitio web no funcionarÃ¡ de la forma prevista sin ellas. Estas cookies no almacenan ningÃºn dato de identificaciÃ³n personal.",
+    cookie_desc_functional: "Las cookies funcionales ayudan a realizar ciertas funcionalidades, como compartir el contenido del sitio web en plataformas de redes sociales, recopilar comentarios y otras caracterÃ­sticas de terceros.",
+    cookie_desc_analytics: "Las cookies analÃ­ticas se utilizan para comprender cÃ³mo interactÃºan los visitantes con el sitio web. Estas cookies ayudan a proporcionar informaciÃ³n sobre mÃ©tricas el nÃºmero de visitantes, el porcentaje de rebote, la fuente de trÃ¡fico, etc.",
+    cookie_desc_performance: "Las cookies de rendimiento se utilizan para comprender y analizar los Ã­ndices de rendimiento clave del sitio web, lo que ayuda a proporcionar una mejor experiencia de usuario para los visitantes.",
+    cookie_desc_advertising: "Las cookies publicitarias se utilizan para entregar a los visitantes anuncios personalizados basados en las pÃ¡ginas que visitaron antes y analizar la efectividad de la campaÃ±a publicitaria.",
+    legal_notice_title: "Aviso Legal",
+    cookies_policy_title: "Política de Cookies",
+    whistleblowing_title: "Canal de Denuncias",
     
     // Mobile footer info
     mobile_quieres_trabajar: "¿Quieres trabajar con nosotros?",
@@ -157,6 +186,12 @@ const translations = {
     ims_caso2_title: "Desde 2014",
     ims_caso2_desc1: "Somos el principal socio de la plataforma IT para EMEA de uno de los mayores bancos europeos en España. Desde 2016, gestionamos la infraestructura de servidores y puestos de trabajo, adaptándola de forma continua a las necesidades del cliente para garantizar entornos IT seguros, eficientes y plenamente operativos.",
     ims_caso2_desc2: "Nuestro servicio abarca la administración del sistema operativo, la autenticación y gestión de accesos mediante Active Directory, la gestión de impresión, la seguridad de los equipos, el despliegue centralizado de software y la aplicación de parches y actualizaciones. Además, nuestros equipos prestan soporte de nivel 2 en infraestructura IT y ciberseguridad, así como atención de primer nivel a usuarios en toda Europa.",
+
+    // Ciberseguridad
+    ciberseguridad_title: "CIBERSEGURIDAD",
+    ciberseguridad_subtitle: "Impulsamos la transformación digital de las empresas con soluciones de infraestructura en la nube y entornos OnPremise.",
+    ciberseguridad_quote: "Diseñamos, implementamos y gestionamos plataformas híbridas y multi-nube para optimizar el rendimiento, mejorar la eficiencia y aportar la flexibilidad necesaria para adaptarse al cambio.",
+    ciberseguridad_section1: "Mantenimiento y administración de tu infraestructura IT en manos de expertos que te acompañan en tu evolución digital para progresar tecnológicamente.",
     
     // Outsourcing
     outsourcing_title: "Outsourcing de Talento",
@@ -199,6 +234,35 @@ const translations = {
     footer_siguenos: "Follow us",
     footer_cv_btn: "📄 Send us your CV",
     footer_copyright: "© 2026 Lognext. All rights reserved.",
+    legal_link_security: "Information security policy",
+    legal_link_integrated: "Integrated management system policy",
+    legal_link_legal_notice: "Legal Notice",
+    legal_link_cookies: "Cookie policy",
+    legal_link_whistleblowing: "Whistleblowing Channel",
+    cookie_btn: "Cookies",
+    cookie_modal_title: "We value your privacy",
+    cookie_modal_preferences_title: "Customize consent preferences",
+    cookie_category_necessary: "Necessary",
+    cookie_category_functional: "Functional",
+    cookie_category_analytics: "Analytics",
+    cookie_category_performance: "Performance",
+    cookie_category_advertising: "Advertising",
+    cookie_reject_all: "Reject all",
+    cookie_accept_all: "Accept all",
+    cookie_accept_necessary: "Accept necessary only",
+    cookie_modal_intro: "We use cookies to improve your browsing experience, show personalized ads or content and analyze our traffic. By clicking \"Accept all\" you consent to our use of cookies.",
+    cookie_modal_preferences_intro: "We use cookies to help you browse efficiently and perform certain functions. Detailed information about each cookie category is shown below.",
+    cookie_modal_necessary_intro: "Cookies categorized as \"Necessary\" are stored in your browser because they are essential to enable the basic features of the website.",
+    cookie_modal_third_party: "We also use third-party cookies that help us analyze how you use this website, store your preferences and provide relevant content and advertising. These cookies are only stored in your browser with your prior consent.",
+    cookie_modal_toggle_note: "You can choose to enable or disable some or all of these cookies, although disabling some may affect your browsing experience.",
+    cookie_desc_necessary: "Necessary cookies are crucial for the basic functions of the website and the website will not work as intended without them. These cookies do not store any personally identifiable data.",
+    cookie_desc_functional: "Functional cookies help perform certain features, such as sharing website content on social media platforms, collecting feedback and other third-party features.",
+    cookie_desc_analytics: "Analytics cookies are used to understand how visitors interact with the website. These cookies help provide information on metrics such as visitor numbers, bounce rate, traffic source, etc.",
+    cookie_desc_performance: "Performance cookies are used to understand and analyze key website performance indicators, helping provide a better user experience for visitors.",
+    cookie_desc_advertising: "Advertising cookies are used to deliver personalized ads to visitors based on pages they previously visited and to analyze the effectiveness of advertising campaigns.",
+    legal_notice_title: "Legal Notice",
+    cookies_policy_title: "Cookie Policy",
+    whistleblowing_title: "Whistleblowing Channel",
     
     // Mobile footer info
     mobile_quieres_trabajar: "Do you want to work with us?",
@@ -316,6 +380,12 @@ const translations = {
     ims_caso2_title: "Since 2014",
     ims_caso2_desc1: "We are the main partner of the IT platform for EMEA of one of the largest European banks in Spain. Since 2016, we have been managing the server and workstation infrastructure, continuously adapting it to the client's needs to ensure secure, efficient and fully operational IT environments.",
     ims_caso2_desc2: "Our service covers operating system administration, authentication and access management through Active Directory, print management, equipment security, centralized software deployment and application of patches and updates. In addition, our teams provide level 2 support in IT infrastructure and cybersecurity, as well as first-level care to users throughout Europe.",
+
+    // Cybersecurity
+    ciberseguridad_title: "CYBERSECURITY",
+    ciberseguridad_subtitle: "We drive companies' digital transformation with cloud infrastructure and OnPremise environment solutions.",
+    ciberseguridad_quote: "We design, implement and manage hybrid and multi-cloud platforms to optimize performance, improve efficiency and provide the flexibility needed to adapt to change.",
+    ciberseguridad_section1: "Maintenance and administration of your IT infrastructure in the hands of experts who support you in your digital evolution to progress technologically.",
     
     // Outsourcing
     outsourcing_title: "Talent Outsourcing",
@@ -358,6 +428,35 @@ const translations = {
     footer_siguenos: "Suivez-nous",
     footer_cv_btn: "📄 Envoyez-nous votre CV",
     footer_copyright: "© 2026 Lognext. Tous droits réservés.",
+    legal_link_security: "Politique de sécurité de l'information",
+    legal_link_integrated: "Politique du système intégré",
+    legal_link_legal_notice: "Mentions légales",
+    legal_link_cookies: "Politique de cookies",
+    legal_link_whistleblowing: "Canal de signalement",
+    cookie_btn: "Cookies",
+    cookie_modal_title: "Nous respectons votre vie privée",
+    cookie_modal_preferences_title: "Personnaliser les préférences de consentement",
+    cookie_category_necessary: "Nécessaire",
+    cookie_category_functional: "Fonctionnel",
+    cookie_category_analytics: "Analytique",
+    cookie_category_performance: "Performance",
+    cookie_category_advertising: "Publicité",
+    cookie_reject_all: "Tout refuser",
+    cookie_accept_all: "Tout accepter",
+    cookie_accept_necessary: "Accepter uniquement les nécessaires",
+    cookie_modal_intro: "Nous utilisons des cookies pour améliorer votre expérience de navigation, afficher des annonces ou contenus personnalisés et analyser notre trafic. En cliquant sur \"Tout accepter\", vous consentez à notre utilisation des cookies.",
+    cookie_modal_preferences_intro: "Nous utilisons des cookies pour vous aider à naviguer efficacement et à exécuter certaines fonctions. Des informations détaillées sur chaque catégorie de cookies figurent ci-dessous.",
+    cookie_modal_necessary_intro: "Les cookies classés comme \"Nécessaires\" sont enregistrés dans votre navigateur car ils sont indispensables aux fonctionnalités de base du site web.",
+    cookie_modal_third_party: "Nous utilisons également des cookies tiers qui nous aident à analyser votre utilisation du site, enregistrer vos préférences et fournir du contenu et de la publicité pertinents. Ces cookies ne sont enregistrés qu'avec votre consentement préalable.",
+    cookie_modal_toggle_note: "Vous pouvez activer ou désactiver tout ou partie de ces cookies, bien que la désactivation de certains puisse affecter votre expérience de navigation.",
+    cookie_desc_necessary: "Les cookies nécessaires sont essentiels aux fonctions de base du site web, qui ne fonctionnera pas correctement sans eux. Ces cookies ne stockent aucune donnée d'identification personnelle.",
+    cookie_desc_functional: "Les cookies fonctionnels aident à réaliser certaines fonctionnalités, comme le partage de contenu sur les réseaux sociaux, la collecte de commentaires et d'autres fonctions de tiers.",
+    cookie_desc_analytics: "Les cookies analytiques servent à comprendre comment les visiteurs interagissent avec le site web. Ils fournissent des informations sur des métriques telles que le nombre de visiteurs, le taux de rebond, la source du trafic, etc.",
+    cookie_desc_performance: "Les cookies de performance servent à comprendre et analyser les indicateurs clés de performance du site web afin d'offrir une meilleure expérience utilisateur.",
+    cookie_desc_advertising: "Les cookies publicitaires servent à proposer aux visiteurs des annonces personnalisées en fonction des pages visitées auparavant et à analyser l'efficacité des campagnes publicitaires.",
+    legal_notice_title: "Mentions légales",
+    cookies_policy_title: "Politique de Cookies",
+    whistleblowing_title: "Canal de signalement",
     
     // Mobile footer info
     mobile_quieres_trabajar: "Vous voulez travailler avec nous ?",
@@ -475,6 +574,12 @@ const translations = {
     ims_caso2_title: "Depuis 2014",
     ims_caso2_desc1: "Nous sommes le principal partenaire de la plateforme IT pour EMEA d'une des plus grandes banques européennes en Espagne. Depuis 2016, nous gérons l'infrastructure des serveurs et des postes de travail, l'adaptant en continu aux besoins du client pour garantir des environnements IT sécurisés, efficaces et pleinement opérationnels.",
     ims_caso2_desc2: "Notre service couvre l'administration du système d'exploitation, l'authentification et la gestion des accès via Active Directory, la gestion de l'impression, la sécurité des équipements, le déploiement centralisé de logiciels et l'application de correctifs et de mises à jour. De plus, nos équipes fournissent un support de niveau 2 en infrastructure IT et cybersécurité, ainsi qu'une attention de premier niveau aux utilisateurs dans toute l'Europe.",
+
+    // Cybersécurité
+    ciberseguridad_title: "CYBERSÉCURITÉ",
+    ciberseguridad_subtitle: "Nous stimulons la transformation numérique des entreprises avec des solutions d'infrastructure cloud et d'environnements OnPremise.",
+    ciberseguridad_quote: "Nous concevons, mettons en œuvre et gérons des plateformes hybrides et multi-cloud pour optimiser les performances, améliorer l'efficacité et apporter la flexibilité nécessaire pour s'adapter au changement.",
+    ciberseguridad_section1: "Maintenance et administration de votre infrastructure IT entre les mains d'experts qui vous accompagnent dans votre évolution numérique pour progresser technologiquement.",
     
     // Outsourcing
     outsourcing_title: "Externalisation de Talents",
@@ -484,6 +589,210 @@ const translations = {
     outsourcing_caso1_title: "Your next level",
     outsourcing_caso1_desc1: "Nous accompagnons nos clients et leurs équipes avec nos NEXTERS. Des talents hautement qualifiés qui s'adaptent aux besoins spécifiques de chaque projet et environnement technologique, identifiant de nouvelles façons d'avancer, faisant de la créativité un moteur d'innovation pour faire la différence dans les affaires, anticipant et adaptant les opportunités.",
     outsourcing_caso1_desc2: "Notre façon de travailler favorise une communication efficace et garantit la livraison continue de projets dans différentes technologies IT."
+  }
+};
+
+const htmlTranslations = {
+  es: {
+    legal_notice_content: `
+          <p>Este Aviso de Privacidad proporciona un marco de entendimiento acerca del tratamiento de los datos personales recopilados por LOGNEXT S.L., de acuerdo con la Ley Orgánica 3/2018, de Protección de Datos Personales y garantía de los derechos digitales, y el Reglamento General de Protección de Datos de la Unión Europea (RGPD).</p>
+          <h2>Ámbito de aplicación</h2>
+          <p>Este aviso se aplica a candidatos, destinatarios de servicios profesionales, consultores, personas asignadas a clientes, usuarios de los sitios web y representantes de socios comerciales, clientes y proveedores.</p>
+          <h2>Responsable de tratamiento</h2>
+          <p><strong>Razón Social:</strong> LOGNEXT S.L.<br><strong>NIF:</strong> B84861244<br><strong>Domicilio:</strong> Avenida de Burgos 17, Planta 8, 28035 Madrid<br><strong>Teléfono:</strong> 915 472 550<br><strong>Correo electrónico:</strong> privacy@lognext.com<br><strong>Registro Mercantil:</strong> Registro Mercantil de Madrid, Tomo 23462, Folio 99, Sección 8, Hoja M-420888.</p>
+          <h2>Información que recopilamos</h2>
+          <p>Podemos recopilar datos de contacto, credenciales de registro, información facilitada en formularios, encuestas o solicitudes, historial laboral y académico, competencias, documento de identidad, fecha de nacimiento, nacionalidad, autorización para trabajar, referencias, currículum e intereses profesionales.</p>
+          <h2>Finalidad</h2>
+          <p>Usamos la información para gestionar oportunidades de empleo, cuentas en línea, pagos, relaciones con clientes y proveedores, consultas, mejora del negocio, prevención del fraude, cumplimiento legal y, cuando proceda, comunicaciones promocionales o participación en eventos y programas.</p>
+          <h2>Legitimación</h2>
+          <p>El tratamiento se basa en el consentimiento del interesado cuando sea necesario, en el cumplimiento de obligaciones legales o contractuales, y en el interés legítimo de LOGNEXT cuando resulte aplicable.</p>
+          <h2>Conservación de los datos</h2>
+          <p>Los datos se conservarán durante el tiempo necesario para la finalidad correspondiente, mientras exista relación contractual o comercial y durante los plazos exigidos por la legislación aplicable.</p>
+          <h2>Destinatarios</h2>
+          <p>Podemos compartir datos con proveedores que prestan servicios en nuestro nombre, filiales, clientes con oportunidades profesionales, consultores, subcontratistas, autoridades competentes o terceros cuando exista obligación legal o necesidad legítima.</p>
+          <h2>Transferencias Internacionales de datos</h2>
+          <p>No se realizan.</p>
+          <h2>Decisiones automatizadas</h2>
+          <p>No elaboraremos un perfil comercial ni se tomarán decisiones automatizadas basadas en dicho perfil.</p>
+          <h2>Origen de los datos</h2>
+          <p>Solo recabamos los datos directamente de usted, sin obtenerlos de otras fuentes.</p>
+          <h2>Derechos</h2>
+          <p>Puede ejercer sus derechos de acceso, rectificación, supresión, oposición, limitación, portabilidad y retirada del consentimiento escribiendo a privacy@lognext.com y adjuntando copia de su documento identificativo.</p>
+          <p>Si considera que no se han respetado sus derechos puede reclamar ante la Agencia Española de Protección de Datos: <a href="https://sedeagpd.gob.es" target="_blank" class="legal-link-inline">https://sedeagpd.gob.es</a>.</p>
+          <p>También puede consultar la <a href="../assets/docs/guia-ciudadano.pdf" target="_blank" class="legal-link-inline">Guía Ciudadano</a>.</p>`,
+    cookies_policy_content: `
+          <h2>Información sobre Cookies</h2>
+          <p>Debido a la normativa aplicable, es necesario obtener el consentimiento expreso del usuario para usar cookies no imprescindibles antes de que navegue por la web.</p>
+          <h2>¿Qué son las Cookies?</h2>
+          <p>Las cookies y tecnologías similares son herramientas que permiten almacenar y recuperar información sobre los visitantes para ofrecer un correcto funcionamiento del sitio y recordar preferencias de navegación.</p>
+          <h2>Cookies afectadas por la normativa y Cookies exceptuadas</h2>
+          <p>Las cookies analíticas, publicitarias y de afiliación requieren consentimiento informado. Quedan exceptuadas las cookies técnicas y necesarias para el funcionamiento del sitio o la prestación de servicios solicitados por el usuario.</p>
+          <h2>¿Qué tipos de Cookies existen?</h2>
+          <p>Existen cookies analíticas, sociales, de afiliados, publicitarias y comportamentales, técnicas y funcionales.</p>
+          <h2>Cookies de Redes Sociales</h2>
+          <p>Algunas páginas permiten compartir contenidos en redes sociales o mostrar vídeos de terceros. Estos servicios pueden instalar sus propias cookies, que LOGNEXT no controla.</p>
+          <h2>Desde su Navegador puede:</h2>
+          <p>Puede evitar, deshabilitar o eliminar cookies desde la configuración de su navegador, así como usar modos de navegación privada o incógnito.</p>
+          <h2>Revocación del consentimiento para instalar Cookies como eliminar las Cookies del Navegador</h2>
+          <h3>Chrome</h3><p>Acceda a Configuración, opciones avanzadas y privacidad para eliminar cookies o impedir su almacenamiento. Más información: <a href="http://support.google.com/chrome/answer/95647?hl=es" target="_blank" class="legal-link-inline">Chrome</a>.</p>
+          <h3>Internet Explorer. Versión 11</h3><p>Use Herramientas, Opciones de Internet e historial de exploración para eliminar archivos y cookies.</p>
+          <h3>Firefox</h3><p>Use Historial, limpiar historial reciente y seleccione cookies, caché e inicios de sesión activos.</p>
+          <h3>Safari</h3><p>Use las opciones de Safari para borrar historial y datos de sitios web.</p>
+          <h3>Opera</h3><p>Use Opciones, Avanzado y Cookies para controlar su aceptación o rechazo.</p>
+          <h3>Otros navegadores</h3><p>Consulte la documentación del navegador que tenga instalado.</p>
+          <h2>Información sobre las transferencias de datos a terceros países realizadas por LOGNEXT</h2>
+          <p>LOGNEXT no realiza transferencias internacionales a terceros países. En el caso de terceros, puede consultar sus respectivas políticas.</p>
+          <h2>Elaboración de Perfiles</h2>
+          <p>LOGNEXT no realiza elaboración de perfiles.</p>
+          <h2>En relación con el resto de Información exigida por el Artículo 13 del RGPD</h2>
+          <p>Le remitimos a la <a href="aviso-legal.html" class="legal-link-inline">Política de Privacidad de LOGNEXT</a>.</p>`,
+    whistleblowing_content: `
+          <p>Ponemos a disposición de empleados, empleados públicos, autónomos, subcontratistas, proveedores, clientes, exempleados, becarios, trabajadores en formación y participantes en procesos de selección los medios necesarios para comunicar posibles infracciones del Derecho de la Unión Europea, infracciones penales o administrativas graves o muy graves, o vulneraciones relevantes de la normativa interna y del Código Ético.</p>
+          <p>Por ejemplo, pueden comunicarse situaciones de acoso laboral, fraude, uso de información privilegiada o cualquier actuación que pudiera generar responsabilidad penal para la empresa.</p>
+          <p>El Canal de Denuncias está parcialmente externalizado en una plataforma creada por una empresa especializada. El denunciante puede identificarse o mantener el anonimato, garantizando la confidencialidad.</p>
+          <p>El modelo incorpora medidas de protección frente a represalias y de protección al denunciante.</p>
+          <p>De acuerdo con la Ley 2/2023, los datos solicitados durante el proceso no se recaban para identificar al informante, sino para obtener la información necesaria para gestionar y tramitar la denuncia.</p>
+          <p>Para instruir las comunicaciones será necesario aportar información suficiente, debidamente fundada y con indicios racionales de infracción. En caso contrario, se archivará por falta de elementos suficientes.</p>
+          <p>Antes de presentar una denuncia, lea detenidamente las normas de uso del canal.</p>
+          <div class="canal-buttons">
+            <a href="../assets/docs/codigo-etico.pdf" target="_blank" class="canal-btn">Código ético</a>
+            <a href="../assets/docs/politica-sistema-interno-informacion.pdf" target="_blank" class="canal-btn">Política Sistema Interno de Información</a>
+            <a href="https://lognext.form.mastransparente.es/" target="_blank" class="canal-btn">Acceso al Canal</a>
+          </div>`
+  },
+  en: {
+    legal_notice_content: `
+          <p>This Privacy Notice provides a framework for understanding how personal data collected by LOGNEXT S.L. is processed in accordance with Organic Law 3/2018 on Personal Data Protection and digital rights guarantees, and the European Union General Data Protection Regulation (GDPR).</p>
+          <h2>Scope</h2>
+          <p>This notice applies to candidates, recipients of professional services, consultants, people assigned to clients, website users, and representatives of business partners, clients and suppliers.</p>
+          <h2>Data Controller</h2>
+          <p><strong>Company name:</strong> LOGNEXT S.L.<br><strong>Tax ID:</strong> B84861244<br><strong>Address:</strong> Avenida de Burgos 17, Floor 8, 28035 Madrid<br><strong>Phone:</strong> 915 472 550<br><strong>Email:</strong> privacy@lognext.com<br><strong>Commercial Registry:</strong> Madrid Commercial Registry, Volume 23462, Folio 99, Section 8, Sheet M-420888.</p>
+          <h2>Information we collect</h2>
+          <p>We may collect contact details, registration credentials, information provided in forms, surveys or requests, employment and academic history, skills, identity document, date of birth, nationality, work authorization, references, CV and professional interests.</p>
+          <h2>Purpose</h2>
+          <p>We use the information to manage job opportunities, online accounts, payments, relationships with clients and suppliers, enquiries, business improvement, fraud prevention, legal compliance and, where applicable, promotional communications or participation in events and programmes.</p>
+          <h2>Legal basis</h2>
+          <p>Processing is based on the data subject's consent where necessary, compliance with legal or contractual obligations, and LOGNEXT's legitimate interest where applicable.</p>
+          <h2>Data retention</h2>
+          <p>Data will be kept for as long as necessary for the corresponding purpose, while a contractual or commercial relationship exists and during the periods required by applicable law.</p>
+          <h2>Recipients</h2>
+          <p>We may share data with service providers acting on our behalf, affiliates, clients with professional opportunities, consultants, subcontractors, competent authorities or third parties where there is a legal obligation or legitimate need.</p>
+          <h2>International data transfers</h2>
+          <p>None are carried out.</p>
+          <h2>Automated decisions</h2>
+          <p>We will not create a commercial profile or make automated decisions based on such a profile.</p>
+          <h2>Source of data</h2>
+          <p>We only collect data directly from you and do not obtain it from other sources.</p>
+          <h2>Rights</h2>
+          <p>You may exercise your rights of access, rectification, erasure, objection, restriction, portability and withdrawal of consent by writing to privacy@lognext.com and attaching a copy of your identity document.</p>
+          <p>If you believe your rights have not been respected, you may lodge a complaint with the Spanish Data Protection Agency: <a href="https://sedeagpd.gob.es" target="_blank" class="legal-link-inline">https://sedeagpd.gob.es</a>.</p>
+          <p>You may also consult the <a href="../assets/docs/guia-ciudadano.pdf" target="_blank" class="legal-link-inline">Citizen Guide</a>.</p>`,
+    cookies_policy_content: `
+          <h2>Information about Cookies</h2>
+          <p>Under applicable regulations, express user consent is required for non-essential cookies before browsing the website.</p>
+          <h2>What are Cookies?</h2>
+          <p>Cookies and similar technologies are tools that store and retrieve information about visitors in order to provide correct site operation and remember browsing preferences.</p>
+          <h2>Cookies affected by regulations and exempt cookies</h2>
+          <p>Analytics, advertising and affiliate cookies require informed consent. Technical and necessary cookies for site operation or services requested by the user are exempt.</p>
+          <h2>What types of Cookies exist?</h2>
+          <p>There are analytics, social, affiliate, advertising and behavioural, technical and functional cookies.</p>
+          <h2>Social Media Cookies</h2>
+          <p>Some pages allow content sharing on social networks or show third-party videos. These services may set their own cookies, which LOGNEXT does not control.</p>
+          <h2>From your browser you can:</h2>
+          <p>You can prevent, disable or delete cookies from your browser settings, as well as use private or incognito browsing modes.</p>
+          <h2>Withdrawing consent and deleting browser cookies</h2>
+          <h3>Chrome</h3><p>Go to Settings, advanced options and privacy to delete cookies or prevent their storage. More information: <a href="http://support.google.com/chrome/answer/95647?hl=en" target="_blank" class="legal-link-inline">Chrome</a>.</p>
+          <h3>Internet Explorer. Version 11</h3><p>Use Tools, Internet Options and browsing history to delete files and cookies.</p>
+          <h3>Firefox</h3><p>Use History, clear recent history and select cookies, cache and active logins.</p>
+          <h3>Safari</h3><p>Use Safari options to clear history and website data.</p>
+          <h3>Opera</h3><p>Use Options, Advanced and Cookies to control acceptance or rejection.</p>
+          <h3>Other browsers</h3><p>Please consult the documentation for your installed browser.</p>
+          <h2>Information on data transfers to third countries by LOGNEXT</h2>
+          <p>LOGNEXT does not carry out international transfers to third countries. For third parties, please consult their respective policies.</p>
+          <h2>Profiling</h2>
+          <p>LOGNEXT does not perform profiling.</p>
+          <h2>Regarding the rest of the information required by Article 13 of the GDPR</h2>
+          <p>Please refer to the <a href="aviso-legal.html" class="legal-link-inline">LOGNEXT Privacy Policy</a>.</p>`,
+    whistleblowing_content: `
+          <p>We provide employees, public employees, self-employed workers, subcontractors, suppliers, clients, former employees, interns, trainees and participants in selection processes with the necessary means to report possible breaches of European Union law, serious or very serious criminal or administrative offences, or relevant breaches of internal regulations and the Code of Ethics.</p>
+          <p>For example, workplace harassment, fraud, use of privileged information or any conduct that could entail criminal liability for the company may be reported.</p>
+          <p>The Whistleblowing Channel is partially outsourced to a platform created by a specialised company. The reporter may identify themselves or remain anonymous, ensuring confidentiality.</p>
+          <p>The model includes measures to protect against retaliation and to protect the reporter.</p>
+          <p>In accordance with Law 2/2023, the data requested during the reporting process is not collected to identify the informant, but to obtain the information required to manage and process the report.</p>
+          <p>To investigate communications, sufficient and duly substantiated information with reasonable indications of infringement must be provided. Otherwise, the case will be closed due to insufficient evidence.</p>
+          <p>Before submitting a report, please read the channel rules carefully.</p>
+          <div class="canal-buttons">
+            <a href="../assets/docs/codigo-etico.pdf" target="_blank" class="canal-btn">Code of Ethics</a>
+            <a href="../assets/docs/politica-sistema-interno-informacion.pdf" target="_blank" class="canal-btn">Internal Information System Policy</a>
+            <a href="https://lognext.form.mastransparente.es/" target="_blank" class="canal-btn">Access the Channel</a>
+          </div>`
+  },
+  fr: {
+    legal_notice_content: `
+          <p>Le présent avis de confidentialité explique le traitement des données personnelles collectées par LOGNEXT S.L., conformément à la loi organique 3/2018 relative à la protection des données personnelles et à la garantie des droits numériques, ainsi qu'au Règlement général sur la protection des données de l'Union européenne (RGPD).</p>
+          <h2>Champ d'application</h2>
+          <p>Le présent avis s'applique aux candidats, destinataires de services professionnels, consultants, personnes affectées à des clients, utilisateurs des sites web et représentants de partenaires commerciaux, clients et fournisseurs.</p>
+          <h2>Responsable du traitement</h2>
+          <p><strong>Raison sociale :</strong> LOGNEXT S.L.<br><strong>NIF :</strong> B84861244<br><strong>Adresse :</strong> Avenida de Burgos 17, 8e étage, 28035 Madrid<br><strong>Téléphone :</strong> 915 472 550<br><strong>E-mail :</strong> privacy@lognext.com<br><strong>Registre du commerce :</strong> Registre du commerce de Madrid, Tome 23462, Folio 99, Section 8, Feuille M-420888.</p>
+          <h2>Informations collectées</h2>
+          <p>Nous pouvons collecter des coordonnées, identifiants d'inscription, informations fournies dans des formulaires, enquêtes ou demandes, parcours professionnel et académique, compétences, document d'identité, date de naissance, nationalité, autorisation de travail, références, CV et intérêts professionnels.</p>
+          <h2>Finalité</h2>
+          <p>Nous utilisons les informations pour gérer les opportunités d'emploi, comptes en ligne, paiements, relations avec les clients et fournisseurs, demandes, amélioration de l'activité, prévention de la fraude, conformité légale et, le cas échéant, communications promotionnelles ou participation à des événements et programmes.</p>
+          <h2>Base juridique</h2>
+          <p>Le traitement repose sur le consentement de la personne concernée lorsque cela est nécessaire, le respect d'obligations légales ou contractuelles, et l'intérêt légitime de LOGNEXT lorsque cela s'applique.</p>
+          <h2>Conservation des données</h2>
+          <p>Les données seront conservées pendant la durée nécessaire à la finalité correspondante, pendant la relation contractuelle ou commerciale et durant les délais exigés par la loi applicable.</p>
+          <h2>Destinataires</h2>
+          <p>Nous pouvons partager des données avec des prestataires agissant pour notre compte, des filiales, des clients ayant des opportunités professionnelles, des consultants, des sous-traitants, des autorités compétentes ou des tiers lorsqu'il existe une obligation légale ou un besoin légitime.</p>
+          <h2>Transferts internationaux de données</h2>
+          <p>Aucun transfert n'est effectué.</p>
+          <h2>Décisions automatisées</h2>
+          <p>Nous n'établirons pas de profil commercial et aucune décision automatisée ne sera prise sur la base d'un tel profil.</p>
+          <h2>Origine des données</h2>
+          <p>Nous collectons les données directement auprès de vous uniquement, sans les obtenir d'autres sources.</p>
+          <h2>Droits</h2>
+          <p>Vous pouvez exercer vos droits d'accès, de rectification, d'effacement, d'opposition, de limitation, de portabilité et de retrait du consentement en écrivant à privacy@lognext.com et en joignant une copie de votre pièce d'identité.</p>
+          <p>Si vous estimez que vos droits n'ont pas été respectés, vous pouvez déposer une réclamation auprès de l'Agence espagnole de protection des données : <a href="https://sedeagpd.gob.es" target="_blank" class="legal-link-inline">https://sedeagpd.gob.es</a>.</p>
+          <p>Vous pouvez également consulter le <a href="../assets/docs/guia-ciudadano.pdf" target="_blank" class="legal-link-inline">Guide du citoyen</a>.</p>`,
+    cookies_policy_content: `
+          <h2>Informations sur les Cookies</h2>
+          <p>Conformément à la réglementation applicable, le consentement exprès de l'utilisateur est nécessaire pour utiliser des cookies non indispensables avant la navigation sur le site.</p>
+          <h2>Que sont les Cookies ?</h2>
+          <p>Les cookies et technologies similaires sont des outils permettant de stocker et récupérer des informations sur les visiteurs afin d'assurer le bon fonctionnement du site et de mémoriser les préférences de navigation.</p>
+          <h2>Cookies concernés par la réglementation et cookies exemptés</h2>
+          <p>Les cookies analytiques, publicitaires et d'affiliation nécessitent un consentement éclairé. Les cookies techniques et nécessaires au fonctionnement du site ou aux services demandés par l'utilisateur sont exemptés.</p>
+          <h2>Quels types de Cookies existent ?</h2>
+          <p>Il existe des cookies analytiques, sociaux, d'affiliation, publicitaires et comportementaux, techniques et fonctionnels.</p>
+          <h2>Cookies de réseaux sociaux</h2>
+          <p>Certaines pages permettent de partager du contenu sur les réseaux sociaux ou d'afficher des vidéos de tiers. Ces services peuvent installer leurs propres cookies, que LOGNEXT ne contrôle pas.</p>
+          <h2>Depuis votre navigateur, vous pouvez :</h2>
+          <p>Vous pouvez empêcher, désactiver ou supprimer les cookies depuis les paramètres de votre navigateur, ainsi qu'utiliser des modes de navigation privée.</p>
+          <h2>Retrait du consentement et suppression des cookies du navigateur</h2>
+          <h3>Chrome</h3><p>Accédez aux paramètres, options avancées et confidentialité pour supprimer les cookies ou empêcher leur stockage. Plus d'informations : <a href="http://support.google.com/chrome/answer/95647?hl=fr" target="_blank" class="legal-link-inline">Chrome</a>.</p>
+          <h3>Internet Explorer. Version 11</h3><p>Utilisez Outils, Options Internet et historique de navigation pour supprimer les fichiers et les cookies.</p>
+          <h3>Firefox</h3><p>Utilisez Historique, effacer l'historique récent et sélectionnez cookies, cache et connexions actives.</p>
+          <h3>Safari</h3><p>Utilisez les options de Safari pour effacer l'historique et les données des sites web.</p>
+          <h3>Opera</h3><p>Utilisez Options, Avancé et Cookies pour contrôler leur acceptation ou leur refus.</p>
+          <h3>Autres navigateurs</h3><p>Consultez la documentation du navigateur installé.</p>
+          <h2>Informations sur les transferts de données vers des pays tiers effectués par LOGNEXT</h2>
+          <p>LOGNEXT n'effectue pas de transferts internationaux vers des pays tiers. Pour les tiers, veuillez consulter leurs politiques respectives.</p>
+          <h2>Profilage</h2>
+          <p>LOGNEXT ne réalise pas de profilage.</p>
+          <h2>Concernant le reste des informations exigées par l'article 13 du RGPD</h2>
+          <p>Veuillez consulter la <a href="aviso-legal.html" class="legal-link-inline">Politique de confidentialité de LOGNEXT</a>.</p>`,
+    whistleblowing_content: `
+          <p>Nous mettons à la disposition des employés, agents publics, travailleurs indépendants, sous-traitants, fournisseurs, clients, anciens employés, stagiaires, personnes en formation et participants à des processus de sélection les moyens nécessaires pour signaler d'éventuelles infractions au droit de l'Union européenne, des infractions pénales ou administratives graves ou très graves, ou des violations pertinentes de la réglementation interne et du Code d'éthique.</p>
+          <p>Par exemple, il est possible de signaler des situations de harcèlement au travail, de fraude, d'utilisation d'informations privilégiées ou toute conduite pouvant entraîner une responsabilité pénale pour l'entreprise.</p>
+          <p>Le canal de signalement est partiellement externalisé sur une plateforme créée par une entreprise spécialisée. Le déclarant peut s'identifier ou rester anonyme, la confidentialité étant garantie.</p>
+          <p>Le modèle comprend des mesures de protection contre les représailles et de protection du déclarant.</p>
+          <p>Conformément à la loi 2/2023, les données demandées pendant le processus ne sont pas collectées pour identifier l'informateur, mais pour obtenir les informations nécessaires à la gestion et au traitement du signalement.</p>
+          <p>Pour instruire les communications, des informations suffisantes, dûment motivées et présentant des indices raisonnables d'infraction doivent être fournies. Dans le cas contraire, le dossier sera classé faute d'éléments suffisants.</p>
+          <p>Avant de présenter un signalement, veuillez lire attentivement les règles d'utilisation du canal.</p>
+          <div class="canal-buttons">
+            <a href="../assets/docs/codigo-etico.pdf" target="_blank" class="canal-btn">Code d'éthique</a>
+            <a href="../assets/docs/politica-sistema-interno-informacion.pdf" target="_blank" class="canal-btn">Politique du système interne d'information</a>
+            <a href="https://lognext.form.mastransparente.es/" target="_blank" class="canal-btn">Accéder au canal</a>
+          </div>`
   }
 };
 
@@ -515,6 +824,14 @@ function updateContent() {
     const key = element.getAttribute('data-i18n');
     if (t[key] !== undefined) {
       element.textContent = t[key];
+    }
+  });
+
+  const htmlT = htmlTranslations[currentLang] || {};
+  document.querySelectorAll('[data-i18n-html]').forEach(element => {
+    const key = element.getAttribute('data-i18n-html');
+    if (htmlT[key] !== undefined) {
+      element.innerHTML = htmlT[key];
     }
   });
 }

@@ -227,6 +227,58 @@ main {
   color: #FA3C0F;
 }
 
+.service-submenu-item {
+  position: relative;
+}
+
+.service-submenu-row {
+  display: flex;
+  align-items: stretch;
+}
+
+.service-submenu-row .submenu-item {
+  flex: 1;
+}
+
+.service-submenu-toggle {
+  width: 42px;
+  border: 0;
+  background: transparent;
+  color: #ffffff;
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+  pointer-events: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.service-submenu-list {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  min-width: 190px;
+  list-style: none;
+  background: #000029;
+  border: 1px solid rgba(250, 60, 15, 0.3);
+  border-radius: 8px;
+  padding: 8px 0;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.service-submenu-item:hover > .service-submenu-list {
+  display: block;
+}
+
+.service-submenu-item:hover .service-submenu-toggle {
+  color: #FA3C0F;
+  transform: translateX(3px);
+}
+
+.submenu-child-item {
+  white-space: nowrap;
+}
+
 .has-dropdown:hover .submenu {
   display: flex;
   animation: fadeInDown 0.3s ease;
@@ -785,6 +837,43 @@ main {
   .submenu a {
     padding: 10px 20px;
     font-size: 16px;
+  }
+  .service-submenu-item {
+    width: 100%;
+  }
+  .service-submenu-row {
+    align-items: center;
+  }
+  .service-submenu-row .submenu-item {
+    text-align: center;
+  }
+  .service-submenu-toggle {
+    pointer-events: auto;
+    min-width: 44px;
+    height: 44px;
+  }
+  .service-submenu-item:hover > .service-submenu-list {
+    display: none;
+  }
+  .service-submenu-item.active > .service-submenu-list {
+    display: block;
+  }
+  .service-submenu-item.active .service-submenu-toggle {
+    transform: rotate(90deg);
+    color: #FA3C0F;
+  }
+  .service-submenu-list {
+    position: static;
+    min-width: 0;
+    background: rgba(0, 0, 41, 0.35);
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0;
+  }
+  .submenu .service-submenu-list a {
+    font-size: 14px;
+    padding: 8px 20px 12px;
   }
   .menu-toggle {
     display: block;

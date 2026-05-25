@@ -33,6 +33,22 @@ function initMobileMenu() {
       });
     }
   });
+
+  const serviceToggles = document.querySelectorAll('.service-submenu-toggle');
+  serviceToggles.forEach(function(toggle) {
+    toggle.addEventListener('click', function(e) {
+      if (window.innerWidth > 768) return;
+
+      e.preventDefault();
+      e.stopPropagation();
+
+      const serviceItem = toggle.closest('.service-submenu-item');
+      if (!serviceItem) return;
+
+      const isActive = serviceItem.classList.toggle('active');
+      toggle.setAttribute('aria-expanded', isActive ? 'true' : 'false');
+    });
+  });
 }
 
 function initHeroVideo() {

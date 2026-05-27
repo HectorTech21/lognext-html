@@ -143,30 +143,166 @@
         <div class="container">
           <h1 data-i18n="comunicacion_title">Comunicación</h1>
           <p data-i18n="comunicacion_intro">
-            Próximamente compartiremos noticias, artículos y novedades sobre tecnología, ciberseguridad, inteligencia artificial y transformación digital.
+            Actualidad, tendencias e innovación tecnológica para seguir avanzando hacia el futuro digital.
           </p>
         </div>
       </section>
 
-      <section class="comunicacion-news">
+      <section class="communication-featured-section">
         <div class="container">
-          <h2 class="section-title" data-i18n="comunicacion_news_title">Próximas publicaciones</h2>
-          <div class="news-placeholder-grid">
-            <article class="news-placeholder-card">
-              <span data-i18n="comunicacion_card_1_tag">Tecnología</span>
-              <h3 data-i18n="comunicacion_card_1_title">Artículo en preparación</h3>
-              <p data-i18n="comunicacion_card_1_text">Este espacio se reservará para novedades tecnológicas y análisis de actualidad.</p>
+          <div class="section-heading">
+            <span class="section-kicker" data-i18n="comunicacion_featured_label">Noticia destacada</span>
+            <h2 class="section-title" data-i18n="comunicacion_featured_heading">Actualidad tecnológica</h2>
+          </div>
+
+          <!-- Noticia destacada editable: sustituir imagen, textos, categoria y enlace cuando se publique contenido propio. -->
+          <article class="featured-news-card" data-category="ia">
+            <a class="featured-news-image" href="https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai" target="_blank" rel="noopener noreferrer">
+              <img src="assets/img/imgindex/ia.png" alt="Inteligencia artificial empresarial" />
+            </a>
+            <div class="featured-news-content">
+              <div class="news-meta">
+                <span class="news-category" data-i18n="comunicacion_featured_category">Inteligencia Artificial</span>
+                <span class="news-date" data-i18n="comunicacion_featured_date">Mayo 2026</span>
+              </div>
+              <h3 data-i18n="comunicacion_featured_title">La IA empresarial entra en una etapa de gobierno y confianza</h3>
+              <p data-i18n="comunicacion_featured_text">
+                La evolución del AI Act europeo refuerza la necesidad de desplegar inteligencia artificial con trazabilidad, gestión de riesgos, supervisión humana y criterios claros de cumplimiento.
+              </p>
+              <div class="news-source">
+                <span data-i18n="comunicacion_source">Fuente</span>: European Commission
+              </div>
+              <a class="news-link" href="https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai" target="_blank" rel="noopener noreferrer" data-i18n="comunicacion_read_more">Leer más</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="communication-news-section">
+        <div class="container">
+          <div class="section-heading">
+            <span class="section-kicker" data-i18n="comunicacion_news_kicker">Radar LogNext</span>
+            <h2 class="section-title" data-i18n="comunicacion_news_title">Noticias y tendencias</h2>
+          </div>
+
+          <div class="communication-filters" aria-label="Filtros de comunicación">
+            <button class="filter-chip active" type="button" data-filter="all" aria-pressed="true" data-i18n="comunicacion_filter_all">Todas</button>
+            <button class="filter-chip" type="button" data-filter="ia" aria-pressed="false" data-i18n="comunicacion_filter_ia">Inteligencia Artificial</button>
+            <button class="filter-chip" type="button" data-filter="ciberseguridad" aria-pressed="false" data-i18n="comunicacion_filter_ciberseguridad">Ciberseguridad</button>
+            <button class="filter-chip" type="button" data-filter="cloud" aria-pressed="false" data-i18n="comunicacion_filter_cloud">Cloud</button>
+            <button class="filter-chip" type="button" data-filter="transformacion" aria-pressed="false" data-i18n="comunicacion_filter_transformacion">Transformación Digital</button>
+            <button class="filter-chip" type="button" data-filter="innovacion" aria-pressed="false" data-i18n="comunicacion_filter_innovacion">Innovación</button>
+          </div>
+
+          <!-- Noticias editables: cada card puede actualizarse cambiando data-category, imagen, textos y href de origen. -->
+          <div class="news-grid">
+            <article class="news-card" data-category="ciberseguridad">
+              <a class="news-card-image" href="https://newsroom.ibm.com/2025-07-30-ibm-report-13-of-organizations-reported-breaches-of-ai-models-or-applications%2C-97-of-which-reported-lacking-proper-ai-access-controls" target="_blank" rel="noopener noreferrer">
+                <img src="assets/img/imgindex/ciberseguridad.png" alt="Ciberseguridad e inteligencia artificial" />
+              </a>
+              <div class="news-card-content">
+                <div class="news-meta">
+                  <span class="news-category" data-i18n="comunicacion_news_1_category">Ciberseguridad</span>
+                  <span class="news-date" data-i18n="comunicacion_news_1_date">Julio 2025</span>
+                </div>
+                <h3 data-i18n="comunicacion_news_1_title">La seguridad de la IA se convierte en prioridad estratégica</h3>
+                <p data-i18n="comunicacion_news_1_text">El informe Cost of a Data Breach 2025 de IBM sitúa la gobernanza de la IA y los controles de acceso como puntos críticos para reducir exposición y riesgo.</p>
+                <div class="news-source"><span data-i18n="comunicacion_source">Fuente</span>: IBM</div>
+                <a class="news-link" href="https://newsroom.ibm.com/2025-07-30-ibm-report-13-of-organizations-reported-breaches-of-ai-models-or-applications%2C-97-of-which-reported-lacking-proper-ai-access-controls" target="_blank" rel="noopener noreferrer" data-i18n="comunicacion_read_more">Leer más</a>
+              </div>
             </article>
-            <article class="news-placeholder-card">
-              <span data-i18n="comunicacion_card_2_tag">Empresa</span>
-              <h3 data-i18n="comunicacion_card_2_title">Contenido próximamente</h3>
-              <p data-i18n="comunicacion_card_2_text">Aquí se publicarán reflexiones sobre transformación digital y negocio.</p>
+
+            <article class="news-card" data-category="cloud">
+              <a class="news-card-image" href="https://blogs.microsoft.com/blog/2026/03/09/introducing-the-first-frontier-suite-built-on-intelligence-trust/" target="_blank" rel="noopener noreferrer">
+                <img src="assets/img/imgindex/ims.png" alt="Cloud empresarial y agentes de inteligencia artificial" />
+              </a>
+              <div class="news-card-content">
+                <div class="news-meta">
+                  <span class="news-category" data-i18n="comunicacion_news_2_category">Cloud</span>
+                  <span class="news-date" data-i18n="comunicacion_news_2_date">Marzo 2026</span>
+                </div>
+                <h3 data-i18n="comunicacion_news_2_title">El cloud se consolida como base para agentes empresariales</h3>
+                <p data-i18n="comunicacion_news_2_text">Microsoft apunta a un nuevo escenario de productividad donde agentes, datos y plataformas cloud trabajan con mayor integración y control corporativo.</p>
+                <div class="news-source"><span data-i18n="comunicacion_source">Fuente</span>: Microsoft</div>
+                <a class="news-link" href="https://blogs.microsoft.com/blog/2026/03/09/introducing-the-first-frontier-suite-built-on-intelligence-trust/" target="_blank" rel="noopener noreferrer" data-i18n="comunicacion_read_more">Leer más</a>
+              </div>
             </article>
-            <article class="news-placeholder-card">
-              <span data-i18n="comunicacion_card_3_tag">Innovación</span>
-              <h3 data-i18n="comunicacion_card_3_title">Nuevo formato editorial</h3>
-              <p data-i18n="comunicacion_card_3_text">Esta sección se preparará para futuras noticias, newsletter y contenidos especializados.</p>
+
+            <article class="news-card" data-category="transformacion">
+              <a class="news-card-image" href="https://www.gartner.com/en/articles/top-technology-trends-2026" target="_blank" rel="noopener noreferrer">
+                <img src="assets/img/imgindex/ams.png" alt="Transformación digital y aplicaciones empresariales" />
+              </a>
+              <div class="news-card-content">
+                <div class="news-meta">
+                  <span class="news-category" data-i18n="comunicacion_news_3_category">Transformación Digital</span>
+                  <span class="news-date" data-i18n="comunicacion_news_3_date">2026</span>
+                </div>
+                <h3 data-i18n="comunicacion_news_3_title">Las tendencias tecnológicas se orientan a sistemas inteligentes y resilientes</h3>
+                <p data-i18n="comunicacion_news_3_text">Gartner destaca tecnologías estratégicas para 2026 vinculadas a automatización, ciberseguridad, sistemas multiagente y protección del valor empresarial.</p>
+                <div class="news-source"><span data-i18n="comunicacion_source">Fuente</span>: Gartner</div>
+                <a class="news-link" href="https://www.gartner.com/en/articles/top-technology-trends-2026" target="_blank" rel="noopener noreferrer" data-i18n="comunicacion_read_more">Leer más</a>
+              </div>
             </article>
+
+            <article class="news-card" data-category="innovacion">
+              <a class="news-card-image" href="https://www.weforum.org/press/2025/01/future-of-jobs-report-2025-78-million-new-job-opportunities-by-2030-but-urgent-upskilling-needed-to-prepare-workforces/" target="_blank" rel="noopener noreferrer">
+                <img src="assets/img/imgindex/outsourcing.png" alt="Talento tecnológico y nuevos perfiles digitales" />
+              </a>
+              <div class="news-card-content">
+                <div class="news-meta">
+                  <span class="news-category" data-i18n="comunicacion_news_4_category">Innovación</span>
+                  <span class="news-date" data-i18n="comunicacion_news_4_date">Enero 2025</span>
+                </div>
+                <h3 data-i18n="comunicacion_news_4_title">El talento tecnológico acelera nuevas capacidades digitales</h3>
+                <p data-i18n="comunicacion_news_4_text">El World Economic Forum señala el crecimiento de habilidades en IA, big data y ciberseguridad como uno de los grandes retos de adaptación empresarial.</p>
+                <div class="news-source"><span data-i18n="comunicacion_source">Fuente</span>: World Economic Forum</div>
+                <a class="news-link" href="https://www.weforum.org/press/2025/01/future-of-jobs-report-2025-78-million-new-job-opportunities-by-2030-but-urgent-upskilling-needed-to-prepare-workforces/" target="_blank" rel="noopener noreferrer" data-i18n="comunicacion_read_more">Leer más</a>
+              </div>
+            </article>
+
+            <article class="news-card" data-category="ciberseguridad">
+              <a class="news-card-image" href="https://www.nist.gov/publications/nist-cybersecurity-framework-csf-20" target="_blank" rel="noopener noreferrer">
+                <img src="assets/img/ciberseguridad/imagen (1).jpg" alt="Marco de gestión de riesgos de ciberseguridad" />
+              </a>
+              <div class="news-card-content">
+                <div class="news-meta">
+                  <span class="news-category" data-i18n="comunicacion_news_5_category">Ciberseguridad</span>
+                  <span class="news-date" data-i18n="comunicacion_news_5_date">2024</span>
+                </div>
+                <h3 data-i18n="comunicacion_news_5_title">Gestionar el riesgo ciber con marcos comunes</h3>
+                <p data-i18n="comunicacion_news_5_text">El Cybersecurity Framework 2.0 de NIST ofrece una referencia para que organizaciones de cualquier tamaño ordenen gobierno, protección y respuesta.</p>
+                <div class="news-source"><span data-i18n="comunicacion_source">Fuente</span>: NIST</div>
+                <a class="news-link" href="https://www.nist.gov/publications/nist-cybersecurity-framework-csf-20" target="_blank" rel="noopener noreferrer" data-i18n="comunicacion_read_more">Leer más</a>
+              </div>
+            </article>
+
+            <article class="news-card" data-category="ia">
+              <a class="news-card-image" href="https://www.gartner.com/en/articles/top-technology-trends-2026" target="_blank" rel="noopener noreferrer">
+                <img src="assets/img/iaCE/IAimagen.jpg" alt="Automatización con inteligencia artificial" />
+              </a>
+              <div class="news-card-content">
+                <div class="news-meta">
+                  <span class="news-category" data-i18n="comunicacion_news_6_category">Inteligencia Artificial</span>
+                  <span class="news-date" data-i18n="comunicacion_news_6_date">2026</span>
+                </div>
+                <h3 data-i18n="comunicacion_news_6_title">La automatización evoluciona hacia sistemas multiagente</h3>
+                <p data-i18n="comunicacion_news_6_text">La combinación de agentes especializados y procesos conectados abre nuevas vías para mejorar operaciones, soporte y toma de decisiones en la empresa.</p>
+                <div class="news-source"><span data-i18n="comunicacion_source">Fuente</span>: Gartner</div>
+                <a class="news-link" href="https://www.gartner.com/en/articles/top-technology-trends-2026" target="_blank" rel="noopener noreferrer" data-i18n="comunicacion_read_more">Leer más</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="communication-cta">
+        <div class="container">
+          <div class="cta-panel">
+            <div>
+              <h2 data-i18n="comunicacion_cta_title">¿Quieres estar al día de la actualidad tecnológica?</h2>
+              <p data-i18n="comunicacion_cta_text">En LogNext seguimos de cerca las tendencias que transforman la forma de trabajar, innovar y crecer.</p>
+            </div>
+            <a class="cta-button" href="mailto:info@lognext.com" data-i18n="comunicacion_cta_button">Contacta con nosotros</a>
           </div>
         </div>
       </section>

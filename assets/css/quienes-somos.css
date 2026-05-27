@@ -1,14 +1,46 @@
 ﻿/* ========== PÃGINA QUIÃ‰NES SOMOS ========== */
+.about-continuous-background {
+  background-color: #000029;
+  background-image:
+    radial-gradient(circle at 20% 80%, rgba(250, 60, 15, 0.15) 0%, transparent 50%),
+    repeating-linear-gradient(45deg, rgba(250, 60, 15, 0.05) 0px, rgba(250, 60, 15, 0.05) 2px, transparent 2px, transparent 8px);
+  background-position: center top;
+  background-repeat: repeat;
+  background-size: auto;
+  position: relative;
+  overflow: hidden;
+  margin-top: 80px;
+}
+
+.about-continuous-background::before {
+  content: none;
+  display: none;
+  background: none;
+  background-image: none;
+}
+
+.about-continuous-background::after {
+  content: none;
+  display: none;
+  background: none;
+  background-image: none;
+}
+
 .about-hero {
   min-height: 85vh;
-  background: #000029;
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  overflow: hidden;
-  margin-top: 80px;
+  overflow: visible;
+  margin-top: 0;
+  border-top: 0;
+  border-bottom: 0;
+  box-shadow: none;
 }
 
 .about-hero .circle-1,
@@ -48,30 +80,48 @@
 }
 
 .about-hero::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: radial-gradient(circle at 20% 80%, rgba(250, 60, 15, 0.15) 0%, transparent 50%),
-                    repeating-linear-gradient(45deg, rgba(250, 60, 15, 0.05) 0px, rgba(250, 60, 15, 0.05) 2px, transparent 2px, transparent 8px);
-  pointer-events: none;
-  z-index: 1;
+  content: none !important;
+  display: none !important;
+  background: none !important;
+  background-image: none !important;
 }
 
 .about-hero::after {
-  content: '';
-  position: absolute;
-  width: 500px;
-  height: 500px;
-  background: radial-gradient(circle, rgba(250, 60, 15, 0.25) 0%, rgba(250, 60, 15, 0.1) 40%, transparent 70%);
-  bottom: -200px;
-  right: -150px;
-  border-radius: 50%;
-  animation: floatCircle 8s ease-in-out infinite;
-  pointer-events: none;
-  z-index: 1;
+  content: none !important;
+  display: none !important;
+  background: none !important;
+  background-image: none !important;
+}
+
+.about-continuous-background .about-hero,
+.about-continuous-background .work-hero-full {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  border-top: 0 !important;
+  border-bottom: 0 !important;
+  box-shadow: none !important;
+}
+
+.about-continuous-background .about-hero::before,
+.about-continuous-background .about-hero::after,
+.about-continuous-background .work-hero-full::before,
+.about-continuous-background .work-hero-full::after {
+  content: none !important;
+  display: none !important;
+  background: none !important;
+  background-image: none !important;
+}
+
+.about-continuous-background .about-hero > .circle-1,
+.about-continuous-background .about-hero > .circle-2,
+.about-continuous-background .about-hero > .circle-3,
+.about-continuous-background .work-hero-full > .circle-1,
+.about-continuous-background .work-hero-full > .circle-2,
+.about-continuous-background .work-hero-full > .circle-3 {
+  display: none !important;
+  background: none !important;
+  background-image: none !important;
 }
 
 .about-hero-content {
@@ -388,11 +438,16 @@
 
 /* Hero completo que incluye tÃ­tulo y cards */
 .work-hero-full {
-  background: #000029;
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
   margin-top: 0;
   padding: 80px 0 100px 0;
+  border-top: 0;
+  border-bottom: 0;
+  box-shadow: none;
 }
 
 .work-hero-full .circle-1,
@@ -432,30 +487,17 @@
 }
 
 .work-hero-full::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: radial-gradient(circle at 20% 80%, rgba(250, 60, 15, 0.15) 0%, transparent 50%),
-                    repeating-linear-gradient(45deg, rgba(250, 60, 15, 0.05) 0px, rgba(250, 60, 15, 0.05) 2px, transparent 2px, transparent 8px);
-  pointer-events: none;
-  z-index: 1;
+  content: none !important;
+  display: none !important;
+  background: none !important;
+  background-image: none !important;
 }
 
 .work-hero-full::after {
-  content: '';
-  position: absolute;
-  width: 500px;
-  height: 500px;
-  background: radial-gradient(circle, rgba(250, 60, 15, 0.25) 0%, rgba(250, 60, 15, 0.1) 40%, transparent 70%);
-  bottom: -200px;
-  right: -150px;
-  border-radius: 50%;
-  animation: floatCircle 8s ease-in-out infinite;
-  pointer-events: none;
-  z-index: 1;
+  content: none !important;
+  display: none !important;
+  background: none !important;
+  background-image: none !important;
 }
 
 .work-hero-content {

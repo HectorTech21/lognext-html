@@ -403,6 +403,32 @@ function initCasosParticles() {
   }
 }
 
+function initCommunicationFilters() {
+  const filters = document.querySelector('.communication-filters');
+  const cards = document.querySelectorAll('.news-card[data-category]');
+
+  if (!filters || !cards.length) return;
+
+  const buttons = filters.querySelectorAll('.filter-chip[data-filter]');
+
+  buttons.forEach(button => {
+    button.addEventListener('click', function() {
+      const selectedFilter = this.getAttribute('data-filter');
+
+      buttons.forEach(filterButton => {
+        const isActive = filterButton === this;
+        filterButton.classList.toggle('active', isActive);
+        filterButton.setAttribute('aria-pressed', String(isActive));
+      });
+
+      cards.forEach(card => {
+        const shouldShow = selectedFilter === 'all' || card.getAttribute('data-category') === selectedFilter;
+        card.hidden = !shouldShow;
+      });
+    });
+  });
+}
+
 // ========== SISTEMA DE COOKIES (CORREGIDO - NO ROMPE SCROLLBAR) ==========
 function initCookieSystem() {
     const STORAGE_KEY = 'lognext_cookie_preferences';
@@ -560,5 +586,6 @@ document.addEventListener('DOMContentLoaded', function() {
   initBenefitParticles();
   initTeamCarousel();
   initCasosParticles();
+  initCommunicationFilters();
   initCookieSystem(); // Sistema de cookies iniciado - NO ROMPE LA SCROLLBAR
 });

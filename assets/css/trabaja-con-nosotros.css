@@ -1,5 +1,114 @@
 /* ========== PAGINA TRABAJA CON NOSOTROS ========== */
 
+.work-intro-benefits-bg {
+  margin-top: 80px;
+  background-color: #000029;
+  background-image: radial-gradient(circle at 20% 80%, rgba(250, 60, 15, 0.15) 0%, transparent 50%),
+                    repeating-linear-gradient(45deg, rgba(250, 60, 15, 0.05) 0px, rgba(250, 60, 15, 0.05) 2px, transparent 2px, transparent 8px),
+                    linear-gradient(135deg, #000029 0%, #0a0a3a 100%);
+  background-position: center top;
+  background-repeat: repeat;
+  background-size: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.work-hero-intro {
+  min-height: 620px;
+  margin-top: 0;
+  padding: 120px 0 110px;
+  background: transparent;
+  color: #ffffff;
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  text-align: center;
+}
+
+.work-hero-intro .circle-1,
+.work-hero-intro .circle-2,
+.work-hero-intro .circle-3 {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.work-hero-intro .circle-1 {
+  width: 350px;
+  height: 350px;
+  background: radial-gradient(circle, rgba(250, 60, 15, 0.2) 0%, rgba(250, 60, 15, 0.08) 40%, transparent 70%);
+  top: -120px;
+  left: -100px;
+  animation: floatCircle 10s ease-in-out infinite reverse;
+}
+
+.work-hero-intro .circle-2 {
+  width: 250px;
+  height: 250px;
+  background: radial-gradient(circle, rgba(250, 60, 15, 0.18) 0%, rgba(250, 60, 15, 0.08) 40%, transparent 70%);
+  top: 40%;
+  right: 5%;
+  animation: pulseCircle 6s ease-in-out infinite;
+}
+
+.work-hero-intro .circle-3 {
+  width: 180px;
+  height: 180px;
+  background: radial-gradient(circle, rgba(250, 60, 15, 0.15) 0%, rgba(250, 60, 15, 0.05) 40%, transparent 70%);
+  bottom: 15%;
+  left: 5%;
+  animation: floatCircle 12s ease-in-out infinite;
+}
+
+.work-hero-intro .container {
+  position: relative;
+  z-index: 2;
+}
+
+.work-hero-title {
+  margin: 0 auto 28px;
+  max-width: 1120px;
+  background: linear-gradient(90deg, #ffffff 0%, #ffd5c7 46%, #FA3C0F 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: clamp(46px, 7vw, 96px);
+  font-weight: 900;
+  line-height: 1.02;
+  text-transform: uppercase;
+}
+
+.work-hero-subtitle {
+  max-width: 760px;
+  margin: 0 auto;
+  color: rgba(255, 255, 255, 0.86);
+  font-size: 21px;
+  line-height: 1.6;
+}
+
+.work-intro-benefits-bg .work-hero-intro,
+.work-intro-benefits-bg .benefits-section {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  border: 0;
+  box-shadow: none;
+}
+
+.work-intro-benefits-bg .work-hero-intro::before,
+.work-intro-benefits-bg .work-hero-intro::after,
+.work-intro-benefits-bg .benefits-section::before,
+.work-intro-benefits-bg .benefits-section::after {
+  content: none !important;
+  display: none !important;
+  background: none !important;
+  background-image: none !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
 .work-main > .benefits-section:first-child {
   margin-top: 80px;
 }
@@ -8,9 +117,50 @@
 /* SecciÃ³n Beneficios con partÃ­culas */
 .benefits-section {
   padding: 80px 0;
-  background: linear-gradient(135deg, #000029 0%, #0a0a3a 100%);
+  background: transparent;
   position: relative;
   overflow: hidden;
+}
+
+.benefits-section .circle-1,
+.benefits-section .circle-2,
+.benefits-section .circle-3 {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.benefits-section .circle-1 {
+  width: 350px;
+  height: 350px;
+  background: radial-gradient(circle, rgba(250, 60, 15, 0.2) 0%, rgba(250, 60, 15, 0.08) 40%, transparent 70%);
+  top: -120px;
+  left: -100px;
+  animation: floatCircle 10s ease-in-out infinite reverse;
+}
+
+.benefits-section .circle-2 {
+  width: 250px;
+  height: 250px;
+  background: radial-gradient(circle, rgba(250, 60, 15, 0.18) 0%, rgba(250, 60, 15, 0.08) 40%, transparent 70%);
+  top: 40%;
+  right: 5%;
+  animation: pulseCircle 6s ease-in-out infinite;
+}
+
+.benefits-section .circle-3 {
+  width: 180px;
+  height: 180px;
+  background: radial-gradient(circle, rgba(250, 60, 15, 0.15) 0%, rgba(250, 60, 15, 0.05) 40%, transparent 70%);
+  bottom: 15%;
+  left: 5%;
+  animation: floatCircle 12s ease-in-out infinite;
+}
+
+.benefits-section .container {
+  position: relative;
+  z-index: 2;
 }
 
 .benefits-section .section-title {
@@ -107,6 +257,16 @@
   border-radius: 50%;
   pointer-events: none;
   animation: floatParticle linear infinite;
+}
+
+@keyframes floatCircle {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-30px) rotate(180deg); }
+}
+
+@keyframes pulseCircle {
+  0%, 100% { transform: scale(1); opacity: 0.6; }
+  50% { transform: scale(1.2); opacity: 0.3; }
 }
 
 /* SecciÃ³n Ofertas */
@@ -215,6 +375,16 @@
 }
 
 @media (max-width: 768px) {
+  .work-hero-intro {
+    min-height: 520px;
+    padding: 90px 0 80px;
+  }
+  .work-hero-title {
+    font-size: 42px;
+  }
+  .work-hero-subtitle {
+    font-size: 17px;
+  }
   .benefits-section {
     padding: 50px 0;
   }
@@ -234,6 +404,16 @@
 }
 
 @media (max-width: 480px) {
+  .work-hero-intro {
+    min-height: 460px;
+    padding: 76px 0 68px;
+  }
+  .work-hero-title {
+    font-size: 34px;
+  }
+  .work-hero-subtitle {
+    font-size: 16px;
+  }
   .offers-left h2 {
     font-size: 28px;
   }

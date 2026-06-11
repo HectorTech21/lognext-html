@@ -26,16 +26,16 @@
   text-align: center;
 }
 
-.work-hero-intro .circle-1,
-.work-hero-intro .circle-2,
-.work-hero-intro .circle-3 {
+.work-intro-benefits-bg > .circle-1,
+.work-intro-benefits-bg > .circle-2,
+.work-intro-benefits-bg > .circle-3 {
   position: absolute;
   border-radius: 50%;
   pointer-events: none;
   z-index: 1;
 }
 
-.work-hero-intro .circle-1 {
+.work-intro-benefits-bg > .circle-1 {
   width: 350px;
   height: 350px;
   background: radial-gradient(circle, rgba(250, 60, 15, 0.2) 0%, rgba(250, 60, 15, 0.08) 40%, transparent 70%);
@@ -44,20 +44,20 @@
   animation: floatCircle 10s ease-in-out infinite reverse;
 }
 
-.work-hero-intro .circle-2 {
+.work-intro-benefits-bg > .circle-2 {
   width: 250px;
   height: 250px;
   background: radial-gradient(circle, rgba(250, 60, 15, 0.18) 0%, rgba(250, 60, 15, 0.08) 40%, transparent 70%);
-  top: 40%;
+  top: 38%;
   right: 5%;
   animation: pulseCircle 6s ease-in-out infinite;
 }
 
-.work-hero-intro .circle-3 {
+.work-intro-benefits-bg > .circle-3 {
   width: 180px;
   height: 180px;
   background: radial-gradient(circle, rgba(250, 60, 15, 0.15) 0%, rgba(250, 60, 15, 0.05) 40%, transparent 70%);
-  bottom: 15%;
+  bottom: 12%;
   left: 5%;
   animation: floatCircle 12s ease-in-out infinite;
 }
@@ -120,42 +120,6 @@
   background: transparent;
   position: relative;
   overflow: hidden;
-}
-
-.benefits-section .circle-1,
-.benefits-section .circle-2,
-.benefits-section .circle-3 {
-  position: absolute;
-  border-radius: 50%;
-  pointer-events: none;
-  z-index: 1;
-}
-
-.benefits-section .circle-1 {
-  width: 350px;
-  height: 350px;
-  background: radial-gradient(circle, rgba(250, 60, 15, 0.2) 0%, rgba(250, 60, 15, 0.08) 40%, transparent 70%);
-  top: -120px;
-  left: -100px;
-  animation: floatCircle 10s ease-in-out infinite reverse;
-}
-
-.benefits-section .circle-2 {
-  width: 250px;
-  height: 250px;
-  background: radial-gradient(circle, rgba(250, 60, 15, 0.18) 0%, rgba(250, 60, 15, 0.08) 40%, transparent 70%);
-  top: 40%;
-  right: 5%;
-  animation: pulseCircle 6s ease-in-out infinite;
-}
-
-.benefits-section .circle-3 {
-  width: 180px;
-  height: 180px;
-  background: radial-gradient(circle, rgba(250, 60, 15, 0.15) 0%, rgba(250, 60, 15, 0.05) 40%, transparent 70%);
-  bottom: 15%;
-  left: 5%;
-  animation: floatCircle 12s ease-in-out infinite;
 }
 
 .benefits-section .container {

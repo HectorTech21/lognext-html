@@ -667,6 +667,10 @@ function initMobileMenu() {
   menuLinks.forEach(function(link) {
     link.addEventListener('click', function() {
       if (window.innerWidth <= 768) {
+        const parentDropdown = link.closest('.has-dropdown');
+        if (parentDropdown && parentDropdown.querySelector(':scope > a') === link) {
+          return;
+        }
         menuToggle.classList.remove('active');
         mainNav.classList.remove('active');
         document.body.style.overflow = '';

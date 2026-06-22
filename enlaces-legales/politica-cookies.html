@@ -107,18 +107,14 @@
 
           <div class="mobile-footer-info">
             <div class="mobile-info-card">
-              <h4 class="mobile-info-title" data-i18n="mobile_quieres_trabajar">
-                ¿Quieres trabajar con nosotros?
-              </h4>
+              <h4 class="mobile-info-title" data-i18n="mobile_quieres_trabajar">¿Quieres trabajar con nosotros?</h4>
               <div class="mobile-info-contact">
                 <p><span class="info-icon">📞</span> +34 915 472 550</p>
                 <p><span class="info-icon">✉️</span> talent@lognext.com</p>
               </div>
             </div>
             <div class="mobile-info-card">
-              <h4 class="mobile-info-title" data-i18n="mobile_hablamos">
-                ¿Hablamos?
-              </h4>
+              <h4 class="mobile-info-title" data-i18n="mobile_hablamos">¿Hablamos?</h4>
               <div class="mobile-info-contact">
                 <p><span class="info-icon">📞</span> +34 915 472 550</p>
                 <p>
@@ -161,14 +157,14 @@
         <div class="circle-2"></div>
         <div class="circle-3"></div>
         <div class="legal-hero-content">
-          <h1>Política de Cookies</h1>
+          <h1 data-i18n="cookie_policy_title">Política de Cookies</h1>
         </div>
       </section>
 
       <!-- SECCIÓN DE CONTENIDO -->
       <section class="legal-content">
         <div class="container">
-          <div class="legal-content-inner">
+          <div class="legal-content-inner" data-i18n-html="cookie_policy_content">
             <h2>Información sobre Cookies</h2>
             <p>
               Debido a la entrada en vigor de la referente modificación de la
@@ -573,7 +569,7 @@
 
         <div class="footer-bottom">
           <div class="footer-bottom-container">
-            <p class="copyright">
+            <p class="copyright" data-i18n="footer_copyright">
               &copy; 2026 Lognext. Todos los derechos reservados.
             </p>
             <div class="legal-links">
@@ -581,24 +577,24 @@
                 href="../assets/docs/politica-seguridad.pdf"
                 target="_blank"
                 class="legal-link"
-                >Política de seguridad de la información</a
+                 data-i18n="legal_link_security">Política de seguridad de la información</a
               >
               <span class="legal-separator">|</span>
               <a
                 href="../assets/docs/politica-sistema-integrado.pdf"
                 target="_blank"
                 class="legal-link"
-                >Política de sistema integrado</a
+                 data-i18n="legal_link_integrated">Política de sistema integrado</a
               >
               <span class="legal-separator">|</span>
-              <a href="aviso-legal.html" class="legal-link">Aviso Legal</a>
+              <a href="aviso-legal.html" class="legal-link" data-i18n="legal_link_legal_notice">Aviso Legal</a>
               <span class="legal-separator">|</span>
               <a href="politica-cookies.html" class="legal-link"
-                >Política de cookies</a
+                 data-i18n="legal_link_cookies">Política de cookies</a
               >
               <span class="legal-separator">|</span>
               <a href="canal-denuncias.html" class="legal-link"
-                >Canal de Denuncias</a
+                 data-i18n="legal_link_whistleblowing">Canal de Denuncias</a
               >
             </div>
           </div>
@@ -609,42 +605,42 @@
     <!-- ========== BOTÓN FLOTANTE DE COOKIES ========== -->
     <div class="cookie-btn-fixed" id="cookieBtn">
       <span class="cookie-icon">🍪</span>
-      <span class="cookie-text">Cookies</span>
+      <span class="cookie-text" data-i18n="cookie_btn">Cookies</span>
     </div>
 
     <!-- ========== MODAL DE COOKIES ========== -->
     <div id="cookieModal" class="cookie-modal">
       <div class="cookie-modal-content">
         <div class="cookie-modal-header">
-          <h2>Valoramos tu privacidad</h2>
+          <h2 data-i18n="cookie_modal_title">Valoramos tu privacidad</h2>
           <button class="cookie-modal-close" id="closeCookieModal">
             &times;
           </button>
         </div>
 
         <div class="cookie-modal-body">
-          <p>
+          <p data-i18n="cookie_modal_intro">
             Usamos cookies para mejorar su experiencia de navegación, mostrarle
             anuncios o contenidos personalizados y analizar nuestro tráfico. Al
             hacer clic en "Aceptar todo" usted da su consentimiento a nuestro
             uso de las cookies.
           </p>
 
-          <h3>Personalizar las preferencias de consentimiento</h3>
-          <p>
+          <h3 data-i18n="cookie_modal_preferences_title">Personalizar las preferencias de consentimiento</h3>
+          <p data-i18n="cookie_modal_preferences_intro">
             Usamos cookies para ayudarle a navegar de manera eficiente y
             realizar ciertas funciones. Encontrará información detallada sobre
             cada una de las cookies bajo cada categoría de consentimiento a
             continuación.
           </p>
 
-          <p>
+          <p data-i18n="cookie_modal_necessary_intro">
             Las cookies categorizadas como "Necesarias" se guardan en su
             navegador, ya que son esenciales para permitir las funcionalidades
             básicas del sitio web.
           </p>
 
-          <p>
+          <p data-i18n="cookie_modal_third_party">
             También utilizamos cookies de terceros que nos ayudan a analizar
             cómo usted utiliza este sitio web, guardar sus preferencias y
             aportar el contenido y la publicidad que le sean relevantes. Estas
@@ -652,7 +648,7 @@
             parte.
           </p>
 
-          <p>
+          <p data-i18n="cookie_modal_toggle_note">
             Puede optar por activar o desactivar alguna o todas estas cookies,
             aunque la desactivación de algunas podría afectar a su experiencia
             de navegación.
@@ -661,7 +657,7 @@
           <!-- Categorías de cookies -->
           <div class="cookie-category">
             <div class="cookie-category-header">
-              <span class="cookie-category-name">Necesaria</span>
+              <span class="cookie-category-name" data-i18n="cookie_category_necessary">Necesaria</span>
               <label class="cookie-switch">
                 <input
                   type="checkbox"
@@ -673,7 +669,7 @@
                 <span class="cookie-slider"></span>
               </label>
             </div>
-            <p class="cookie-category-desc">
+            <p class="cookie-category-desc" data-i18n="cookie_desc_necessary">
               Las cookies necesarias son cruciales para las funciones básicas
               del sitio web y el sitio web no funcionará de la forma prevista
               sin ellas. Estas cookies no almacenan ningún dato de
@@ -683,7 +679,7 @@
 
           <div class="cookie-category">
             <div class="cookie-category-header">
-              <span class="cookie-category-name">Funcional</span>
+              <span class="cookie-category-name" data-i18n="cookie_category_functional">Funcional</span>
               <label class="cookie-switch">
                 <input
                   type="checkbox"
@@ -693,7 +689,7 @@
                 <span class="cookie-slider"></span>
               </label>
             </div>
-            <p class="cookie-category-desc">
+            <p class="cookie-category-desc" data-i18n="cookie_desc_functional">
               Las cookies funcionales ayudan a realizar ciertas funcionalidades,
               como compartir el contenido del sitio web en plataformas de redes
               sociales, recopilar comentarios y otras características de
@@ -703,7 +699,7 @@
 
           <div class="cookie-category">
             <div class="cookie-category-header">
-              <span class="cookie-category-name">Analítica</span>
+              <span class="cookie-category-name" data-i18n="cookie_category_analytics">Analítica</span>
               <label class="cookie-switch">
                 <input
                   type="checkbox"
@@ -713,7 +709,7 @@
                 <span class="cookie-slider"></span>
               </label>
             </div>
-            <p class="cookie-category-desc">
+            <p class="cookie-category-desc" data-i18n="cookie_desc_analytics">
               Las cookies analíticas se utilizan para comprender cómo
               interactúan los visitantes con el sitio web. Estas cookies ayudan
               a proporcionar información sobre métricas el número de visitantes,
@@ -723,7 +719,7 @@
 
           <div class="cookie-category">
             <div class="cookie-category-header">
-              <span class="cookie-category-name">El rendimiento</span>
+              <span class="cookie-category-name" data-i18n="cookie_category_performance">El rendimiento</span>
               <label class="cookie-switch">
                 <input
                   type="checkbox"
@@ -733,7 +729,7 @@
                 <span class="cookie-slider"></span>
               </label>
             </div>
-            <p class="cookie-category-desc">
+            <p class="cookie-category-desc" data-i18n="cookie_desc_performance">
               Las cookies de rendimiento se utilizan para comprender y analizar
               los índices de rendimiento clave del sitio web, lo que ayuda a
               proporcionar una mejor experiencia de usuario para los visitantes.
@@ -742,7 +738,7 @@
 
           <div class="cookie-category">
             <div class="cookie-category-header">
-              <span class="cookie-category-name">Anuncio</span>
+              <span class="cookie-category-name" data-i18n="cookie_category_advertising">Anuncio</span>
               <label class="cookie-switch">
                 <input
                   type="checkbox"
@@ -752,7 +748,7 @@
                 <span class="cookie-slider"></span>
               </label>
             </div>
-            <p class="cookie-category-desc">
+            <p class="cookie-category-desc" data-i18n="cookie_desc_advertising">
               Las cookies publicitarias se utilizan para entregar a los
               visitantes anuncios personalizados basados en las páginas que
               visitaron antes y analizar la efectividad de la campaña
@@ -762,16 +758,16 @@
         </div>
 
         <div class="cookie-modal-footer">
-          <button class="cookie-btn cookie-btn-reject" id="rejectAllCookies">
+          <button class="cookie-btn cookie-btn-reject" id="rejectAllCookies" data-i18n="cookie_reject_all">
             Rechazar todas
           </button>
-          <button class="cookie-btn cookie-btn-accept" id="acceptAllCookies">
+          <button class="cookie-btn cookie-btn-accept" id="acceptAllCookies" data-i18n="cookie_accept_all">
             Aceptar todas
           </button>
           <button
             class="cookie-btn cookie-btn-necessary"
             id="acceptNecessaryCookies"
-          >
+           data-i18n="cookie_accept_necessary">
             Aceptar solo necesarias
           </button>
         </div>

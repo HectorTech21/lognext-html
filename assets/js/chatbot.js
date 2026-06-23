@@ -271,9 +271,24 @@
       .trim();
   }
 
+  function escapeRegExp(text) {
+    return text.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  }
+
+  function matchesKeyword(normalizedText, keyword) {
+    const normalizedKeyword = normalize(keyword);
+    if (!normalizedKeyword) return false;
+
+    if (!normalizedKeyword.includes(" ") && normalizedKeyword.length <= 3) {
+      return new RegExp(`(^|\\s)${escapeRegExp(normalizedKeyword)}(\\s|$)`).test(normalizedText);
+    }
+
+    return normalizedText.includes(normalizedKeyword);
+  }
+
   function findIntent(text) {
     const normalized = normalize(text);
-    return intents.find((intent) => intent.words.some((word) => normalized.includes(normalize(word))));
+    return intents.find((intent) => intent.words.some((word) => matchesKeyword(normalized, word)));
   }
 
   function createMessage(text, type) {
@@ -395,6 +410,18 @@
       launcher.focus();
     }
 
+    function syncWithMobileMenu() {
+      const mainNav = document.querySelector(".main-nav");
+      const isMobile = window.matchMedia("(max-width: 768px)").matches;
+      const shouldHide = Boolean(mainNav && mainNav.classList.contains("active") && isMobile);
+
+      if (shouldHide && widget.classList.contains("is-open")) {
+        closeChat();
+      }
+
+      widget.hidden = shouldHide;
+    }
+
     launcher.addEventListener("click", () => {
       if (widget.classList.contains("is-open")) {
         closeChat();
@@ -420,6 +447,14 @@
     document.querySelectorAll(".language-switcher a, .language-switcher.mobile a").forEach((link) => {
       link.addEventListener("click", () => window.setTimeout(updateStaticText, 0));
     });
+
+    const mainNav = document.querySelector(".main-nav");
+    if (mainNav) {
+      const navObserver = new MutationObserver(syncWithMobileMenu);
+      navObserver.observe(mainNav, { attributes: true, attributeFilter: ["class"] });
+      window.addEventListener("resize", syncWithMobileMenu);
+      syncWithMobileMenu();
+    }
 
     renderQuickActions();
   }

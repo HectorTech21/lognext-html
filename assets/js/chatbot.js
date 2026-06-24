@@ -309,10 +309,7 @@
     widget.id = "lognextChatbot";
     widget.innerHTML = `
       <button class="lognext-chatbot__launcher" type="button" aria-label="${langCopy.open}" aria-expanded="false" aria-controls="lognextChatbotPanel">
-        <svg class="lognext-chatbot__launcher-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-          <path fill="currentColor" d="M4 5.5A3.5 3.5 0 0 1 7.5 2h9A3.5 3.5 0 0 1 20 5.5v6A3.5 3.5 0 0 1 16.5 15H10l-4.2 4.2A1 1 0 0 1 4 18.5V5.5Zm3.5-1.6A1.6 1.6 0 0 0 5.9 5.5v10.6l3.1-3.1h7.5a1.6 1.6 0 0 0 1.6-1.6v-6a1.6 1.6 0 0 0-1.6-1.6h-9Z"/>
-          <path fill="currentColor" d="M8 8h8v1.7H8V8Zm0 3h5.7v1.7H8V11Z"/>
-        </svg>
+        <img class="lognext-chatbot__launcher-icon" src="${rootPrefix}assets/img/chatbot/chatbot_logo_cropped.png" alt="" aria-hidden="true">
       </button>
       <div class="lognext-chatbot__panel" id="lognextChatbotPanel" role="region" aria-label="${langCopy.title}">
         <div class="lognext-chatbot__header">

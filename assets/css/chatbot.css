@@ -133,6 +133,11 @@
   border-top-left-radius: 4px;
 }
 
+.lognext-chatbot__message--typing {
+  color: rgba(0, 0, 41, 0.68);
+  font-style: italic;
+}
+
 .lognext-chatbot__message--user {
   margin-left: auto;
   background: #000029;

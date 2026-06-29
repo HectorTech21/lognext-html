@@ -2,7 +2,7 @@
   if (document.getElementById("lognextChatbot")) return;
 
   const CHATBOT_DEBUG = false;
-  const EXACT_PHRASE_SCORE = 4;
+  const EXACT_PHRASE_SCORE = 8;
   const KEYWORD_SCORE = 3;
   const SUPPORT_TERM_SCORE = 1;
   const MIN_INTENT_SCORE = 2;
@@ -31,12 +31,13 @@
         ia: `En Inteligencia Artificial, LogNext trabaja soluciones orientadas a automatización, análisis y nuevos modelos de interacción. Puedes consultar el servicio en <a href="${rootPrefix}servicios/ia.html">Inteligencia Artificial</a>.`,
         empleo: `Puedes consultar las oportunidades disponibles y enviar tu candidatura desde la sección <a href="${rootPrefix}trabaja-con-nosotros.html">Trabaja con nosotros</a>. No tengo acceso en tiempo real a vacantes concretas, pero puedo llevarte a la página correspondiente.`,
         contacto: `Puedes contactar con LogNext en <a href="mailto:info@lognext.com">info@lognext.com</a> o llamar al <a href="tel:+34915472550">+34 915 472 550</a>. También puedes escribir a <a href="mailto:talent@lognext.com">talent@lognext.com</a> para temas de talento.`,
+        contactoHumano: `Para hablar con el equipo de LogNext, puedes escribir a <a href="mailto:info@lognext.com">info@lognext.com</a> o llamar al <a href="tel:+34915472550">+34 915 472 550</a>. Si tu consulta es sobre talento o candidaturas, también puedes contactar en <a href="mailto:talent@lognext.com">talent@lognext.com</a>.`,
         saludo: `¡Hola! 👋 Soy el asistente virtual de LogNext. Puedo ayudarte con información sobre servicios, ubicación, contacto, empleo, ciberseguridad, inteligencia artificial, aviso legal, cookies o canal de denuncias. ¿Sobre qué tema necesitas ayuda?`,
         agradecimiento: `¡De nada! 😊 Si necesitas algo más sobre LogNext, servicios, empleo, contacto o información legal, aquí estoy.`,
         precios: `No puedo facilitar precios o tarifas cerradas desde el chat, porque dependen del alcance, contexto y necesidades de cada proyecto. Para solicitar una propuesta o presupuesto, contacta con LogNext en <a href="mailto:info@lognext.com">info@lognext.com</a>.`,
         ubicacion: `La sede de LogNext está en <a href="https://maps.google.com/?q=Avenida+de+Burgos+17+Madrid+Spain" target="_blank" rel="noopener noreferrer">Avenida de Burgos 17, 28036 Madrid, Spain</a>. También puedes contactar por teléfono en <a href="tel:+34915472550">+34 915 472 550</a>.`,
         legal: `Puedes consultar la información legal de LogNext en la página <a href="${rootPrefix}enlaces-legales/aviso-legal.html">Aviso Legal</a>.`,
-        politicasCorporativas: `Puedes consultar la información corporativa y legal disponible en los enlaces legales de LogNext: <a href="${rootPrefix}enlaces-legales/aviso-legal.html">Aviso Legal</a>, <a href="${rootPrefix}enlaces-legales/politica-cookies.html">Política de Cookies</a> y <a href="${rootPrefix}enlaces-legales/canal-denuncias.html">Canal de Denuncias</a>. Si buscas documentación específica sobre la Política de Seguridad de la Información o cumplimiento normativo, te recomendamos contactar directamente con LogNext en <a href="mailto:info@lognext.com">info@lognext.com</a> para recibir la información adecuada.`,
+        politicasCorporativas: `Puedes consultar la documentación corporativa y legal publicada por LogNext: <a href="${rootPrefix}assets/docs/politica-seguridad.pdf" target="_blank" rel="noopener noreferrer">Política de Seguridad de la Información</a>, <a href="${rootPrefix}assets/docs/politica-sistema-integrado.pdf" target="_blank" rel="noopener noreferrer">Política de Sistema Integrado</a>, <a href="${rootPrefix}enlaces-legales/aviso-legal.html">Aviso Legal</a>, <a href="${rootPrefix}enlaces-legales/politica-cookies.html">Política de Cookies</a> y <a href="${rootPrefix}enlaces-legales/canal-denuncias.html">Canal de Denuncias</a>. Para documentación adicional sobre cumplimiento normativo, contacta con LogNext en <a href="mailto:info@lognext.com">info@lognext.com</a>.`,
         cookies: `La información sobre uso, configuración y consentimiento de cookies está disponible en la <a href="${rootPrefix}enlaces-legales/politica-cookies.html">Política de Cookies</a>.`,
         canal: `Para comunicar posibles incidencias o irregularidades, puedes consultar el <a href="${rootPrefix}enlaces-legales/canal-denuncias.html">Canal de Denuncias</a>.`,
         privacidad: `No veo una página independiente de privacidad en la web. La información sobre tratamiento de datos personales aparece dentro del <a href="${rootPrefix}enlaces-legales/aviso-legal.html">Aviso Legal</a>. Para dudas específicas, escribe a <a href="mailto:privacy@lognext.com">privacy@lognext.com</a>.`,
@@ -62,12 +63,13 @@
         ia: `In Artificial Intelligence, LogNext works on solutions focused on automation, analysis and new interaction models. You can check the service at <a href="${rootPrefix}servicios/ia.html">Artificial Intelligence</a>.`,
         empleo: `You can check available opportunities and submit your application in <a href="${rootPrefix}trabaja-con-nosotros.html">Work with us</a>. I do not have real-time access to specific vacancies, but I can take you to the right page.`,
         contacto: `You can contact LogNext at <a href="mailto:info@lognext.com">info@lognext.com</a> or call <a href="tel:+34915472550">+34 915 472 550</a>. For talent-related topics, write to <a href="mailto:talent@lognext.com">talent@lognext.com</a>.`,
+        contactoHumano: `To talk to the LogNext team, you can write to <a href="mailto:info@lognext.com">info@lognext.com</a> or call <a href="tel:+34915472550">+34 915 472 550</a>. For talent or application-related questions, you can also contact <a href="mailto:talent@lognext.com">talent@lognext.com</a>.`,
         saludo: `Hello! 👋 I’m LogNext’s virtual assistant. I can help you with services, location, contact, careers, cybersecurity, artificial intelligence, legal notice, cookies or the whistleblowing channel. What would you like to know?`,
         agradecimiento: `You’re welcome! 😊 If you need anything else about LogNext, services, careers, contact or legal information, I’m here to help.`,
         precios: `I cannot provide fixed prices or rates from the chat because they depend on the scope, context and needs of each project. To request a proposal or quote, contact LogNext at <a href="mailto:info@lognext.com">info@lognext.com</a>.`,
         ubicacion: `LogNext is located at <a href="https://maps.google.com/?q=Avenida+de+Burgos+17+Madrid+Spain" target="_blank" rel="noopener noreferrer">Avenida de Burgos 17, 28036 Madrid, Spain</a>. You can also call <a href="tel:+34915472550">+34 915 472 550</a>.`,
         legal: `You can review LogNext's legal information on the <a href="${rootPrefix}enlaces-legales/aviso-legal.html">Legal Notice</a> page.`,
-        politicasCorporativas: `You can check LogNext’s available corporate and legal information in the legal links: <a href="${rootPrefix}enlaces-legales/aviso-legal.html">Legal Notice</a>, <a href="${rootPrefix}enlaces-legales/politica-cookies.html">Cookie Policy</a> and <a href="${rootPrefix}enlaces-legales/canal-denuncias.html">Whistleblowing Channel</a>. If you are looking for specific documentation about the Information Security Policy or compliance, we recommend contacting LogNext directly at <a href="mailto:info@lognext.com">info@lognext.com</a> to receive the appropriate information.`,
+        politicasCorporativas: `You can check the corporate and legal documentation published by LogNext: <a href="${rootPrefix}assets/docs/politica-seguridad.pdf" target="_blank" rel="noopener noreferrer">Information Security Policy</a>, <a href="${rootPrefix}assets/docs/politica-sistema-integrado.pdf" target="_blank" rel="noopener noreferrer">Integrated System Policy</a>, <a href="${rootPrefix}enlaces-legales/aviso-legal.html">Legal Notice</a>, <a href="${rootPrefix}enlaces-legales/politica-cookies.html">Cookie Policy</a> and <a href="${rootPrefix}enlaces-legales/canal-denuncias.html">Whistleblowing Channel</a>. For additional compliance documentation, contact LogNext at <a href="mailto:info@lognext.com">info@lognext.com</a>.`,
         cookies: `Information about cookie use, settings and consent is available in the <a href="${rootPrefix}enlaces-legales/politica-cookies.html">Cookie Policy</a>.`,
         canal: `To report possible issues or irregularities, please visit the <a href="${rootPrefix}enlaces-legales/canal-denuncias.html">Whistleblowing Channel</a>.`,
         privacidad: `I do not see a separate privacy page on the website. Information about personal data processing appears within the <a href="${rootPrefix}enlaces-legales/aviso-legal.html">Legal Notice</a>. For specific questions, write to <a href="mailto:privacy@lognext.com">privacy@lognext.com</a>.`,
@@ -93,12 +95,13 @@
         ia: `En Intelligence Artificielle, LogNext travaille sur des solutions orientées vers l'automatisation, l'analyse et de nouveaux modèles d'interaction. Consultez le service <a href="${rootPrefix}servicios/ia.html">Intelligence Artificielle</a>.`,
         empleo: `Vous pouvez consulter les opportunités disponibles et envoyer votre candidature depuis la section <a href="${rootPrefix}trabaja-con-nosotros.html">Travailler avec nous</a>. Je n'ai pas accès en temps réel aux offres concrètes, mais je peux vous diriger vers la page correspondante.`,
         contacto: `Vous pouvez contacter LogNext à <a href="mailto:info@lognext.com">info@lognext.com</a> ou appeler le <a href="tel:+34915472550">+34 915 472 550</a>. Pour les sujets liés au talent, écrivez à <a href="mailto:talent@lognext.com">talent@lognext.com</a>.`,
+        contactoHumano: `Pour parler avec l'équipe de LogNext, vous pouvez écrire à <a href="mailto:info@lognext.com">info@lognext.com</a> ou appeler le <a href="tel:+34915472550">+34 915 472 550</a>. Pour les questions liées au talent ou aux candidatures, vous pouvez également contacter <a href="mailto:talent@lognext.com">talent@lognext.com</a>.`,
         saludo: `Bonjour ! 👋 Je suis l’assistant virtuel de LogNext. Je peux vous aider avec les services, la localisation, le contact, les carrières, la cybersécurité, l’intelligence artificielle, les mentions légales, les cookies ou le canal de signalement. Que souhaitez-vous savoir ?`,
         agradecimiento: `Avec plaisir ! 😊 Si vous avez besoin d’autre chose sur LogNext, les services, les carrières, le contact ou les informations légales, je suis là pour vous aider.`,
         precios: `Je ne peux pas fournir de prix ou de tarifs fixes depuis le chat, car ils dépendent du périmètre, du contexte et des besoins de chaque projet. Pour demander une proposition ou un devis, contactez LogNext à <a href="mailto:info@lognext.com">info@lognext.com</a>.`,
         ubicacion: `LogNext est situé à <a href="https://maps.google.com/?q=Avenida+de+Burgos+17+Madrid+Spain" target="_blank" rel="noopener noreferrer">Avenida de Burgos 17, 28036 Madrid, Spain</a>. Vous pouvez également appeler le <a href="tel:+34915472550">+34 915 472 550</a>.`,
         legal: `Vous pouvez consulter les informations légales de LogNext sur la page <a href="${rootPrefix}enlaces-legales/aviso-legal.html">Mentions légales</a>.`,
-        politicasCorporativas: `Vous pouvez consulter les informations corporatives et légales disponibles dans les liens légaux de LogNext : <a href="${rootPrefix}enlaces-legales/aviso-legal.html">Mentions légales</a>, <a href="${rootPrefix}enlaces-legales/politica-cookies.html">Politique de cookies</a> et <a href="${rootPrefix}enlaces-legales/canal-denuncias.html">Canal de signalement</a>. Si vous recherchez une documentation spécifique sur la politique de sécurité de l’information ou la conformité, nous vous recommandons de contacter directement LogNext à <a href="mailto:info@lognext.com">info@lognext.com</a>.`,
+        politicasCorporativas: `Vous pouvez consulter la documentation corporative et légale publiée par LogNext : <a href="${rootPrefix}assets/docs/politica-seguridad.pdf" target="_blank" rel="noopener noreferrer">Politique de sécurité de l’information</a>, <a href="${rootPrefix}assets/docs/politica-sistema-integrado.pdf" target="_blank" rel="noopener noreferrer">Politique du système intégré</a>, <a href="${rootPrefix}enlaces-legales/aviso-legal.html">Mentions légales</a>, <a href="${rootPrefix}enlaces-legales/politica-cookies.html">Politique de cookies</a> et <a href="${rootPrefix}enlaces-legales/canal-denuncias.html">Canal de signalement</a>. Pour toute documentation supplémentaire sur la conformité, contactez LogNext à <a href="mailto:info@lognext.com">info@lognext.com</a>.`,
         cookies: `Les informations sur l'utilisation, la configuration et le consentement des cookies sont disponibles dans la <a href="${rootPrefix}enlaces-legales/politica-cookies.html">Politique de cookies</a>.`,
         canal: `Pour signaler une possible incidence ou irrégularité, consultez le <a href="${rootPrefix}enlaces-legales/canal-denuncias.html">Canal de signalement</a>.`,
         privacidad: `Je ne vois pas de page de confidentialité indépendante sur le site. Les informations sur le traitement des données personnelles figurent dans les <a href="${rootPrefix}enlaces-legales/aviso-legal.html">Mentions légales</a>. Pour une question spécifique, écrivez à <a href="mailto:privacy@lognext.com">privacy@lognext.com</a>.`,
@@ -518,6 +521,30 @@
         "infrastructure management"
       ],
       terms: ["servicios", "servicio", "soluciones", "areas", "catalogo", "services", "solutions", "portfolio", "ams", "ims", "outsourcing"]
+    },
+    {
+      key: "contactoHumano",
+      words: [
+        "quiero hablar con una persona",
+        "hablar con alguien",
+        "hablar con un comercial",
+        "hablar con soporte",
+        "contactar con una persona",
+        "agente humano",
+        "persona real",
+        "talk to a person",
+        "speak to someone",
+        "human agent",
+        "contact a person",
+        "talk to sales",
+        "talk to support",
+        "parler a une personne",
+        "parler a quelqu un",
+        "agent humain",
+        "contacter une personne",
+        "parler au commercial"
+      ],
+      terms: ["persona", "alguien", "comercial", "soporte", "humano", "person", "someone", "human", "sales", "support", "personne", "quelqu", "commercial"]
     },
     {
       key: "contacto",

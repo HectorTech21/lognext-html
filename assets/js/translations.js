@@ -1174,6 +1174,67 @@ function initCookieSystem() {
     });
 }
 
+// ========== THEME TOGGLE ==========
+const THEME_STORAGE_KEY = 'lognext_theme_preference';
+
+function getSystemThemePreference() {
+  return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+}
+
+function getStoredThemePreference() {
+  const savedTheme = localStorage.getItem(THEME_STORAGE_KEY);
+  return savedTheme === 'dark' || savedTheme === 'light' ? savedTheme : null;
+}
+
+function getInitialTheme() {
+  return getStoredThemePreference() || 'light';
+}
+
+function updateThemeToggleButtons(theme) {
+  const isDark = theme === 'dark';
+  document.querySelectorAll('.theme-toggle').forEach(button => {
+    button.setAttribute('aria-pressed', String(isDark));
+    button.setAttribute('aria-label', isDark ? 'Cambiar a tema claro' : 'Cambiar a tema oscuro');
+    const icon = button.querySelector('.theme-toggle__icon');
+    if (icon) {
+      icon.textContent = isDark ? '☀' : '☾';
+    }
+  });
+}
+
+function applyTheme(theme) {
+  document.documentElement.setAttribute('data-theme', theme);
+  updateThemeToggleButtons(theme);
+}
+
+function initThemeToggle() {
+  applyTheme(getInitialTheme());
+
+  document.querySelectorAll('.theme-toggle').forEach(button => {
+    button.addEventListener('click', function() {
+      const currentTheme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+      const nextTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      localStorage.setItem(THEME_STORAGE_KEY, nextTheme);
+      applyTheme(nextTheme);
+    });
+  });
+
+  if (window.matchMedia) {
+    const colorSchemeQuery = window.matchMedia('(prefers-color-scheme: dark)');
+    const handleSystemThemeChange = function(event) {
+      if (!getStoredThemePreference()) {
+        applyTheme(event.matches ? 'dark' : 'light');
+      }
+    };
+
+    if (colorSchemeQuery.addEventListener) {
+      colorSchemeQuery.addEventListener('change', handleSystemThemeChange);
+    } else if (colorSchemeQuery.addListener) {
+      colorSchemeQuery.addListener(handleSystemThemeChange);
+    }
+  }
+}
+
 // ========== INICIALIZACIÓN PRINCIPAL ==========
 document.addEventListener('DOMContentLoaded', function() {
   const langLinks = document.querySelectorAll('.language-switcher a, .language-switcher.mobile a');
@@ -1184,6 +1245,7 @@ document.addEventListener('DOMContentLoaded', function() {
       setLanguage(lang);
     });
   });
+  initThemeToggle();
   setLanguage(currentLang);
   initMobileMenu();
   initHeroVideo();

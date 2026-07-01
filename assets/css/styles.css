@@ -5,10 +5,88 @@
   box-sizing: border-box;
 }
 
+:root {
+  color-scheme: light;
+  --color-primary: #000029;
+  --color-primary-soft: #101044;
+  --color-accent: #FA3C0F;
+  --color-accent-hover: #e6350a;
+  --color-page-bg: #f6f7fb;
+  --color-surface: #ffffff;
+  --color-surface-soft: #f8f9fc;
+  --color-text: #1e2a3a;
+  --color-text-strong: #000029;
+  --color-text-muted: #4a5568;
+  --section-bg: #ffffff;
+  --section-bg-soft: #f6f7fb;
+  --section-title-color: #000029;
+  --section-text-color: #1e2a3a;
+  --card-bg: #ffffff;
+  --card-text: #000029;
+  --service-card-bg: #000029;
+  --service-card-text: #ffffff;
+  --service-card-border: rgba(250, 60, 15, 0.25);
+  --service-card-shadow: 0 18px 45px rgba(0, 0, 41, 0.18);
+  --service-media-panel-bg: #000029;
+  --service-media-panel-border: rgba(250, 60, 15, 0.24);
+  --service-media-panel-shadow: 0 24px 60px rgba(0, 0, 41, 0.18);
+  --success-section-bg: #ffffff;
+  --success-card-bg: #000029;
+  --success-card-text: rgba(255, 255, 255, 0.9);
+  --success-card-title: #FA3C0F;
+  --success-card-border: rgba(250, 60, 15, 0.25);
+  --hero-bg: #f6f7fb;
+  --hero-text: #1e2a3a;
+  --hero-text-muted: #4a5568;
+  --color-border: rgba(0, 0, 41, 0.12);
+  --color-border-accent: rgba(250, 60, 15, 0.3);
+  --shadow-soft: 0 14px 36px rgba(0, 0, 41, 0.08);
+  --shadow-card: 0 18px 45px rgba(0, 0, 41, 0.1);
+  --gradient-brand: linear-gradient(135deg, #FA3C0F, #e6350a);
+  --gradient-brand-text: linear-gradient(135deg, #FA3C0F 0%, #ff7a59 52%, #d91f7f 100%);
+  --gradient-dark: linear-gradient(135deg, #000029 0%, #0a0a3a 100%);
+  --radius-card: 20px;
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+  --color-page-bg: #05051f;
+  --color-surface: #08082d;
+  --color-surface-soft: #101044;
+  --color-text: rgba(255, 255, 255, 0.86);
+  --color-text-strong: #ffffff;
+  --color-text-muted: rgba(255, 255, 255, 0.72);
+  --section-bg: #08082d;
+  --section-bg-soft: #101044;
+  --section-title-color: #ffffff;
+  --section-text-color: rgba(255, 255, 255, 0.86);
+  --card-bg: #101044;
+  --card-text: #ffffff;
+  --service-card-bg: #05052b;
+  --service-card-text: #ffffff;
+  --service-card-border: rgba(250, 60, 15, 0.35);
+  --service-card-shadow: 0 18px 45px rgba(0, 0, 0, 0.34);
+  --service-media-panel-bg: #000029;
+  --service-media-panel-border: rgba(250, 60, 15, 0.3);
+  --service-media-panel-shadow: 0 24px 60px rgba(0, 0, 0, 0.32);
+  --success-section-bg: #08082d;
+  --success-card-bg: #000029;
+  --success-card-text: rgba(255, 255, 255, 0.9);
+  --success-card-title: #FA3C0F;
+  --success-card-border: rgba(250, 60, 15, 0.35);
+  --hero-bg: #000029;
+  --hero-text: rgba(255, 255, 255, 0.9);
+  --hero-text-muted: rgba(255, 255, 255, 0.72);
+  --color-border: rgba(255, 255, 255, 0.12);
+  --shadow-soft: 0 16px 44px rgba(0, 0, 0, 0.28);
+  --shadow-card: 0 22px 54px rgba(0, 0, 0, 0.34);
+  --gradient-brand-text: linear-gradient(135deg, #ffffff 0%, #FA3C0F 100%);
+}
+
 body {
   font-family: 'Segoe UI', 'Inter', system-ui, -apple-system, sans-serif;
-  background-color: #ffffff;
-  color: #1e2a3a;
+  background-color: var(--color-page-bg);
+  color: var(--color-text);
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
@@ -28,13 +106,7 @@ body {
 
   /* Base gradient + subtle shine layer (both clipped to text) */
   background-image:
-    linear-gradient(
-      110deg,
-      #7C3AED 0%,
-      #22D3EE 35%,
-      #3B82F6 70%,
-      #A855F7 100%
-    ),
+    var(--gradient-brand-text),
     linear-gradient(
       120deg,
       rgba(255, 255, 255, 0) 0%,
@@ -48,6 +120,14 @@ body {
 
   animation: animatedGradientFlow 12s ease-in-out infinite;
   will-change: background-position;
+}
+
+.text-gradient-brand {
+  color: var(--color-accent);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: var(--gradient-brand-text);
 }
 
 @keyframes animatedGradientFlow {
@@ -246,6 +326,34 @@ main {
 .language-switcher .active {
   color: #FA3C0F;
   border-bottom: 2px solid #FA3C0F;
+}
+
+.theme-toggle {
+  width: 38px;
+  height: 38px;
+  border: 1px solid rgba(250, 60, 15, 0.45);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.06);
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.25s ease, border-color 0.25s ease, color 0.25s ease, transform 0.25s ease;
+}
+
+.theme-toggle:hover,
+.theme-toggle:focus-visible {
+  background: rgba(250, 60, 15, 0.14);
+  border-color: #FA3C0F;
+  color: #FA3C0F;
+  transform: translateY(-1px);
+  outline: none;
+}
+
+.theme-toggle__icon {
+  font-size: 16px;
+  line-height: 1;
 }
 
 .menu-toggle {
@@ -3502,4 +3610,538 @@ input:disabled + .cookie-slider {
 
     
     
+}
+
+/* ========== LIGHT-FIRST THEME FOUNDATION ========== */
+body {
+  background:
+    radial-gradient(circle at 12% 8%, rgba(250, 60, 15, 0.05), transparent 28%),
+    var(--color-page-bg);
+  color: var(--color-text);
+}
+
+.presentacion,
+.about-hero,
+.work-hero-full,
+.service-hero,
+.legal-hero {
+  background:
+    radial-gradient(circle at 10% 12%, rgba(250, 60, 15, 0.08), transparent 32%),
+    radial-gradient(circle at 88% 20%, rgba(0, 0, 41, 0.06), transparent 28%),
+    var(--hero-bg) !important;
+  color: var(--hero-text);
+}
+
+.presentacion::before,
+.presentacion::after,
+.about-hero::before,
+.about-hero::after,
+.work-hero-full::before,
+.work-hero-full::after,
+.service-hero::before,
+.service-hero::after,
+.legal-hero::before,
+.legal-hero::after,
+.presentacion .circle-1,
+.presentacion .circle-2,
+.presentacion .circle-3,
+.about-hero .circle-1,
+.about-hero .circle-2,
+.about-hero .circle-3,
+.work-hero-full .circle-1,
+.work-hero-full .circle-2,
+.work-hero-full .circle-3,
+.service-hero .circle-1,
+.service-hero .circle-2,
+.service-hero .circle-3,
+.legal-hero .circle-1,
+.legal-hero .circle-2,
+.legal-hero .circle-3 {
+  display: none;
+}
+
+.presentacion h1,
+.presentacion h1.animated-gradient-text,
+.about-hero-content h1,
+.work-hero-content h1,
+.service-hero-text h1,
+.legal-hero-content h1 {
+  background: var(--gradient-brand-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.presentacion p,
+.about-hero-content h2,
+.service-hero-text h2,
+.hero-quote {
+  color: var(--hero-text-muted);
+}
+
+.service-hero-image {
+  background:
+    radial-gradient(circle at 18% 16%, rgba(250, 60, 15, 0.18), transparent 38%),
+    var(--service-media-panel-bg);
+  border: 1px solid var(--service-media-panel-border);
+  border-radius: 28px;
+  padding: clamp(28px, 4vw, 56px);
+  box-shadow: var(--service-media-panel-shadow);
+  align-items: center;
+  max-width: 560px;
+  min-height: 320px;
+}
+
+.service-hero-image img {
+  filter: none;
+}
+
+.presentacion::before,
+.presentacion::after,
+.presentacion .circle-1,
+.presentacion .circle-2,
+.presentacion .circle-3 {
+  display: block;
+}
+
+.presentacion::before {
+  background-image:
+    radial-gradient(circle at 18% 22%, rgba(250, 60, 15, 0.12) 0%, transparent 34%),
+    radial-gradient(circle at 82% 18%, rgba(0, 0, 41, 0.08) 0%, transparent 30%);
+}
+
+.presentacion::after {
+  width: 520px;
+  height: 520px;
+  background: radial-gradient(circle, rgba(250, 60, 15, 0.14) 0%, rgba(250, 60, 15, 0.07) 38%, transparent 70%);
+  opacity: 0.75;
+}
+
+.presentacion .circle-1 {
+  background: radial-gradient(circle, rgba(250, 60, 15, 0.12) 0%, rgba(250, 60, 15, 0.05) 42%, transparent 72%);
+  opacity: 0.75;
+}
+
+.presentacion .circle-2 {
+  background: radial-gradient(circle, rgba(0, 0, 41, 0.09) 0%, rgba(0, 0, 41, 0.04) 42%, transparent 72%);
+  opacity: 0.7;
+}
+
+.presentacion .circle-3 {
+  background: radial-gradient(circle, rgba(250, 60, 15, 0.1) 0%, rgba(250, 60, 15, 0.04) 42%, transparent 72%);
+  opacity: 0.7;
+}
+
+.servicios,
+.contact-section,
+.certificaciones,
+.legal-content-section,
+.service-content,
+.cookie-content,
+.canal-content,
+.about-map-section,
+.about-carousel,
+.offers-section {
+  background-color: var(--section-bg);
+  color: var(--color-text);
+}
+
+.beneficios,
+.team-section,
+.timeline-section,
+.valores-section,
+.carousel-section,
+.benefits-section,
+.about-stats,
+.section-light,
+.light-section {
+  background: var(--section-bg-soft);
+  color: var(--color-text);
+}
+
+.section-title,
+.servicios h2,
+.benefits-section .section-title,
+.about-stats .section-title,
+.about-carousel .section-title,
+.legal-content h2,
+.legal-content h3,
+.cookie-content h2,
+.canal-content h2,
+.certificaciones .section-title {
+  color: var(--section-title-color);
+}
+
+.section-title::after,
+.servicios h2::after,
+.benefits-section .section-title::after,
+.about-stats .section-title::after,
+.about-carousel .section-title::after {
+  background: var(--gradient-brand);
+}
+
+.servicio-card-horizontal,
+.benefit-card {
+  background: var(--card-bg);
+  color: var(--card-text);
+  border-color: var(--color-border);
+  box-shadow: var(--shadow-soft);
+}
+
+.servicio-card-horizontal h3,
+.benefit-card h3 {
+  color: var(--card-text);
+}
+
+.servicio-card-horizontal:hover,
+.benefit-card:hover {
+  background: var(--color-surface);
+  border-color: var(--color-border-accent);
+}
+
+.servicios .servicio-card-horizontal {
+  background: var(--service-card-bg);
+  color: var(--service-card-text);
+  border-color: var(--service-card-border);
+  box-shadow: var(--service-card-shadow);
+}
+
+.servicios .servicio-card-horizontal h3 {
+  color: var(--service-card-text);
+}
+
+.servicios .servicio-card-horizontal .servicio-imagen img {
+  filter: none;
+}
+
+.servicios .servicio-card-horizontal:hover {
+  background: var(--service-card-bg);
+  border-color: rgba(250, 60, 15, 0.65);
+  box-shadow: 0 22px 52px rgba(250, 60, 15, 0.22);
+}
+
+.servicios .servicio-card-horizontal:hover h3 {
+  color: #FA3C0F;
+}
+
+.service-casos-full {
+  background: var(--success-section-bg);
+  color: var(--section-text-color);
+}
+
+.service-casos-full::before {
+  background-image:
+    radial-gradient(circle at 14% 18%, rgba(250, 60, 15, 0.06), transparent 32%),
+    radial-gradient(circle at 86% 24%, rgba(0, 0, 41, 0.06), transparent 28%);
+}
+
+.service-casos-full .section-title {
+  color: var(--section-title-color);
+}
+
+.caso-item {
+  background: var(--success-card-bg);
+  border: 1px solid var(--success-card-border);
+  box-shadow: var(--shadow-soft);
+}
+
+.caso-item:hover {
+  background: var(--success-card-bg);
+  border-color: rgba(250, 60, 15, 0.6);
+  box-shadow: 0 22px 52px rgba(250, 60, 15, 0.2);
+}
+
+.caso-item h3 {
+  color: var(--success-card-title);
+}
+
+.caso-item p {
+  color: var(--success-card-text);
+}
+
+.caso-image img {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.service-card,
+.certificacion-card,
+.benefit-card,
+.team-card,
+.stat-card,
+.legal-content,
+.cookie-category,
+.modal-content,
+.carousel-card,
+.mobile-info-card {
+  box-shadow: var(--shadow-soft);
+}
+
+[data-theme="dark"] body {
+  background:
+    radial-gradient(circle at 15% 10%, rgba(250, 60, 15, 0.08), transparent 30%),
+    var(--color-page-bg);
+}
+
+[data-theme="dark"] .presentacion,
+[data-theme="dark"] .about-hero,
+[data-theme="dark"] .work-hero-full,
+[data-theme="dark"] .service-hero,
+[data-theme="dark"] .legal-hero {
+  background: #000029 !important;
+}
+
+[data-theme="dark"] .presentacion::before,
+[data-theme="dark"] .presentacion::after,
+[data-theme="dark"] .about-hero::before,
+[data-theme="dark"] .about-hero::after,
+[data-theme="dark"] .work-hero-full::before,
+[data-theme="dark"] .work-hero-full::after,
+[data-theme="dark"] .service-hero::before,
+[data-theme="dark"] .service-hero::after,
+[data-theme="dark"] .legal-hero::before,
+[data-theme="dark"] .legal-hero::after,
+[data-theme="dark"] .presentacion .circle-1,
+[data-theme="dark"] .presentacion .circle-2,
+[data-theme="dark"] .presentacion .circle-3,
+[data-theme="dark"] .about-hero .circle-1,
+[data-theme="dark"] .about-hero .circle-2,
+[data-theme="dark"] .about-hero .circle-3,
+[data-theme="dark"] .work-hero-full .circle-1,
+[data-theme="dark"] .work-hero-full .circle-2,
+[data-theme="dark"] .work-hero-full .circle-3,
+[data-theme="dark"] .service-hero .circle-1,
+[data-theme="dark"] .service-hero .circle-2,
+[data-theme="dark"] .service-hero .circle-3,
+[data-theme="dark"] .legal-hero .circle-1,
+[data-theme="dark"] .legal-hero .circle-2,
+[data-theme="dark"] .legal-hero .circle-3 {
+  display: block;
+}
+
+[data-theme="dark"] .presentacion p,
+[data-theme="dark"] .about-hero-content h2,
+[data-theme="dark"] .service-hero-text h2,
+[data-theme="dark"] .hero-quote {
+  color: var(--hero-text);
+}
+
+[data-theme="dark"] .servicios,
+[data-theme="dark"] .contact-section,
+[data-theme="dark"] .certificaciones,
+[data-theme="dark"] .legal-content-section,
+[data-theme="dark"] .service-content,
+[data-theme="dark"] .cookie-content,
+[data-theme="dark"] .canal-content,
+[data-theme="dark"] .about-map-section,
+[data-theme="dark"] .about-carousel,
+[data-theme="dark"] .offers-section,
+[data-theme="dark"] .beneficios,
+[data-theme="dark"] .team-section,
+[data-theme="dark"] .timeline-section,
+[data-theme="dark"] .valores-section,
+[data-theme="dark"] .carousel-section,
+[data-theme="dark"] .benefits-section,
+[data-theme="dark"] .about-stats,
+[data-theme="dark"] .section-light,
+[data-theme="dark"] .light-section {
+  background-color: var(--color-surface);
+  color: var(--color-text);
+}
+
+[data-theme="dark"] .servicios {
+  background-color: var(--section-bg);
+}
+
+[data-theme="dark"] .section-title,
+[data-theme="dark"] .servicios h2,
+[data-theme="dark"] .benefits-section .section-title,
+[data-theme="dark"] .about-stats .section-title,
+[data-theme="dark"] .about-carousel .section-title,
+[data-theme="dark"] .legal-content h2,
+[data-theme="dark"] .legal-content h3,
+[data-theme="dark"] .cookie-content h2,
+[data-theme="dark"] .canal-content h2,
+[data-theme="dark"] .certificaciones .section-title {
+  color: var(--color-text-strong);
+}
+
+[data-theme="dark"] .servicio-card-horizontal {
+  background: var(--service-card-bg);
+  border-color: var(--service-card-border);
+  color: var(--service-card-text);
+  box-shadow: var(--service-card-shadow);
+}
+
+[data-theme="dark"] .servicio-card-horizontal h3 {
+  color: var(--service-card-text);
+}
+
+[data-theme="dark"] .servicio-card-horizontal .servicio-imagen img {
+  filter: none;
+}
+
+[data-theme="dark"] .servicio-card-horizontal:hover {
+  background: var(--service-card-bg);
+  border-color: rgba(250, 60, 15, 0.65);
+  box-shadow: 0 22px 52px rgba(250, 60, 15, 0.24);
+}
+
+[data-theme="dark"] .servicio-card-horizontal:hover h3 {
+  color: #FA3C0F;
+}
+
+[data-theme="dark"] .benefit-card:hover {
+  background: rgba(250, 60, 15, 0.15);
+  border-color: rgba(250, 60, 15, 0.5);
+}
+
+[data-theme="dark"] .service-casos-full {
+  background: var(--success-section-bg);
+}
+
+[data-theme="dark"] .service-casos-full .section-title {
+  color: var(--section-title-color);
+}
+
+[data-theme="dark"] .caso-item {
+  background: var(--success-card-bg);
+  border-color: var(--success-card-border);
+}
+
+[data-theme="dark"] .caso-item h3 {
+  color: var(--success-card-title);
+}
+
+[data-theme="dark"] .caso-item p {
+  color: var(--success-card-text);
+}
+
+[data-theme="dark"] .service-card,
+[data-theme="dark"] .certificacion-card,
+[data-theme="dark"] .benefit-card,
+[data-theme="dark"] .team-card,
+[data-theme="dark"] .stat-card,
+[data-theme="dark"] .legal-content,
+[data-theme="dark"] .cookie-category,
+[data-theme="dark"] .modal-content,
+[data-theme="dark"] .carousel-card {
+  background-color: var(--color-surface-soft);
+  border-color: var(--color-border);
+  color: var(--color-text);
+  box-shadow: var(--shadow-card);
+}
+
+/* ========== QUIENES SOMOS CONTRAST FIXES ========== */
+.about-stats .stat-card {
+  background: var(--card-bg);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-soft);
+}
+
+.about-stats .stat-label {
+  color: var(--color-text-strong);
+}
+
+.about-map .section-title {
+  color: #000029;
+}
+
+[data-theme="dark"] .about-carousel .carousel-card h3 {
+  color: #ffffff;
+}
+
+[data-theme="dark"] .about-carousel .carousel-card p {
+  color: rgba(255, 255, 255, 0.82);
+}
+
+[data-theme="dark"] .about-map .section-title {
+  color: #000029;
+}
+
+/* ========== TRABAJA CON NOSOTROS CONTRAST FIXES ========== */
+.work-hero-full .team-card,
+.work-hero-full .team-card-carousel {
+  background: #000029;
+  border-color: rgba(250, 60, 15, 0.28);
+  color: #ffffff;
+}
+
+.work-hero-full .team-card:hover,
+.work-hero-full .team-card-carousel:hover {
+  background: #05052b;
+  border-color: rgba(250, 60, 15, 0.55);
+}
+
+.work-hero-full .team-info h2,
+.work-hero-full .team-info p,
+.work-hero-full .team-members p,
+.work-hero-full .team-carousel-info h3,
+.work-hero-full .team-carousel-info h3 a {
+  color: #ffffff;
+}
+
+.work-hero-full .team-carousel-role {
+  color: rgba(255, 255, 255, 0.82);
+}
+
+[data-theme="dark"] .offers-left h2,
+[data-theme="dark"] .offers-right p,
+[data-theme="dark"] .offers-highlight {
+  color: rgba(255, 255, 255, 0.88);
+}
+
+[data-theme="dark"] .offers-left h2 {
+  color: #ffffff;
+}
+
+/* ========== LEGAL PAGES CONTRAST FIXES ========== */
+.legal-hero {
+  background: #000029 !important;
+}
+
+.legal-hero::before,
+.legal-hero::after,
+.legal-hero .circle-1,
+.legal-hero .circle-2,
+.legal-hero .circle-3 {
+  display: block;
+}
+
+.legal-hero::before {
+  background-image:
+    radial-gradient(circle at 20% 80%, rgba(250, 60, 15, 0.15) 0%, transparent 50%),
+    repeating-linear-gradient(45deg, rgba(250, 60, 15, 0.05) 0px, rgba(250, 60, 15, 0.05) 2px, transparent 2px, transparent 8px);
+}
+
+[data-theme="dark"] .legal-content {
+  background-color: var(--color-surface);
+}
+
+[data-theme="dark"] .legal-content-inner,
+[data-theme="dark"] .legal-content-inner p,
+[data-theme="dark"] .legal-content-inner li,
+[data-theme="dark"] .legal-content-inner span {
+  color: rgba(255, 255, 255, 0.86);
+}
+
+[data-theme="dark"] .legal-content-inner h2,
+[data-theme="dark"] .legal-content-inner h3 {
+  color: #ffffff;
+}
+
+[data-theme="dark"] .legal-content-inner strong {
+  color: #ffffff;
+}
+
+[data-theme="dark"] .legal-link-inline {
+  color: #FA3C0F;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .presentacion::after,
+  .presentacion .circle-1,
+  .presentacion .circle-2,
+  .presentacion .circle-3 {
+    animation: none;
+  }
 }

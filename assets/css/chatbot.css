@@ -15,7 +15,7 @@
   height: 64px;
   border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: 50%;
-  background: #000029;
+  background: var(--color-primary, #000029);
   color: #ffffff;
   cursor: pointer;
   box-shadow: 0 14px 34px rgba(0, 0, 41, 0.3);
@@ -57,7 +57,7 @@
   bottom: 78px;
   width: min(380px, calc(100vw - 32px));
   max-height: min(620px, calc(100vh - 120px));
-  background: #ffffff;
+  background: var(--color-surface, #ffffff);
   border-radius: 18px;
   box-shadow: 0 22px 60px rgba(0, 0, 41, 0.32);
   overflow: hidden;
@@ -73,7 +73,7 @@
 .lognext-chatbot__header {
   background:
     linear-gradient(135deg, rgba(250, 60, 15, 0.18), transparent 45%),
-    linear-gradient(135deg, #000029 0%, #08083d 100%);
+    var(--gradient-dark, linear-gradient(135deg, #000029 0%, #08083d 100%));
   color: #ffffff;
   padding: 18px 20px;
   display: flex;
@@ -110,7 +110,7 @@
 
 .lognext-chatbot__messages {
   padding: 18px;
-  background: #f7f8fb;
+  background: var(--color-surface-soft, #f7f8fb);
   overflow-y: auto;
   min-height: 230px;
   max-height: 330px;
@@ -123,12 +123,12 @@
   margin-bottom: 12px;
   font-size: 14px;
   line-height: 1.45;
-  color: #000029;
+  color: var(--color-text-strong, #000029);
   word-wrap: break-word;
 }
 
 .lognext-chatbot__message--bot {
-  background: #ffffff;
+  background: var(--color-surface, #ffffff);
   border: 1px solid rgba(0, 0, 41, 0.08);
   border-top-left-radius: 4px;
 }
@@ -140,13 +140,13 @@
 
 .lognext-chatbot__message--user {
   margin-left: auto;
-  background: #000029;
+  background: var(--color-primary, #000029);
   color: #ffffff;
   border-top-right-radius: 4px;
 }
 
 .lognext-chatbot__message a {
-  color: #fa3c0f;
+  color: var(--color-accent, #fa3c0f);
   font-weight: 700;
   text-decoration: none;
 }
@@ -160,14 +160,14 @@
   flex-wrap: wrap;
   gap: 8px;
   padding: 14px 18px 4px;
-  background: #ffffff;
+  background: var(--color-surface, #ffffff);
 }
 
 .lognext-chatbot__quick-btn {
   border: 1px solid rgba(250, 60, 15, 0.35);
   border-radius: 999px;
-  background: #ffffff;
-  color: #000029;
+  background: var(--color-surface, #ffffff);
+  color: var(--color-text-strong, #000029);
   padding: 8px 12px;
   font-size: 13px;
   font-weight: 700;
@@ -177,7 +177,7 @@
 
 .lognext-chatbot__quick-btn:hover {
   background: rgba(250, 60, 15, 0.08);
-  border-color: #fa3c0f;
+  border-color: var(--color-accent, #fa3c0f);
   transform: translateY(-1px);
 }
 
@@ -185,7 +185,7 @@
   display: flex;
   gap: 10px;
   padding: 14px 18px 18px;
-  background: #ffffff;
+  background: var(--color-surface, #ffffff);
   border-top: 1px solid rgba(0, 0, 41, 0.08);
 }
 
@@ -196,13 +196,14 @@
   border-radius: 999px;
   padding: 11px 14px;
   font-size: 14px;
-  color: #000029;
+  color: var(--color-text-strong, #000029);
+  background: var(--color-surface, #ffffff);
 }
 
 .lognext-chatbot__send {
-  border: 1px solid #fa3c0f;
+  border: 1px solid var(--color-accent, #fa3c0f);
   border-radius: 999px;
-  background: #fa3c0f;
+  background: var(--color-accent, #fa3c0f);
   color: #ffffff;
   padding: 0 16px;
   font-size: 14px;

@@ -3277,27 +3277,26 @@ main {
 .certificacion-card {
   display: block;
   text-decoration: none;
-  background: #ffffff;
-  border-radius: 20px;
-  padding: 25px;
+  background: transparent;
+  border-radius: 0;
+  padding: 0;
   text-align: center;
   transition: all 0.3s ease;
-  border: 1px solid rgba(0, 0, 41, 0.1);
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  border: 0;
+  box-shadow: none;
   cursor: pointer;
 }
 
 .certificacion-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 20px 40px rgba(250, 60, 15, 0.15);
-  border-color: rgba(250, 60, 15, 0.3);
 }
 
 .certificacion-card img {
+  display: block;
   width: 100%;
   max-width: 180px;
   height: auto;
-  display: block;
+  object-fit: contain;
   margin: 0 auto;
   transition: transform 0.3s ease;
 }
@@ -3323,7 +3322,7 @@ main {
     max-width: 500px;
   }
   .certificacion-card {
-    padding: 20px;
+    padding: 0;
   }
 }
 
@@ -3337,7 +3336,7 @@ main {
     max-width: 250px;
   }
   .certificacion-card {
-    padding: 20px;
+    padding: 0;
   }
 }
 }
@@ -3874,6 +3873,14 @@ body {
 .carousel-card,
 .mobile-info-card {
   box-shadow: var(--shadow-soft);
+}
+
+.certificaciones .certificacion-card,
+[data-theme="dark"] .certificaciones .certificacion-card {
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  padding: 0;
 }
 
 [data-theme="dark"] body {

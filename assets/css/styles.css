@@ -729,6 +729,104 @@ main {
   transform: scale(1.1);
 }
 
+.servicio-card-horizontal h3,
+.servicio-card-horizontal .servicio-imagen,
+.servicio-card-horizontal .servicio-imagen img,
+.servicio-card-horizontal .servicio-descripcion {
+  will-change: transform, opacity;
+}
+
+.servicio-card-horizontal h3 {
+  position: relative;
+  z-index: 2;
+  transition: color 0.35s ease, transform 0.35s ease;
+}
+
+.servicio-card-horizontal .servicio-imagen {
+  position: relative;
+  z-index: 1;
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+.servicio-card-horizontal .servicio-imagen img {
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+.servicio-descripcion {
+  position: absolute;
+  left: 22px;
+  right: 22px;
+  bottom: 34px;
+  z-index: 2;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 14px;
+  line-height: 1.55;
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.35s ease, transform 0.35s ease;
+  pointer-events: none;
+}
+
+.servicio-card-horizontal:hover h3,
+.servicio-card-horizontal:focus h3,
+.servicio-card-horizontal:focus-within h3 {
+  color: #FA3C0F;
+  transform: translateY(-4px);
+}
+
+.servicio-card-horizontal:hover .servicio-imagen,
+.servicio-card-horizontal:focus .servicio-imagen,
+.servicio-card-horizontal:focus-within .servicio-imagen {
+  opacity: 0;
+  transform: translateY(20px) scale(0.95);
+}
+
+.servicio-card-horizontal:hover .servicio-imagen img,
+.servicio-card-horizontal:focus .servicio-imagen img,
+.servicio-card-horizontal:focus-within .servicio-imagen img {
+  opacity: 0;
+  transform: translateY(20px) scale(0.95);
+}
+
+.servicio-card-horizontal:hover .servicio-descripcion,
+.servicio-card-horizontal:focus .servicio-descripcion,
+.servicio-card-horizontal:focus-within .servicio-descripcion {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .servicio-descripcion {
+    position: static;
+    opacity: 1;
+    transform: none;
+    margin-top: 4px;
+    font-size: 13px;
+    line-height: 1.45;
+  }
+
+  .servicio-card-horizontal:hover .servicio-imagen,
+  .servicio-card-horizontal:focus .servicio-imagen,
+  .servicio-card-horizontal:focus-within .servicio-imagen,
+  .servicio-card-horizontal:hover .servicio-imagen img,
+  .servicio-card-horizontal:focus .servicio-imagen img,
+  .servicio-card-horizontal:focus-within .servicio-imagen img {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .servicio-card-horizontal,
+  .servicio-card-horizontal h3,
+  .servicio-card-horizontal .servicio-imagen,
+  .servicio-card-horizontal .servicio-imagen img,
+  .servicio-card-horizontal .servicio-descripcion {
+    transition: none;
+  }
+}
+
 /* ========== PÁGINA QUIÉNES SOMOS ========== */
 .about-hero {
   min-height: 85vh;

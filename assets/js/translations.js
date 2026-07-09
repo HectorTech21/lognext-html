@@ -21,6 +21,11 @@ const translations = {
     
     // Servicios section (index)
     servicios_title: "Nuestros Servicios",
+    servicio_ia_hover: "Nuevas oportunidades para automatizar procesos, analizar información y mejorar la interacción con el cliente.",
+    servicio_ciber_hover: "Protección, cumplimiento y confianza para reforzar la seguridad de la información.",
+    servicio_ams_hover: "Gestión, mantenimiento y evolución de aplicaciones para asegurar continuidad y rendimiento.",
+    servicio_ims_hover: "Gestión de infraestructuras tecnológicas, soporte y continuidad operativa.",
+    servicio_outsourcing_hover: "Talento tecnológico especializado para reforzar equipos y acelerar proyectos.",
     certifications_title: "Certificaciones",
     video_not_supported: "Tu navegador no soporta videos.",
     
@@ -231,6 +236,11 @@ const translations = {
     
     // Servicios section (index)
     servicios_title: "Our Services",
+    servicio_ia_hover: "New opportunities to automate processes, analyze information and improve customer interaction.",
+    servicio_ciber_hover: "Protection, compliance and trust to strengthen information security.",
+    servicio_ams_hover: "Application management, maintenance and evolution to ensure continuity and performance.",
+    servicio_ims_hover: "Technology infrastructure management, support and operational continuity.",
+    servicio_outsourcing_hover: "Specialized technology talent to reinforce teams and accelerate projects.",
     certifications_title: "Certifications",
     video_not_supported: "Your browser does not support videos.",
     
@@ -432,6 +442,11 @@ const translations = {
     
     // Servicios section (index)
     servicios_title: "Nos Services",
+    servicio_ia_hover: "De nouvelles opportunités pour automatiser les processus, analyser l'information et améliorer l'interaction client.",
+    servicio_ciber_hover: "Protection, conformité et confiance pour renforcer la sécurité de l'information.",
+    servicio_ams_hover: "Gestion, maintenance et évolution des applications pour assurer continuité et performance.",
+    servicio_ims_hover: "Gestion des infrastructures technologiques, support et continuité opérationnelle.",
+    servicio_outsourcing_hover: "Des talents technologiques spécialisés pour renforcer les équipes et accélérer les projets.",
     certifications_title: "Certifications",
     video_not_supported: "Votre navigateur ne prend pas en charge les vidéos.",
     

@@ -3285,10 +3285,12 @@ main {
 }
 
 .certificaciones-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 30px;
-  max-width: 1000px;
+  width: 100%;
+  max-width: 1120px;
   margin: 0 auto;
 }
 
@@ -3311,12 +3313,18 @@ main {
 
 .certificacion-card img {
   display: block;
-  width: 100%;
+  width: auto;
   max-width: 180px;
+  max-height: 95px;
   height: auto;
   object-fit: contain;
   margin: 0 auto;
   transition: transform 0.3s ease;
+}
+
+.certificacion-card--ens img {
+  max-width: 150px;
+  max-height: 120px;
 }
 
 .certificacion-card:hover img {
@@ -3335,7 +3343,6 @@ main {
     padding: 60px 0;
   }
   .certificaciones-grid {
-    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     max-width: 500px;
   }
@@ -3349,7 +3356,6 @@ main {
     padding: 50px 0;
   }
   .certificaciones-grid {
-    grid-template-columns: 1fr;
     gap: 15px;
     max-width: 250px;
   }
@@ -4168,5 +4174,98 @@ body {
   .presentacion .circle-2,
   .presentacion .circle-3 {
     animation: none;
+  }
+}
+
+.certificaciones img[src*="ENSAlta"],
+.certifications img[src*="ENSAlta"],
+img[src*="ENSAlta"] {
+  max-width: 150px !important;
+  max-height: 130px !important;
+  width: auto !important;
+  height: auto !important;
+  object-fit: contain !important;
+  display: block !important;
+}
+
+.certificaciones a,
+.certifications a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.certificaciones {
+  padding-bottom: 100px !important;
+}
+
+@media (min-width: 1024px) {
+  .certifications-grid,
+  .certificaciones-grid,
+  .certifications-container,
+  .certificaciones-container {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 32px !important;
+    flex-wrap: nowrap !important;
+    width: 100% !important;
+    max-width: 1120px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .certifications-grid a,
+  .certificaciones-grid a,
+  .certifications-container a,
+  .certificaciones-container a {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex: 0 0 auto !important;
+  }
+
+  .certifications-grid img:not([src*="ENSAlta"]),
+  .certificaciones-grid img:not([src*="ENSAlta"]),
+  .certifications-container img:not([src*="ENSAlta"]),
+  .certificaciones-container img:not([src*="ENSAlta"]) {
+    max-width: 320px !important;
+    max-height: 130px !important;
+    width: auto !important;
+    height: auto !important;
+    object-fit: contain !important;
+    display: block !important;
+  }
+
+  .certifications-grid img[src*="ENSAlta"],
+  .certificaciones-grid img[src*="ENSAlta"],
+  .certifications-container img[src*="ENSAlta"],
+  .certificaciones-container img[src*="ENSAlta"] {
+    max-width: 135px !important;
+    max-height: 145px !important;
+    width: auto !important;
+    height: auto !important;
+    object-fit: contain !important;
+    display: block !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .certificaciones {
+    padding-bottom: 60px !important;
+  }
+
+  .certifications-grid,
+  .certificaciones-grid,
+  .certifications-container,
+  .certificaciones-container {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-wrap: wrap !important;
+    gap: 24px !important;
+    width: 100% !important;
   }
 }

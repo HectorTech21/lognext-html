@@ -656,8 +656,8 @@ main {
 .servicio-card-horizontal {
   background: #000029;
   border-radius: 20px;
-  padding: 40px 20px 45px 20px;
-  text-align: center;
+  padding: 36px 30px 40px;
+  text-align: left;
   transition: all 0.4s ease;
   border: 1px solid rgba(250, 60, 15, 0.2);
   position: relative;
@@ -693,15 +693,19 @@ main {
 }
 
 .servicio-card-horizontal h3 {
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 1.15rem;
+  font-weight: 700;
   color: #ffffff;
-  margin-bottom: 35px;
-  line-height: 1.4;
-  min-height: 75px;
+  margin: 0 0 32px;
+  line-height: 1.12;
+  min-height: auto;
+  max-width: 92%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 0;
   transition: color 0.3s ease;
   text-decoration: none;
 }
@@ -713,7 +717,7 @@ main {
 .servicio-imagen {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   margin-top: 10px;
 }
@@ -754,14 +758,17 @@ main {
 
 .servicio-descripcion {
   position: absolute;
-  left: 22px;
-  right: 22px;
+  left: 30px;
+  right: 30px;
   bottom: 34px;
   z-index: 2;
   margin: 0;
+  text-align: left;
   color: rgba(255, 255, 255, 0.92);
-  font-size: 14px;
-  line-height: 1.55;
+  font-size: 1.08rem;
+  line-height: 1.18;
+  font-weight: 500;
+  letter-spacing: 0;
   opacity: 0;
   transform: translateY(18px);
   transition: opacity 0.35s ease, transform 0.35s ease;
@@ -772,7 +779,7 @@ main {
 .servicio-card-horizontal:focus h3,
 .servicio-card-horizontal:focus-within h3 {
   color: #FA3C0F;
-  transform: translateY(-4px);
+  transform: translateY(0);
 }
 
 .servicio-card-horizontal:hover .servicio-imagen,
@@ -801,9 +808,11 @@ main {
     position: static;
     opacity: 1;
     transform: none;
-    margin-top: 4px;
-    font-size: 13px;
-    line-height: 1.45;
+    margin-top: 2px;
+    max-width: 100%;
+    font-size: 1.12rem;
+    line-height: 1.18;
+    font-weight: 500;
   }
 
   .servicio-card-horizontal:hover .servicio-imagen,
@@ -2756,12 +2765,12 @@ main {
     gap: 20px;
   }
   .servicio-card-horizontal {
-    padding: 30px 15px 35px 15px;
+    padding: 30px 24px 35px;
     min-height: 280px;
   }
   .servicio-card-horizontal h3 {
-    font-size: 16px;
-    min-height: 65px;
+    font-size: 1rem;
+    min-height: auto;
     margin-bottom: 25px;
   }
   .servicio-imagen img {
@@ -2999,14 +3008,14 @@ main {
     gap: 15px;
   }
   .servicio-card-horizontal {
-    padding: 25px 12px 30px 12px;
+    padding: 28px 24px 32px;
     min-height: 250px;
-    justify-content: center;
+    justify-content: space-between;
     gap: 18px;
   }
   .servicio-card-horizontal h3 {
-    font-size: 14px;
-    min-height: 55px;
+    font-size: 1.18rem;
+    min-height: auto;
     margin-bottom: 0;
   }
   .servicio-imagen {
@@ -3220,13 +3229,13 @@ main {
     gap: 15px;
   }
   .servicio-card-horizontal {
-    padding: 30px 20px 35px 20px;
+    padding: 30px 24px 35px;
     min-height: 240px;
-    justify-content: center;
+    justify-content: space-between;
     gap: 22px;
   }
   .servicio-card-horizontal h3 {
-    font-size: 16px;
+    font-size: 1.25rem;
     min-height: auto;
     margin-bottom: 0;
   }

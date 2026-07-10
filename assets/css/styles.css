@@ -93,6 +93,32 @@ body {
   min-height: 100vh;
 }
 
+:where(
+  body,
+  header,
+  main,
+  section,
+  footer,
+  button,
+  a,
+  .card,
+  .service-card,
+  .servicio-card-horizontal,
+  .benefit-card,
+  .team-card,
+  .stat-card,
+  .carousel-card,
+  .caso-item,
+  .legal-content,
+  .cookie-category
+) {
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
 /* ========== ANIMATED GRADIENT TEXT (reusable) ========== */
 /*
   Premium animated gradient that renders ONLY inside glyphs.
@@ -146,6 +172,28 @@ body {
   .animated-gradient-text {
     animation: none;
     background-position: 50% 50%, 50% 50%;
+  }
+
+  :where(
+    body,
+    header,
+    main,
+    section,
+    footer,
+    button,
+    a,
+    .card,
+    .service-card,
+    .servicio-card-horizontal,
+    .benefit-card,
+    .team-card,
+    .stat-card,
+    .carousel-card,
+    .caso-item,
+    .legal-content,
+    .cookie-category
+  ) {
+    transition: none;
   }
 
   .presentacion h1,
@@ -757,6 +805,52 @@ main {
 
 .servicio-card-horizontal:hover .servicio-imagen img {
   transform: scale(1.1);
+}
+
+.card-glow {
+  --mouse-x: 50%;
+  --mouse-y: 50%;
+  position: relative;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .card-glow {
+    overflow: hidden;
+  }
+
+  .card-glow::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    background: radial-gradient(
+      420px circle at var(--mouse-x) var(--mouse-y),
+      rgba(250, 60, 15, 0.16),
+      transparent 42%
+    );
+  }
+
+  .benefit-card.card-glow::after {
+    background: radial-gradient(
+      460px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+      rgba(250, 60, 15, 0.30),
+      rgba(250, 60, 15, 0.12) 30%,
+      transparent 58%
+    );
+  }
+
+  .card-glow:hover::after,
+  .card-glow:focus-within::after {
+    opacity: 1;
+  }
+
+  .card-glow > * {
+    position: relative;
+    z-index: 1;
+  }
 }
 
 @media (min-width: 769px) {

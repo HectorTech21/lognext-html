@@ -147,6 +147,14 @@ body {
     animation: none;
     background-position: 50% 50%, 50% 50%;
   }
+
+  .presentacion h1,
+  .presentacion p,
+  .presentacion .btn-principal {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
 }
 
 main {
@@ -488,12 +496,19 @@ main {
 .presentacion-contenido {
   flex: 1;
   max-width: 600px;
-  animation: fadeInUp 1s ease-out;
+  animation: none;
 }
 
 @keyframes fadeInUp {
   from { opacity: 0; transform: translateY(30px); }
   to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes heroFadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .presentacion h1 {
@@ -505,6 +520,9 @@ main {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  opacity: 0;
+  transform: translateY(24px);
+  animation: heroFadeUp 0.8s ease forwards, gradientShift 8s ease-in-out infinite;
 }
 
 .presentacion p {
@@ -512,6 +530,10 @@ main {
   line-height: 1.6;
   margin-bottom: 30px;
   color: rgba(255, 255, 255, 0.9);
+  opacity: 0;
+  transform: translateY(24px);
+  animation: heroFadeUp 0.8s ease forwards;
+  animation-delay: 0.15s;
 }
 
 .btn-principal {
@@ -526,6 +548,10 @@ main {
   border: 1px solid rgba(255, 255, 255, 0.2);
   position: relative;
   overflow: hidden;
+  opacity: 0;
+  transform: translateY(24px);
+  animation: heroFadeUp 0.8s ease forwards;
+  animation-delay: 0.3s;
 }
 
 .btn-principal::before {
@@ -731,6 +757,18 @@ main {
 
 .servicio-card-horizontal:hover .servicio-imagen img {
   transform: scale(1.1);
+}
+
+@media (min-width: 769px) {
+  .servicios .servicio-imagen {
+    justify-content: center;
+  }
+
+  .servicios .servicio-imagen img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .servicio-card-horizontal h3,
@@ -3469,14 +3507,22 @@ main {
   border-radius: 0;
   padding: 0;
   text-align: center;
-  transition: all 0.3s ease;
+  transition: transform 0.25s ease, filter 0.25s ease;
   border: 0;
   box-shadow: none;
   cursor: pointer;
 }
 
-.certificacion-card:hover {
-  transform: translateY(-8px);
+.certificacion-card:hover,
+.certificacion-card:focus-visible {
+  transform: translateY(-6px) scale(1.04);
+  filter: drop-shadow(0 14px 22px rgba(0, 0, 41, 0.16));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .certificacion-card {
+    transition: none;
+  }
 }
 
 .certificacion-card img {
@@ -3487,16 +3533,11 @@ main {
   height: auto;
   object-fit: contain;
   margin: 0 auto;
-  transition: transform 0.3s ease;
 }
 
 .certificacion-card--ens img {
   max-width: 150px;
   max-height: 120px;
-}
-
-.certificacion-card:hover img {
-  transform: scale(1.05);
 }
 
 /* Responsive certificaciones */
@@ -4501,5 +4542,65 @@ img[src*="ENSAlta"] {
     flex-wrap: wrap !important;
     gap: 24px !important;
     width: 100% !important;
+  }
+}
+
+.certificaciones-grid .certificacion-card,
+.certificaciones-grid a,
+.certifications-grid a,
+.certificaciones-container a,
+.certifications-container a {
+  transition: transform 0.28s ease, filter 0.28s ease;
+  will-change: transform;
+}
+
+.certificaciones-grid .certificacion-card img,
+.certificaciones-grid a img,
+.certifications-grid a img,
+.certificaciones-container a img,
+.certifications-container a img {
+  transition: transform 0.28s ease, filter 0.28s ease;
+  will-change: transform;
+}
+
+.certificaciones-grid .certificacion-card:hover,
+.certificaciones-grid .certificacion-card:focus-visible,
+.certificaciones-grid a:hover,
+.certificaciones-grid a:focus-visible,
+.certifications-grid a:hover,
+.certifications-grid a:focus-visible,
+.certificaciones-container a:hover,
+.certificaciones-container a:focus-visible,
+.certifications-container a:hover,
+.certifications-container a:focus-visible {
+  transform: translateY(-10px) scale(1.08);
+  filter: drop-shadow(0 18px 24px rgba(0, 0, 41, 0.28));
+}
+
+.certificaciones-grid .certificacion-card:hover img,
+.certificaciones-grid .certificacion-card:focus-visible img,
+.certificaciones-grid a:hover img,
+.certificaciones-grid a:focus-visible img,
+.certifications-grid a:hover img,
+.certifications-grid a:focus-visible img,
+.certificaciones-container a:hover img,
+.certificaciones-container a:focus-visible img,
+.certifications-container a:hover img,
+.certifications-container a:focus-visible img {
+  transform: scale(1.03);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .certificaciones-grid .certificacion-card,
+  .certificaciones-grid .certificacion-card img,
+  .certificaciones-grid a,
+  .certificaciones-grid a img,
+  .certifications-grid a,
+  .certifications-grid a img,
+  .certificaciones-container a,
+  .certificaciones-container a img,
+  .certifications-container a,
+  .certifications-container a img {
+    transition: none;
   }
 }

@@ -4193,6 +4193,68 @@ body {
   color: #FA3C0F;
 }
 
+@media (max-width: 768px) {
+  .servicios .servicio-card-horizontal {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .servicios .servicio-card-horizontal:hover,
+  .servicios .servicio-card-horizontal:focus,
+  .servicios .servicio-card-horizontal:focus-within {
+    transform: none;
+  }
+
+  .servicios .servicio-card-horizontal:hover::before,
+  .servicios .servicio-card-horizontal:focus::before,
+  .servicios .servicio-card-horizontal:focus-within::before {
+    transform: scaleX(0);
+  }
+
+  .servicios .servicio-card-horizontal h3,
+  .servicios .servicio-card-horizontal:hover h3,
+  .servicios .servicio-card-horizontal:focus h3,
+  .servicios .servicio-card-horizontal:focus-within h3 {
+    align-self: stretch;
+    justify-content: center;
+    text-align: center;
+    transform: none;
+  }
+
+  .servicios .servicio-imagen,
+  .servicios .servicio-card-horizontal:hover .servicio-imagen,
+  .servicios .servicio-card-horizontal:focus .servicio-imagen,
+  .servicios .servicio-card-horizontal:focus-within .servicio-imagen {
+    justify-content: center;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+  }
+
+  .servicios .servicio-imagen img,
+  .servicios .servicio-card-horizontal:hover .servicio-imagen img,
+  .servicios .servicio-card-horizontal:focus .servicio-imagen img,
+  .servicios .servicio-card-horizontal:focus-within .servicio-imagen img {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .servicios .servicio-descripcion,
+  .servicios .servicio-card-horizontal:hover .servicio-descripcion,
+  .servicios .servicio-card-horizontal:focus .servicio-descripcion,
+  .servicios .servicio-card-horizontal:focus-within .servicio-descripcion {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transform: none;
+  }
+}
+
 [data-theme="dark"] .benefit-card:hover {
   background: rgba(250, 60, 15, 0.15);
   border-color: rgba(250, 60, 15, 0.5);

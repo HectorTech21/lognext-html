@@ -1684,15 +1684,23 @@ main {
   background: rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(10px);
   border-radius: 20px;
-  padding: 30px 20px;
+  padding: 32px 24px;
   text-align: center;
   transition: all 0.3s ease;
   border: 1px solid rgba(250, 60, 15, 0.2);
   cursor: pointer;
   position: relative;
+  min-height: 250px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
 }
 
-.benefit-card:hover {
+.benefit-card:hover,
+.benefit-card:focus-within {
   transform: translateY(-8px);
   background: rgba(250, 60, 15, 0.15);
   border-color: rgba(250, 60, 15, 0.5);
@@ -1700,51 +1708,104 @@ main {
 
 .benefit-icon {
   font-size: 48px;
-  margin-bottom: 15px;
+  margin-bottom: 0;
+  flex: 0 0 auto;
+  transition: opacity 0.35s ease, transform 0.35s ease;
 }
 
 .benefit-card h3 {
+  position: static;
+  flex: 0 0 auto;
   font-size: 18px;
   font-weight: 600;
   color: #ffffff;
-  margin-bottom: 0;
+  margin: 0;
+  line-height: 1.2;
+  z-index: 1;
+  transition: color 0.35s ease, transform 0.35s ease;
 }
 
 .benefit-tooltip {
-  position: absolute;
-  bottom: 100%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-10px);
-  background: #FA3C0F;
-  color: white;
-  padding: 10px 15px;
-  border-radius: 10px;
-  font-size: 12px;
+  position: static;
+  flex: 0 0 auto;
+  transform: translateY(10px);
+  background: transparent;
+  color: rgba(255, 255, 255, 0.9);
+  padding: 0;
+  border-radius: 0;
+  font-size: 0.95rem;
   line-height: 1.4;
-  width: 200px;
+  width: 100%;
+  max-height: 0;
+  overflow: hidden;
+  margin: 0;
   opacity: 0;
   visibility: hidden;
-  transition: all 0.3s ease;
+  transition: opacity 0.35s ease, transform 0.35s ease, max-height 0.35s ease, visibility 0.35s ease;
   pointer-events: none;
-  z-index: 10;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  box-shadow: none;
 }
 
 .benefit-tooltip::after {
-  content: '';
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  border-width: 6px;
-  border-style: solid;
-  border-color: #FA3C0F transparent transparent transparent;
+  content: none;
 }
 
-.benefit-card:hover .benefit-tooltip {
+.benefit-card:hover .benefit-icon,
+.benefit-card:focus-within .benefit-icon {
+  opacity: 0.25;
+  transform: translateY(-8px) scale(0.95);
+}
+
+.benefit-card:hover h3,
+.benefit-card:focus-within h3 {
+  color: #FA3C0F;
+  transform: translateY(-6px);
+}
+
+.benefit-card:hover .benefit-tooltip,
+.benefit-card:focus-within .benefit-tooltip {
   opacity: 1;
   visibility: visible;
-  transform: translateX(-50%) translateY(-15px);
+  transform: translateY(0);
+  max-height: 110px;
+}
+
+@media (max-width: 768px) {
+  .benefit-card {
+    min-height: auto;
+    padding: 28px 22px;
+  }
+
+  .benefit-tooltip {
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    max-height: none;
+    margin-top: 12px;
+    color: rgba(255, 255, 255, 0.9);
+  }
+
+  .benefit-card:hover,
+  .benefit-card:focus-within {
+    transform: none;
+  }
+
+  .benefit-card:hover .benefit-icon,
+  .benefit-card:focus-within .benefit-icon,
+  .benefit-card:hover h3,
+  .benefit-card:focus-within h3 {
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .benefit-card,
+  .benefit-icon,
+  .benefit-card h3,
+  .benefit-tooltip {
+    transition: none;
+  }
 }
 
 /* Partículas para beneficios */
@@ -3920,6 +3981,10 @@ body {
 
 .servicio-card-horizontal h3,
 .benefit-card h3 {
+  color: var(--card-text);
+}
+
+.benefits-section .benefit-tooltip {
   color: var(--card-text);
 }
 

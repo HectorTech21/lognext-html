@@ -2,22 +2,37 @@ document.addEventListener('DOMContentLoaded', function() {
   const video = document.getElementById('heroVideo');
   const playPauseBtn = document.getElementById('videoPlayPauseBtn');
   const intro = document.getElementById('siteIntro');
+  const mainContent = document.querySelector('main');
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   const supportsPointerGlow = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
 
-  if (intro) {
-    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const revealMainContent = () => {
+    if (!mainContent || prefersReducedMotion) return;
 
+    window.requestAnimationFrame(() => {
+      mainContent.classList.add('is-page-visible');
+    });
+  };
+
+  if (mainContent && !prefersReducedMotion) {
+    mainContent.classList.add('page-enter');
+  }
+
+  if (intro) {
     if (prefersReducedMotion) {
       intro.remove();
     } else {
       window.setTimeout(() => {
         intro.classList.add('is-hiding');
+        revealMainContent();
 
         window.setTimeout(() => {
           intro.remove();
         }, 500);
       }, 1450);
     }
+  } else {
+    revealMainContent();
   }
 
 

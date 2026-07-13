@@ -898,6 +898,28 @@ function initCarousel() {
 }
 
 function initScrollReveal() {
+  const staggerGroups = [
+    { group: '.servicios-grid-horizontal', items: '.servicio-card-horizontal' },
+    { group: '.benefits-grid', items: '.benefit-card' },
+    { group: '.certificaciones-grid', items: '.certificacion-card' },
+    { group: '.carousel-container', items: '.carousel-card' },
+    { group: '.team-cards-container', items: '.team-card' }
+  ];
+
+  staggerGroups.forEach(({ group, items }) => {
+    document.querySelectorAll(group).forEach(container => {
+      const cards = container.querySelectorAll(items);
+      if (!cards.length) return;
+
+      container.classList.add('scroll-reveal', 'stagger-reveal-group');
+      cards.forEach((card, index) => {
+        card.classList.remove('scroll-reveal', 'revealed');
+        card.classList.add('stagger-reveal-item');
+        card.style.setProperty('--stagger-delay', `${Math.min(index, 7) * 90}ms`);
+      });
+    });
+  });
+
   const revealElements = document.querySelectorAll('.scroll-reveal');
   if (!revealElements.length) return;
   

@@ -3704,6 +3704,8 @@ main {
   }
 
 /* ========== SECCIÓN CERTIFICACIONES ========== */
+}
+
 .certificaciones {
   padding: 80px 0;
   background-color: #ffffff;
@@ -3800,7 +3802,6 @@ main {
   .certificacion-card {
     padding: 0;
   }
-}
 }
 
 /* ========== COOKIES - BOTÓN FLOTANTE Y MODAL ========== */
@@ -4831,5 +4832,121 @@ img[src*="ENSAlta"] {
   .certifications-container a,
   .certifications-container a img {
     transition: none;
+  }
+}
+
+/* ========== RESPONSIVE HARDENING ========== */
+img,
+video,
+iframe {
+  max-width: 100%;
+}
+
+.footer-grid > *,
+.service-hero-content > *,
+.service-two-columns > *,
+.offers-grid > *,
+.team-card > *,
+.team-carousel-content > * {
+  min-width: 0;
+}
+
+.legal-content-inner,
+.footer-text,
+.contact-link,
+.legal-link,
+.mobile-info-contact p {
+  overflow-wrap: anywhere;
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .site-header .container {
+    gap: 10px;
+  }
+
+  .logo img {
+    height: 38px;
+    width: auto;
+  }
+
+  .main-nav {
+    min-width: 0;
+  }
+
+  .menu {
+    gap: clamp(12px, 1.6vw, 20px);
+  }
+
+  .menu a,
+  .employee-portal,
+  .language-switcher a {
+    font-size: 14px;
+  }
+
+  .desktop-actions {
+    gap: 8px;
+  }
+
+  .employee-portal {
+    padding: 9px 13px;
+  }
+
+  .language-switcher {
+    gap: 2px;
+  }
+
+  .language-switcher a {
+    padding: 4px 5px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .certificaciones-grid .certificacion-card {
+    flex: 1 1 0 !important;
+    min-width: 0;
+  }
+
+  .certificaciones-grid .certificacion-card img:not([src*="ENSAlta"]) {
+    max-width: 100% !important;
+  }
+
+  .certificaciones-grid .certificacion-card img[src*="ENSAlta"] {
+    max-width: min(100%, 135px) !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .cookie-modal-content {
+    width: calc(100% - 24px);
+    max-height: calc(100dvh - 24px);
+    margin: 12px;
+    border-radius: 14px;
+  }
+
+  .cookie-modal-footer {
+    padding: 16px;
+  }
+
+  .site-footer {
+    padding-bottom: 96px;
+  }
+}
+
+@media (max-width: 430px) {
+  .container,
+  .footer-container,
+  .footer-bottom-container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .main-nav {
+    height: calc(100dvh - 80px);
+  }
+
+  .cookie-btn-fixed {
+    left: 12px;
+    bottom: 12px;
+    padding: 10px 14px;
   }
 }

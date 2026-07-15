@@ -29,9 +29,14 @@
         empresa: `LogNext es una consultora tecnológica especializada en acompañar a organizaciones en sus procesos de transformación digital, ofreciendo servicios de consultoría IT, ciberseguridad, inteligencia artificial, gestión de aplicaciones, infraestructuras y outsourcing tecnológico.`,
         servicios: `LogNext ofrece servicios tecnológicos para ayudar a las organizaciones a transformar, operar y proteger sus entornos IT: inteligencia artificial, ciberseguridad, AMS, IMS, outsourcing, consultoría tecnológica, automatización, soporte IT y gobierno IT.`,
         orientacionServicios: `Depende de tu necesidad. Si buscas proteger información, encajaría Ciberseguridad; si necesitas mantener aplicaciones, AMS; si el problema está en sistemas o infraestructuras, IMS; si quieres automatizar o analizar datos, IA; y si necesitas talento especializado, Outsourcing.`,
-        ciberseguridad: `LogNext ayuda a reforzar la ciberseguridad mediante protección de sistemas, seguridad de la información, gestión de riesgos, cumplimiento normativo, auditorías, ENS, ISO 27001, concienciación y respuesta ante incidentes. Es especialmente útil para organizaciones que necesitan proteger información crítica.`,
-        ia: `LogNext aplica inteligencia artificial a la empresa para automatizar procesos, aprovechar mejor los datos, mejorar la eficiencia operativa y crear soluciones que ayuden a tomar mejores decisiones de negocio. Encaja con empresas que quieren automatizar, analizar datos o mejorar procesos.`,
+        ciberseguridad: `LogNext ayuda a reforzar la ciberseguridad mediante protección de sistemas, gestión de riesgos, auditorías, concienciación y respuesta ante incidentes. El servicio se adapta a organizaciones que necesitan proteger información crítica y reducir su exposición a amenazas.`,
+        ciberseguridadBeneficios: `La ciberseguridad ayuda a proteger la información, reducir riesgos operativos y reforzar la continuidad y la confianza de una organización. También facilita una respuesta más preparada ante amenazas e incidentes.`,
+        ia: `LogNext aplica la Inteligencia Artificial para ayudar a las organizaciones a automatizar procesos, analizar información y crear soluciones adaptadas a necesidades concretas de negocio.`,
+        iaAutomatizacion: `La IA puede apoyar la automatización de tareas repetitivas, análisis de datos, clasificación de información, asistencia a usuarios y mejora de procesos internos.`,
+        iaBeneficios: `La IA puede mejorar la eficiencia operativa, reducir tareas manuales, apoyar la toma de decisiones y abrir nuevas oportunidades de innovación dentro de la organización.`,
         empleo: `Puedes consultar la sección "Trabaja con nosotros" para conocer oportunidades profesionales en LogNext. Buscamos talento tecnológico con ganas de crecer en proyectos innovadores y entornos colaborativos.`,
+        beneficiosEmpleo: `En la sección "Trabaja con nosotros" puedes consultar los beneficios que LogNext ofrece a su equipo, junto con información sobre desarrollo profesional y oportunidades.`,
+        culturaEmpleo: `Trabajar en LogNext significa formar parte de un entorno tecnológico, colaborativo y orientado al crecimiento profesional. La compañía apuesta por el talento, la formación, el acompañamiento y la participación en proyectos con impacto.`,
         contacto: `Puedes contactar con LogNext desde la sección de Contacto. El equipo revisará tu solicitud para ayudarte con la solución tecnológica que mejor encaje con tu organización.`,
         contactoHumano: `Para hablar con el equipo de LogNext, puedes escribir a <a href="mailto:info@lognext.com">info@lognext.com</a> o llamar al <a href="tel:+34915472550">+34 915 472 550</a>. Si tu consulta es sobre talento o candidaturas, también puedes contactar en <a href="mailto:talent@lognext.com">talent@lognext.com</a>.`,
         saludo: `¡Hola! 👋 Soy el asistente virtual de LogNext. Puedo ayudarte con información sobre servicios, ubicación, contacto, empleo, ciberseguridad, inteligencia artificial, aviso legal, cookies o canal de denuncias. ¿Sobre qué tema necesitas ayuda?`,
@@ -47,7 +52,7 @@
         navegacion: `Puedo orientarte por la web: <a href="${rootPrefix}index.html">Inicio</a>, <a href="${rootPrefix}index.html#servicios">Servicios</a>, <a href="${rootPrefix}quienes-somos.html">Quiénes somos</a>, <a href="${rootPrefix}trabaja-con-nosotros.html">Trabaja con nosotros</a>, <a href="mailto:info@lognext.com">Contacto</a>, <a href="${rootPrefix}enlaces-legales/aviso-legal.html">Aviso legal</a>, <a href="${rootPrefix}enlaces-legales/politica-cookies.html">Política de cookies</a> y <a href="${rootPrefix}enlaces-legales/canal-denuncias.html">Canal de denuncias</a>.`,
         actividad: `En LogNext desarrollamos soluciones de negocio basadas en la tecnología y en la innovación. Ayudamos a nuestros clientes a transformar sus procesos, mejorar su eficiencia y avanzar con soluciones IT adaptadas a sus necesidades.`,
         quienesSomos: `LogNext es una compañía especializada en soluciones y servicios IT. Acompañamos a nuestros clientes en sus procesos de transformación tecnológica, combinando experiencia, innovación y talento especializado para responder a sus necesidades de negocio.`,
-        propuestaValor: `Lo que diferencia a LogNext es la combinación de conocimiento tecnológico, cercanía con el cliente, flexibilidad y capacidad para adaptar cada solución a las necesidades reales del negocio. Trabajamos con un enfoque práctico, especializado y orientado a resultados.`,
+        propuestaValor: `La propuesta de valor de LogNext se basa en desarrollar soluciones de negocio basadas en la tecnología y en la innovación. Combinamos conocimiento tecnológico, cercanía con el cliente, flexibilidad y capacidad de adaptación para responder a las necesidades reales de cada organización.`,
         certificaciones: `Sí. LogNext cuenta con <a href="${rootPrefix}assets/certificaciones/iso9001.pdf" target="_blank" rel="noopener noreferrer">ISO 9001</a> para calidad, <a href="${rootPrefix}assets/certificaciones/iso14001.pdf" target="_blank" rel="noopener noreferrer">ISO 14001</a> para gestión ambiental, <a href="${rootPrefix}assets/certificaciones/iso20000.pdf" target="_blank" rel="noopener noreferrer">ISO 20000</a> para gestión de servicios IT, <a href="${rootPrefix}assets/certificaciones/iso27001.pdf" target="_blank" rel="noopener noreferrer">ISO 27001</a> para seguridad de la información y <a href="${rootPrefix}assets/certificaciones/CertificadoENS-2025-0095_ES_2026-07-07.pdf" target="_blank" rel="noopener noreferrer">ENS Alto</a> para seguridad y cumplimiento en servicios digitales.`,
         certificacionesEns: `Sí. LogNext cuenta con certificación ENS Alto, el nivel más exigente dentro del Esquema Nacional de Seguridad. Esta certificación refuerza la confianza de clientes, administraciones públicas y colaboradores, demostrando un alto compromiso con la seguridad, la protección de la información y el cumplimiento normativo.`,
         sectorPublico: `Sí. LogNext puede acompañar tanto a Administraciones Públicas como a empresas privadas en proyectos tecnológicos, transformación digital, ciberseguridad, gestión de aplicaciones, infraestructuras, inteligencia artificial y outsourcing IT. Además, contar con ENS Alto refuerza la confianza en proyectos donde la seguridad y el cumplimiento normativo son especialmente importantes.`,
@@ -55,10 +60,16 @@
         clientesSectores: `LogNext puede aportar valor a organizaciones públicas y privadas que necesiten apoyo tecnológico en áreas como transformación digital, ciberseguridad, gestión de aplicaciones, infraestructuras, inteligencia artificial y outsourcing IT. Sus servicios se adaptan a las necesidades de cada organización.`,
         casosExito: `Puedes encontrar casos de éxito dentro de las páginas de servicios de LogNext. Sirven para ver ejemplos de aplicación práctica por área, como inteligencia artificial, ciberseguridad, AMS, IMS u outsourcing.`,
         innovacionTransformacion: `En LogNext entendemos la innovación como una forma de aportar valor real al negocio. Aplicamos la tecnología para mejorar procesos, optimizar servicios y ayudar a nuestros clientes a evolucionar de forma eficiente, segura y sostenible.`,
-        ams: `AMS ayuda a gestionar, mantener, soportar y evolucionar aplicaciones de negocio. Es útil para empresas con aplicaciones en producción que requieren continuidad, mantenimiento, eficiencia, evolución y soporte especializado.`,
-        ims: `IMS se centra en la gestión, operación y soporte de infraestructuras y servicios tecnológicos. Aporta estabilidad, seguridad, disponibilidad y soporte a organizaciones con entornos IT críticos.`,
+        ams: `AMS, Application Management Services, se centra en la gestión, mantenimiento y evolución de aplicaciones para asegurar su correcto funcionamiento durante todo su ciclo de vida.`,
+        amsMantenimiento: `El mantenimiento de aplicaciones puede incluir seguimiento de incidencias, correcciones, evolución funcional, mejoras de rendimiento y soporte continuo para asegurar la continuidad del servicio.`,
+        amsBeneficios: `AMS ayuda a reducir incidencias, mejorar la estabilidad de las aplicaciones, optimizar su rendimiento y liberar a los equipos internos para centrarse en actividades de mayor valor.`,
+        ims: `IMS, Infrastructure Management Services, se centra en la gestión y soporte de infraestructuras tecnológicas, sistemas y entornos críticos.`,
+        imsGestion: `La gestión de infraestructuras puede incluir soporte técnico, monitorización, administración de sistemas, continuidad operativa y resolución de incidencias.`,
+        imsBeneficios: `IMS ayuda a mejorar la disponibilidad, estabilidad y continuidad de los sistemas tecnológicos, reduciendo riesgos operativos y facilitando una gestión más eficiente.`,
         agile: `Actualmente no tengo información sobre Agile Transformation como servicio activo de LogNext. Puedes consultar la sección de Servicios o contactar con LogNext para confirmar qué soluciones están disponibles.`,
-        outsourcing: `El Outsourcing IT permite incorporar talento tecnológico especializado para reforzar equipos, cubrir necesidades concretas y ganar flexibilidad. Encaja con compañías que necesitan sumar perfiles IT cualificados de forma flexible.`,
+        outsourcing: `El outsourcing IT permite incorporar talento tecnológico especializado para apoyar proyectos, reforzar equipos o cubrir necesidades concretas de una organización.`,
+        outsourcingEquipo: `LogNext puede ayudar a reforzar equipos tecnológicos mediante perfiles especializados que se integran en proyectos según las necesidades del cliente.`,
+        outsourcingBeneficios: `Externalizar talento tecnológico aporta flexibilidad, capacidad de adaptación, acceso a perfiles especializados y apoyo para acelerar proyectos sin ampliar estructuras internas de forma permanente.`,
         consultoriaIt: `La consultoría tecnológica de LogNext ayuda a identificar necesidades, definir soluciones IT y orientar decisiones tecnológicas con una visión práctica, segura y alineada con el negocio.`,
         desarrolloAplicaciones: `LogNext puede ayudar en el desarrollo, mantenimiento y evolución de aplicaciones, buscando continuidad, calidad, eficiencia y adaptación a las necesidades reales de cada organización.`,
         automatizacionProcesos: `La automatización de procesos permite reducir tareas manuales, mejorar tiempos de respuesta y ganar eficiencia operativa. LogNext la aborda combinando tecnología, datos e integración con procesos de negocio.`,
@@ -82,9 +93,14 @@
         empresa: `LogNext is a technology consulting company specialized in supporting organizations through digital transformation, offering IT consulting, cybersecurity, artificial intelligence, application management, infrastructure services and technology outsourcing.`,
         servicios: `LogNext offers technology services to help organizations transform, operate and protect their IT environments: artificial intelligence, cybersecurity, AMS, IMS, outsourcing, technology consulting, automation, IT support and IT governance.`,
         orientacionServicios: `It depends on your need. If you want to protect information, Cybersecurity would fit; if you need to maintain applications, AMS; if the issue is systems or infrastructure, IMS; if you want to automate or analyze data, AI; and if you need specialized talent, Outsourcing.`,
-        ciberseguridad: `LogNext helps strengthen cybersecurity through system protection, information security, risk management, compliance, audits, ENS, ISO 27001, security awareness and incident response. It is especially useful for organizations that need to protect critical information.`,
-        ia: `LogNext applies artificial intelligence to business contexts to automate processes, make better use of data, improve operational efficiency and create solutions that support better decision-making. It fits companies that want to automate, analyze data or improve processes.`,
+        ciberseguridad: `LogNext helps strengthen cybersecurity through system protection, risk management, audits, security awareness and incident response. The service is adapted to organizations that need to protect critical information and reduce their exposure to threats.`,
+        ciberseguridadBeneficios: `Cybersecurity helps protect information, reduce operational risks and strengthen an organization's continuity and trust. It also enables a more prepared response to threats and incidents.`,
+        ia: `LogNext applies Artificial Intelligence to help organizations automate processes, analyze information and create solutions tailored to specific business needs.`,
+        iaAutomatizacion: `AI can support the automation of repetitive tasks, data analysis, information classification, user assistance and improvements to internal processes.`,
+        iaBeneficios: `AI can improve operational efficiency, reduce manual tasks, support decision-making and open new opportunities for innovation within the organization.`,
         empleo: `You can visit the "Work with us" section to learn about professional opportunities at LogNext. We look for technology talent eager to grow in innovative projects and collaborative environments.`,
+        beneficiosEmpleo: `In the "Work with us" section, you can review the benefits LogNext offers its team, along with information about professional development and opportunities.`,
+        culturaEmpleo: `Working at LogNext means being part of a technological, collaborative environment focused on professional growth. The company supports talent, training, guidance and participation in projects with impact.`,
         contacto: `You can contact LogNext through the Contact section. The team will review your request to help you find the technology solution that best fits your organization.`,
         contactoHumano: `To talk to the LogNext team, you can write to <a href="mailto:info@lognext.com">info@lognext.com</a> or call <a href="tel:+34915472550">+34 915 472 550</a>. For talent or application-related questions, you can also contact <a href="mailto:talent@lognext.com">talent@lognext.com</a>.`,
         saludo: `Hello! 👋 I’m LogNext’s virtual assistant. I can help you with services, location, contact, careers, cybersecurity, artificial intelligence, legal notice, cookies or the whistleblowing channel. What would you like to know?`,
@@ -100,7 +116,7 @@
         navegacion: `I can guide you through the website: <a href="${rootPrefix}index.html">Home</a>, <a href="${rootPrefix}index.html#servicios">Services</a>, <a href="${rootPrefix}quienes-somos.html">About us</a>, <a href="${rootPrefix}trabaja-con-nosotros.html">Work with us</a>, <a href="mailto:info@lognext.com">Contact</a>, <a href="${rootPrefix}enlaces-legales/aviso-legal.html">Legal notice</a>, <a href="${rootPrefix}enlaces-legales/politica-cookies.html">Cookie policy</a> and <a href="${rootPrefix}enlaces-legales/canal-denuncias.html">Whistleblowing channel</a>.`,
         actividad: `At LogNext, we develop business solutions based on technology and innovation. We help our clients transform their processes, improve efficiency and move forward with IT solutions adapted to their needs.`,
         quienesSomos: `LogNext is a company specialized in IT solutions and services. We support our clients in their technology transformation processes, combining experience, innovation and specialized talent to respond to their business needs.`,
-        propuestaValor: `What differentiates LogNext is the combination of technological knowledge, proximity to the client, flexibility and the ability to adapt each solution to real business needs. We work with a practical, specialized and results-oriented approach.`,
+        propuestaValor: `LogNext's value proposition is based on developing business solutions grounded in technology and innovation. We combine technological knowledge, close client relationships, flexibility and adaptability to address each organization's real needs.`,
         certificaciones: `Yes. LogNext holds <a href="${rootPrefix}assets/certificaciones/iso9001.pdf" target="_blank" rel="noopener noreferrer">ISO 9001</a> for quality, <a href="${rootPrefix}assets/certificaciones/iso14001.pdf" target="_blank" rel="noopener noreferrer">ISO 14001</a> for environmental management, <a href="${rootPrefix}assets/certificaciones/iso20000.pdf" target="_blank" rel="noopener noreferrer">ISO 20000</a> for IT service management, <a href="${rootPrefix}assets/certificaciones/iso27001.pdf" target="_blank" rel="noopener noreferrer">ISO 27001</a> for information security and <a href="${rootPrefix}assets/certificaciones/CertificadoENS-2025-0095_ES_2026-07-07.pdf" target="_blank" rel="noopener noreferrer">ENS Alto</a> for security and compliance in digital services.`,
         certificacionesEns: `Yes. LogNext holds ENS Alto certification, the most demanding level within Spain's National Security Framework. This certification strengthens trust among clients, public administrations and partners, demonstrating a strong commitment to security, information protection and compliance.`,
         sectorPublico: `Yes. LogNext can support both public administrations and private companies in technology projects, digital transformation, cybersecurity, application management, infrastructure services, artificial intelligence and IT outsourcing. In addition, having the High ENS certification strengthens trust in projects where security and regulatory compliance are especially important.`,
@@ -108,10 +124,16 @@
         clientesSectores: `LogNext can bring value to public and private organizations that need technology support in areas such as digital transformation, cybersecurity, application management, infrastructure, artificial intelligence and IT outsourcing. Its services adapt to each organization's needs.`,
         casosExito: `You can find success cases within LogNext's service pages. They show practical examples by area, such as artificial intelligence, cybersecurity, AMS, IMS or outsourcing.`,
         innovacionTransformacion: `At LogNext, we understand innovation as a way to bring real value to the business. We apply technology to improve processes, optimize services and help our clients evolve efficiently, securely and sustainably.`,
-        ams: `AMS helps manage, maintain, support and evolve business applications. It is useful for companies with production applications that require continuity, maintenance, efficiency, evolution and specialized support.`,
-        ims: `IMS focuses on managing, operating and supporting infrastructure and technology services. It brings stability, security, availability and support to organizations with critical IT environments.`,
+        ams: `AMS, Application Management Services, focuses on managing, maintaining and evolving applications to ensure they operate correctly throughout their lifecycle.`,
+        amsMantenimiento: `Application maintenance can include incident tracking, corrections, functional evolution, performance improvements and ongoing support to ensure service continuity.`,
+        amsBeneficios: `AMS helps reduce incidents, improve application stability, optimize performance and free internal teams to focus on higher-value activities.`,
+        ims: `IMS, Infrastructure Management Services, focuses on managing and supporting technology infrastructure, systems and critical environments.`,
+        imsGestion: `Infrastructure management can include technical support, monitoring, system administration, operational continuity and incident resolution.`,
+        imsBeneficios: `IMS helps improve the availability, stability and continuity of technology systems, reducing operational risks and enabling more efficient management.`,
         agile: `I currently do not have information about Agile Transformation as an active LogNext service. You can check the Services section or contact LogNext to confirm which solutions are available.`,
-        outsourcing: `IT Outsourcing helps organizations incorporate specialized technology talent, reinforce teams, cover specific needs and gain flexibility. It fits companies that need to add qualified IT profiles quickly.`,
+        outsourcing: `IT outsourcing enables organizations to add specialized technology talent to support projects, strengthen teams or cover specific needs.`,
+        outsourcingEquipo: `LogNext can strengthen technology teams with specialized professionals who join projects according to each client's needs.`,
+        outsourcingBeneficios: `Outsourcing technology talent provides flexibility, adaptability, access to specialized profiles and support to accelerate projects without permanently expanding internal structures.`,
         consultoriaIt: `LogNext's technology consulting helps identify needs, define IT solutions and guide technology decisions with a practical, secure and business-aligned approach.`,
         desarrolloAplicaciones: `LogNext can support application development, maintenance and evolution, focusing on continuity, quality, efficiency and adaptation to each organization's needs.`,
         automatizacionProcesos: `Process automation reduces manual work, improves response times and increases operational efficiency. LogNext approaches it through technology, data and integration with business processes.`,
@@ -135,9 +157,14 @@
         empresa: `LogNext est une société de conseil technologique spécialisée dans l'accompagnement des organisations dans leur transformation numérique, avec des services de conseil IT, cybersécurité, intelligence artificielle, gestion d'applications, infrastructures et outsourcing technologique.`,
         servicios: `LogNext propose des services technologiques pour aider les organisations à transformer, opérer et protéger leurs environnements IT : intelligence artificielle, cybersécurité, AMS, IMS, outsourcing, conseil technologique, automatisation, support IT et gouvernance IT.`,
         orientacionServicios: `Cela dépend de votre besoin. Si vous souhaitez protéger l'information, la Cybersécurité est adaptée ; si vous devez maintenir des applications, AMS ; si le problème concerne les systèmes ou infrastructures, IMS ; si vous voulez automatiser ou analyser des données, l'IA ; et si vous avez besoin de talents spécialisés, l'Outsourcing.`,
-        ciberseguridad: `LogNext aide à renforcer la cybersécurité grâce à la protection des systèmes, la sécurité de l'information, la gestion des risques, la conformité, les audits, l'ENS, ISO 27001, la sensibilisation et la réponse aux incidents. C'est particulièrement utile pour les organisations qui doivent protéger des informations critiques.`,
-        ia: `LogNext applique l'intelligence artificielle à l'entreprise pour automatiser les processus, mieux exploiter les données, améliorer l'efficacité opérationnelle et créer des solutions utiles à la prise de décision. Cela convient aux entreprises qui veulent automatiser, analyser des données ou améliorer leurs processus.`,
+        ciberseguridad: `LogNext aide à renforcer la cybersécurité grâce à la protection des systèmes, la gestion des risques, les audits, la sensibilisation et la réponse aux incidents. Le service s'adapte aux organisations qui doivent protéger des informations critiques et réduire leur exposition aux menaces.`,
+        ciberseguridadBeneficios: `La cybersécurité aide à protéger les informations, réduire les risques opérationnels et renforcer la continuité et la confiance d'une organisation. Elle permet également de mieux se préparer face aux menaces et aux incidents.`,
+        ia: `LogNext applique l'Intelligence Artificielle pour aider les organisations à automatiser des processus, analyser l'information et créer des solutions adaptées à des besoins métier concrets.`,
+        iaAutomatizacion: `L'IA peut aider à automatiser les tâches répétitives, l'analyse de données, la classification d'informations, l'assistance aux utilisateurs et l'amélioration des processus internes.`,
+        iaBeneficios: `L'IA peut améliorer l'efficacité opérationnelle, réduire les tâches manuelles, soutenir la prise de décision et ouvrir de nouvelles possibilités d'innovation dans l'organisation.`,
         empleo: `Vous pouvez consulter la section "Travailler avec nous" pour connaître les opportunités professionnelles chez LogNext. Nous recherchons des talents technologiques souhaitant évoluer dans des projets innovants et des environnements collaboratifs.`,
+        beneficiosEmpleo: `Dans la section "Travailler avec nous", vous pouvez consulter les avantages proposés par LogNext à son équipe, ainsi que des informations sur le développement professionnel et les opportunités.`,
+        culturaEmpleo: `Travailler chez LogNext signifie évoluer dans un environnement technologique, collaboratif et orienté vers le développement professionnel. L'entreprise mise sur les talents, la formation, l'accompagnement et la participation à des projets à impact.`,
         contacto: `Vous pouvez contacter LogNext via la section Contact. L'équipe examinera votre demande afin de vous aider avec la solution technologique la mieux adaptée à votre organisation.`,
         contactoHumano: `Pour parler avec l'équipe de LogNext, vous pouvez écrire à <a href="mailto:info@lognext.com">info@lognext.com</a> ou appeler le <a href="tel:+34915472550">+34 915 472 550</a>. Pour les questions liées au talent ou aux candidatures, vous pouvez également contacter <a href="mailto:talent@lognext.com">talent@lognext.com</a>.`,
         saludo: `Bonjour ! 👋 Je suis l’assistant virtuel de LogNext. Je peux vous aider avec les services, la localisation, le contact, les carrières, la cybersécurité, l’intelligence artificielle, les mentions légales, les cookies ou le canal de signalement. Que souhaitez-vous savoir ?`,
@@ -153,7 +180,7 @@
         navegacion: `Je peux vous orienter sur le site : <a href="${rootPrefix}index.html">Accueil</a>, <a href="${rootPrefix}index.html#servicios">Services</a>, <a href="${rootPrefix}quienes-somos.html">Qui sommes-nous</a>, <a href="${rootPrefix}trabaja-con-nosotros.html">Travailler avec nous</a>, <a href="mailto:info@lognext.com">Contact</a>, <a href="${rootPrefix}enlaces-legales/aviso-legal.html">Mentions légales</a>, <a href="${rootPrefix}enlaces-legales/politica-cookies.html">Politique de cookies</a> et <a href="${rootPrefix}enlaces-legales/canal-denuncias.html">Canal de signalement</a>.`,
         actividad: `Chez LogNext, nous développons des solutions métier fondées sur la technologie et l'innovation. Nous aidons nos clients à transformer leurs processus, améliorer leur efficacité et avancer avec des solutions IT adaptées à leurs besoins.`,
         quienesSomos: `LogNext est une entreprise spécialisée dans les solutions et services IT. Nous accompagnons nos clients dans leurs processus de transformation technologique en combinant expérience, innovation et talent spécialisé pour répondre à leurs besoins métier.`,
-        propuestaValor: `Ce qui différencie LogNext, c'est la combinaison de connaissances technologiques, de proximité avec le client, de flexibilité et de capacité à adapter chaque solution aux besoins réels du métier. Nous travaillons avec une approche pratique, spécialisée et orientée résultats.`,
+        propuestaValor: `La proposition de valeur de LogNext repose sur le développement de solutions métier fondées sur la technologie et l'innovation. Nous combinons expertise technologique, proximité avec le client, flexibilité et capacité d'adaptation pour répondre aux besoins réels de chaque organisation.`,
         certificaciones: `Oui. LogNext dispose d'<a href="${rootPrefix}assets/certificaciones/iso9001.pdf" target="_blank" rel="noopener noreferrer">ISO 9001</a> pour la qualité, <a href="${rootPrefix}assets/certificaciones/iso14001.pdf" target="_blank" rel="noopener noreferrer">ISO 14001</a> pour la gestion environnementale, <a href="${rootPrefix}assets/certificaciones/iso20000.pdf" target="_blank" rel="noopener noreferrer">ISO 20000</a> pour la gestion des services IT, <a href="${rootPrefix}assets/certificaciones/iso27001.pdf" target="_blank" rel="noopener noreferrer">ISO 27001</a> pour la sécurité de l'information et <a href="${rootPrefix}assets/certificaciones/CertificadoENS-2025-0095_ES_2026-07-07.pdf" target="_blank" rel="noopener noreferrer">ENS Alto</a> pour la sécurité et la conformité des services numériques.`,
         certificacionesEns: `Oui. LogNext dispose de la certification ENS Alto, le niveau le plus exigeant du Schéma National de Sécurité espagnol. Cette certification renforce la confiance des clients, administrations publiques et partenaires, en démontrant un engagement élevé envers la sécurité, la protection de l'information et la conformité.`,
         sectorPublico: `Oui. LogNext peut accompagner les administrations publiques ainsi que les entreprises privées dans des projets technologiques, de transformation digitale, de cybersécurité, de gestion applicative, d'infrastructures, d'intelligence artificielle et d'outsourcing IT. De plus, la certification ENS Alto renforce la confiance dans les projets où la sécurité et la conformité sont essentielles.`,
@@ -161,10 +188,16 @@
         clientesSectores: `LogNext peut apporter de la valeur aux organisations publiques et privées qui ont besoin d'un accompagnement technologique en transformation numérique, cybersécurité, gestion applicative, infrastructures, intelligence artificielle et outsourcing IT. Ses services s'adaptent aux besoins de chaque organisation.`,
         casosExito: `Vous pouvez trouver des cas de réussite dans les pages de services de LogNext. Ils présentent des exemples pratiques par domaine, comme l'intelligence artificielle, la cybersécurité, AMS, IMS ou l'outsourcing.`,
         innovacionTransformacion: `Chez LogNext, nous considérons l'innovation comme une manière d'apporter une valeur réelle au métier. Nous appliquons la technologie pour améliorer les processus, optimiser les services et aider nos clients à évoluer de façon efficace, sûre et durable.`,
-        ams: `AMS aide à gérer, maintenir, supporter et faire évoluer les applications métier. Ce service est utile aux entreprises avec des applications en production qui nécessitent continuité, maintenance, efficacité, évolution et support spécialisé.`,
-        ims: `IMS se concentre sur la gestion, l'exploitation et le support des infrastructures et services technologiques. Il apporte stabilité, sécurité, disponibilité et support aux organisations avec des environnements IT critiques.`,
+        ams: `AMS, Application Management Services, se concentre sur la gestion, la maintenance et l'évolution des applications afin d'assurer leur bon fonctionnement pendant tout leur cycle de vie.`,
+        amsMantenimiento: `La maintenance des applications peut inclure le suivi des incidents, les corrections, l'évolution fonctionnelle, l'amélioration des performances et le support continu afin d'assurer la continuité du service.`,
+        amsBeneficios: `AMS aide à réduire les incidents, améliorer la stabilité des applications, optimiser leurs performances et libérer les équipes internes pour des activités à plus forte valeur.`,
+        ims: `IMS, Infrastructure Management Services, se concentre sur la gestion et le support des infrastructures technologiques, des systèmes et des environnements critiques.`,
+        imsGestion: `La gestion des infrastructures peut inclure le support technique, la supervision, l'administration des systèmes, la continuité opérationnelle et la résolution des incidents.`,
+        imsBeneficios: `IMS aide à améliorer la disponibilité, la stabilité et la continuité des systèmes technologiques, en réduisant les risques opérationnels et en facilitant une gestion plus efficace.`,
         agile: `Je n'ai actuellement pas d'information indiquant qu'Agile Transformation soit un service actif de LogNext. Vous pouvez consulter la section Services ou contacter LogNext pour confirmer les solutions disponibles.`,
-        outsourcing: `L'Outsourcing IT permet d'intégrer des talents technologiques spécialisés, de renforcer les équipes, de couvrir des besoins spécifiques et de gagner en flexibilité. Cela convient aux entreprises qui doivent intégrer rapidement des profils IT qualifiés.`,
+        outsourcing: `L'outsourcing IT permet d'intégrer des talents technologiques spécialisés pour soutenir des projets, renforcer des équipes ou couvrir les besoins spécifiques d'une organisation.`,
+        outsourcingEquipo: `LogNext peut renforcer les équipes technologiques grâce à des profils spécialisés qui rejoignent les projets selon les besoins du client.`,
+        outsourcingBeneficios: `Externaliser les talents technologiques apporte flexibilité, capacité d'adaptation, accès à des profils spécialisés et soutien pour accélérer les projets sans agrandir durablement les structures internes.`,
         consultoriaIt: `Le conseil technologique de LogNext aide à identifier les besoins, définir des solutions IT et orienter les décisions technologiques avec une approche pratique, sûre et alignée sur le métier.`,
         desarrolloAplicaciones: `LogNext peut accompagner le développement, la maintenance et l'évolution d'applications, avec une attention portée à la continuité, la qualité, l'efficacité et l'adaptation aux besoins de chaque organisation.`,
         automatizacionProcesos: `L'automatisation des processus réduit les tâches manuelles, améliore les temps de réponse et renforce l'efficacité opérationnelle. LogNext l'aborde avec la technologie, les données et l'intégration aux processus métier.`,
@@ -173,6 +206,217 @@
       }
     }
   };
+
+  const contextualSuggestions = {
+    home: {
+      es: [
+        { label: "¿Qué servicios ofrece LogNext?", intent: "servicios" },
+        { label: "¿Por qué elegir LogNext?", intent: "propuestaValor" },
+        { label: "¿Cómo puedo contactar?", intent: "contacto" }
+      ],
+      en: [
+        { label: "What services does LogNext offer?", intent: "servicios" },
+        { label: "Why choose LogNext?", intent: "propuestaValor" },
+        { label: "How can I contact you?", intent: "contacto" }
+      ],
+      fr: [
+        { label: "Quels services propose LogNext ?", intent: "servicios" },
+        { label: "Pourquoi choisir LogNext ?", intent: "propuestaValor" },
+        { label: "Comment puis-je vous contacter ?", intent: "contacto" }
+      ]
+    },
+    about: {
+      es: [
+        { label: "¿Qué es LogNext?", intent: "quienesSomos" },
+        { label: "¿Cuál es vuestra propuesta de valor?", intent: "propuestaValor" },
+        { label: "¿Qué certificaciones tenéis?", intent: "certificaciones" }
+      ],
+      en: [
+        { label: "What is LogNext?", intent: "quienesSomos" },
+        { label: "What is your value proposition?", intent: "propuestaValor" },
+        { label: "What certifications do you have?", intent: "certificaciones" }
+      ],
+      fr: [
+        { label: "Qu'est-ce que LogNext ?", intent: "quienesSomos" },
+        { label: "Quelle est votre proposition de valeur ?", intent: "propuestaValor" },
+        { label: "Quelles certifications avez-vous ?", intent: "certificaciones" }
+      ]
+    },
+    careers: {
+      es: [
+        { label: "¿Cómo puedo enviar mi CV?", intent: "empleo" },
+        { label: "¿Qué beneficios ofrecéis?", intent: "beneficiosEmpleo" },
+        { label: "¿Cómo es trabajar en LogNext?", intent: "culturaEmpleo" }
+      ],
+      en: [
+        { label: "How can I send my CV?", intent: "empleo" },
+        { label: "What benefits do you offer?", intent: "beneficiosEmpleo" },
+        { label: "What is it like to work at LogNext?", intent: "culturaEmpleo" }
+      ],
+      fr: [
+        { label: "Comment puis-je envoyer mon CV ?", intent: "empleo" },
+        { label: "Quels avantages proposez-vous ?", intent: "beneficiosEmpleo" },
+        { label: "Comment est le travail chez LogNext ?", intent: "culturaEmpleo" }
+      ]
+    },
+    cybersecurity: {
+      es: [
+        { label: "¿Cómo ayuda LogNext en ciberseguridad?", intent: "ciberseguridad" },
+        { label: "¿Qué supone ENS Alto?", intent: "certificacionesEns" },
+        { label: "¿Qué beneficios aporta la ciberseguridad?", intent: "ciberseguridadBeneficios" }
+      ],
+      en: [
+        { label: "How does LogNext help with cybersecurity?", intent: "ciberseguridad" },
+        { label: "What does ENS Alto mean?", intent: "certificacionesEns" },
+        { label: "What benefits does cybersecurity provide?", intent: "ciberseguridadBeneficios" }
+      ],
+      fr: [
+        { label: "Comment LogNext aide-t-elle en cybersécurité ?", intent: "ciberseguridad" },
+        { label: "Que signifie ENS Alto ?", intent: "certificacionesEns" },
+        { label: "Quels avantages apporte la cybersécurité ?", intent: "ciberseguridadBeneficios" }
+      ]
+    },
+    ai: {
+      es: [
+        { label: "¿Cómo aplica LogNext la Inteligencia Artificial?", intent: "ia" },
+        { label: "¿Qué procesos se pueden automatizar con IA?", intent: "iaAutomatizacion" },
+        { label: "¿Qué beneficios aporta la IA?", intent: "iaBeneficios" }
+      ],
+      en: [
+        { label: "How does LogNext apply Artificial Intelligence?", intent: "ia" },
+        { label: "What processes can be automated with AI?", intent: "iaAutomatizacion" },
+        { label: "What benefits does AI provide?", intent: "iaBeneficios" }
+      ],
+      fr: [
+        { label: "Comment LogNext applique-t-elle l'Intelligence Artificielle ?", intent: "ia" },
+        { label: "Quels processus peuvent être automatisés avec l'IA ?", intent: "iaAutomatizacion" },
+        { label: "Quels avantages apporte l'IA ?", intent: "iaBeneficios" }
+      ]
+    },
+    ams: {
+      es: [
+        { label: "¿Qué es AMS?", intent: "ams" },
+        { label: "¿Cómo mantenéis las aplicaciones?", intent: "amsMantenimiento" },
+        { label: "¿Qué beneficios aporta AMS?", intent: "amsBeneficios" }
+      ],
+      en: [
+        { label: "What is AMS?", intent: "ams" },
+        { label: "How do you maintain applications?", intent: "amsMantenimiento" },
+        { label: "What benefits does AMS provide?", intent: "amsBeneficios" }
+      ],
+      fr: [
+        { label: "Qu'est-ce que l'AMS ?", intent: "ams" },
+        { label: "Comment maintenez-vous les applications ?", intent: "amsMantenimiento" },
+        { label: "Quels avantages apporte l'AMS ?", intent: "amsBeneficios" }
+      ]
+    },
+    ims: {
+      es: [
+        { label: "¿Qué es IMS?", intent: "ims" },
+        { label: "¿Cómo gestionáis las infraestructuras?", intent: "imsGestion" },
+        { label: "¿Qué beneficios aporta IMS?", intent: "imsBeneficios" }
+      ],
+      en: [
+        { label: "What is IMS?", intent: "ims" },
+        { label: "How do you manage IT infrastructure?", intent: "imsGestion" },
+        { label: "What benefits does IMS provide?", intent: "imsBeneficios" }
+      ],
+      fr: [
+        { label: "Qu'est-ce que l'IMS ?", intent: "ims" },
+        { label: "Comment gérez-vous les infrastructures ?", intent: "imsGestion" },
+        { label: "Quels avantages apporte l'IMS ?", intent: "imsBeneficios" }
+      ]
+    },
+    outsourcing: {
+      es: [
+        { label: "¿Qué es el outsourcing IT?", intent: "outsourcing" },
+        { label: "¿Cómo puede LogNext reforzar mi equipo?", intent: "outsourcingEquipo" },
+        { label: "¿Qué ventajas tiene externalizar talento?", intent: "outsourcingBeneficios" }
+      ],
+      en: [
+        { label: "What is IT outsourcing?", intent: "outsourcing" },
+        { label: "How can LogNext strengthen my team?", intent: "outsourcingEquipo" },
+        { label: "What are the benefits of outsourcing talent?", intent: "outsourcingBeneficios" }
+      ],
+      fr: [
+        { label: "Qu'est-ce que l'outsourcing IT ?", intent: "outsourcing" },
+        { label: "Comment LogNext peut-elle renforcer mon équipe ?", intent: "outsourcingEquipo" },
+        { label: "Quels sont les avantages d'externaliser les talents ?", intent: "outsourcingBeneficios" }
+      ]
+    },
+    legal: {
+      es: [
+        { label: "¿Dónde está el aviso legal?", intent: "legal" },
+        { label: "¿Cómo tratáis los datos personales?", intent: "privacidad" },
+        { label: "¿Cómo puedo contactar?", intent: "contacto" }
+      ],
+      en: [
+        { label: "Where is the legal notice?", intent: "legal" },
+        { label: "How do you process personal data?", intent: "privacidad" },
+        { label: "How can I contact you?", intent: "contacto" }
+      ],
+      fr: [
+        { label: "Où sont les mentions légales ?", intent: "legal" },
+        { label: "Comment traitez-vous les données personnelles ?", intent: "privacidad" },
+        { label: "Comment puis-je vous contacter ?", intent: "contacto" }
+      ]
+    },
+    cookies: {
+      es: [
+        { label: "¿Qué cookies utilizáis?", intent: "cookies" },
+        { label: "¿Cómo configuro las cookies?", intent: "cookies" },
+        { label: "¿Cómo tratáis mis datos?", intent: "privacidad" }
+      ],
+      en: [
+        { label: "What cookies do you use?", intent: "cookies" },
+        { label: "How can I manage cookies?", intent: "cookies" },
+        { label: "How do you process my data?", intent: "privacidad" }
+      ],
+      fr: [
+        { label: "Quels cookies utilisez-vous ?", intent: "cookies" },
+        { label: "Comment gérer les cookies ?", intent: "cookies" },
+        { label: "Comment traitez-vous mes données ?", intent: "privacidad" }
+      ]
+    },
+    whistleblowing: {
+      es: [
+        { label: "¿Cómo funciona el canal de denuncias?", intent: "canal" },
+        { label: "¿Cómo comunico una irregularidad?", intent: "canal" },
+        { label: "¿Dónde está la información legal?", intent: "legal" }
+      ],
+      en: [
+        { label: "How does the whistleblowing channel work?", intent: "canal" },
+        { label: "How can I report an irregularity?", intent: "canal" },
+        { label: "Where is the legal information?", intent: "legal" }
+      ],
+      fr: [
+        { label: "Comment fonctionne le canal de signalement ?", intent: "canal" },
+        { label: "Comment signaler une irrégularité ?", intent: "canal" },
+        { label: "Où sont les informations légales ?", intent: "legal" }
+      ]
+    }
+  };
+
+  function getPageContext() {
+    const path = decodeURIComponent(window.location.pathname).replace(/\\/g, "/").toLowerCase();
+
+    if (path.endsWith("/trabaja-con-nosotros.html")) return "careers";
+    if (path.endsWith("/quienes-somos.html")) return "about";
+    if (path.endsWith("/servicios/ciberseguridad.html")) return "cybersecurity";
+    if (path.endsWith("/servicios/ia.html")) return "ai";
+    if (path.endsWith("/servicios/ams.html")) return "ams";
+    if (path.endsWith("/servicios/ims.html")) return "ims";
+    if (path.endsWith("/servicios/outsourcing.html")) return "outsourcing";
+    if (path.endsWith("/enlaces-legales/politica-cookies.html")) return "cookies";
+    if (path.endsWith("/enlaces-legales/canal-denuncias.html")) return "whistleblowing";
+    if (path.endsWith("/enlaces-legales/aviso-legal.html")) return "legal";
+    return "home";
+  }
+
+  function getContextualSuggestions() {
+    const context = contextualSuggestions[getPageContext()] || contextualSuggestions.home;
+    return (context[getLang()] || context.es).slice(0, 3);
+  }
 
   const responseLinks = {
     empresa: {
@@ -211,13 +455,33 @@
       href: `${rootPrefix}servicios/ciberseguridad.html`,
       label: { es: "Ver Ciberseguridad", en: "View Cybersecurity", fr: "Voir Cybersécurité" }
     },
+    ciberseguridadBeneficios: {
+      href: `${rootPrefix}servicios/ciberseguridad.html`,
+      label: { es: "Ver Ciberseguridad", en: "View Cybersecurity", fr: "Voir Cybersécurité" }
+    },
     ia: {
+      href: `${rootPrefix}servicios/ia.html`,
+      label: { es: "Ver Inteligencia Artificial", en: "View Artificial Intelligence", fr: "Voir Intelligence Artificielle" }
+    },
+    iaAutomatizacion: {
+      href: `${rootPrefix}servicios/ia.html`,
+      label: { es: "Ver Inteligencia Artificial", en: "View Artificial Intelligence", fr: "Voir Intelligence Artificielle" }
+    },
+    iaBeneficios: {
       href: `${rootPrefix}servicios/ia.html`,
       label: { es: "Ver Inteligencia Artificial", en: "View Artificial Intelligence", fr: "Voir Intelligence Artificielle" }
     },
     empleo: {
       href: `${rootPrefix}trabaja-con-nosotros.html`,
       label: { es: "Ir a Trabaja con Nosotros", en: "Go to Work with us", fr: "Aller à Travailler avec nous" }
+    },
+    beneficiosEmpleo: {
+      href: `${rootPrefix}trabaja-con-nosotros.html`,
+      label: { es: "Ver beneficios", en: "View benefits", fr: "Voir les avantages" }
+    },
+    culturaEmpleo: {
+      href: `${rootPrefix}trabaja-con-nosotros.html`,
+      label: { es: "Conocer Trabaja con nosotros", en: "Explore Work with us", fr: "Découvrir Travailler avec nous" }
     },
     contacto: {
       href: "mailto:info@lognext.com",
@@ -267,17 +531,131 @@
       href: `${rootPrefix}servicios/ams.html`,
       label: { es: "Ver AMS", en: "View AMS", fr: "Voir AMS" }
     },
+    amsMantenimiento: {
+      href: `${rootPrefix}servicios/ams.html`,
+      label: { es: "Ver AMS", en: "View AMS", fr: "Voir AMS" }
+    },
+    amsBeneficios: {
+      href: `${rootPrefix}servicios/ams.html`,
+      label: { es: "Ver AMS", en: "View AMS", fr: "Voir AMS" }
+    },
     ims: {
+      href: `${rootPrefix}servicios/ims.html`,
+      label: { es: "Ver IMS", en: "View IMS", fr: "Voir IMS" }
+    },
+    imsGestion: {
+      href: `${rootPrefix}servicios/ims.html`,
+      label: { es: "Ver IMS", en: "View IMS", fr: "Voir IMS" }
+    },
+    imsBeneficios: {
       href: `${rootPrefix}servicios/ims.html`,
       label: { es: "Ver IMS", en: "View IMS", fr: "Voir IMS" }
     },
     outsourcing: {
       href: `${rootPrefix}servicios/outsourcing.html`,
       label: { es: "Ver Outsourcing", en: "View Outsourcing", fr: "Voir Outsourcing" }
+    },
+    outsourcingEquipo: {
+      href: `${rootPrefix}servicios/outsourcing.html`,
+      label: { es: "Ver Outsourcing", en: "View Outsourcing", fr: "Voir Outsourcing" }
+    },
+    outsourcingBeneficios: {
+      href: `${rootPrefix}servicios/outsourcing.html`,
+      label: { es: "Ver Outsourcing", en: "View Outsourcing", fr: "Voir Outsourcing" }
     }
   };
 
   const intents = [
+    {
+      key: "culturaEmpleo",
+      words: [
+        "como es trabajar en lognext",
+        "what is it like to work at lognext",
+        "comment est le travail chez lognext"
+      ],
+      phraseBoost: 8
+    },
+    {
+      key: "ciberseguridadBeneficios",
+      words: [
+        "que beneficios aporta la ciberseguridad",
+        "what benefits does cybersecurity provide",
+        "quels avantages apporte la cybersecurite"
+      ],
+      phraseBoost: 8
+    },
+    {
+      key: "iaAutomatizacion",
+      words: [
+        "que procesos se pueden automatizar con ia",
+        "what processes can be automated with ai",
+        "quels processus peuvent etre automatises avec l ia"
+      ],
+      phraseBoost: 8
+    },
+    {
+      key: "iaBeneficios",
+      words: [
+        "que beneficios aporta la ia",
+        "what benefits does ai provide",
+        "quels avantages apporte l ia"
+      ],
+      phraseBoost: 8
+    },
+    {
+      key: "amsMantenimiento",
+      words: [
+        "como manteneis las aplicaciones",
+        "how do you maintain applications",
+        "comment maintenez vous les applications"
+      ],
+      phraseBoost: 8
+    },
+    {
+      key: "amsBeneficios",
+      words: [
+        "que beneficios aporta ams",
+        "what benefits does ams provide",
+        "quels avantages apporte l ams"
+      ],
+      phraseBoost: 8
+    },
+    {
+      key: "imsGestion",
+      words: [
+        "como gestionais las infraestructuras",
+        "how do you manage it infrastructure",
+        "comment gerez vous les infrastructures"
+      ],
+      phraseBoost: 8
+    },
+    {
+      key: "imsBeneficios",
+      words: [
+        "que beneficios aporta ims",
+        "what benefits does ims provide",
+        "quels avantages apporte l ims"
+      ],
+      phraseBoost: 8
+    },
+    {
+      key: "outsourcingEquipo",
+      words: [
+        "como puede lognext reforzar mi equipo",
+        "how can lognext strengthen my team",
+        "comment lognext peut elle renforcer mon equipe"
+      ],
+      phraseBoost: 8
+    },
+    {
+      key: "outsourcingBeneficios",
+      words: [
+        "que ventajas tiene externalizar talento",
+        "what are the benefits of outsourcing talent",
+        "quels sont les avantages d externaliser les talents"
+      ],
+      phraseBoost: 8
+    },
     {
       key: "cookies",
       words: [
@@ -906,14 +1284,11 @@
         "proteger informacion critica",
         "haceis auditorias",
         "haceis auditorías",
-        "ayudais con ens",
         "seguridad de la informacion",
         "concienciacion en seguridad",
         "respuesta ante incidentes",
         "gestion de riesgos",
         "cumplimiento normativo",
-        "necesito cumplir ens",
-        "necesito cumplir iso 27001",
         "gestionais riesgos tecnologicos",
         "proteger datos",
         "capacidades en seguridad de la informacion",
@@ -922,7 +1297,6 @@
         "seguridad informatica",
         "soluciones de ciberseguridad",
         "seguridad",
-        "ens",
         "auditoria",
         "proteccion",
         "vulnerabilidad",
@@ -2306,7 +2680,7 @@
       scrollToBottom();
     }
 
-    function answerQuestion(question) {
+    function answerQuestion(question, forcedIntentKey) {
       const langCopy = copy[getLang()];
       const cleanQuestion = question.trim();
       if (!cleanQuestion) {
@@ -2315,19 +2689,18 @@
       }
 
       addUserMessage(cleanQuestion);
-      const intent = findIntent(cleanQuestion);
+      const intent = forcedIntentKey ? { key: forcedIntentKey } : findIntent(cleanQuestion);
       addTypingMessage(intent ? buildBotResponse(intent, langCopy) : langCopy.fallback);
     }
 
     function renderQuickActions() {
-      const langCopy = copy[getLang()];
       quickActions.innerHTML = "";
-      langCopy.quick.forEach((label) => {
+      getContextualSuggestions().forEach((suggestion) => {
         const button = document.createElement("button");
         button.type = "button";
         button.className = "lognext-chatbot__quick-btn";
-        button.textContent = label;
-        button.addEventListener("click", () => answerQuestion(label));
+        button.textContent = suggestion.label;
+        button.addEventListener("click", () => answerQuestion(suggestion.label, suggestion.intent));
         quickActions.appendChild(button);
       });
     }

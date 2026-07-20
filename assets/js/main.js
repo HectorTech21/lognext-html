@@ -1,4 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
+  const INTRO_VISIBLE_TIME = 650;
+  const INTRO_FADE_TIME = 280;
   const video = document.getElementById('heroVideo');
   const playPauseBtn = document.getElementById('videoPlayPauseBtn');
   const intro = document.getElementById('siteIntro');
@@ -28,8 +30,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
         window.setTimeout(() => {
           intro.remove();
-        }, 500);
-      }, 1450);
+        }, INTRO_FADE_TIME);
+      }, INTRO_VISIBLE_TIME);
     }
   } else {
     revealMainContent();

@@ -2511,7 +2511,7 @@ main.page-enter.is-page-visible {
 
 .footer-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 40px;
   margin-bottom: 40px;
 }

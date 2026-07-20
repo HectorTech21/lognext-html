@@ -2697,6 +2697,8 @@
   function initChatbot() {
     const widget = buildChatbot();
     const launcher = widget.querySelector(".lognext-chatbot__launcher");
+    const panel = widget.querySelector(".lognext-chatbot__panel");
+    const header = widget.querySelector(".lognext-chatbot__header");
     const closeBtn = widget.querySelector(".lognext-chatbot__close");
     const messages = widget.querySelector(".lognext-chatbot__messages");
     const quickActions = widget.querySelector(".lognext-chatbot__quick-actions");
@@ -2822,6 +2824,25 @@
     });
 
     closeBtn.addEventListener("click", closeChat);
+
+    header.addEventListener("click", (event) => {
+      const selection = window.getSelection();
+      const isSelectingHeaderText = Boolean(
+        selection
+        && !selection.isCollapsed
+        && selection.rangeCount
+        && header.contains(selection.getRangeAt(0).commonAncestorContainer)
+      );
+
+      if (closeBtn.contains(event.target) || isSelectingHeaderText) return;
+      closeChat();
+    });
+
+    document.addEventListener("click", (event) => {
+      if (!widget.classList.contains("is-open")) return;
+      if (panel.contains(event.target) || launcher.contains(event.target)) return;
+      closeChat();
+    });
 
     form.addEventListener("submit", (event) => {
       event.preventDefault();

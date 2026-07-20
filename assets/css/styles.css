@@ -2373,7 +2373,7 @@ main.page-enter.is-page-visible {
 
 /* Sección Casos de Éxito que se extiende hasta el footer */
 .service-casos-full {
-  padding: 80px 0 0 0;
+  padding: 80px 0 90px;
   background: linear-gradient(135deg, #000029 0%, #0a0a3a 100%);
   position: relative;
   overflow: hidden;
@@ -3544,7 +3544,7 @@ main.page-enter.is-page-visible {
     padding: 50px 0;
   }
   .service-casos-full {
-    padding: 50px 0 0 0;
+    padding: 50px 0 60px;
   }
   .caso-item {
     padding: 20px;

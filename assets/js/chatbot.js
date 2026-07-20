@@ -56,7 +56,8 @@
         certificaciones: `Sí. LogNext cuenta con <a href="${rootPrefix}assets/certificaciones/iso9001.pdf" target="_blank" rel="noopener noreferrer">ISO 9001</a> para calidad, <a href="${rootPrefix}assets/certificaciones/iso14001.pdf" target="_blank" rel="noopener noreferrer">ISO 14001</a> para gestión ambiental, <a href="${rootPrefix}assets/certificaciones/iso20000.pdf" target="_blank" rel="noopener noreferrer">ISO 20000</a> para gestión de servicios IT, <a href="${rootPrefix}assets/certificaciones/iso27001.pdf" target="_blank" rel="noopener noreferrer">ISO 27001</a> para seguridad de la información y <a href="${rootPrefix}assets/certificaciones/CertificadoENS-2025-0095_ES_2026-07-07.pdf" target="_blank" rel="noopener noreferrer">ENS Alto</a> para seguridad y cumplimiento en servicios digitales.`,
         certificacionesEns: `Sí. LogNext cuenta con certificación ENS Alto, el nivel más exigente dentro del Esquema Nacional de Seguridad. Esta certificación refuerza la confianza de clientes, administraciones públicas y colaboradores, demostrando un alto compromiso con la seguridad, la protección de la información y el cumplimiento normativo.`,
         sectorPublico: `Sí. LogNext puede acompañar tanto a Administraciones Públicas como a empresas privadas en proyectos tecnológicos, transformación digital, ciberseguridad, gestión de aplicaciones, infraestructuras, inteligencia artificial y outsourcing IT. Además, contar con ENS Alto refuerza la confianza en proyectos donde la seguridad y el cumplimiento normativo son especialmente importantes.`,
-        responsable: `El responsable de LogNext es Patrick Pariente.`,
+        responsable: `Para cuestiones corporativas, comerciales o administrativas, puedes contactar con LogNext a través de los canales oficiales indicados en la web. El equipo correspondiente revisará tu consulta y la derivará a la persona adecuada.`,
+        personaConcreta: `Para información sobre personas concretas de la organización, te recomendamos contactar con LogNext a través de los canales oficiales de la web.`,
         clientesSectores: `LogNext puede aportar valor a organizaciones públicas y privadas que necesiten apoyo tecnológico en áreas como transformación digital, ciberseguridad, gestión de aplicaciones, infraestructuras, inteligencia artificial y outsourcing IT. Sus servicios se adaptan a las necesidades de cada organización.`,
         casosExito: `Puedes encontrar casos de éxito dentro de las páginas de servicios de LogNext. Sirven para ver ejemplos de aplicación práctica por área, como inteligencia artificial, ciberseguridad, AMS, IMS u outsourcing.`,
         innovacionTransformacion: `En LogNext entendemos la innovación como una forma de aportar valor real al negocio. Aplicamos la tecnología para mejorar procesos, optimizar servicios y ayudar a nuestros clientes a evolucionar de forma eficiente, segura y sostenible.`,
@@ -120,7 +121,8 @@
         certificaciones: `Yes. LogNext holds <a href="${rootPrefix}assets/certificaciones/iso9001.pdf" target="_blank" rel="noopener noreferrer">ISO 9001</a> for quality, <a href="${rootPrefix}assets/certificaciones/iso14001.pdf" target="_blank" rel="noopener noreferrer">ISO 14001</a> for environmental management, <a href="${rootPrefix}assets/certificaciones/iso20000.pdf" target="_blank" rel="noopener noreferrer">ISO 20000</a> for IT service management, <a href="${rootPrefix}assets/certificaciones/iso27001.pdf" target="_blank" rel="noopener noreferrer">ISO 27001</a> for information security and <a href="${rootPrefix}assets/certificaciones/CertificadoENS-2025-0095_ES_2026-07-07.pdf" target="_blank" rel="noopener noreferrer">ENS Alto</a> for security and compliance in digital services.`,
         certificacionesEns: `Yes. LogNext holds ENS Alto certification, the most demanding level within Spain's National Security Framework. This certification strengthens trust among clients, public administrations and partners, demonstrating a strong commitment to security, information protection and compliance.`,
         sectorPublico: `Yes. LogNext can support both public administrations and private companies in technology projects, digital transformation, cybersecurity, application management, infrastructure services, artificial intelligence and IT outsourcing. In addition, having the High ENS certification strengthens trust in projects where security and regulatory compliance are especially important.`,
-        responsable: `The person responsible for LogNext is Patrick Pariente.`,
+        responsable: `For corporate, commercial or administrative matters, you can contact LogNext through the official channels listed on the website. The appropriate team will review your request and direct it to the right person.`,
+        personaConcreta: `For information about specific people in the organization, we recommend contacting LogNext through the official channels on the website.`,
         clientesSectores: `LogNext can bring value to public and private organizations that need technology support in areas such as digital transformation, cybersecurity, application management, infrastructure, artificial intelligence and IT outsourcing. Its services adapt to each organization's needs.`,
         casosExito: `You can find success cases within LogNext's service pages. They show practical examples by area, such as artificial intelligence, cybersecurity, AMS, IMS or outsourcing.`,
         innovacionTransformacion: `At LogNext, we understand innovation as a way to bring real value to the business. We apply technology to improve processes, optimize services and help our clients evolve efficiently, securely and sustainably.`,
@@ -184,7 +186,8 @@
         certificaciones: `Oui. LogNext dispose d'<a href="${rootPrefix}assets/certificaciones/iso9001.pdf" target="_blank" rel="noopener noreferrer">ISO 9001</a> pour la qualité, <a href="${rootPrefix}assets/certificaciones/iso14001.pdf" target="_blank" rel="noopener noreferrer">ISO 14001</a> pour la gestion environnementale, <a href="${rootPrefix}assets/certificaciones/iso20000.pdf" target="_blank" rel="noopener noreferrer">ISO 20000</a> pour la gestion des services IT, <a href="${rootPrefix}assets/certificaciones/iso27001.pdf" target="_blank" rel="noopener noreferrer">ISO 27001</a> pour la sécurité de l'information et <a href="${rootPrefix}assets/certificaciones/CertificadoENS-2025-0095_ES_2026-07-07.pdf" target="_blank" rel="noopener noreferrer">ENS Alto</a> pour la sécurité et la conformité des services numériques.`,
         certificacionesEns: `Oui. LogNext dispose de la certification ENS Alto, le niveau le plus exigeant du Schéma National de Sécurité espagnol. Cette certification renforce la confiance des clients, administrations publiques et partenaires, en démontrant un engagement élevé envers la sécurité, la protection de l'information et la conformité.`,
         sectorPublico: `Oui. LogNext peut accompagner les administrations publiques ainsi que les entreprises privées dans des projets technologiques, de transformation digitale, de cybersécurité, de gestion applicative, d'infrastructures, d'intelligence artificielle et d'outsourcing IT. De plus, la certification ENS Alto renforce la confiance dans les projets où la sécurité et la conformité sont essentielles.`,
-        responsable: `Le responsable de LogNext est Patrick Pariente.`,
+        responsable: `Pour toute question institutionnelle, commerciale ou administrative, vous pouvez contacter LogNext via les canaux officiels indiqués sur le site. L’équipe compétente examinera votre demande et l’orientera vers la personne appropriée.`,
+        personaConcreta: `Pour obtenir des informations sur des personnes précises de l’organisation, nous vous recommandons de contacter LogNext via les canaux officiels du site.`,
         clientesSectores: `LogNext peut apporter de la valeur aux organisations publiques et privées qui ont besoin d'un accompagnement technologique en transformation numérique, cybersécurité, gestion applicative, infrastructures, intelligence artificielle et outsourcing IT. Ses services s'adaptent aux besoins de chaque organisation.`,
         casosExito: `Vous pouvez trouver des cas de réussite dans les pages de services de LogNext. Ils présentent des exemples pratiques par domaine, comme l'intelligence artificielle, la cybersécurité, AMS, IMS ou l'outsourcing.`,
         innovacionTransformacion: `Chez LogNext, nous considérons l'innovation comme une manière d'apporter une valeur réelle au métier. Nous appliquons la technologie pour améliorer les processus, optimiser les services et aider nos clients à évoluer de façon efficace, sûre et durable.`,
@@ -488,6 +491,14 @@
       label: { es: "Ir a Contacto", en: "Contact LogNext", fr: "Contacter LogNext" }
     },
     contactoHumano: {
+      href: "mailto:info@lognext.com",
+      label: { es: "Contactar con LogNext", en: "Contact LogNext", fr: "Contacter LogNext" }
+    },
+    responsable: {
+      href: "mailto:info@lognext.com",
+      label: { es: "Contactar con LogNext", en: "Contact LogNext", fr: "Contacter LogNext" }
+    },
+    personaConcreta: {
       href: "mailto:info@lognext.com",
       label: { es: "Contactar con LogNext", en: "Contact LogNext", fr: "Contacter LogNext" }
     },
@@ -1818,6 +1829,12 @@
       words: [
         "quien es el responsable",
         "quien es el responsable de lognext",
+        "quien es el representante",
+        "quien representa a lognext",
+        "quien representa lognext",
+        "representante de lognext",
+        "representante legal",
+        "persona de referencia",
         "quien esta al mando",
         "quien dirige lognext",
         "quien lleva la empresa",
@@ -1838,6 +1855,12 @@
         "quien esta al mando",
         "who is responsible",
         "who is responsible for lognext",
+        "who is the representative",
+        "who represents lognext",
+        "lognext representative",
+        "legal representative",
+        "company representative",
+        "point of contact",
         "who leads lognext",
         "who runs lognext",
         "who manages lognext",
@@ -1849,6 +1872,11 @@
         "leader",
         "qui est le responsable",
         "qui est responsable de lognext",
+        "qui est le representant",
+        "qui represente lognext",
+        "representant de lognext",
+        "representant legal",
+        "personne de reference",
         "qui dirige lognext",
         "qui mene lognext",
         "qui est aux commandes",
@@ -1860,6 +1888,8 @@
       ],
       terms: [
         "responsable",
+        "representante",
+        "representa",
         "encargado",
         "jefe",
         "director",
@@ -1870,6 +1900,8 @@
         "manda",
         "mando",
         "responsible",
+        "representative",
+        "represents",
         "leads",
         "runs",
         "manages",
@@ -1877,14 +1909,16 @@
         "manager",
         "leader",
         "responsable",
+        "representant",
+        "represente",
         "directeur",
         "direction"
       ],
       groups: [
-        ["responsable", "encargado", "jefe", "director", "direccion", "lider", "dirige", "lidera", "manda", "mando"],
+        ["responsable", "representante", "representa", "encargado", "jefe", "director", "direccion", "lider", "dirige", "lidera", "manda", "mando"],
         ["lognext", "empresa", "persona"],
-        ["responsible", "leads", "runs", "manages", "charge", "manager", "director", "leader"],
-        ["responsable", "dirige", "directeur", "direction", "leader"]
+        ["responsible", "representative", "represents", "leads", "runs", "manages", "charge", "manager", "director", "leader"],
+        ["responsable", "representant", "represente", "dirige", "directeur", "direction", "leader"]
       ]
     },
     {
@@ -2475,6 +2509,38 @@
       .trim();
   }
 
+  function isSpecificPersonQuestion(originalText, normalizedText, bestScore) {
+    const asksWho = /(?:^|\s)(?:quien es|who is|qui est)(?:\s|$)/.test(normalizedText);
+    const corporateOrRoleTerms = [
+      "lognext",
+      "responsable",
+      "representante",
+      "representant",
+      "representative",
+      "encargado",
+      "jefe",
+      "director",
+      "directeur",
+      "lider",
+      "leader",
+      "manager",
+      "contacto",
+      "contact"
+    ];
+    const isCorporateOrRoleQuestion = corporateOrRoleTerms.some((term) =>
+      matchesKeyword(normalizedText, term)
+    );
+
+    if (asksWho && !isCorporateOrRoleQuestion) return true;
+    if (bestScore >= MIN_INTENT_SCORE) return false;
+
+    const standaloneName = originalText
+      .trim()
+      .replace(/^[¿?¡!\s]+|[¿?¡!.,;:\s]+$/g, "");
+
+    return /^[A-ZÁÉÍÓÚÜÑ][A-Za-zÁÉÍÓÚÜÑáéíóúüñ'’-]+(?:\s+[A-ZÁÉÍÓÚÜÑ][A-Za-zÁÉÍÓÚÜÑáéíóúüñ'’-]+){1,2}$/.test(standaloneName);
+  }
+
   function escapeRegExp(text) {
     return text.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
   }
@@ -2580,7 +2646,10 @@
       }
     });
 
-    const detectedIntent = bestScore >= MIN_INTENT_SCORE ? bestIntent : null;
+    let detectedIntent = bestScore >= MIN_INTENT_SCORE ? bestIntent : null;
+    if (isSpecificPersonQuestion(text, normalized, bestScore)) {
+      detectedIntent = { key: "personaConcreta" };
+    }
     logIntentDebug(text, normalized, detectedIntent, scores);
     return detectedIntent;
   }

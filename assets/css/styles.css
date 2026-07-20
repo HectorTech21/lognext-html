@@ -3748,74 +3748,98 @@ main.page-enter.is-page-visible {
 }
 
 .certificaciones {
-  padding: 80px 0;
+  padding: 80px 0 100px;
   background-color: #ffffff;
   position: relative;
 }
 
 .certificaciones .section-title {
   color: #000029;
-  margin-bottom: 50px;
+  margin-bottom: 36px;
 }
 
 .certificaciones .section-title::after {
   background: linear-gradient(90deg, #FA3C0F, #e6350a);
 }
 
-.certificaciones-grid {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 30px;
-  width: 100%;
+.certificaciones-layout {
+  width: calc(100% - 40px);
   max-width: 1120px;
   margin: 0 auto;
 }
 
+.certificaciones-destacada {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 42px;
+}
+
+.certificaciones-iso-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  align-items: center;
+  gap: 32px;
+}
+
 .certificacion-card {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
   text-decoration: none;
   background: transparent;
   border-radius: 0;
   padding: 0;
   text-align: center;
-  transition: transform 0.25s ease, filter 0.25s ease;
+  transition: transform 0.28s ease, filter 0.28s ease;
   border: 0;
   box-shadow: none;
   cursor: pointer;
+  will-change: transform;
 }
 
 .certificacion-card:hover,
 .certificacion-card:focus-visible {
-  transform: translateY(-6px) scale(1.04);
-  filter: drop-shadow(0 14px 22px rgba(0, 0, 41, 0.16));
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .certificacion-card {
-    transition: none;
-  }
+  transform: translateY(-10px) scale(1.08);
+  filter: drop-shadow(0 18px 24px rgba(0, 0, 41, 0.28));
 }
 
 .certificacion-card img {
   display: block;
   width: auto;
-  max-width: 180px;
-  max-height: 95px;
   height: auto;
   object-fit: contain;
   margin: 0 auto;
+  transition: transform 0.28s ease;
+  will-change: transform;
+}
+
+.certificacion-card:hover img,
+.certificacion-card:focus-visible img {
+  transform: scale(1.03);
+}
+
+.certificaciones-iso-grid img {
+  width: 100%;
+  max-width: 260px;
+  max-height: 130px;
 }
 
 .certificacion-card--ens img {
-  max-width: 150px;
-  max-height: 120px;
+  max-width: 170px;
+  max-height: 165px;
 }
 
 /* Responsive certificaciones */
 @media (max-width: 1024px) {
-  .certificaciones-grid {
-    gap: 25px;
+  .certificaciones-layout {
+    max-width: 680px;
+  }
+
+  .certificaciones-iso-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px 28px;
   }
 }
 
@@ -3823,25 +3847,51 @@ main.page-enter.is-page-visible {
   .certificaciones {
     padding: 60px 0;
   }
-  .certificaciones-grid {
-    gap: 20px;
-    max-width: 500px;
+
+  .certificaciones .section-title {
+    margin-bottom: 28px;
   }
-  .certificacion-card {
-    padding: 0;
+
+  .certificaciones-destacada {
+    margin-bottom: 32px;
+  }
+
+  .certificacion-card--ens img {
+    max-width: 150px;
+    max-height: 140px;
+  }
+
+  .certificaciones-iso-grid {
+    gap: 28px 24px;
+  }
+
+  .certificaciones-iso-grid img {
+    max-width: 280px;
+    max-height: 110px;
   }
 }
 
 @media (max-width: 480px) {
   .certificaciones {
-    padding: 50px 0;
+    padding: 50px 0 60px;
   }
-  .certificaciones-grid {
-    gap: 15px;
-    max-width: 250px;
+
+  .certificaciones-layout {
+    width: calc(100% - 32px);
   }
-  .certificacion-card {
-    padding: 0;
+
+  .certificaciones-iso-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+    max-width: 280px;
+    margin: 0 auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .certificacion-card,
+  .certificacion-card img {
+    transition: none;
   }
 }
 
@@ -4723,159 +4773,6 @@ body {
   }
 }
 
-.certificaciones img[src*="ENSAlta"],
-.certifications img[src*="ENSAlta"],
-img[src*="ENSAlta"] {
-  max-width: 150px !important;
-  max-height: 130px !important;
-  width: auto !important;
-  height: auto !important;
-  object-fit: contain !important;
-  display: block !important;
-}
-
-.certificaciones a,
-.certifications a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.certificaciones {
-  padding-bottom: 100px !important;
-}
-
-@media (min-width: 1024px) {
-  .certifications-grid,
-  .certificaciones-grid,
-  .certifications-container,
-  .certificaciones-container {
-    display: flex !important;
-    flex-direction: row !important;
-    align-items: center !important;
-    justify-content: center !important;
-    gap: 32px !important;
-    flex-wrap: nowrap !important;
-    width: 100% !important;
-    max-width: 1120px !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-  }
-
-  .certifications-grid a,
-  .certificaciones-grid a,
-  .certifications-container a,
-  .certificaciones-container a {
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    flex: 0 0 auto !important;
-  }
-
-  .certifications-grid img:not([src*="ENSAlta"]),
-  .certificaciones-grid img:not([src*="ENSAlta"]),
-  .certifications-container img:not([src*="ENSAlta"]),
-  .certificaciones-container img:not([src*="ENSAlta"]) {
-    max-width: 320px !important;
-    max-height: 130px !important;
-    width: auto !important;
-    height: auto !important;
-    object-fit: contain !important;
-    display: block !important;
-  }
-
-  .certifications-grid img[src*="ENSAlta"],
-  .certificaciones-grid img[src*="ENSAlta"],
-  .certifications-container img[src*="ENSAlta"],
-  .certificaciones-container img[src*="ENSAlta"] {
-    max-width: 135px !important;
-    max-height: 145px !important;
-    width: auto !important;
-    height: auto !important;
-    object-fit: contain !important;
-    display: block !important;
-  }
-}
-
-@media (max-width: 768px) {
-  .certificaciones {
-    padding-bottom: 60px !important;
-  }
-
-  .certifications-grid,
-  .certificaciones-grid,
-  .certifications-container,
-  .certificaciones-container {
-    display: flex !important;
-    flex-direction: row !important;
-    align-items: center !important;
-    justify-content: center !important;
-    flex-wrap: wrap !important;
-    gap: 24px !important;
-    width: 100% !important;
-  }
-}
-
-.certificaciones-grid .certificacion-card,
-.certificaciones-grid a,
-.certifications-grid a,
-.certificaciones-container a,
-.certifications-container a {
-  transition: transform 0.28s ease, filter 0.28s ease;
-  will-change: transform;
-}
-
-.certificaciones-grid .certificacion-card img,
-.certificaciones-grid a img,
-.certifications-grid a img,
-.certificaciones-container a img,
-.certifications-container a img {
-  transition: transform 0.28s ease, filter 0.28s ease;
-  will-change: transform;
-}
-
-.certificaciones-grid .certificacion-card:hover,
-.certificaciones-grid .certificacion-card:focus-visible,
-.certificaciones-grid a:hover,
-.certificaciones-grid a:focus-visible,
-.certifications-grid a:hover,
-.certifications-grid a:focus-visible,
-.certificaciones-container a:hover,
-.certificaciones-container a:focus-visible,
-.certifications-container a:hover,
-.certifications-container a:focus-visible {
-  transform: translateY(-10px) scale(1.08);
-  filter: drop-shadow(0 18px 24px rgba(0, 0, 41, 0.28));
-}
-
-.certificaciones-grid .certificacion-card:hover img,
-.certificaciones-grid .certificacion-card:focus-visible img,
-.certificaciones-grid a:hover img,
-.certificaciones-grid a:focus-visible img,
-.certifications-grid a:hover img,
-.certifications-grid a:focus-visible img,
-.certificaciones-container a:hover img,
-.certificaciones-container a:focus-visible img,
-.certifications-container a:hover img,
-.certifications-container a:focus-visible img {
-  transform: scale(1.03);
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .certificaciones-grid .certificacion-card,
-  .certificaciones-grid .certificacion-card img,
-  .certificaciones-grid a,
-  .certificaciones-grid a img,
-  .certifications-grid a,
-  .certifications-grid a img,
-  .certificaciones-container a,
-  .certificaciones-container a img,
-  .certifications-container a,
-  .certifications-container a img {
-    transition: none;
-  }
-}
-
 /* ========== RESPONSIVE HARDENING ========== */
 img,
 video,
@@ -4938,21 +4835,6 @@ iframe {
 
   .language-switcher a {
     padding: 4px 5px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .certificaciones-grid .certificacion-card {
-    flex: 1 1 0 !important;
-    min-width: 0;
-  }
-
-  .certificaciones-grid .certificacion-card img:not([src*="ENSAlta"]) {
-    max-width: 100% !important;
-  }
-
-  .certificaciones-grid .certificacion-card img[src*="ENSAlta"] {
-    max-width: min(100%, 135px) !important;
   }
 }
 

@@ -2479,7 +2479,7 @@ main.page-enter.is-page-visible {
 .site-footer {
   background: linear-gradient(135deg, #000029 0%, #0a0a3a 100%);
   position: relative;
-  padding: 60px 0 20px;
+  padding: 48px 0 16px;
   margin-top: 0;
   border-top: 3px solid #FA3C0F;
   overflow: hidden;
@@ -2512,8 +2512,8 @@ main.page-enter.is-page-visible {
 .footer-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 40px;
-  margin-bottom: 40px;
+  gap: 36px;
+  margin-bottom: 24px;
 }
 
 .footer-title {
@@ -2549,7 +2549,7 @@ main.page-enter.is-page-visible {
 }
 
 .footer-links li {
-  margin-bottom: 12px;
+  margin-bottom: 9px;
 }
 
 .footer-links a {
@@ -2587,19 +2587,37 @@ main.page-enter.is-page-visible {
 
 .contact-item {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 12px;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 }
 
 .contact-icon {
-  font-size: 18px;
-  width: 28px;
-  transition: transform 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 24px;
+  width: 24px;
+  height: 24px;
+  margin-top: 1px;
+  color: #FA3C0F;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-contact-icon svg {
+  display: block;
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 .contact-item:hover .contact-icon {
-  transform: scale(1.1);
+  color: #ffffff;
+  transform: translateY(-1px);
 }
 
 .contact-link {
@@ -2618,7 +2636,7 @@ main.page-enter.is-page-visible {
 }
 
 .footer-map {
-  margin-bottom: 20px;
+  margin-bottom: 14px;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
@@ -2631,17 +2649,18 @@ main.page-enter.is-page-visible {
 
 .footer-map iframe {
   display: block;
+  height: 135px;
 }
 
 .footer-social {
-  margin-top: 20px;
+  margin-top: 14px;
 }
 
 .social-title {
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   font-weight: 500;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   letter-spacing: 1px;
 }
 
@@ -2683,7 +2702,7 @@ main.page-enter.is-page-visible {
 }
 
 .footer-cv {
-  margin-top: 20px;
+  margin-top: 14px;
 }
 
 .btn-cv-simple {
@@ -2732,8 +2751,8 @@ main.page-enter.is-page-visible {
 /* ========== FOOTER BOTTOM CON ENLACES LEGALES ========== */
 .footer-bottom {
   text-align: center;
-  padding-top: 30px;
-  margin-top: 30px;
+  padding-top: 20px;
+  margin-top: 0;
   border-top: 1px solid rgba(250, 60, 15, 0.3);
 }
 
@@ -3137,7 +3156,7 @@ main.page-enter.is-page-visible {
   }
   .footer-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
+    gap: 32px;
   }
   .about-hero-content h1 {
     font-size: 52px;
@@ -3380,13 +3399,13 @@ main.page-enter.is-page-visible {
   }
   .footer-grid {
     grid-template-columns: 1fr;
-    gap: 35px;
+    gap: 28px;
   }
   .footer-title::after {
     width: 60px;
   }
   .footer-map iframe {
-    height: 180px;
+    height: 150px;
   }
   .mobile-footer-info {
     display: flex;

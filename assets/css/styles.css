@@ -3531,6 +3531,9 @@ main.page-enter.is-page-visible {
     padding: 0 20px;
     min-height: 70vh;
   }
+  .service-hero-image {
+    margin-top: 28px;
+  }
   .service-hero-text h1 {
     font-size: 36px;
   }
@@ -3539,6 +3542,7 @@ main.page-enter.is-page-visible {
   }
   .hero-quote {
     font-size: 14px;
+    margin-bottom: 36px;
   }
   .service-section {
     padding: 50px 0;

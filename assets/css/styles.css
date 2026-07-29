@@ -3080,9 +3080,19 @@ main.page-enter.is-page-visible {
 }
 
 .info-icon {
-  font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 24px;
   width: 24px;
-  display: inline-block;
+  height: 24px;
+  color: #FA3C0F;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.mobile-info-contact p:hover .info-icon {
+  color: #ffffff;
+  transform: translateY(-1px);
 }
 
 /* ========== SCROLLBAR PERSONALIZADA ========== */

@@ -60,6 +60,10 @@
   --section-bg-soft: #101044;
   --section-title-color: #ffffff;
   --section-text-color: rgba(255, 255, 255, 0.86);
+  --section-bridge-bg:
+    radial-gradient(circle at 50% 0%, rgba(250, 60, 15, 0.09), transparent 40%),
+    linear-gradient(180deg, #0b0b35 0%, #060624 100%);
+  --section-bridge-border: rgba(250, 60, 15, 0.12);
   --card-bg: #101044;
   --card-text: #ffffff;
   --service-card-bg: #05052b;
@@ -4670,6 +4674,26 @@ body {
   box-shadow: var(--shadow-card);
 }
 
+/* ========== DARK SECTION CONTINUITY ========== */
+[data-theme="dark"] .about-claim,
+[data-theme="dark"] .about-map,
+[data-theme="dark"] .service-section {
+  background: var(--section-bridge-bg);
+  color: var(--section-text-color);
+  border-top: 1px solid var(--section-bridge-border);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  box-shadow: inset 0 18px 38px rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="dark"] .about-claim .claim-text {
+  color: var(--color-text-strong);
+}
+
+[data-theme="dark"] .about-claim .claim-sub,
+[data-theme="dark"] .service-section .service-text-col p {
+  color: var(--section-text-color);
+}
+
 /* ========== QUIENES SOMOS CONTRAST FIXES ========== */
 .about-stats .stat-card {
   background: var(--card-bg);
@@ -4694,7 +4718,7 @@ body {
 }
 
 [data-theme="dark"] .about-map .section-title {
-  color: #000029;
+  color: var(--color-text-strong);
 }
 
 /* ========== TRABAJA CON NOSOTROS CONTRAST FIXES ========== */

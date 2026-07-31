@@ -30,8 +30,6 @@ const translations = {
     video_not_supported: "Tu navegador no soporta videos.",
     
     // Footer
-    footer_somos_nexter: "SOMOS NEXTERS",
-    footer_text: "Superamos nuestros retos porque somos expertos en lo que hacemos, no importa cuáles sean, nuestra entrega por lo que hacemos nos ayuda a superar expectativas, la excelencia es el fruto de nuestra experiencia. Estamos orgullosos de lo que hacemos y de lo que conseguimos haciéndolo. Si te mueve dar un paso más, creando un impacto significativo en el mundo que te rodea, este es tu lugar.",
     footer_enlaces_rapidos: "Enlaces rápidos",
     footer_contacto: "Contacto",
     footer_hablamos: "¿Hablamos?",
@@ -85,7 +83,6 @@ const translations = {
     stats_title: "Números que nos respaldan",
     stats_anos: "Años de experiencia",
     stats_proyectos: "Proyectos entregados",
-    stats_clientes: "Clientes satisfechos",
     stats_expertos: "Expertos en tecnología",
     
     // Frase impactante (Claim)
@@ -110,8 +107,6 @@ const translations = {
     
     // Sección Mapa (Quiénes Somos)
     mapa_title: "Estamos donde nos necesitas",
-    mapa_info_sede: "Sede principal",
-    mapa_info_direccion: "Avenida de Burgos 17, 28036 Madrid, Spain",
     
     // ========== PÁGINA TRABAJA CON NOSOTROS ==========
     work_hero_title: "CONOCE AL EQUIPO",
@@ -139,7 +134,7 @@ const translations = {
     work_benefit3_desc: "Formación técnica y de idiomas continua para potenciar tus habilidades.",
     work_benefit4_title: "Retribución Flexible",
     work_benefit4_desc: "Elige cómo quieres recibir parte de tu salario: seguro médico, formación, etc.",
-    work_benefit5_title: "Team LogNext",
+    work_benefit5_title: "Team Lognext",
     work_benefit5_desc: "Eventos, afterworks y actividades para fortalecer los lazos del equipo.",
     work_benefit6_title: "Compromiso Social",
     work_benefit6_desc: "Participamos activamente en iniciativas que generan impacto positivo en la sociedad.",
@@ -245,8 +240,6 @@ const translations = {
     video_not_supported: "Your browser does not support videos.",
     
     // Footer
-    footer_somos_nexter: "WE ARE NEXTERS",
-    footer_text: "We overcome our challenges because we are experts in what we do, no matter what they are, our dedication helps us exceed expectations, excellence is the result of our experience. We are proud of what we do and what we achieve by doing it. If you want to take a step further, creating a significant impact on the world around you, this is your place.",
     footer_enlaces_rapidos: "Quick links",
     footer_contacto: "Contact",
     footer_hablamos: "Let's talk?",
@@ -298,7 +291,6 @@ const translations = {
     stats_title: "Numbers that support us",
     stats_anos: "Years of experience",
     stats_proyectos: "Projects delivered",
-    stats_clientes: "Satisfied clients",
     stats_expertos: "Technology experts",
     claim_text: "We don't just transform businesses. ",
     claim_highlight: "We create the future.",
@@ -317,8 +309,6 @@ const translations = {
     valor_excelencia: "Excellence",
     valor_excelencia_desc: "Quality is our hallmark.",
     mapa_title: "We are where you need us",
-    mapa_info_sede: "Headquarters",
-    mapa_info_direccion: "Avenida de Burgos 17, 28036 Madrid, Spain",
     
     // Trabaja con nosotros
     work_hero_title: "MEET THE TEAM",
@@ -346,7 +336,7 @@ const translations = {
     work_benefit3_desc: "Continuous technical and language training to enhance your skills.",
     work_benefit4_title: "Flexible Compensation",
     work_benefit4_desc: "Choose how to receive part of your salary: health insurance, training, etc.",
-    work_benefit5_title: "Team LogNext",
+    work_benefit5_title: "Team Lognext",
     work_benefit5_desc: "Events, afterworks and activities to strengthen team bonds.",
     work_benefit6_title: "Social Commitment",
     work_benefit6_desc: "We actively participate in initiatives that generate positive impact on society.",
@@ -451,8 +441,6 @@ const translations = {
     video_not_supported: "Votre navigateur ne prend pas en charge les vidéos.",
     
     // Footer
-    footer_somos_nexter: "NOUS SOMMES NEXTERS",
-    footer_text: "Nous surmontons nos défis parce que nous sommes experts dans ce que nous faisons, peu importe lesquels, notre engagement nous aide à dépasser les attentes, l'excellence est le fruit de notre expérience. Nous sommes fiers de ce que nous faisons et de ce que nous accomplissons. Si vous voulez aller plus loin, créer un impact significatif sur le monde qui vous entoure, c'est votre place.",
     footer_enlaces_rapidos: "Liens rapides",
     footer_contacto: "Contact",
     footer_hablamos: "On parle ?",
@@ -504,7 +492,6 @@ const translations = {
     stats_title: "Des chiffres qui nous soutiennent",
     stats_anos: "Années d'expérience",
     stats_proyectos: "Projets livrés",
-    stats_clientes: "Clients satisfaits",
     stats_expertos: "Experts en technologie",
     claim_text: "Nous ne transformons pas seulement les entreprises. ",
     claim_highlight: "Nous créons l'avenir.",
@@ -523,8 +510,6 @@ const translations = {
     valor_excelencia: "Excellence",
     valor_excelencia_desc: "La qualité est notre marque de fabrique.",
     mapa_title: "Nous sommes là où vous avez besoin de nous",
-    mapa_info_sede: "Siège social",
-    mapa_info_direccion: "Avenida de Burgos 17, 28036 Madrid, Espagne",
     
     // Trabaja con nosotros
     work_hero_title: "RENCONTREZ L'ÉQUIPE",
@@ -552,7 +537,7 @@ const translations = {
     work_benefit3_desc: "Formation technique et linguistique continue pour renforcer vos compétences.",
     work_benefit4_title: "Rémunération flexible",
     work_benefit4_desc: "Choisissez comment recevoir une partie de votre salaire : assurance santé, formation, etc.",
-    work_benefit5_title: "Team LogNext",
+    work_benefit5_title: "Team Lognext",
     work_benefit5_desc: "Événements, afterworks et activités pour renforcer les liens d'équipe.",
     work_benefit6_title: "Engagement social",
     work_benefit6_desc: "Nous participons activement à des initiatives qui génèrent un impact positif sur la société.",

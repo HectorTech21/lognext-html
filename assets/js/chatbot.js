@@ -14,11 +14,11 @@
 
   const copy = {
     es: {
-      open: "Abrir chatbot de LogNext",
-      close: "Cerrar chatbot",
-      title: "LogNext Assistant",
-      subtitle: "Te ayudo con información rápida sobre LogNext.",
-      initial: "Hola, soy el asistente virtual de LogNext. Puedo orientarte sobre servicios, ciberseguridad, inteligencia artificial, empleo y contacto.",
+      open: "Abrir NextBot",
+      close: "Cerrar NextBot",
+      title: "NextBot",
+      subtitle: "Te ayudo con información rápida sobre Lognext.",
+      initial: "Hola, soy NextBot. Puedo orientarte sobre servicios, ciberseguridad, inteligencia artificial, empleo y contacto.",
       placeholder: "Escribe tu pregunta...",
       send: "Enviar",
       typing: "Escribiendo...",
@@ -26,64 +26,64 @@
       fallback: `No estoy seguro de haber entendido exactamente tu pregunta. Puedes preguntarme por servicios, certificaciones, empleo o contacto.`,
       empty: "Escribe una pregunta para que pueda ayudarte.",
       responses: {
-        empresa: `LogNext es una consultora tecnológica especializada en acompañar a organizaciones en sus procesos de transformación digital, ofreciendo servicios de consultoría IT, ciberseguridad, inteligencia artificial, gestión de aplicaciones, infraestructuras y outsourcing tecnológico.`,
-        servicios: `LogNext ofrece servicios tecnológicos para ayudar a las organizaciones a transformar, operar y proteger sus entornos IT: inteligencia artificial, ciberseguridad, AMS, IMS, outsourcing, consultoría tecnológica, automatización, soporte IT y gobierno IT.`,
+        empresa: `Lognext es una consultora tecnológica especializada en acompañar a organizaciones en sus procesos de transformación digital, ofreciendo servicios de consultoría IT, ciberseguridad, inteligencia artificial, gestión de aplicaciones, infraestructuras y outsourcing tecnológico.`,
+        servicios: `Lognext ofrece servicios tecnológicos para ayudar a las organizaciones a transformar, operar y proteger sus entornos IT: inteligencia artificial, ciberseguridad, AMS, IMS, outsourcing, consultoría tecnológica, automatización, soporte IT y gobierno IT.`,
         orientacionServicios: `Depende de tu necesidad. Si buscas proteger información, encajaría Ciberseguridad; si necesitas mantener aplicaciones, AMS; si el problema está en sistemas o infraestructuras, IMS; si quieres automatizar o analizar datos, IA; y si necesitas talento especializado, Outsourcing.`,
-        ciberseguridad: `LogNext ayuda a reforzar la ciberseguridad mediante protección de sistemas, gestión de riesgos, auditorías, concienciación y respuesta ante incidentes. El servicio se adapta a organizaciones que necesitan proteger información crítica y reducir su exposición a amenazas.`,
+        ciberseguridad: `Lognext ayuda a reforzar la ciberseguridad mediante protección de sistemas, gestión de riesgos, auditorías, concienciación y respuesta ante incidentes. El servicio se adapta a organizaciones que necesitan proteger información crítica y reducir su exposición a amenazas.`,
         ciberseguridadBeneficios: `La ciberseguridad ayuda a proteger la información, reducir riesgos operativos y reforzar la continuidad y la confianza de una organización. También facilita una respuesta más preparada ante amenazas e incidentes.`,
-        ia: `LogNext aplica la Inteligencia Artificial para ayudar a las organizaciones a automatizar procesos, analizar información y crear soluciones adaptadas a necesidades concretas de negocio.`,
+        ia: `Lognext aplica la Inteligencia Artificial para ayudar a las organizaciones a automatizar procesos, analizar información y crear soluciones adaptadas a necesidades concretas de negocio.`,
         iaAutomatizacion: `La IA puede apoyar la automatización de tareas repetitivas, análisis de datos, clasificación de información, asistencia a usuarios y mejora de procesos internos.`,
         iaBeneficios: `La IA puede mejorar la eficiencia operativa, reducir tareas manuales, apoyar la toma de decisiones y abrir nuevas oportunidades de innovación dentro de la organización.`,
-        empleo: `Puedes consultar la sección "Trabaja con nosotros" para conocer oportunidades profesionales en LogNext. Buscamos talento tecnológico con ganas de crecer en proyectos innovadores y entornos colaborativos.`,
-        beneficiosEmpleo: `En la sección "Trabaja con nosotros" puedes consultar los beneficios que LogNext ofrece a su equipo, junto con información sobre desarrollo profesional y oportunidades.`,
-        culturaEmpleo: `Trabajar en LogNext significa formar parte de un entorno tecnológico, colaborativo y orientado al crecimiento profesional. La compañía apuesta por el talento, la formación, el acompañamiento y la participación en proyectos con impacto.`,
-        contacto: `Puedes contactar con LogNext desde la sección de Contacto. El equipo revisará tu solicitud para ayudarte con la solución tecnológica que mejor encaje con tu organización.`,
-        contactoHumano: `Para hablar con el equipo de LogNext, puedes escribir a <a href="mailto:info@lognext.com">info@lognext.com</a> o llamar al <a href="tel:+34915472550">+34 915 472 550</a>. Si tu consulta es sobre talento o candidaturas, también puedes contactar en <a href="mailto:talent@lognext.com">talent@lognext.com</a>.`,
-        saludo: `¡Hola! 👋 Soy el asistente virtual de LogNext. Puedo ayudarte con información sobre servicios, ubicación, contacto, empleo, ciberseguridad, inteligencia artificial, aviso legal, cookies o canal de denuncias. ¿Sobre qué tema necesitas ayuda?`,
-        agradecimiento: `¡De nada! 😊 Si necesitas algo más sobre LogNext, servicios, empleo, contacto o información legal, aquí estoy.`,
-        precios: `No puedo facilitar precios o tarifas cerradas desde el chat, porque dependen del alcance, contexto y necesidades de cada proyecto. Para solicitar una propuesta o presupuesto, contacta con LogNext en <a href="mailto:info@lognext.com">info@lognext.com</a>.`,
-        ubicacion: `La sede de LogNext está en <a href="https://maps.google.com/?q=Avenida+de+Burgos+17+Madrid+Spain" target="_blank" rel="noopener noreferrer">Avenida de Burgos 17, 28036 Madrid, Spain</a>. También puedes contactar por teléfono en <a href="tel:+34915472550">+34 915 472 550</a>.`,
-        legal: `Puedes consultar la información legal de LogNext en la página <a href="${rootPrefix}enlaces-legales/aviso-legal.html">Aviso Legal</a>.`,
-        politicasCorporativas: `Puedes consultar la documentación corporativa y legal publicada por LogNext: <a href="${rootPrefix}assets/docs/politica-seguridad.pdf" target="_blank" rel="noopener noreferrer">Política de Seguridad de la Información</a>, <a href="${rootPrefix}assets/docs/politica-sistema-integrado.pdf" target="_blank" rel="noopener noreferrer">Política de Sistema Integrado</a>, <a href="${rootPrefix}enlaces-legales/aviso-legal.html">Aviso Legal</a>, <a href="${rootPrefix}enlaces-legales/politica-cookies.html">Política de Cookies</a> y <a href="${rootPrefix}enlaces-legales/canal-denuncias.html">Canal de Denuncias</a>. Para documentación adicional sobre cumplimiento normativo, contacta con LogNext en <a href="mailto:info@lognext.com">info@lognext.com</a>.`,
+        empleo: `Puedes consultar la sección "Trabaja con nosotros" para conocer oportunidades profesionales en Lognext. Buscamos talento tecnológico con ganas de crecer en proyectos innovadores y entornos colaborativos.`,
+        beneficiosEmpleo: `En la sección "Trabaja con nosotros" puedes consultar los beneficios que Lognext ofrece a su equipo, junto con información sobre desarrollo profesional y oportunidades.`,
+        culturaEmpleo: `Trabajar en Lognext significa formar parte de un entorno tecnológico, colaborativo y orientado al crecimiento profesional. La compañía apuesta por el talento, la formación, el acompañamiento y la participación en proyectos con impacto.`,
+        contacto: `Puedes contactar con Lognext desde la sección de Contacto. El equipo revisará tu solicitud para ayudarte con la solución tecnológica que mejor encaje con tu organización.`,
+        contactoHumano: `Para hablar con el equipo de Lognext, puedes escribir a <a href="mailto:info@lognext.com">info@lognext.com</a> o llamar al <a href="tel:+34915472550">+34 915 472 550</a>. Si tu consulta es sobre talento o candidaturas, también puedes contactar en <a href="mailto:talent@lognext.com">talent@lognext.com</a>.`,
+        saludo: `¡Hola! 👋 Soy NextBot, el asistente virtual de Lognext. Puedo ayudarte con información sobre servicios, ubicación, contacto, empleo, ciberseguridad, inteligencia artificial, aviso legal, cookies o canal de denuncias. ¿Sobre qué tema necesitas ayuda?`,
+        agradecimiento: `¡De nada! 😊 Si necesitas algo más sobre Lognext, servicios, empleo, contacto o información legal, aquí estoy.`,
+        precios: `No puedo facilitar precios o tarifas cerradas desde el chat, porque dependen del alcance, contexto y necesidades de cada proyecto. Para solicitar una propuesta o presupuesto, contacta con Lognext en <a href="mailto:info@lognext.com">info@lognext.com</a>.`,
+        ubicacion: `La sede de Lognext está en <a href="https://maps.google.com/?q=Avenida+de+Burgos+17+Madrid+Spain" target="_blank" rel="noopener noreferrer">Avenida de Burgos 17, 28036 Madrid, Spain</a>. También puedes contactar por teléfono en <a href="tel:+34915472550">+34 915 472 550</a>.`,
+        legal: `Puedes consultar la información legal de Lognext en la página <a href="${rootPrefix}enlaces-legales/aviso-legal.html">Aviso Legal</a>.`,
+        politicasCorporativas: `Puedes consultar la documentación corporativa y legal publicada por Lognext: <a href="${rootPrefix}assets/docs/politica-seguridad.pdf" target="_blank" rel="noopener noreferrer">Política de Seguridad de la Información</a>, <a href="${rootPrefix}assets/docs/politica-sistema-integrado.pdf" target="_blank" rel="noopener noreferrer">Política de Sistema Integrado</a>, <a href="${rootPrefix}enlaces-legales/aviso-legal.html">Aviso Legal</a>, <a href="${rootPrefix}enlaces-legales/politica-cookies.html">Política de Cookies</a> y <a href="${rootPrefix}enlaces-legales/canal-denuncias.html">Canal de Denuncias</a>. Para documentación adicional sobre cumplimiento normativo, contacta con Lognext en <a href="mailto:info@lognext.com">info@lognext.com</a>.`,
         cookies: `La información sobre uso, configuración y consentimiento de cookies está disponible en la <a href="${rootPrefix}enlaces-legales/politica-cookies.html">Política de Cookies</a>.`,
         canal: `Para comunicar posibles incidencias o irregularidades, puedes consultar el <a href="${rootPrefix}enlaces-legales/canal-denuncias.html">Canal de Denuncias</a>.`,
         privacidad: `No veo una página independiente de privacidad en la web. La información sobre tratamiento de datos personales aparece dentro del <a href="${rootPrefix}enlaces-legales/aviso-legal.html">Aviso Legal</a>. Para dudas específicas, escribe a <a href="mailto:privacy@lognext.com">privacy@lognext.com</a>.`,
-        portal: `Si formas parte de LogNext, puedes acceder desde el <a href="https://w3.cezanneondemand.com/CezanneOnDemand/-/LOGNEXT/Account/LogIn?ReturnUrl=%7E%2F-%2FLOGNEXT" target="_blank" rel="noopener noreferrer">Portal del empleado</a>. Si tienes problemas de acceso, contacta con tu responsable o con el departamento correspondiente.`,
+        portal: `Si formas parte de Lognext, puedes acceder desde el <a href="https://w3.cezanneondemand.com/CezanneOnDemand/-/LOGNEXT/Account/LogIn?ReturnUrl=%7E%2F-%2FLOGNEXT" target="_blank" rel="noopener noreferrer">Portal del empleado</a>. Si tienes problemas de acceso, contacta con tu responsable o con el departamento correspondiente.`,
         navegacion: `Puedo orientarte por la web: <a href="${rootPrefix}index.html">Inicio</a>, <a href="${rootPrefix}index.html#servicios">Servicios</a>, <a href="${rootPrefix}quienes-somos.html">Quiénes somos</a>, <a href="${rootPrefix}trabaja-con-nosotros.html">Trabaja con nosotros</a>, <a href="mailto:info@lognext.com">Contacto</a>, <a href="${rootPrefix}enlaces-legales/aviso-legal.html">Aviso legal</a>, <a href="${rootPrefix}enlaces-legales/politica-cookies.html">Política de cookies</a> y <a href="${rootPrefix}enlaces-legales/canal-denuncias.html">Canal de denuncias</a>.`,
-        actividad: `En LogNext desarrollamos soluciones de negocio basadas en la tecnología y en la innovación. Ayudamos a nuestros clientes a transformar sus procesos, mejorar su eficiencia y avanzar con soluciones IT adaptadas a sus necesidades.`,
-        quienesSomos: `LogNext es una compañía especializada en soluciones y servicios IT. Acompañamos a nuestros clientes en sus procesos de transformación tecnológica, combinando experiencia, innovación y talento especializado para responder a sus necesidades de negocio.`,
-        propuestaValor: `La propuesta de valor de LogNext se basa en desarrollar soluciones de negocio basadas en la tecnología y en la innovación. Combinamos conocimiento tecnológico, cercanía con el cliente, flexibilidad y capacidad de adaptación para responder a las necesidades reales de cada organización.`,
-        certificaciones: `Sí. LogNext cuenta con <a href="${rootPrefix}assets/certificaciones/iso9001.pdf" target="_blank" rel="noopener noreferrer">ISO 9001</a> para calidad, <a href="${rootPrefix}assets/certificaciones/iso14001.pdf" target="_blank" rel="noopener noreferrer">ISO 14001</a> para gestión ambiental, <a href="${rootPrefix}assets/certificaciones/iso20000.pdf" target="_blank" rel="noopener noreferrer">ISO 20000</a> para gestión de servicios IT, <a href="${rootPrefix}assets/certificaciones/iso27001.pdf" target="_blank" rel="noopener noreferrer">ISO 27001</a> para seguridad de la información y <a href="${rootPrefix}assets/certificaciones/CertificadoENS-2025-0095_ES_2026-07-07.pdf" target="_blank" rel="noopener noreferrer">ENS Alto</a> para seguridad y cumplimiento en servicios digitales.`,
-        certificacionesEns: `Sí. LogNext cuenta con certificación ENS Alto, el nivel más exigente dentro del Esquema Nacional de Seguridad. Esta certificación refuerza la confianza de clientes, administraciones públicas y colaboradores, demostrando un alto compromiso con la seguridad, la protección de la información y el cumplimiento normativo.`,
-        sectorPublico: `Sí. LogNext puede acompañar tanto a Administraciones Públicas como a empresas privadas en proyectos tecnológicos, transformación digital, ciberseguridad, gestión de aplicaciones, infraestructuras, inteligencia artificial y outsourcing IT. Además, contar con ENS Alto refuerza la confianza en proyectos donde la seguridad y el cumplimiento normativo son especialmente importantes.`,
-        responsable: `Para cuestiones corporativas, comerciales o administrativas, puedes contactar con LogNext a través de los canales oficiales indicados en la web. El equipo correspondiente revisará tu consulta y la derivará a la persona adecuada.`,
-        personaConcreta: `Para información sobre personas concretas de la organización, te recomendamos contactar con LogNext a través de los canales oficiales de la web.`,
-        clientesSectores: `LogNext puede aportar valor a organizaciones públicas y privadas que necesiten apoyo tecnológico en áreas como transformación digital, ciberseguridad, gestión de aplicaciones, infraestructuras, inteligencia artificial y outsourcing IT. Sus servicios se adaptan a las necesidades de cada organización.`,
-        casosExito: `Puedes encontrar casos de éxito dentro de las páginas de servicios de LogNext. Sirven para ver ejemplos de aplicación práctica por área, como inteligencia artificial, ciberseguridad, AMS, IMS u outsourcing.`,
-        innovacionTransformacion: `En LogNext entendemos la innovación como una forma de aportar valor real al negocio. Aplicamos la tecnología para mejorar procesos, optimizar servicios y ayudar a nuestros clientes a evolucionar de forma eficiente, segura y sostenible.`,
+        actividad: `En Lognext desarrollamos soluciones de negocio basadas en la tecnología y en la innovación. Ayudamos a nuestros clientes a transformar sus procesos, mejorar su eficiencia y avanzar con soluciones IT adaptadas a sus necesidades.`,
+        quienesSomos: `Lognext es una compañía especializada en soluciones y servicios IT. Acompañamos a nuestros clientes en sus procesos de transformación tecnológica, combinando experiencia, innovación y talento especializado para responder a sus necesidades de negocio.`,
+        propuestaValor: `La propuesta de valor de Lognext se basa en desarrollar soluciones de negocio basadas en la tecnología y en la innovación. Combinamos conocimiento tecnológico, cercanía con el cliente, flexibilidad y capacidad de adaptación para responder a las necesidades reales de cada organización.`,
+        certificaciones: `Sí. Lognext cuenta con <a href="${rootPrefix}assets/certificaciones/iso9001.pdf" target="_blank" rel="noopener noreferrer">ISO 9001</a> para calidad, <a href="${rootPrefix}assets/certificaciones/iso14001.pdf" target="_blank" rel="noopener noreferrer">ISO 14001</a> para gestión ambiental, <a href="${rootPrefix}assets/certificaciones/iso20000.pdf" target="_blank" rel="noopener noreferrer">ISO 20000</a> para gestión de servicios IT, <a href="${rootPrefix}assets/certificaciones/iso27001.pdf" target="_blank" rel="noopener noreferrer">ISO 27001</a> para seguridad de la información y <a href="${rootPrefix}assets/certificaciones/CertificadoENS-2025-0095_ES_2026-07-07.pdf" target="_blank" rel="noopener noreferrer">ENS Alto</a> para seguridad y cumplimiento en servicios digitales.`,
+        certificacionesEns: `Sí. Lognext cuenta con certificación ENS Alto, el nivel más exigente dentro del Esquema Nacional de Seguridad. Esta certificación refuerza la confianza de clientes, administraciones públicas y colaboradores, demostrando un alto compromiso con la seguridad, la protección de la información y el cumplimiento normativo.`,
+        sectorPublico: `Sí. Lognext puede acompañar tanto a Administraciones Públicas como a empresas privadas en proyectos tecnológicos, transformación digital, ciberseguridad, gestión de aplicaciones, infraestructuras, inteligencia artificial y outsourcing IT. Además, contar con ENS Alto refuerza la confianza en proyectos donde la seguridad y el cumplimiento normativo son especialmente importantes.`,
+        responsable: `Para cuestiones corporativas, comerciales o administrativas, puedes contactar con Lognext a través de los canales oficiales indicados en la web. El equipo correspondiente revisará tu consulta y la derivará a la persona adecuada.`,
+        personaConcreta: `Para información sobre personas concretas de la organización, te recomendamos contactar con Lognext a través de los canales oficiales de la web.`,
+        clientesSectores: `Lognext puede aportar valor a organizaciones públicas y privadas que necesiten apoyo tecnológico en áreas como transformación digital, ciberseguridad, gestión de aplicaciones, infraestructuras, inteligencia artificial y outsourcing IT. Sus servicios se adaptan a las necesidades de cada organización.`,
+        casosExito: `Puedes encontrar casos de éxito dentro de las páginas de servicios de Lognext. Sirven para ver ejemplos de aplicación práctica por área, como inteligencia artificial, ciberseguridad, AMS, IMS u outsourcing.`,
+        innovacionTransformacion: `En Lognext entendemos la innovación como una forma de aportar valor real al negocio. Aplicamos la tecnología para mejorar procesos, optimizar servicios y ayudar a nuestros clientes a evolucionar de forma eficiente, segura y sostenible.`,
         ams: `AMS, Application Management Services, se centra en la gestión, mantenimiento y evolución de aplicaciones para asegurar su correcto funcionamiento durante todo su ciclo de vida.`,
         amsMantenimiento: `El mantenimiento de aplicaciones puede incluir seguimiento de incidencias, correcciones, evolución funcional, mejoras de rendimiento y soporte continuo para asegurar la continuidad del servicio.`,
         amsBeneficios: `AMS ayuda a reducir incidencias, mejorar la estabilidad de las aplicaciones, optimizar su rendimiento y liberar a los equipos internos para centrarse en actividades de mayor valor.`,
         ims: `IMS, Infrastructure Management Services, se centra en la gestión y soporte de infraestructuras tecnológicas, sistemas y entornos críticos.`,
         imsGestion: `La gestión de infraestructuras puede incluir soporte técnico, monitorización, administración de sistemas, continuidad operativa y resolución de incidencias.`,
         imsBeneficios: `IMS ayuda a mejorar la disponibilidad, estabilidad y continuidad de los sistemas tecnológicos, reduciendo riesgos operativos y facilitando una gestión más eficiente.`,
-        agile: `Actualmente no tengo información sobre Agile Transformation como servicio activo de LogNext. Puedes consultar la sección de Servicios o contactar con LogNext para confirmar qué soluciones están disponibles.`,
+        agile: `Actualmente no tengo información sobre Agile Transformation como servicio activo de Lognext. Puedes consultar la sección de Servicios o contactar con Lognext para confirmar qué soluciones están disponibles.`,
         outsourcing: `El outsourcing IT permite incorporar talento tecnológico especializado para apoyar proyectos, reforzar equipos o cubrir necesidades concretas de una organización.`,
-        outsourcingEquipo: `LogNext puede ayudar a reforzar equipos tecnológicos mediante perfiles especializados que se integran en proyectos según las necesidades del cliente.`,
+        outsourcingEquipo: `Lognext puede ayudar a reforzar equipos tecnológicos mediante perfiles especializados que se integran en proyectos según las necesidades del cliente.`,
         outsourcingBeneficios: `Externalizar talento tecnológico aporta flexibilidad, capacidad de adaptación, acceso a perfiles especializados y apoyo para acelerar proyectos sin ampliar estructuras internas de forma permanente.`,
-        consultoriaIt: `La consultoría tecnológica de LogNext ayuda a identificar necesidades, definir soluciones IT y orientar decisiones tecnológicas con una visión práctica, segura y alineada con el negocio.`,
-        desarrolloAplicaciones: `LogNext puede ayudar en el desarrollo, mantenimiento y evolución de aplicaciones, buscando continuidad, calidad, eficiencia y adaptación a las necesidades reales de cada organización.`,
-        automatizacionProcesos: `La automatización de procesos permite reducir tareas manuales, mejorar tiempos de respuesta y ganar eficiencia operativa. LogNext la aborda combinando tecnología, datos e integración con procesos de negocio.`,
-        soporteIt: `El soporte IT ayuda a mantener servicios tecnológicos operativos, estables y disponibles. LogNext orienta este tipo de servicio a continuidad, eficiencia y resolución rápida de incidencias.`,
+        consultoriaIt: `La consultoría tecnológica de Lognext ayuda a identificar necesidades, definir soluciones IT y orientar decisiones tecnológicas con una visión práctica, segura y alineada con el negocio.`,
+        desarrolloAplicaciones: `Lognext puede ayudar en el desarrollo, mantenimiento y evolución de aplicaciones, buscando continuidad, calidad, eficiencia y adaptación a las necesidades reales de cada organización.`,
+        automatizacionProcesos: `La automatización de procesos permite reducir tareas manuales, mejorar tiempos de respuesta y ganar eficiencia operativa. Lognext la aborda combinando tecnología, datos e integración con procesos de negocio.`,
+        soporteIt: `El soporte IT ayuda a mantener servicios tecnológicos operativos, estables y disponibles. Lognext orienta este tipo de servicio a continuidad, eficiencia y resolución rápida de incidencias.`,
         gobiernoIt: `El gobierno IT ayuda a ordenar, priorizar y controlar los servicios tecnológicos para que estén alineados con la estrategia, los riesgos, la seguridad y las necesidades del negocio.`
       }
     },
     en: {
-      open: "Open LogNext chatbot",
-      close: "Close chatbot",
-      title: "LogNext Assistant",
-      subtitle: "I can help with quick information about LogNext.",
-      initial: "Hello, I am LogNext's virtual assistant. I can guide you on services, cybersecurity, artificial intelligence, careers and contact details.",
+      open: "Open NextBot",
+      close: "Close NextBot",
+      title: "NextBot",
+      subtitle: "I can help with quick information about Lognext.",
+      initial: "Hello, I am NextBot, Lognext's virtual assistant. I can guide you on services, cybersecurity, artificial intelligence, careers and contact details.",
       placeholder: "Type your question...",
       send: "Send",
       typing: "Typing...",
@@ -91,64 +91,64 @@
       fallback: `I am not completely sure I understood your question. You can ask me about services, certifications, careers or contact.`,
       empty: "Type a question so I can help you.",
       responses: {
-        empresa: `LogNext is a technology consulting company specialized in supporting organizations through digital transformation, offering IT consulting, cybersecurity, artificial intelligence, application management, infrastructure services and technology outsourcing.`,
-        servicios: `LogNext offers technology services to help organizations transform, operate and protect their IT environments: artificial intelligence, cybersecurity, AMS, IMS, outsourcing, technology consulting, automation, IT support and IT governance.`,
+        empresa: `Lognext is a technology consulting company specialized in supporting organizations through digital transformation, offering IT consulting, cybersecurity, artificial intelligence, application management, infrastructure services and technology outsourcing.`,
+        servicios: `Lognext offers technology services to help organizations transform, operate and protect their IT environments: artificial intelligence, cybersecurity, AMS, IMS, outsourcing, technology consulting, automation, IT support and IT governance.`,
         orientacionServicios: `It depends on your need. If you want to protect information, Cybersecurity would fit; if you need to maintain applications, AMS; if the issue is systems or infrastructure, IMS; if you want to automate or analyze data, AI; and if you need specialized talent, Outsourcing.`,
-        ciberseguridad: `LogNext helps strengthen cybersecurity through system protection, risk management, audits, security awareness and incident response. The service is adapted to organizations that need to protect critical information and reduce their exposure to threats.`,
+        ciberseguridad: `Lognext helps strengthen cybersecurity through system protection, risk management, audits, security awareness and incident response. The service is adapted to organizations that need to protect critical information and reduce their exposure to threats.`,
         ciberseguridadBeneficios: `Cybersecurity helps protect information, reduce operational risks and strengthen an organization's continuity and trust. It also enables a more prepared response to threats and incidents.`,
-        ia: `LogNext applies Artificial Intelligence to help organizations automate processes, analyze information and create solutions tailored to specific business needs.`,
+        ia: `Lognext applies Artificial Intelligence to help organizations automate processes, analyze information and create solutions tailored to specific business needs.`,
         iaAutomatizacion: `AI can support the automation of repetitive tasks, data analysis, information classification, user assistance and improvements to internal processes.`,
         iaBeneficios: `AI can improve operational efficiency, reduce manual tasks, support decision-making and open new opportunities for innovation within the organization.`,
-        empleo: `You can visit the "Work with us" section to learn about professional opportunities at LogNext. We look for technology talent eager to grow in innovative projects and collaborative environments.`,
-        beneficiosEmpleo: `In the "Work with us" section, you can review the benefits LogNext offers its team, along with information about professional development and opportunities.`,
-        culturaEmpleo: `Working at LogNext means being part of a technological, collaborative environment focused on professional growth. The company supports talent, training, guidance and participation in projects with impact.`,
-        contacto: `You can contact LogNext through the Contact section. The team will review your request to help you find the technology solution that best fits your organization.`,
-        contactoHumano: `To talk to the LogNext team, you can write to <a href="mailto:info@lognext.com">info@lognext.com</a> or call <a href="tel:+34915472550">+34 915 472 550</a>. For talent or application-related questions, you can also contact <a href="mailto:talent@lognext.com">talent@lognext.com</a>.`,
-        saludo: `Hello! 👋 I’m LogNext’s virtual assistant. I can help you with services, location, contact, careers, cybersecurity, artificial intelligence, legal notice, cookies or the whistleblowing channel. What would you like to know?`,
-        agradecimiento: `You’re welcome! 😊 If you need anything else about LogNext, services, careers, contact or legal information, I’m here to help.`,
-        precios: `I cannot provide fixed prices or rates from the chat because they depend on the scope, context and needs of each project. To request a proposal or quote, contact LogNext at <a href="mailto:info@lognext.com">info@lognext.com</a>.`,
-        ubicacion: `LogNext is located at <a href="https://maps.google.com/?q=Avenida+de+Burgos+17+Madrid+Spain" target="_blank" rel="noopener noreferrer">Avenida de Burgos 17, 28036 Madrid, Spain</a>. You can also call <a href="tel:+34915472550">+34 915 472 550</a>.`,
-        legal: `You can review LogNext's legal information on the <a href="${rootPrefix}enlaces-legales/aviso-legal.html">Legal Notice</a> page.`,
-        politicasCorporativas: `You can check the corporate and legal documentation published by LogNext: <a href="${rootPrefix}assets/docs/politica-seguridad.pdf" target="_blank" rel="noopener noreferrer">Information Security Policy</a>, <a href="${rootPrefix}assets/docs/politica-sistema-integrado.pdf" target="_blank" rel="noopener noreferrer">Integrated System Policy</a>, <a href="${rootPrefix}enlaces-legales/aviso-legal.html">Legal Notice</a>, <a href="${rootPrefix}enlaces-legales/politica-cookies.html">Cookie Policy</a> and <a href="${rootPrefix}enlaces-legales/canal-denuncias.html">Whistleblowing Channel</a>. For additional compliance documentation, contact LogNext at <a href="mailto:info@lognext.com">info@lognext.com</a>.`,
+        empleo: `You can visit the "Work with us" section to learn about professional opportunities at Lognext. We look for technology talent eager to grow in innovative projects and collaborative environments.`,
+        beneficiosEmpleo: `In the "Work with us" section, you can review the benefits Lognext offers its team, along with information about professional development and opportunities.`,
+        culturaEmpleo: `Working at Lognext means being part of a technological, collaborative environment focused on professional growth. The company supports talent, training, guidance and participation in projects with impact.`,
+        contacto: `You can contact Lognext through the Contact section. The team will review your request to help you find the technology solution that best fits your organization.`,
+        contactoHumano: `To talk to the Lognext team, you can write to <a href="mailto:info@lognext.com">info@lognext.com</a> or call <a href="tel:+34915472550">+34 915 472 550</a>. For talent or application-related questions, you can also contact <a href="mailto:talent@lognext.com">talent@lognext.com</a>.`,
+        saludo: `Hello! 👋 I’m NextBot, Lognext’s virtual assistant. I can help you with services, location, contact, careers, cybersecurity, artificial intelligence, legal notice, cookies or the whistleblowing channel. What would you like to know?`,
+        agradecimiento: `You’re welcome! 😊 If you need anything else about Lognext, services, careers, contact or legal information, I’m here to help.`,
+        precios: `I cannot provide fixed prices or rates from the chat because they depend on the scope, context and needs of each project. To request a proposal or quote, contact Lognext at <a href="mailto:info@lognext.com">info@lognext.com</a>.`,
+        ubicacion: `Lognext is located at <a href="https://maps.google.com/?q=Avenida+de+Burgos+17+Madrid+Spain" target="_blank" rel="noopener noreferrer">Avenida de Burgos 17, 28036 Madrid, Spain</a>. You can also call <a href="tel:+34915472550">+34 915 472 550</a>.`,
+        legal: `You can review Lognext's legal information on the <a href="${rootPrefix}enlaces-legales/aviso-legal.html">Legal Notice</a> page.`,
+        politicasCorporativas: `You can check the corporate and legal documentation published by Lognext: <a href="${rootPrefix}assets/docs/politica-seguridad.pdf" target="_blank" rel="noopener noreferrer">Information Security Policy</a>, <a href="${rootPrefix}assets/docs/politica-sistema-integrado.pdf" target="_blank" rel="noopener noreferrer">Integrated System Policy</a>, <a href="${rootPrefix}enlaces-legales/aviso-legal.html">Legal Notice</a>, <a href="${rootPrefix}enlaces-legales/politica-cookies.html">Cookie Policy</a> and <a href="${rootPrefix}enlaces-legales/canal-denuncias.html">Whistleblowing Channel</a>. For additional compliance documentation, contact Lognext at <a href="mailto:info@lognext.com">info@lognext.com</a>.`,
         cookies: `Information about cookie use, settings and consent is available in the <a href="${rootPrefix}enlaces-legales/politica-cookies.html">Cookie Policy</a>.`,
         canal: `To report possible issues or irregularities, please visit the <a href="${rootPrefix}enlaces-legales/canal-denuncias.html">Whistleblowing Channel</a>.`,
         privacidad: `I do not see a separate privacy page on the website. Information about personal data processing appears within the <a href="${rootPrefix}enlaces-legales/aviso-legal.html">Legal Notice</a>. For specific questions, write to <a href="mailto:privacy@lognext.com">privacy@lognext.com</a>.`,
-        portal: `If you are part of LogNext, you can access the <a href="https://w3.cezanneondemand.com/CezanneOnDemand/-/LOGNEXT/Account/LogIn?ReturnUrl=%7E%2F-%2FLOGNEXT" target="_blank" rel="noopener noreferrer">Employee Portal</a>. If you have access issues, please contact your manager or the relevant department.`,
+        portal: `If you are part of Lognext, you can access the <a href="https://w3.cezanneondemand.com/CezanneOnDemand/-/LOGNEXT/Account/LogIn?ReturnUrl=%7E%2F-%2FLOGNEXT" target="_blank" rel="noopener noreferrer">Employee Portal</a>. If you have access issues, please contact your manager or the relevant department.`,
         navegacion: `I can guide you through the website: <a href="${rootPrefix}index.html">Home</a>, <a href="${rootPrefix}index.html#servicios">Services</a>, <a href="${rootPrefix}quienes-somos.html">About us</a>, <a href="${rootPrefix}trabaja-con-nosotros.html">Work with us</a>, <a href="mailto:info@lognext.com">Contact</a>, <a href="${rootPrefix}enlaces-legales/aviso-legal.html">Legal notice</a>, <a href="${rootPrefix}enlaces-legales/politica-cookies.html">Cookie policy</a> and <a href="${rootPrefix}enlaces-legales/canal-denuncias.html">Whistleblowing channel</a>.`,
-        actividad: `At LogNext, we develop business solutions based on technology and innovation. We help our clients transform their processes, improve efficiency and move forward with IT solutions adapted to their needs.`,
-        quienesSomos: `LogNext is a company specialized in IT solutions and services. We support our clients in their technology transformation processes, combining experience, innovation and specialized talent to respond to their business needs.`,
-        propuestaValor: `LogNext's value proposition is based on developing business solutions grounded in technology and innovation. We combine technological knowledge, close client relationships, flexibility and adaptability to address each organization's real needs.`,
-        certificaciones: `Yes. LogNext holds <a href="${rootPrefix}assets/certificaciones/iso9001.pdf" target="_blank" rel="noopener noreferrer">ISO 9001</a> for quality, <a href="${rootPrefix}assets/certificaciones/iso14001.pdf" target="_blank" rel="noopener noreferrer">ISO 14001</a> for environmental management, <a href="${rootPrefix}assets/certificaciones/iso20000.pdf" target="_blank" rel="noopener noreferrer">ISO 20000</a> for IT service management, <a href="${rootPrefix}assets/certificaciones/iso27001.pdf" target="_blank" rel="noopener noreferrer">ISO 27001</a> for information security and <a href="${rootPrefix}assets/certificaciones/CertificadoENS-2025-0095_ES_2026-07-07.pdf" target="_blank" rel="noopener noreferrer">ENS Alto</a> for security and compliance in digital services.`,
-        certificacionesEns: `Yes. LogNext holds ENS Alto certification, the most demanding level within Spain's National Security Framework. This certification strengthens trust among clients, public administrations and partners, demonstrating a strong commitment to security, information protection and compliance.`,
-        sectorPublico: `Yes. LogNext can support both public administrations and private companies in technology projects, digital transformation, cybersecurity, application management, infrastructure services, artificial intelligence and IT outsourcing. In addition, having the High ENS certification strengthens trust in projects where security and regulatory compliance are especially important.`,
-        responsable: `For corporate, commercial or administrative matters, you can contact LogNext through the official channels listed on the website. The appropriate team will review your request and direct it to the right person.`,
-        personaConcreta: `For information about specific people in the organization, we recommend contacting LogNext through the official channels on the website.`,
-        clientesSectores: `LogNext can bring value to public and private organizations that need technology support in areas such as digital transformation, cybersecurity, application management, infrastructure, artificial intelligence and IT outsourcing. Its services adapt to each organization's needs.`,
-        casosExito: `You can find success cases within LogNext's service pages. They show practical examples by area, such as artificial intelligence, cybersecurity, AMS, IMS or outsourcing.`,
-        innovacionTransformacion: `At LogNext, we understand innovation as a way to bring real value to the business. We apply technology to improve processes, optimize services and help our clients evolve efficiently, securely and sustainably.`,
+        actividad: `At Lognext, we develop business solutions based on technology and innovation. We help our clients transform their processes, improve efficiency and move forward with IT solutions adapted to their needs.`,
+        quienesSomos: `Lognext is a company specialized in IT solutions and services. We support our clients in their technology transformation processes, combining experience, innovation and specialized talent to respond to their business needs.`,
+        propuestaValor: `Lognext's value proposition is based on developing business solutions grounded in technology and innovation. We combine technological knowledge, close client relationships, flexibility and adaptability to address each organization's real needs.`,
+        certificaciones: `Yes. Lognext holds <a href="${rootPrefix}assets/certificaciones/iso9001.pdf" target="_blank" rel="noopener noreferrer">ISO 9001</a> for quality, <a href="${rootPrefix}assets/certificaciones/iso14001.pdf" target="_blank" rel="noopener noreferrer">ISO 14001</a> for environmental management, <a href="${rootPrefix}assets/certificaciones/iso20000.pdf" target="_blank" rel="noopener noreferrer">ISO 20000</a> for IT service management, <a href="${rootPrefix}assets/certificaciones/iso27001.pdf" target="_blank" rel="noopener noreferrer">ISO 27001</a> for information security and <a href="${rootPrefix}assets/certificaciones/CertificadoENS-2025-0095_ES_2026-07-07.pdf" target="_blank" rel="noopener noreferrer">ENS Alto</a> for security and compliance in digital services.`,
+        certificacionesEns: `Yes. Lognext holds ENS Alto certification, the most demanding level within Spain's National Security Framework. This certification strengthens trust among clients, public administrations and partners, demonstrating a strong commitment to security, information protection and compliance.`,
+        sectorPublico: `Yes. Lognext can support both public administrations and private companies in technology projects, digital transformation, cybersecurity, application management, infrastructure services, artificial intelligence and IT outsourcing. In addition, having the High ENS certification strengthens trust in projects where security and regulatory compliance are especially important.`,
+        responsable: `For corporate, commercial or administrative matters, you can contact Lognext through the official channels listed on the website. The appropriate team will review your request and direct it to the right person.`,
+        personaConcreta: `For information about specific people in the organization, we recommend contacting Lognext through the official channels on the website.`,
+        clientesSectores: `Lognext can bring value to public and private organizations that need technology support in areas such as digital transformation, cybersecurity, application management, infrastructure, artificial intelligence and IT outsourcing. Its services adapt to each organization's needs.`,
+        casosExito: `You can find success cases within Lognext's service pages. They show practical examples by area, such as artificial intelligence, cybersecurity, AMS, IMS or outsourcing.`,
+        innovacionTransformacion: `At Lognext, we understand innovation as a way to bring real value to the business. We apply technology to improve processes, optimize services and help our clients evolve efficiently, securely and sustainably.`,
         ams: `AMS, Application Management Services, focuses on managing, maintaining and evolving applications to ensure they operate correctly throughout their lifecycle.`,
         amsMantenimiento: `Application maintenance can include incident tracking, corrections, functional evolution, performance improvements and ongoing support to ensure service continuity.`,
         amsBeneficios: `AMS helps reduce incidents, improve application stability, optimize performance and free internal teams to focus on higher-value activities.`,
         ims: `IMS, Infrastructure Management Services, focuses on managing and supporting technology infrastructure, systems and critical environments.`,
         imsGestion: `Infrastructure management can include technical support, monitoring, system administration, operational continuity and incident resolution.`,
         imsBeneficios: `IMS helps improve the availability, stability and continuity of technology systems, reducing operational risks and enabling more efficient management.`,
-        agile: `I currently do not have information about Agile Transformation as an active LogNext service. You can check the Services section or contact LogNext to confirm which solutions are available.`,
+        agile: `I currently do not have information about Agile Transformation as an active Lognext service. You can check the Services section or contact Lognext to confirm which solutions are available.`,
         outsourcing: `IT outsourcing enables organizations to add specialized technology talent to support projects, strengthen teams or cover specific needs.`,
-        outsourcingEquipo: `LogNext can strengthen technology teams with specialized professionals who join projects according to each client's needs.`,
+        outsourcingEquipo: `Lognext can strengthen technology teams with specialized professionals who join projects according to each client's needs.`,
         outsourcingBeneficios: `Outsourcing technology talent provides flexibility, adaptability, access to specialized profiles and support to accelerate projects without permanently expanding internal structures.`,
-        consultoriaIt: `LogNext's technology consulting helps identify needs, define IT solutions and guide technology decisions with a practical, secure and business-aligned approach.`,
-        desarrolloAplicaciones: `LogNext can support application development, maintenance and evolution, focusing on continuity, quality, efficiency and adaptation to each organization's needs.`,
-        automatizacionProcesos: `Process automation reduces manual work, improves response times and increases operational efficiency. LogNext approaches it through technology, data and integration with business processes.`,
-        soporteIt: `IT support helps keep technology services operational, stable and available. LogNext focuses this type of service on continuity, efficiency and fast incident resolution.`,
+        consultoriaIt: `Lognext's technology consulting helps identify needs, define IT solutions and guide technology decisions with a practical, secure and business-aligned approach.`,
+        desarrolloAplicaciones: `Lognext can support application development, maintenance and evolution, focusing on continuity, quality, efficiency and adaptation to each organization's needs.`,
+        automatizacionProcesos: `Process automation reduces manual work, improves response times and increases operational efficiency. Lognext approaches it through technology, data and integration with business processes.`,
+        soporteIt: `IT support helps keep technology services operational, stable and available. Lognext focuses this type of service on continuity, efficiency and fast incident resolution.`,
         gobiernoIt: `IT governance helps organize, prioritize and control technology services so they stay aligned with strategy, risks, security and business needs.`
       }
     },
     fr: {
-      open: "Ouvrir le chatbot LogNext",
-      close: "Fermer le chatbot",
-      title: "LogNext Assistant",
-      subtitle: "Je peux vous aider avec des informations rapides sur LogNext.",
-      initial: "Bonjour, je suis l'assistant virtuel de LogNext. Je peux vous orienter sur les services, la cybersécurité, l'intelligence artificielle, les carrières et les moyens de contact.",
+      open: "Ouvrir NextBot",
+      close: "Fermer NextBot",
+      title: "NextBot",
+      subtitle: "Je peux vous aider avec des informations rapides sur Lognext.",
+      initial: "Bonjour, je suis NextBot, l'assistant virtuel de Lognext. Je peux vous orienter sur les services, la cybersécurité, l'intelligence artificielle, les carrières et les moyens de contact.",
       placeholder: "Écrivez votre question...",
       send: "Envoyer",
       typing: "Écriture...",
@@ -156,55 +156,55 @@
       fallback: `Je ne suis pas certain d'avoir compris votre question. Vous pouvez me poser des questions sur les services, les certifications, les carrières ou le contact.`,
       empty: "Écrivez une question afin que je puisse vous aider.",
       responses: {
-        empresa: `LogNext est une société de conseil technologique spécialisée dans l'accompagnement des organisations dans leur transformation numérique, avec des services de conseil IT, cybersécurité, intelligence artificielle, gestion d'applications, infrastructures et outsourcing technologique.`,
-        servicios: `LogNext propose des services technologiques pour aider les organisations à transformer, opérer et protéger leurs environnements IT : intelligence artificielle, cybersécurité, AMS, IMS, outsourcing, conseil technologique, automatisation, support IT et gouvernance IT.`,
+        empresa: `Lognext est une société de conseil technologique spécialisée dans l'accompagnement des organisations dans leur transformation numérique, avec des services de conseil IT, cybersécurité, intelligence artificielle, gestion d'applications, infrastructures et outsourcing technologique.`,
+        servicios: `Lognext propose des services technologiques pour aider les organisations à transformer, opérer et protéger leurs environnements IT : intelligence artificielle, cybersécurité, AMS, IMS, outsourcing, conseil technologique, automatisation, support IT et gouvernance IT.`,
         orientacionServicios: `Cela dépend de votre besoin. Si vous souhaitez protéger l'information, la Cybersécurité est adaptée ; si vous devez maintenir des applications, AMS ; si le problème concerne les systèmes ou infrastructures, IMS ; si vous voulez automatiser ou analyser des données, l'IA ; et si vous avez besoin de talents spécialisés, l'Outsourcing.`,
-        ciberseguridad: `LogNext aide à renforcer la cybersécurité grâce à la protection des systèmes, la gestion des risques, les audits, la sensibilisation et la réponse aux incidents. Le service s'adapte aux organisations qui doivent protéger des informations critiques et réduire leur exposition aux menaces.`,
+        ciberseguridad: `Lognext aide à renforcer la cybersécurité grâce à la protection des systèmes, la gestion des risques, les audits, la sensibilisation et la réponse aux incidents. Le service s'adapte aux organisations qui doivent protéger des informations critiques et réduire leur exposition aux menaces.`,
         ciberseguridadBeneficios: `La cybersécurité aide à protéger les informations, réduire les risques opérationnels et renforcer la continuité et la confiance d'une organisation. Elle permet également de mieux se préparer face aux menaces et aux incidents.`,
-        ia: `LogNext applique l'Intelligence Artificielle pour aider les organisations à automatiser des processus, analyser l'information et créer des solutions adaptées à des besoins métier concrets.`,
+        ia: `Lognext applique l'Intelligence Artificielle pour aider les organisations à automatiser des processus, analyser l'information et créer des solutions adaptées à des besoins métier concrets.`,
         iaAutomatizacion: `L'IA peut aider à automatiser les tâches répétitives, l'analyse de données, la classification d'informations, l'assistance aux utilisateurs et l'amélioration des processus internes.`,
         iaBeneficios: `L'IA peut améliorer l'efficacité opérationnelle, réduire les tâches manuelles, soutenir la prise de décision et ouvrir de nouvelles possibilités d'innovation dans l'organisation.`,
-        empleo: `Vous pouvez consulter la section "Travailler avec nous" pour connaître les opportunités professionnelles chez LogNext. Nous recherchons des talents technologiques souhaitant évoluer dans des projets innovants et des environnements collaboratifs.`,
-        beneficiosEmpleo: `Dans la section "Travailler avec nous", vous pouvez consulter les avantages proposés par LogNext à son équipe, ainsi que des informations sur le développement professionnel et les opportunités.`,
-        culturaEmpleo: `Travailler chez LogNext signifie évoluer dans un environnement technologique, collaboratif et orienté vers le développement professionnel. L'entreprise mise sur les talents, la formation, l'accompagnement et la participation à des projets à impact.`,
-        contacto: `Vous pouvez contacter LogNext via la section Contact. L'équipe examinera votre demande afin de vous aider avec la solution technologique la mieux adaptée à votre organisation.`,
-        contactoHumano: `Pour parler avec l'équipe de LogNext, vous pouvez écrire à <a href="mailto:info@lognext.com">info@lognext.com</a> ou appeler le <a href="tel:+34915472550">+34 915 472 550</a>. Pour les questions liées au talent ou aux candidatures, vous pouvez également contacter <a href="mailto:talent@lognext.com">talent@lognext.com</a>.`,
-        saludo: `Bonjour ! 👋 Je suis l’assistant virtuel de LogNext. Je peux vous aider avec les services, la localisation, le contact, les carrières, la cybersécurité, l’intelligence artificielle, les mentions légales, les cookies ou le canal de signalement. Que souhaitez-vous savoir ?`,
-        agradecimiento: `Avec plaisir ! 😊 Si vous avez besoin d’autre chose sur LogNext, les services, les carrières, le contact ou les informations légales, je suis là pour vous aider.`,
-        precios: `Je ne peux pas fournir de prix ou de tarifs fixes depuis le chat, car ils dépendent du périmètre, du contexte et des besoins de chaque projet. Pour demander une proposition ou un devis, contactez LogNext à <a href="mailto:info@lognext.com">info@lognext.com</a>.`,
-        ubicacion: `LogNext est situé à <a href="https://maps.google.com/?q=Avenida+de+Burgos+17+Madrid+Spain" target="_blank" rel="noopener noreferrer">Avenida de Burgos 17, 28036 Madrid, Spain</a>. Vous pouvez également appeler le <a href="tel:+34915472550">+34 915 472 550</a>.`,
-        legal: `Vous pouvez consulter les informations légales de LogNext sur la page <a href="${rootPrefix}enlaces-legales/aviso-legal.html">Mentions légales</a>.`,
-        politicasCorporativas: `Vous pouvez consulter la documentation corporative et légale publiée par LogNext : <a href="${rootPrefix}assets/docs/politica-seguridad.pdf" target="_blank" rel="noopener noreferrer">Politique de sécurité de l’information</a>, <a href="${rootPrefix}assets/docs/politica-sistema-integrado.pdf" target="_blank" rel="noopener noreferrer">Politique du système intégré</a>, <a href="${rootPrefix}enlaces-legales/aviso-legal.html">Mentions légales</a>, <a href="${rootPrefix}enlaces-legales/politica-cookies.html">Politique de cookies</a> et <a href="${rootPrefix}enlaces-legales/canal-denuncias.html">Canal de signalement</a>. Pour toute documentation supplémentaire sur la conformité, contactez LogNext à <a href="mailto:info@lognext.com">info@lognext.com</a>.`,
+        empleo: `Vous pouvez consulter la section "Travailler avec nous" pour connaître les opportunités professionnelles chez Lognext. Nous recherchons des talents technologiques souhaitant évoluer dans des projets innovants et des environnements collaboratifs.`,
+        beneficiosEmpleo: `Dans la section "Travailler avec nous", vous pouvez consulter les avantages proposés par Lognext à son équipe, ainsi que des informations sur le développement professionnel et les opportunités.`,
+        culturaEmpleo: `Travailler chez Lognext signifie évoluer dans un environnement technologique, collaboratif et orienté vers le développement professionnel. L'entreprise mise sur les talents, la formation, l'accompagnement et la participation à des projets à impact.`,
+        contacto: `Vous pouvez contacter Lognext via la section Contact. L'équipe examinera votre demande afin de vous aider avec la solution technologique la mieux adaptée à votre organisation.`,
+        contactoHumano: `Pour parler avec l'équipe de Lognext, vous pouvez écrire à <a href="mailto:info@lognext.com">info@lognext.com</a> ou appeler le <a href="tel:+34915472550">+34 915 472 550</a>. Pour les questions liées au talent ou aux candidatures, vous pouvez également contacter <a href="mailto:talent@lognext.com">talent@lognext.com</a>.`,
+        saludo: `Bonjour ! 👋 Je suis NextBot, l’assistant virtuel de Lognext. Je peux vous aider avec les services, la localisation, le contact, les carrières, la cybersécurité, l’intelligence artificielle, les mentions légales, les cookies ou le canal de signalement. Que souhaitez-vous savoir ?`,
+        agradecimiento: `Avec plaisir ! 😊 Si vous avez besoin d’autre chose sur Lognext, les services, les carrières, le contact ou les informations légales, je suis là pour vous aider.`,
+        precios: `Je ne peux pas fournir de prix ou de tarifs fixes depuis le chat, car ils dépendent du périmètre, du contexte et des besoins de chaque projet. Pour demander une proposition ou un devis, contactez Lognext à <a href="mailto:info@lognext.com">info@lognext.com</a>.`,
+        ubicacion: `Lognext est situé à <a href="https://maps.google.com/?q=Avenida+de+Burgos+17+Madrid+Spain" target="_blank" rel="noopener noreferrer">Avenida de Burgos 17, 28036 Madrid, Spain</a>. Vous pouvez également appeler le <a href="tel:+34915472550">+34 915 472 550</a>.`,
+        legal: `Vous pouvez consulter les informations légales de Lognext sur la page <a href="${rootPrefix}enlaces-legales/aviso-legal.html">Mentions légales</a>.`,
+        politicasCorporativas: `Vous pouvez consulter la documentation corporative et légale publiée par Lognext : <a href="${rootPrefix}assets/docs/politica-seguridad.pdf" target="_blank" rel="noopener noreferrer">Politique de sécurité de l’information</a>, <a href="${rootPrefix}assets/docs/politica-sistema-integrado.pdf" target="_blank" rel="noopener noreferrer">Politique du système intégré</a>, <a href="${rootPrefix}enlaces-legales/aviso-legal.html">Mentions légales</a>, <a href="${rootPrefix}enlaces-legales/politica-cookies.html">Politique de cookies</a> et <a href="${rootPrefix}enlaces-legales/canal-denuncias.html">Canal de signalement</a>. Pour toute documentation supplémentaire sur la conformité, contactez Lognext à <a href="mailto:info@lognext.com">info@lognext.com</a>.`,
         cookies: `Les informations sur l'utilisation, la configuration et le consentement des cookies sont disponibles dans la <a href="${rootPrefix}enlaces-legales/politica-cookies.html">Politique de cookies</a>.`,
         canal: `Pour signaler une possible incidence ou irrégularité, consultez le <a href="${rootPrefix}enlaces-legales/canal-denuncias.html">Canal de signalement</a>.`,
         privacidad: `Je ne vois pas de page de confidentialité indépendante sur le site. Les informations sur le traitement des données personnelles figurent dans les <a href="${rootPrefix}enlaces-legales/aviso-legal.html">Mentions légales</a>. Pour une question spécifique, écrivez à <a href="mailto:privacy@lognext.com">privacy@lognext.com</a>.`,
-        portal: `Si vous faites partie de LogNext, vous pouvez accéder au <a href="https://w3.cezanneondemand.com/CezanneOnDemand/-/LOGNEXT/Account/LogIn?ReturnUrl=%7E%2F-%2FLOGNEXT" target="_blank" rel="noopener noreferrer">Portail employé</a>. En cas de problème d'accès, contactez votre responsable ou le département correspondant.`,
+        portal: `Si vous faites partie de Lognext, vous pouvez accéder au <a href="https://w3.cezanneondemand.com/CezanneOnDemand/-/LOGNEXT/Account/LogIn?ReturnUrl=%7E%2F-%2FLOGNEXT" target="_blank" rel="noopener noreferrer">Portail employé</a>. En cas de problème d'accès, contactez votre responsable ou le département correspondant.`,
         navegacion: `Je peux vous orienter sur le site : <a href="${rootPrefix}index.html">Accueil</a>, <a href="${rootPrefix}index.html#servicios">Services</a>, <a href="${rootPrefix}quienes-somos.html">Qui sommes-nous</a>, <a href="${rootPrefix}trabaja-con-nosotros.html">Travailler avec nous</a>, <a href="mailto:info@lognext.com">Contact</a>, <a href="${rootPrefix}enlaces-legales/aviso-legal.html">Mentions légales</a>, <a href="${rootPrefix}enlaces-legales/politica-cookies.html">Politique de cookies</a> et <a href="${rootPrefix}enlaces-legales/canal-denuncias.html">Canal de signalement</a>.`,
-        actividad: `Chez LogNext, nous développons des solutions métier fondées sur la technologie et l'innovation. Nous aidons nos clients à transformer leurs processus, améliorer leur efficacité et avancer avec des solutions IT adaptées à leurs besoins.`,
-        quienesSomos: `LogNext est une entreprise spécialisée dans les solutions et services IT. Nous accompagnons nos clients dans leurs processus de transformation technologique en combinant expérience, innovation et talent spécialisé pour répondre à leurs besoins métier.`,
-        propuestaValor: `La proposition de valeur de LogNext repose sur le développement de solutions métier fondées sur la technologie et l'innovation. Nous combinons expertise technologique, proximité avec le client, flexibilité et capacité d'adaptation pour répondre aux besoins réels de chaque organisation.`,
-        certificaciones: `Oui. LogNext dispose d'<a href="${rootPrefix}assets/certificaciones/iso9001.pdf" target="_blank" rel="noopener noreferrer">ISO 9001</a> pour la qualité, <a href="${rootPrefix}assets/certificaciones/iso14001.pdf" target="_blank" rel="noopener noreferrer">ISO 14001</a> pour la gestion environnementale, <a href="${rootPrefix}assets/certificaciones/iso20000.pdf" target="_blank" rel="noopener noreferrer">ISO 20000</a> pour la gestion des services IT, <a href="${rootPrefix}assets/certificaciones/iso27001.pdf" target="_blank" rel="noopener noreferrer">ISO 27001</a> pour la sécurité de l'information et <a href="${rootPrefix}assets/certificaciones/CertificadoENS-2025-0095_ES_2026-07-07.pdf" target="_blank" rel="noopener noreferrer">ENS Alto</a> pour la sécurité et la conformité des services numériques.`,
-        certificacionesEns: `Oui. LogNext dispose de la certification ENS Alto, le niveau le plus exigeant du Schéma National de Sécurité espagnol. Cette certification renforce la confiance des clients, administrations publiques et partenaires, en démontrant un engagement élevé envers la sécurité, la protection de l'information et la conformité.`,
-        sectorPublico: `Oui. LogNext peut accompagner les administrations publiques ainsi que les entreprises privées dans des projets technologiques, de transformation digitale, de cybersécurité, de gestion applicative, d'infrastructures, d'intelligence artificielle et d'outsourcing IT. De plus, la certification ENS Alto renforce la confiance dans les projets où la sécurité et la conformité sont essentielles.`,
-        responsable: `Pour toute question institutionnelle, commerciale ou administrative, vous pouvez contacter LogNext via les canaux officiels indiqués sur le site. L’équipe compétente examinera votre demande et l’orientera vers la personne appropriée.`,
-        personaConcreta: `Pour obtenir des informations sur des personnes précises de l’organisation, nous vous recommandons de contacter LogNext via les canaux officiels du site.`,
-        clientesSectores: `LogNext peut apporter de la valeur aux organisations publiques et privées qui ont besoin d'un accompagnement technologique en transformation numérique, cybersécurité, gestion applicative, infrastructures, intelligence artificielle et outsourcing IT. Ses services s'adaptent aux besoins de chaque organisation.`,
-        casosExito: `Vous pouvez trouver des cas de réussite dans les pages de services de LogNext. Ils présentent des exemples pratiques par domaine, comme l'intelligence artificielle, la cybersécurité, AMS, IMS ou l'outsourcing.`,
-        innovacionTransformacion: `Chez LogNext, nous considérons l'innovation comme une manière d'apporter une valeur réelle au métier. Nous appliquons la technologie pour améliorer les processus, optimiser les services et aider nos clients à évoluer de façon efficace, sûre et durable.`,
+        actividad: `Chez Lognext, nous développons des solutions métier fondées sur la technologie et l'innovation. Nous aidons nos clients à transformer leurs processus, améliorer leur efficacité et avancer avec des solutions IT adaptées à leurs besoins.`,
+        quienesSomos: `Lognext est une entreprise spécialisée dans les solutions et services IT. Nous accompagnons nos clients dans leurs processus de transformation technologique en combinant expérience, innovation et talent spécialisé pour répondre à leurs besoins métier.`,
+        propuestaValor: `La proposition de valeur de Lognext repose sur le développement de solutions métier fondées sur la technologie et l'innovation. Nous combinons expertise technologique, proximité avec le client, flexibilité et capacité d'adaptation pour répondre aux besoins réels de chaque organisation.`,
+        certificaciones: `Oui. Lognext dispose d'<a href="${rootPrefix}assets/certificaciones/iso9001.pdf" target="_blank" rel="noopener noreferrer">ISO 9001</a> pour la qualité, <a href="${rootPrefix}assets/certificaciones/iso14001.pdf" target="_blank" rel="noopener noreferrer">ISO 14001</a> pour la gestion environnementale, <a href="${rootPrefix}assets/certificaciones/iso20000.pdf" target="_blank" rel="noopener noreferrer">ISO 20000</a> pour la gestion des services IT, <a href="${rootPrefix}assets/certificaciones/iso27001.pdf" target="_blank" rel="noopener noreferrer">ISO 27001</a> pour la sécurité de l'information et <a href="${rootPrefix}assets/certificaciones/CertificadoENS-2025-0095_ES_2026-07-07.pdf" target="_blank" rel="noopener noreferrer">ENS Alto</a> pour la sécurité et la conformité des services numériques.`,
+        certificacionesEns: `Oui. Lognext dispose de la certification ENS Alto, le niveau le plus exigeant du Schéma National de Sécurité espagnol. Cette certification renforce la confiance des clients, administrations publiques et partenaires, en démontrant un engagement élevé envers la sécurité, la protection de l'information et la conformité.`,
+        sectorPublico: `Oui. Lognext peut accompagner les administrations publiques ainsi que les entreprises privées dans des projets technologiques, de transformation digitale, de cybersécurité, de gestion applicative, d'infrastructures, d'intelligence artificielle et d'outsourcing IT. De plus, la certification ENS Alto renforce la confiance dans les projets où la sécurité et la conformité sont essentielles.`,
+        responsable: `Pour toute question institutionnelle, commerciale ou administrative, vous pouvez contacter Lognext via les canaux officiels indiqués sur le site. L’équipe compétente examinera votre demande et l’orientera vers la personne appropriée.`,
+        personaConcreta: `Pour obtenir des informations sur des personnes précises de l’organisation, nous vous recommandons de contacter Lognext via les canaux officiels du site.`,
+        clientesSectores: `Lognext peut apporter de la valeur aux organisations publiques et privées qui ont besoin d'un accompagnement technologique en transformation numérique, cybersécurité, gestion applicative, infrastructures, intelligence artificielle et outsourcing IT. Ses services s'adaptent aux besoins de chaque organisation.`,
+        casosExito: `Vous pouvez trouver des cas de réussite dans les pages de services de Lognext. Ils présentent des exemples pratiques par domaine, comme l'intelligence artificielle, la cybersécurité, AMS, IMS ou l'outsourcing.`,
+        innovacionTransformacion: `Chez Lognext, nous considérons l'innovation comme une manière d'apporter une valeur réelle au métier. Nous appliquons la technologie pour améliorer les processus, optimiser les services et aider nos clients à évoluer de façon efficace, sûre et durable.`,
         ams: `AMS, Application Management Services, se concentre sur la gestion, la maintenance et l'évolution des applications afin d'assurer leur bon fonctionnement pendant tout leur cycle de vie.`,
         amsMantenimiento: `La maintenance des applications peut inclure le suivi des incidents, les corrections, l'évolution fonctionnelle, l'amélioration des performances et le support continu afin d'assurer la continuité du service.`,
         amsBeneficios: `AMS aide à réduire les incidents, améliorer la stabilité des applications, optimiser leurs performances et libérer les équipes internes pour des activités à plus forte valeur.`,
         ims: `IMS, Infrastructure Management Services, se concentre sur la gestion et le support des infrastructures technologiques, des systèmes et des environnements critiques.`,
         imsGestion: `La gestion des infrastructures peut inclure le support technique, la supervision, l'administration des systèmes, la continuité opérationnelle et la résolution des incidents.`,
         imsBeneficios: `IMS aide à améliorer la disponibilité, la stabilité et la continuité des systèmes technologiques, en réduisant les risques opérationnels et en facilitant une gestion plus efficace.`,
-        agile: `Je n'ai actuellement pas d'information indiquant qu'Agile Transformation soit un service actif de LogNext. Vous pouvez consulter la section Services ou contacter LogNext pour confirmer les solutions disponibles.`,
+        agile: `Je n'ai actuellement pas d'information indiquant qu'Agile Transformation soit un service actif de Lognext. Vous pouvez consulter la section Services ou contacter Lognext pour confirmer les solutions disponibles.`,
         outsourcing: `L'outsourcing IT permet d'intégrer des talents technologiques spécialisés pour soutenir des projets, renforcer des équipes ou couvrir les besoins spécifiques d'une organisation.`,
-        outsourcingEquipo: `LogNext peut renforcer les équipes technologiques grâce à des profils spécialisés qui rejoignent les projets selon les besoins du client.`,
+        outsourcingEquipo: `Lognext peut renforcer les équipes technologiques grâce à des profils spécialisés qui rejoignent les projets selon les besoins du client.`,
         outsourcingBeneficios: `Externaliser les talents technologiques apporte flexibilité, capacité d'adaptation, accès à des profils spécialisés et soutien pour accélérer les projets sans agrandir durablement les structures internes.`,
-        consultoriaIt: `Le conseil technologique de LogNext aide à identifier les besoins, définir des solutions IT et orienter les décisions technologiques avec une approche pratique, sûre et alignée sur le métier.`,
-        desarrolloAplicaciones: `LogNext peut accompagner le développement, la maintenance et l'évolution d'applications, avec une attention portée à la continuité, la qualité, l'efficacité et l'adaptation aux besoins de chaque organisation.`,
-        automatizacionProcesos: `L'automatisation des processus réduit les tâches manuelles, améliore les temps de réponse et renforce l'efficacité opérationnelle. LogNext l'aborde avec la technologie, les données et l'intégration aux processus métier.`,
-        soporteIt: `Le support IT aide à maintenir les services technologiques opérationnels, stables et disponibles. LogNext l'oriente vers la continuité, l'efficacité et la résolution rapide des incidents.`,
+        consultoriaIt: `Le conseil technologique de Lognext aide à identifier les besoins, définir des solutions IT et orienter les décisions technologiques avec une approche pratique, sûre et alignée sur le métier.`,
+        desarrolloAplicaciones: `Lognext peut accompagner le développement, la maintenance et l'évolution d'applications, avec une attention portée à la continuité, la qualité, l'efficacité et l'adaptation aux besoins de chaque organisation.`,
+        automatizacionProcesos: `L'automatisation des processus réduit les tâches manuelles, améliore les temps de réponse et renforce l'efficacité opérationnelle. Lognext l'aborde avec la technologie, les données et l'intégration aux processus métier.`,
+        soporteIt: `Le support IT aide à maintenir les services technologiques opérationnels, stables et disponibles. Lognext l'oriente vers la continuité, l'efficacité et la résolution rapide des incidents.`,
         gobiernoIt: `La gouvernance IT aide à organiser, prioriser et contrôler les services technologiques afin qu'ils restent alignés avec la stratégie, les risques, la sécurité et les besoins métier.`
       }
     }
@@ -213,34 +213,34 @@
   const contextualSuggestions = {
     home: {
       es: [
-        { label: "¿Qué servicios ofrece LogNext?", intent: "servicios" },
-        { label: "¿Por qué elegir LogNext?", intent: "propuestaValor" },
+        { label: "¿Qué servicios ofrece Lognext?", intent: "servicios" },
+        { label: "¿Por qué elegir Lognext?", intent: "propuestaValor" },
         { label: "¿Cómo puedo contactar?", intent: "contacto" }
       ],
       en: [
-        { label: "What services does LogNext offer?", intent: "servicios" },
-        { label: "Why choose LogNext?", intent: "propuestaValor" },
+        { label: "What services does Lognext offer?", intent: "servicios" },
+        { label: "Why choose Lognext?", intent: "propuestaValor" },
         { label: "How can I contact you?", intent: "contacto" }
       ],
       fr: [
-        { label: "Quels services propose LogNext ?", intent: "servicios" },
-        { label: "Pourquoi choisir LogNext ?", intent: "propuestaValor" },
+        { label: "Quels services propose Lognext ?", intent: "servicios" },
+        { label: "Pourquoi choisir Lognext ?", intent: "propuestaValor" },
         { label: "Comment puis-je vous contacter ?", intent: "contacto" }
       ]
     },
     about: {
       es: [
-        { label: "¿Qué es LogNext?", intent: "quienesSomos" },
+        { label: "¿Qué es Lognext?", intent: "quienesSomos" },
         { label: "¿Cuál es vuestra propuesta de valor?", intent: "propuestaValor" },
         { label: "¿Qué certificaciones tenéis?", intent: "certificaciones" }
       ],
       en: [
-        { label: "What is LogNext?", intent: "quienesSomos" },
+        { label: "What is Lognext?", intent: "quienesSomos" },
         { label: "What is your value proposition?", intent: "propuestaValor" },
         { label: "What certifications do you have?", intent: "certificaciones" }
       ],
       fr: [
-        { label: "Qu'est-ce que LogNext ?", intent: "quienesSomos" },
+        { label: "Qu'est-ce que Lognext ?", intent: "quienesSomos" },
         { label: "Quelle est votre proposition de valeur ?", intent: "propuestaValor" },
         { label: "Quelles certifications avez-vous ?", intent: "certificaciones" }
       ]
@@ -249,49 +249,49 @@
       es: [
         { label: "¿Cómo puedo enviar mi CV?", intent: "empleo" },
         { label: "¿Qué beneficios ofrecéis?", intent: "beneficiosEmpleo" },
-        { label: "¿Cómo es trabajar en LogNext?", intent: "culturaEmpleo" }
+        { label: "¿Cómo es trabajar en Lognext?", intent: "culturaEmpleo" }
       ],
       en: [
         { label: "How can I send my CV?", intent: "empleo" },
         { label: "What benefits do you offer?", intent: "beneficiosEmpleo" },
-        { label: "What is it like to work at LogNext?", intent: "culturaEmpleo" }
+        { label: "What is it like to work at Lognext?", intent: "culturaEmpleo" }
       ],
       fr: [
         { label: "Comment puis-je envoyer mon CV ?", intent: "empleo" },
         { label: "Quels avantages proposez-vous ?", intent: "beneficiosEmpleo" },
-        { label: "Comment est le travail chez LogNext ?", intent: "culturaEmpleo" }
+        { label: "Comment est le travail chez Lognext ?", intent: "culturaEmpleo" }
       ]
     },
     cybersecurity: {
       es: [
-        { label: "¿Cómo ayuda LogNext en ciberseguridad?", intent: "ciberseguridad" },
+        { label: "¿Cómo ayuda Lognext en ciberseguridad?", intent: "ciberseguridad" },
         { label: "¿Qué supone ENS Alto?", intent: "certificacionesEns" },
         { label: "¿Qué beneficios aporta la ciberseguridad?", intent: "ciberseguridadBeneficios" }
       ],
       en: [
-        { label: "How does LogNext help with cybersecurity?", intent: "ciberseguridad" },
+        { label: "How does Lognext help with cybersecurity?", intent: "ciberseguridad" },
         { label: "What does ENS Alto mean?", intent: "certificacionesEns" },
         { label: "What benefits does cybersecurity provide?", intent: "ciberseguridadBeneficios" }
       ],
       fr: [
-        { label: "Comment LogNext aide-t-elle en cybersécurité ?", intent: "ciberseguridad" },
+        { label: "Comment Lognext aide-t-elle en cybersécurité ?", intent: "ciberseguridad" },
         { label: "Que signifie ENS Alto ?", intent: "certificacionesEns" },
         { label: "Quels avantages apporte la cybersécurité ?", intent: "ciberseguridadBeneficios" }
       ]
     },
     ai: {
       es: [
-        { label: "¿Cómo aplica LogNext la Inteligencia Artificial?", intent: "ia" },
+        { label: "¿Cómo aplica Lognext la Inteligencia Artificial?", intent: "ia" },
         { label: "¿Qué procesos se pueden automatizar con IA?", intent: "iaAutomatizacion" },
         { label: "¿Qué beneficios aporta la IA?", intent: "iaBeneficios" }
       ],
       en: [
-        { label: "How does LogNext apply Artificial Intelligence?", intent: "ia" },
+        { label: "How does Lognext apply Artificial Intelligence?", intent: "ia" },
         { label: "What processes can be automated with AI?", intent: "iaAutomatizacion" },
         { label: "What benefits does AI provide?", intent: "iaBeneficios" }
       ],
       fr: [
-        { label: "Comment LogNext applique-t-elle l'Intelligence Artificielle ?", intent: "ia" },
+        { label: "Comment Lognext applique-t-elle l'Intelligence Artificielle ?", intent: "ia" },
         { label: "Quels processus peuvent être automatisés avec l'IA ?", intent: "iaAutomatizacion" },
         { label: "Quels avantages apporte l'IA ?", intent: "iaBeneficios" }
       ]
@@ -333,17 +333,17 @@
     outsourcing: {
       es: [
         { label: "¿Qué es el outsourcing IT?", intent: "outsourcing" },
-        { label: "¿Cómo puede LogNext reforzar mi equipo?", intent: "outsourcingEquipo" },
+        { label: "¿Cómo puede Lognext reforzar mi equipo?", intent: "outsourcingEquipo" },
         { label: "¿Qué ventajas tiene externalizar talento?", intent: "outsourcingBeneficios" }
       ],
       en: [
         { label: "What is IT outsourcing?", intent: "outsourcing" },
-        { label: "How can LogNext strengthen my team?", intent: "outsourcingEquipo" },
+        { label: "How can Lognext strengthen my team?", intent: "outsourcingEquipo" },
         { label: "What are the benefits of outsourcing talent?", intent: "outsourcingBeneficios" }
       ],
       fr: [
         { label: "Qu'est-ce que l'outsourcing IT ?", intent: "outsourcing" },
-        { label: "Comment LogNext peut-elle renforcer mon équipe ?", intent: "outsourcingEquipo" },
+        { label: "Comment Lognext peut-elle renforcer mon équipe ?", intent: "outsourcingEquipo" },
         { label: "Quels sont les avantages d'externaliser les talents ?", intent: "outsourcingBeneficios" }
       ]
     },
@@ -424,7 +424,7 @@
   const responseLinks = {
     empresa: {
       href: `${rootPrefix}quienes-somos.html`,
-      label: { es: "Conocer LogNext", en: "Learn about LogNext", fr: "Découvrir LogNext" }
+      label: { es: "Conocer Lognext", en: "Learn about Lognext", fr: "Découvrir Lognext" }
     },
     servicios: {
       href: `${rootPrefix}index.html#servicios`,
@@ -488,31 +488,31 @@
     },
     contacto: {
       href: "mailto:info@lognext.com",
-      label: { es: "Ir a Contacto", en: "Contact LogNext", fr: "Contacter LogNext" }
+      label: { es: "Ir a Contacto", en: "Contact Lognext", fr: "Contacter Lognext" }
     },
     contactoHumano: {
       href: "mailto:info@lognext.com",
-      label: { es: "Contactar con LogNext", en: "Contact LogNext", fr: "Contacter LogNext" }
+      label: { es: "Contactar con Lognext", en: "Contact Lognext", fr: "Contacter Lognext" }
     },
     responsable: {
       href: "mailto:info@lognext.com",
-      label: { es: "Contactar con LogNext", en: "Contact LogNext", fr: "Contacter LogNext" }
+      label: { es: "Contactar con Lognext", en: "Contact Lognext", fr: "Contacter Lognext" }
     },
     personaConcreta: {
       href: "mailto:info@lognext.com",
-      label: { es: "Contactar con LogNext", en: "Contact LogNext", fr: "Contacter LogNext" }
+      label: { es: "Contactar con Lognext", en: "Contact Lognext", fr: "Contacter Lognext" }
     },
     actividad: {
       href: `${rootPrefix}quienes-somos.html`,
-      label: { es: "Conocer más sobre LogNext", en: "Learn more about LogNext", fr: "En savoir plus sur LogNext" }
+      label: { es: "Conocer más sobre Lognext", en: "Learn more about Lognext", fr: "En savoir plus sur Lognext" }
     },
     quienesSomos: {
       href: `${rootPrefix}quienes-somos.html`,
-      label: { es: "Conocer LogNext", en: "Learn about LogNext", fr: "Découvrir LogNext" }
+      label: { es: "Conocer Lognext", en: "Learn about Lognext", fr: "Découvrir Lognext" }
     },
     propuestaValor: {
       href: `${rootPrefix}quienes-somos.html`,
-      label: { es: "Conocer más sobre LogNext", en: "Learn more about LogNext", fr: "En savoir plus sur LogNext" }
+      label: { es: "Conocer más sobre Lognext", en: "Learn more about Lognext", fr: "En savoir plus sur Lognext" }
     },
     certificaciones: {
       href: `${rootPrefix}index.html#certificaciones`,
@@ -524,11 +524,11 @@
     },
     sectorPublico: {
       href: `${rootPrefix}quienes-somos.html`,
-      label: { es: "Conocer más sobre LogNext", en: "Learn more about LogNext", fr: "En savoir plus sur LogNext" }
+      label: { es: "Conocer más sobre Lognext", en: "Learn more about Lognext", fr: "En savoir plus sur Lognext" }
     },
     clientesSectores: {
       href: `${rootPrefix}quienes-somos.html`,
-      label: { es: "Conocer más sobre LogNext", en: "Learn more about LogNext", fr: "En savoir plus sur LogNext" }
+      label: { es: "Conocer más sobre Lognext", en: "Learn more about Lognext", fr: "En savoir plus sur Lognext" }
     },
     casosExito: {
       href: `${rootPrefix}index.html#servicios`,
@@ -536,7 +536,7 @@
     },
     innovacionTransformacion: {
       href: `${rootPrefix}quienes-somos.html`,
-      label: { es: "Conocer más sobre LogNext", en: "Learn more about LogNext", fr: "En savoir plus sur LogNext" }
+      label: { es: "Conocer más sobre Lognext", en: "Learn more about Lognext", fr: "En savoir plus sur Lognext" }
     },
     ams: {
       href: `${rootPrefix}servicios/ams.html`,
@@ -2619,7 +2619,7 @@
   function logIntentDebug(originalText, normalizedText, intent, scores) {
     if (!CHATBOT_DEBUG) return;
 
-    console.info("[LogNext chatbot intent]", {
+    console.info("[NextBot intent]", {
       originalText,
       normalizedText,
       detectedIntent: intent ? intent.key : null,
